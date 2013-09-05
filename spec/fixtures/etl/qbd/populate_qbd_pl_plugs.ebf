@@ -1,0 +1,11 @@
+ETLCache.resolvers[:company_id] = batch.options[:company_id]
+@since = Date.parse('2012-06-01')
+@grain = :monthly
+
+# extractions
+extract '{:entities => [:balance_sheet_std], :since => @since, :grain => @grain}'
+extract '{:entities => [:report_profit_and_loss], :since => @since, :grain => @grain}'
+
+run 'controls_symlink/populate_qbd_account_balances.ctl'
+
+process :populate_qbd_pl_plugs

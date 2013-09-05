@@ -1,0 +1,57 @@
+ETLCache.resolvers[:company_id] = batch.options[:company_id]
+@since = 18.months.ago.beginning_of_month
+@grain = :monthly
+
+# extractions
+extract '{:entities => [:account]}'
+extract '{:entities => [:customer]}'
+extract '{:entities => [:employee]}'
+extract '{:entities => [:item]}'
+extract '{:entities => [:vendor]}'
+			
+extract '{:entities => [:bill], 					          :since => @since}'
+extract '{:entities => [:bill_payment], 			      :since => @since}'
+extract '{:entities => [:bill_payment_credit_card], :since => @since}'
+extract '{:entities => [:charge], 					        :since => @since}'
+extract '{:entities => [:check], 					          :since => @since}'
+extract '{:entities => [:credit_card_charge],		    :since => @since}'
+extract '{:entities => [:credit_card_credit], 		  :since => @since}'
+extract '{:entities => [:credit_card_refund], 		  :since => @since}'
+extract '{:entities => [:credit_memo], 				      :since => @since}'
+extract '{:entities => [:deposit], 					        :since => @since}'
+extract '{:entities => [:invoice], 					        :since => @since}'
+extract '{:entities => [:journal_entry], 			      :since => @since}'
+extract '{:entities => [:payment], 					        :since => @since}'
+extract '{:entities => [:sales_receipt], 			      :since => @since}'
+extract '{:entities => [:time_activity], 			      :since => @since}'
+extract '{:entities => [:vendor_credit], 			      :since => @since}'
+
+extract '{:entities => [:balance_sheet_std], 		    :since => @since, :grain => @grain}'
+extract '{:entities => [:report_profit_and_loss],   :since => @since, :grain => @grain}'
+
+# loads
+run 'jobs/load_qbd_accounts.ctl'
+run 'jobs/load_qbd_customers.ctl'
+run 'jobs/load_qbd_employees.ctl'
+run 'jobs/load_qbd_items.ctl'
+run 'jobs/load_qbd_vendors.ctl'
+run 'jobs/load_qbd_bills.ctl'
+run 'jobs/load_qbd_bill_payments.ctl'
+run 'jobs/load_qbd_bill_payment_credit_cards.ctl'
+run 'jobs/load_qbd_charges.ctl'
+run 'jobs/load_qbd_checks.ctl'
+run 'jobs/load_qbd_credit_card_charges.ctl'
+run 'jobs/load_qbd_credit_card_credits.ctl'
+run 'jobs/load_qbd_credit_card_refunds.ctl'
+run 'jobs/load_qbd_credit_memos.ctl'
+run 'jobs/load_qbd_deposits.ctl'
+run 'jobs/load_qbd_invoices.ctl'
+run 'jobs/load_qbd_journal_entries.ctl'
+run 'jobs/load_qbd_payments.ctl'
+run 'jobs/load_qbd_sales_receipts.ctl'
+run 'jobs/load_qbd_time_activity.ctl'
+run 'jobs/load_qbd_vendor_credits.ctl'
+
+run 'jobs/populate_qbd_account_balances.ctl'
+process :populate_qbd_pl_plugs
+process :populate_qbd_bal_sht_plugs

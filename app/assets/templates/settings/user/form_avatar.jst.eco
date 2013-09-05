@@ -1,0 +1,3 @@
+<a href="http://gravatar.com/emails/" title="Change your avatar at gravatar.com">
+  <img src="<%= @avatarUrl %>" width="120" height="120" />
+</a>

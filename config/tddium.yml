@@ -1,0 +1,14 @@
+---
+:tddium:
+  :test_pattern:
+    - spec/**_spec.rb
+  :tests:
+   # Jasmine config
+   - :type: custom
+     :command: bundle exec guard-jasmine --server-timeout=90 -t 30000
+     :invocation: single
+     :output: exit-status
+  :mongodb:
+    :version: '2.0.6'
+  :phantomjs:
+    :version: '1.7.0'

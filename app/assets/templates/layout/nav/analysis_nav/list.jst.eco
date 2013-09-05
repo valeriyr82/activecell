@@ -1,0 +1,1 @@
+<li class="nav-ribbon" style="top: <%= @prevTop %>"><!-- --></li>

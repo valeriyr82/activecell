@@ -1,0 +1,24 @@
+<div class="task-list-header">
+  <h3>tasks</h3>
+  <div class="task-control">
+    <ul class="task-switcher semi-transparent">
+      <li class="tasks-all">all tasks</li>
+      <li class="tasks-my">assigned to me</li>
+    </ul>
+    <div class="dropdown-block">
+      <div class="dropdown-trigger">
+        <i class="icon-small-settings icon-white"><!-- --></i>
+        <ul class="dropdown-list right-aligned">
+          <li class="hide-completed-tasks"  data-action="hide"> <a href="#"><i class="icon-small-eye icon-grey"></i> hide completed</a> </li>
+          <li class="hide show-completed-tasks" data-action="show"> <a href="#"><i class="icon-small-eye icon-grey"></i> show completed</a> </li>
+          <li class="clear-completed-tasks"> <a href="#"><i class="icon-small-cross icon-grey"></i> clear completed</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="task-form">
+  <textarea rows="1" type="text" placeholder="Enter @name and task" autocomplete="off"></textarea>
+  <div class="char-count"></div>
+  <input id="mentioned-user-id" type="hidden" />
+</div>

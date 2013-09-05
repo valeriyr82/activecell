@@ -1,0 +1,23 @@
+@import "colors";
+@import "mixins";
+
+.pane .export {
+  float: left;
+  margin: 20px 0 0 20px;
+  overflow: hidden;
+  a {
+    float: left;
+    img {
+      display: block;
+    }
+  }
+  .packaging {
+    display: none;
+    color: $silver-grey-40;
+    background: url("/images/spinner.gif") no-repeat scroll 0 0 transparent;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 5px;
+    padding: 2px 0 2px 18px;
+  }
+}

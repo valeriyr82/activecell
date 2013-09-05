@@ -1,0 +1,154 @@
+@import "colors";
+@import "mixins";
+
+.ui-vertical-slider {
+  margin: 0 10px;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    position: relative;
+    margin: 0 20px 0 0;
+  }
+
+  .ui-slider-track, .ui-slider {
+    width: 6px;
+    height: 200px;
+    background: #ddd;
+    background: rgba(0,0,0,0.1);
+    z-index: 1;
+    border: none;
+    border-radius: 1em;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.22),
+                          1px 1px 0 rgba(255,255,255,0.7);
+  }
+
+  .ui-slider-handler, .ui-slider-handle {
+    position: absolute;
+    bottom: 0;
+    left: -6px;
+    width: 16px;
+    height: 16px;
+    margin-bottom: -10px;
+    border: 1px solid #d5d6d7;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 10em;
+    box-shadow: inset 1px 2px 1px rgba(255,255,255,0.9),
+                        1px 1px 2px rgba(0,0,0,0.2);
+
+    @include gradient(#f8f8f8, #efefef);
+
+    &:hover {
+      @include gradient(lighten(#f8f8f8, 3%), lighten(#efefef, 3%));
+    }
+
+    &:active {
+      @include gradient(lighten(#efefef, 3%), lighten(#f8f8f8, 3%));
+    }
+  }
+
+  .ui-slider-fill, .ui-slider-range {
+    position: absolute;
+    width: 6px;
+    bottom: 0;
+    background: #039ae8;
+    z-index: 5;
+    border-radius: 1em;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.22);    
+  }
+}
+
+.ui-horizontal-slider {
+  @extend .ui-vertical-slider;
+  margin: 0 0 10px 0;
+
+  li {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+
+  .ui-slider-track, .ui-slider {
+    width: 100%;
+    height: 6px;
+  }
+
+  .ui-slider-handler, .ui-slider-handle {
+    bottom: -9px;
+    width: 16px;
+    height: 18px;
+    margin-top: -1px;
+    border: none;
+    background: image-url("sprite_air.png") -80px -10px no-repeat;
+    box-shadow: none;
+    border-radius: 0;
+
+    &:hover, &:active {
+      background: image-url("sprite_air.png") -80px -10px no-repeat;
+    };
+  }
+
+  .ui-slider-fill, .ui-slider-range {
+    width: auto;
+    height: 6px;
+
+    @include gradient(#8a8a8a, #707070);
+  }
+
+  .ui-slider-title {
+    margin: 0 0 7px 0;
+    text-align: center;
+    text-shadow: 1px solid rgba(255,255,255,0.9);
+
+    em {
+      padding: 0 3px;
+    }
+  }
+
+  &.alt-handler {
+    .ui-slider-handler {
+      bottom: -6px;
+      width: 16px;
+      height: 18px;
+      border: none;
+      background: image-url("sprite_air.png") -80px -10px no-repeat;
+      box-shadow: none;
+      border-radius: 0;
+    }
+  }
+}
+
+ul.ui-horizontal-slider {
+  .ui-slider-handler {
+    bottom: 4px;
+    margin-left: -3px;
+  }
+}
+
+.ui-scrollbar {
+  @extend .ui-vertical-slider;
+
+  .ui-slider-track {
+    width: 7px;
+  }
+
+  .ui-slider-handler {
+    width: 10px;
+    height: 25px;
+    left: -2px;
+    border: 1px solid #0981b6;
+    box-shadow: inset 1px 1px 1px rgba(255,255,255,0.4),
+                        1px 1px 2px rgba(0,0,0,0.2);    
+
+    @include gradient(#19affe, #0499e4);
+
+    &:hover {
+      @include gradient(lighten(#19affe, 5%), lighten(#0499e4, 5%));
+    }
+
+    &:active {
+      @include gradient(lighten(#0499e4, 5%), lighten(#19affe, 5%));
+    }
+  }
+}

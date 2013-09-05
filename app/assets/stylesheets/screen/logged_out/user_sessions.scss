@@ -1,0 +1,19 @@
+@import "../../common/colors";
+@import "../../common/mixins";
+
+.sign-user-block {
+  @include clearfix;
+
+  float: left;
+  margin-top: 6px;
+
+  a {
+    display: block;
+    margin-top: 32px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+

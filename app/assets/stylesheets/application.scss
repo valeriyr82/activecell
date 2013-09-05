@@ -1,0 +1,36 @@
+/*
+  ---- Reset ----
+ *= require 'common/reset'
+
+  ---- Third party type styles ----
+  *= require 'jquery.jscrollpane'
+  *= require 'jquery-ui'
+  *= require 'bootstrap-colorpicker'
+
+  ---- Our styles ----
+  *= require 'common/reset'
+  *= require 'common/alerts'
+  *= require 'common/breadcrumbs'
+  *= require 'common/buttons'
+  *= require 'common/charts'
+  *= require 'common/drop_downs'
+  *= require 'common/export'
+  *= require 'common/typography'
+  *= require 'common/icons'
+  *= require 'common/forms'
+  *= require 'common/metrics'
+  *= require 'common/misc'
+  *= require 'common/nav'
+  *= require 'common/progress-bars'
+  *= require 'common/tables'
+  *= require 'common/backgrounds'
+  *= require 'common/modals'
+  *= require 'common/widgets'
+  *= require 'common/pagination'
+  *= require 'common/ui'
+  *= require 'common/chart-colors'
+  *= require 'common/tooltips'
+  *= require 'common/grid'
+  
+ *= require_tree ./screen
+*/

@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="IKBkCUHDz91LCzRyYAIQnWYpqwIUqd44DUrBbbJ5o",
+        oauth_signature="HE8blKrHCSCxS%2FQJCx0hCZuQhjw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296494", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:01:32 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=D9CEF211B3176841F8D4AEA292577E4A.c1-pprdqboas30d; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296492110946; path=/; expires=Tue, 10-Sep-13 17:01:32
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '312'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q013472960670985d14da3</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:01:36 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/estimates/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="XLXZ3jqqgMCcYZYGujPiHRF4fEeYkPTIzJF84JJtwv8",
+        oauth_signature="lioSLa2GteWpVgXtJ0yFOQathjE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296496", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:01:33 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=25DED39A064C9CD771B5CA5FA2218469.c36-pprdqboas30j; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296493398824; path=/; expires=Tue, 10-Sep-13 17:01:33
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '239'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:SearchResults
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:CdmCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:type="Estimates"/><qbo:Count>0</qbo:Count><qbo:CurrentPage>1</qbo:CurrentPage></qbo:SearchResults>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:01:37 GMT
+recorded_with: VCR 2.2.4

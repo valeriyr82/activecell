@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="span12 primary">
+    <h2>Advisor Settings</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="span16 horizontal-container">
+    <h3>Companies you advise</h3>
+
+    <div class="row">
+      <div class="span16">
+        <table class="table companies table-with-buttons">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Branding</th>
+              <% if @hasActiveSubscription: %>
+                <th>Billing</th>
+              <% end %>
+              <th>Account</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <div class="row hide company-form-container">
+          <div class="span12 horizontal-container">
+            <div id="company-form"></div>
+          </div>
+        </div>
+        <div class="well">
+          <a href="#" class="btn" id="add-company" title="Add a new company">Add a new company</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--<div class="span16">-->
+  <!--<div class="well margin-top">-->
+  <!--<form class="form-horizontal" action="#" method="post">-->
+  <!--<div class="control-group">-->
+  <!--<label class="control-label label-wide">Override branding for ALL companies:</label><input-->
+  <!--class="settings-checkbox" type="checkbox"/>-->
+  <!--</div>-->
+  <!--<div class="control-group">-->
+  <!--<label class="control-label label-wide">Override billing for ALL companies:</label><input-->
+  <!--class="settings-checkbox" type="checkbox"/>-->
+  <!--</div>-->
+  <!--</form>-->
+  <!--</div>-->
+  <!--</div>-->
+</div>
+
+<!--<div class="span16 horizontal-container clearfix">-->
+<!--<h3>Done with advising?</h3> -->
+<!--<span class="pull-right">-->
+<!--<a href="#" class="btn btn-small">&times; Click here</a> to remove Sterling Cooper as an advisor.-->
+<!--</span>-->
+<!--</div>-->

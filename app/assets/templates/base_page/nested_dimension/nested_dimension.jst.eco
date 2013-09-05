@@ -1,0 +1,13 @@
+
+<div class="row">
+  <div class="span10">
+    <div class="nested-header" id="nested-dimension-header"></div>
+    <div class="widget-block slick-grid-container">
+      <div class="slick-grid-table" id="myGrid"></div>
+    </div>
+    <div class="nested-footer" id="nested-dimension-footer"></div>
+  </div>
+</div>
+
+<div style="display: none">
+</div>

@@ -1,0 +1,41 @@
+<section id="objects">
+  <div class="page-header"><h1>Object inputs</h1></div>
+
+  <% [{title: 'Revenue streams', fields: ['id', 'name'], klass: 'streams'},
+      {title: 'Customer segments', fields: ['id', 'name'], klass: 'segments'},
+      {title: 'Channels', fields: ['id', 'name'], klass: 'channels'},
+      {title: 'Customer acq stages', fields: ['id', 'name', 'lag period', 'is_topline', 'is_customer'], klass: 'stages'},
+      {title: 'Channel segment mix', fields: ['channelId', 'segmentId', 'value'], klass: 'channelSegmentMix',
+       desc: 'use: admin.channelSegmentMix.set(value, channelId, segmentId), ex: admin.channelSegmentMix.set(50, 5, 7)'}
+    ].each do |table| %>
+    <%= render 'admin/shared/table', title: table[:title], fields: table[:fields], klass: table[:klass], desc: table[:desc] %>
+  <% end %>
+</section>
+
+<section id="forecast">
+  <div class="page-header"><h1>Forecast inputs</h1></div>
+
+  <%= render 'admin/shared/table', title: 'Initial volume', fields: ['stage id', 'channel id', 'segment id', 'value'], klass: 'initialVolume', desc: 'use: admin.initialVolume.set(value, stageId,  channelId, segmentId), ex: admininitialVolume.set(20, 10292, 5, 7)' %>
+
+  <% [{title: 'Topline growth', fields: ['channelId'], klass: 'toplineGrowth',
+       desc: 'use: admin.toplineGrowth.set(value, channelId, monthId), ex: admin.toplineGrowth.set(100, 5, 1)'},
+      {title: 'Conversion rates', fields: ['notFirstStageId', 'channelId'], klass: 'conversionRates',
+       desc: 'use: admin.conversionRates.set(value, notFirstStageId, channelId, monthId), ex: admin.conversionRates.set(95, 22394, 5, 1)'},
+      {title: 'Churn rates', fields: ['segmentId'], klass: 'churnRates',
+       desc: 'use: admin.churnRates.set(value, segmentId, monthId), ex: admin.churnRates.set(0, 7, 1)'}
+    ].each do |table| %>
+    <%= render 'admin/shared/month_table', title: table[:title], fields: table[:fields], klass: table[:klass], desc: table[:desc] %>
+  <% end %>
+</section>
+
+<section id="calculations">
+  <div class="page-header"><h1>Calculations</h1></div>
+  <div id="highchart"></div>
+
+  <% [{title: 'Conversion forecast', fields: ['stageId', 'channelId', 'segmentId'], klass: 'conversionForecast'},
+      {title: 'Churn forecast', fields: ['channelId', 'segmentId'], klass: 'churnForecast'},
+      {title: 'Customer volume forecast', fields: ['channelId', 'segmentId'], klass: 'customerForecast'}
+    ].each do |table| %>
+    <%= render 'admin/shared/month_table', title: table[:title], fields: table[:fields], klass: table[:klass], desc: table[:desc] %>
+  <% end %>
+</section>

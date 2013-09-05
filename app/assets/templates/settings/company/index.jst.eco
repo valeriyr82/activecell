@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="span15">
+    <div class="company-settings">
+      <div class="row">
+        <div class="span14">
+          <h2>Company Settings</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span14 horizontal-container">
+          <div id="company-form"></div>
+          <div class="span6 company-logo-section pull-right">
+            <div class="alert-message block-message info centered">
+              <h4>Look &amp; Feel</h4>
+              <div id="company-logo"></div>
+              <div id="company-colors"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="span14">
+          <div id="company-affiliations"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

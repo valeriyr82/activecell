@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="IdBo0h6JbtfuwfAz04x9s74MSgRrh9H5yIbCpVIQ38",
+        oauth_signature="yqiqCL6JHb3Hl6kqW7WJVI4B5RM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296431", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:00:28 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=7ADCC8286A6D0CECA6537EBDDD47004B.c1-pprdqboas30c; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296428848727; path=/; expires=Tue, 10-Sep-13 17:00:28
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '312'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q013472960670985d14da3</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:00:32 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/items/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="TgHX0ZWYfJF6Sr4JSY2GvZ6vfLekfFJ8fOoIDH3b2s",
+        oauth_signature="Cxw5oQ9hxn1%2BWgMXBr1SrG7VC7U%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296432", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:00:30 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=CEAA46F238613B19923AE75D1D0AF330.c36-pprdqboas30a; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296430201151; path=/; expires=Tue, 10-Sep-13 17:00:30
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '848'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:SearchResults
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:CdmCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:type="Items"><Item><Id idDomain="QBO">2</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:23-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:23-07:00</LastUpdatedTime></MetaData><Name>Basecamp
+        Personal</Name><Taxable>false</Taxable><UnitPrice><Amount>12</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">75</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">13</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:24-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime></MetaData><Name>Discount</Name><Taxable>true</Taxable><UnitPrice><Amount>0</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">54</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">8</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:23-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:23-07:00</LastUpdatedTime></MetaData><Name>External
+        development</Name><Taxable>false</Taxable><UnitPrice><Amount>0</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">103</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">6</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:23-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:23-07:00</LastUpdatedTime></MetaData><Name>Google
+        Apps User (annual)</Name><Taxable>false</Taxable><UnitPrice><Amount>45.83</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">75</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">3</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:23-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:23-07:00</LastUpdatedTime></MetaData><Name>Highrise
+        Basic</Name><Taxable>false</Taxable><UnitPrice><Amount>24</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">75</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">11</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:23-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:23-07:00</LastUpdatedTime></MetaData><Name>Intuit
+        fees</Name><Taxable>false</Taxable><UnitPrice><Amount>0</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">108</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">9</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:23-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:23-07:00</LastUpdatedTime></MetaData><Name>MacBook
+        Pro 15'</Name><Taxable>true</Taxable><UnitPrice><Amount>1958.66</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">74</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">4</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:23-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:23-07:00</LastUpdatedTime></MetaData><Name>Market
+        research surve'complete'</Name><Taxable>false</Taxable><UnitPrice><Amount>67.5</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">149</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">7</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:23-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:23-07:00</LastUpdatedTime></MetaData><Name>Monitor</Name><Taxable>false</Taxable><UnitPrice><Amount>0</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">49</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">16</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:24-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime></MetaData><Name>Monitor
+        (expensed)</Name><Taxable>true</Taxable><UnitPrice><Amount>0</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">80</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">15</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:24-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime></MetaData><Name>NYC
+        Sales Tax</Name><Desc>Sales Tax 8.875%</Desc><Taxable>false</Taxable><UnitPrice><Amount>0.08875</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">135</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">12</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:24-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime></MetaData><Name>Profitably
+        Basic Annual</Name><Desc>Annual Plan (Deferred over 12 months)</Desc><Taxable>true</Taxable><UnitPrice><Amount>99.99</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">140</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">10</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:23-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:23-07:00</LastUpdatedTime></MetaData><Name>Profitably
+        Basic Monthly</Name><Taxable>true</Taxable><UnitPrice><Amount>49.99</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">52</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">14</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:24-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime></MetaData><Name>Profitably
+        Discount</Name><Taxable>true</Taxable><UnitPrice><Amount>0</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">54</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">17</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:24-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime></MetaData><Name>Sales</Name><Taxable>false</Taxable><IncomeAccountRef><AccountId
+        idDomain="QBO">158</AccountId></IncomeAccountRef></Item><Item><Id idDomain="QBO">5</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:23-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:23-07:00</LastUpdatedTime></MetaData><Name>SSL
+        certificate</Name><Taxable>true</Taxable><UnitPrice><Amount>0</Amount></UnitPrice><IncomeAccountRef><AccountId
+        idDomain="QBO">151</AccountId></IncomeAccountRef></Item></qbo:CdmCollections><qbo:Count>16</qbo:Count><qbo:CurrentPage>1</qbo:CurrentPage></qbo:SearchResults>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:00:34 GMT
+recorded_with: VCR 2.2.4

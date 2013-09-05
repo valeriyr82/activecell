@@ -1,0 +1,112 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dd9e07b6afb84b0e8e31fefc56126c6e:@api.recurly.com/v2/recurly_js/result/99624fdb4af045eda32aa051dcfcc394
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      User-Agent:
+      - Recurly/2.1.5; ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-linux]
+      Accept-Language:
+      - !binary |-
+        ZW4tdXMsZW47cT0wLjU=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Jun 2012 11:11:10 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Content-Language:
+      - en-US
+      Etag:
+      - ! '"1149608afd90adbcf4aeafb41d45d44f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<subscription href=\"https://api.recurly.com/v2/subscriptions/196e14ed332b3aadd6b9374060afdf6f\">\n
+        \ <account href=\"https://api.recurly.com/v2/accounts/4fdb7237dac5d5d722000001@recurly\"/>\n
+        \ <plan href=\"https://api.recurly.com/v2/plans/annual\">\n    <plan_code>annual</plan_code>\n
+        \   <name>Activecell Annual</name>\n  </plan>\n  <uuid>196e14ed332b3aadd6b9374060afdf6f</uuid>\n
+        \ <state>active</state>\n  <unit_amount_in_cents type=\"integer\">4999</unit_amount_in_cents>\n
+        \ <currency>USD</currency>\n  <quantity type=\"integer\">1</quantity>\n  <activated_at
+        type=\"datetime\">2012-06-18T11:10:47Z</activated_at>\n  <canceled_at nil=\"nil\"></canceled_at>\n
+        \ <expires_at nil=\"nil\"></expires_at>\n  <total_billing_cycles nil=\"nil\"></total_billing_cycles>\n
+        \ <remaining_billing_cycles nil=\"nil\"></remaining_billing_cycles>\n  <current_period_started_at
+        type=\"datetime\">2012-06-18T11:10:47Z</current_period_started_at>\n  <current_period_ends_at
+        type=\"datetime\">2012-07-18T11:10:47Z</current_period_ends_at>\n  <trial_started_at
+        type=\"datetime\">2012-06-18T11:10:47Z</trial_started_at>\n  <trial_ends_at
+        type=\"datetime\">2012-10-18T11:10:47Z</trial_ends_at>\n  <subscription_add_ons
+        type=\"array\">\n  </subscription_add_ons>\n  <a name=\"cancel\" href=\"https://api.recurly.com/v2/subscriptions/196e14ed332b3aadd6b9374060afdf6f/cancel\"
+        method=\"put\"/>\n  <a name=\"terminate\" href=\"https://api.recurly.com/v2/subscriptions/196e14ed332b3aadd6b9374060afdf6f/terminate\"
+        method=\"put\"/>\n  <a name=\"postpone\" href=\"https://api.recurly.com/v2/subscriptions/196e14ed332b3aadd6b9374060afdf6f/postpone\"
+        method=\"put\"/>\n</subscription>\n"
+    http_version:
+  recorded_at: Mon, 18 Jun 2012 11:11:10 GMT
+- request:
+    method: get
+    uri: https://dd9e07b6afb84b0e8e31fefc56126c6e:@api.recurly.com/v2/plans/annual
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      User-Agent:
+      - Recurly/2.1.5; ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-linux]
+      Accept-Language:
+      - !binary |-
+        ZW4tVVMsKg==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 28 Jun 2012 10:51:03 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Content-Language:
+      - en-US
+      Etag:
+      - ! '"657230f4b5bdc59127c18e0b090aa084"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<plan href=\"https://api.recurly.com/v2/plans/annual\">\n
+        \ <add_ons href=\"https://api.recurly.com/v2/plans/annual/add_ons\"/>\n  <plan_code>annual</plan_code>\n
+        \ <name>Activecell Annual</name>\n  <description></description>\n  <success_url></success_url>\n
+        \ <cancel_url></cancel_url>\n  <display_donation_amounts type=\"boolean\">false</display_donation_amounts>\n
+        \ <display_quantity type=\"boolean\">false</display_quantity>\n  <display_phone_number
+        type=\"boolean\">false</display_phone_number>\n  <bypass_hosted_confirmation
+        type=\"boolean\">false</bypass_hosted_confirmation>\n  <unit_name>unit</unit_name>\n
+        \ <payment_page_tos_link nil=\"nil\"></payment_page_tos_link>\n  <plan_interval_length
+        type=\"integer\">12</plan_interval_length>\n  <plan_interval_unit>months</plan_interval_unit>\n
+        \ <trial_interval_length type=\"integer\">0</trial_interval_length>\n  <trial_interval_unit>days</trial_interval_unit>\n
+        \ <total_billing_cycles nil=\"nil\"></total_billing_cycles>\n  <accounting_code></accounting_code>\n
+        \ <created_at type=\"datetime\">2012-05-25T20:37:36Z</created_at>\n  <unit_amount_in_cents>\n
+        \   <USD type=\"integer\">4999</USD>\n  </unit_amount_in_cents>\n  <setup_fee_in_cents>\n
+        \   <USD type=\"integer\">0</USD>\n  </setup_fee_in_cents>\n</plan>\n"
+    http_version:
+  recorded_at: Thu, 28 Jun 2012 10:51:04 GMT
+recorded_with: VCR 2.2.0

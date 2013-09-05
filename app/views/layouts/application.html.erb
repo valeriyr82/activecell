@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Activecell | The small business management platform</title>
+
+  <!-- Stylesheets -->
+  <%= stylesheet_link_tag 'application' %>
+  <!--[if IE]><%= stylesheet_link_tag "msie/msie.css" %><![endif]-->
+  <!--[if IE 7]><%= stylesheet_link_tag "msie/msie7.css" %><![endif]-->
+  <!--[if IE 8]><%= stylesheet_link_tag "msie/msie8.css" %><![endif]-->
+  <%= render "shared/company_colors_css"%>
+
+  <%= csrf_meta_tag %>
+</head>
+
+<body>
+  <% if current_company.present? and current_company.connected_to_intuit? %>
+    <ipp:blueDot></ipp:blueDot>
+  <% end %>
+
+  <%= render 'layouts/header' %>
+  <% if user_signed_in? %>
+  <div class="page-wrapper textured-with-border">
+    <div class="container">
+      <%= yield %>
+    </div>
+  </div>
+  <% else %>
+  <div class="page-wrapper textured-with-border narrow">
+    <div class="container">
+      <%= yield %>
+    </div>
+  </div>
+  <% end %>
+  <%= render 'layouts/footer' %>
+
+  <!-- Intuit integration -->
+  <%= javascript_include_tag 'https://js.appcenter.intuit.com/Content/IA/intuit.ipp.anywhere.js' %>
+  <script type="text/javascript">
+    intuit.ipp.anywhere.setup({
+      menuProxy: '<%= proxy_intuit_company_url %>',
+      grantUrl: '/auth/intuit'
+    });
+  </script>
+
+  <% if user_signed_in? %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'jquery.mockjax.patched' if Rails.env.test? %>
+  <% else %>
+    <%= javascript_include_tag 'logged_out' %>
+    <!-- UserVoice integration -->
+    <%= javascript_include_tag 'http://support.activecell.com/logout.js' %>
+  <% end %>
+
+  <%= yield(:scripts) %>
+
+  <% if user_signed_in? %>
+    <%= render 'layouts/uv_tab' %>
+  <% end %>
+</body>
+</html>

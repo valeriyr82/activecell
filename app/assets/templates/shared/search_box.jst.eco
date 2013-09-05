@@ -1,0 +1,11 @@
+<form class="form-search form-horizontal">
+  <div class="search-form">
+    <input type="text" 
+      id="<%= @id %>"
+      class="filter-list rounded <%= @additionalClass %>"
+      placeholder="<%= @placeholder %>"
+      value="<%= @value %>">
+    <i class="icon-small-search icon-glass icon-grey"></i>
+    <i class="icon-small-circle-cross icon-eliminate icon-grey hide"></i>
+  </div>
+</form>

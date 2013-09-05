@@ -1,0 +1,6 @@
+ETLCache.resolvers[:company_id] = batch.options[:company_id]
+@since = Date.new(2001,1,1).to_time
+
+# extractions
+extract '{:entities => [:vendor_credit], :since => @since}'
+run 'controls_symlink/load_qbd_vendor_credits.ctl'

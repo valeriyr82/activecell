@@ -1,0 +1,14 @@
+<div class='company-analysis-nav-footer'>
+  <!-- <p>
+    <a href="#company/reports/<%= @reportId %>/new" class="btn reports add-analysis">
+      <i class="icon-small-plus2"></i>
+      add another analysis
+    </a>
+  </p> -->
+  <p>
+    <a href="javascript:;" class="btn btn-danger reports delete-report">
+      <i class="icon-small-cross icon-white"></i>
+      delete this report
+    </a>
+  </p>
+</div>

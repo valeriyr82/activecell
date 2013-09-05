@@ -1,0 +1,27 @@
+<div class='company-colors row'>
+  <div class="span2 pull-left">
+    <div class='control-group'>
+      <h5 class="logo-section-header">primary color</h5>
+    </div>
+    <div class='control-group'>
+      <h5 class="logo-section-header">secondary color</h5>
+    </div>
+  </div>
+  
+  <div class="span3 pull-right customize-colors">
+    <div class='control-group clearfix'>
+      <div class='bar primary_light input-app.nd color clickable' data-object='primary_light' data-color="<%=@primary_light%>" data-color-format="hex">
+        <span class="add-on"> <i style="background:<%=@primary_light%>"></i></span>
+      </div>
+      <a href="#settings/company" class="primary-light">reset to default</a>
+    </div>
+    <div class='control-group clearfix'>
+      <div class='bar primary_dark input-app.nd color clickable' data-color='<%=@primary_dark%>' data-object='primary_dark' data-color-format="hex">
+        <span class="add-on"> <i style="background:<%=@primary_dark%>"></i></span>
+      </div>
+      <a href="#settings/company" class="primary-dark">reset to default</a>
+      
+    </div>
+  </div>
+
+</div>

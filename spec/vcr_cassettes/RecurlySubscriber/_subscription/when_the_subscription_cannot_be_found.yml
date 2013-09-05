@@ -1,0 +1,46 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: https://dd9e07b6afb84b0e8e31fefc56126c6e:@api.recurly.com/v2/subscriptions/not-existing-subscription-uuid
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Accept: 
+      - application/xml
+      User-Agent: 
+      - Recurly/2.1.5; ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-linux]
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Server: 
+      - blackhole
+      Date: 
+      - Sat, 29 Sep 2012 18:14:12 GMT
+      Content-Type: 
+      - application/xml; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Content-Language: 
+      - en-US
+      Cache-Control: 
+      - no-cache
+      X-Runtime: 
+      - "0.022172"
+    body: 
+      encoding: US-ASCII
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <error>
+          <symbol>not_found</symbol>
+          <description lang="en-US">Couldn't find Subscription with UUID=not-existing-subscription-uuid</description>
+        </error>
+
+    http_version: 
+  recorded_at: Sat, 29 Sep 2012 18:14:13 GMT
+recorded_with: VCR 2.2.5

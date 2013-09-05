@@ -1,0 +1,6 @@
+<div class="widget-block">
+  <div class="choose-metric-block">
+    <i class="icon-widget-dashboard"><!-- --></i><br />
+    <a href="javascript:;" class="btn btn-mini choose-metric">Choose a metric</a>
+  </div>
+</div>

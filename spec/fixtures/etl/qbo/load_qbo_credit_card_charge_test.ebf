@@ -1,0 +1,5 @@
+ETLCache.resolvers[:company_id] = batch.options[:company_id]
+
+# extractions
+extract '{:entities => [:credit_card_charge]}'
+run 'controls_symlink/load_qbo_credit_card_charges.ctl'

@@ -1,0 +1,18 @@
+<ul class="breadcrumbs">
+  <li><span>
+    <% if @objectName: %>
+      <a href="#<%= @subnavName %>">
+    <% end %>
+    <%= @subnavName %>
+
+    <% if @objectName: %>
+      </a></span></li><li><span><%= @objectName %>
+    <% end %>
+  </span></li>
+ 
+  <% if @analysisName: %>
+    <li class="last"><span>
+      <%= @analysisName %>
+    </span></li>
+  <% end %>
+</ul>

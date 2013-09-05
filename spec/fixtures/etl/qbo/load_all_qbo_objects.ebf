@@ -1,0 +1,31 @@
+ETLCache.resolvers[:company_id] = batch.options[:company_id]
+
+# List of supported objects: 
+# https://ipp.developer.intuit.com/0010_Intuit_Partner_Platform/0050_Data_Services/0400_QuickBooks_Online/0500_Supported_Entities_and_Operations
+
+extract '{:entities => [:account]}'
+extract '{:entities => [:bill]}'
+extract '{:entities => [:bill_payment]}'
+extract '{:entities => [:cash_purchase]}'
+extract '{:entities => [:change_data_deleted]}'
+extract '{:entities => [:check]}'
+extract '{:entities => [:class]}'
+extract '{:entities => [:company_meta_data]}'
+extract '{:entities => [:credit_card_charge]}'
+extract '{:entities => [:credit_card_credit]}'
+extract '{:entities => [:customer]}'
+extract '{:entities => [:employee]}'
+extract '{:entities => [:entitlements]}'
+extract '{:entities => [:estimate]}'
+extract '{:entities => [:invoice]}'
+extract '{:entities => [:item]}'
+extract '{:entities => [:job]}'
+extract '{:entities => [:journal_entry]}'
+extract '{:entities => [:payment]}'
+extract '{:entities => [:payment_method]}'
+extract '{:entities => [:preferences]}'
+extract '{:entities => [:sales_receipt]}'
+extract '{:entities => [:sales_term]}'
+extract '{:entities => [:time_activity]}'
+extract '{:entities => [:vendor]}'
+extract '{:entities => [:vendor_credit]}'

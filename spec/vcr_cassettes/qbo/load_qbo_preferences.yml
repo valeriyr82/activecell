@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="TnOWRY33UgMFzOi0b3YuxgJ6OsJnvssv8mKuvkyAc",
+        oauth_signature="IhWeZL9aZCKH2kdRIVfNGbBVCxk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347358365", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 11 Sep 2012 10:12:56 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=9795254E63AC0AD6D24F21B3F45CD6C6.c1-pprdqboas30a; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347358376335198; path=/; expires=Wed, 11-Sep-13 10:12:56
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '313'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q0134735626509531cd321</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Tue, 11 Sep 2012 10:12:57 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/preferences/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="yYt0aWt1uCwq57l739qyZf8CFhzmWExsyA2HG3ePOcI",
+        oauth_signature="Nm2rFWtdSVIqnb5sL99AUBt5d90%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347358377", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 11 Sep 2012 10:13:01 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=B8FF46F34CA24D89E10CFF38162ED789.c36-pprdqboas30e; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347358381220299; path=/; expires=Wed, 11-Sep-13 10:13:01
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '776'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: ! '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboCompanyPreferences
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:Preference><Name>TaxAccountId</Name><Value>135</Value></qbo:Preference><qbo:Preference><Name>TaxPercent</Name><Value>8.875%</Value></qbo:Preference><qbo:Preference><Name>TaxEnabled</Name><Value>true</Value></qbo:Preference><qbo:Preference><Name>NewCustomersAreTaxable</Name><Value>true</Value></qbo:Preference><qbo:Preference><Name>DefaultDiscountAccountId</Name><Value>163</Value></qbo:Preference><qbo:Preference><Name>DiscountEnabled</Name><Value>false</Value></qbo:Preference><qbo:Preference><Name>DefaultCustomerMessage</Name></qbo:Preference><qbo:Preference><Name>TimeTrackingEnabled</Name><Value>false</Value></qbo:Preference><qbo:Preference><Name>EstimateEnabled</Name><Value>false</Value></qbo:Preference><qbo:Preference><Name>ClientTerminology</Name><Value>customers</Value></qbo:Preference><qbo:Preference><Name>ClassTrackingEnabled</Name><Value>false</Value></qbo:Preference><qbo:Preference><Name>ExpenseTrackingEnabled</Name><Value>false</Value></qbo:Preference><qbo:Preference><Name>CustomTransactionsEnabled</Name><Value>true</Value></qbo:Preference><qbo:Preference><Name>AccountNumbersEnabled</Name><Value>true</Value></qbo:Preference><qbo:Preference><Name>SalesEmailGreetingEnabled</Name><Value>true</Value></qbo:Preference><qbo:Preference><Name>SalesEmailGreeting</Name><Value>Dear</Value></qbo:Preference><qbo:Preference><Name>SalesEmailGreetingName</Name><Value>&lt;Full
+        Name&gt;</Value></qbo:Preference><qbo:Preference><Name>SalesEmailInvoiceSubject</Name><Value>Invoice
+        from Profitably, Inc.</Value></qbo:Preference><qbo:Preference><Name>SalesEmailCreditMemoSubject</Name><Value>Credit
+        Memo from Profitably, Inc.</Value></qbo:Preference><qbo:Preference><Name>SalesEmailCashSaleSubject</Name><Value>Sales
+        Receipt from Profitably, Inc.</Value></qbo:Preference><qbo:Preference><Name>SalesEmailPurchaseOrderSubject</Name><Value>Purchase
+        Order from Profitably, Inc.</Value></qbo:Preference><qbo:Preference><Name>SalesEmailStatementSubject</Name><Value>Invoice
+        from Profitably, Inc.</Value></qbo:Preference><qbo:Preference><Name>SalesEmailInvoiceMessage</Name><Value>Your
+        invoice is attached.  Please remit payment at your earliest convenience.&#xD;
+
+        Thank you for your business - we appreciate it very much.&#xD;
+
+        &#xD;
+
+        Sincerely,&#xD;
+
+        Profitably, Inc.</Value></qbo:Preference><qbo:Preference><Name>SalesEmailCreditMemoMessage</Name><Value>Your
+        credit memo is attached.  We have reduced your account balance by the amount
+        shown on the credit memo.&#xD;
+
+        &#xD;
+
+        Sincerely,&#xD;
+
+        Profitably, Inc.</Value></qbo:Preference><qbo:Preference><Name>SalesEmailCashSaleMessage</Name><Value>Your
+        sales receipt is attached.&#xD;
+
+        Thank you for your business - we appreciate it very much.&#xD;
+
+        &#xD;
+
+        Sincerely,&#xD;
+
+        Profitably, Inc.</Value></qbo:Preference><qbo:Preference><Name>SalesEmailPurchaseOrderMessage</Name><Value>Please
+        find our purchase order attached to this email.&#xD;
+
+        &#xD;
+
+        Thank you.&#xD;
+
+        &#xD;
+
+        Sincerely,&#xD;
+
+        Profitably, Inc.</Value></qbo:Preference><qbo:Preference><Name>SalesEmailStatementMessage</Name><Value>Your
+        invoice is attached.  Please remit payment at your earliest convenience.&#xD;
+
+        &#xD;
+
+        Thank you for your business - we appreciate it very much.&#xD;
+
+        &#xD;
+
+        Sincerely,&#xD;
+
+        &#xD;
+
+        Profitably, Inc.&#xD;
+
+        +1 617.314.0825</Value></qbo:Preference><qbo:Preference><Name>SalesEmailCopyMeEnabled</Name><Value>false</Value></qbo:Preference><qbo:Preference><Name>SalesEmailPrintCopyEnabled</Name><Value>false</Value></qbo:Preference><qbo:Preference><Name>SalesEmailDeliveredByQboEnabled</Name><Value>false</Value></qbo:Preference></qbo:QboCompanyPreferences>'
+    http_version: 
+  recorded_at: Tue, 11 Sep 2012 10:13:01 GMT
+recorded_with: VCR 2.2.4

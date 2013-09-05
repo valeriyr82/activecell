@@ -1,0 +1,73 @@
+@import "colors";
+@import "mixins";
+
+// Tooltips
+// ------------------------
+
+.tooltip {
+  position: absolute;
+  padding: 3px 6px;
+  color: $grey;
+  z-index: 10000;
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.8),
+                        0 0 3px rgba(0,0,0,0.30);
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.9);
+
+  @include proxima-bold;
+  @include gradient(lighten($lighter-grey, 4%), lighten($lighter-grey, 1%));
+
+  .tooltip-arrow {
+    position: absolute;
+  }
+
+  &.left {
+    margin-left: -5px;
+
+    .tooltip-arrow {
+      right: -6px;
+      top: 6px;
+      width: 6px;
+      height: 11px;
+      background: image-url("sprite_air.png") -16px -50px no-repeat;
+    }
+  }
+
+  &.top {
+    margin-top: -5px;
+
+    .tooltip-arrow {
+      left: 50%;
+      top: -5px;
+      width: 11px;
+      height: 6px;
+      margin-left: -5px;
+      background: image-url("sprite_air.png") -10px -50px no-repeat;
+    }
+  }
+
+  &.right {
+    margin-left: 6px;
+
+    .tooltip-arrow {
+      left: -5px;
+      top: 6px;
+      width: 6px;
+      height: 11px;
+      background: image-url("sprite_air.png") -10px -50px no-repeat;
+    }
+  }
+
+  &.bottom {
+    margin-top: 5px;
+
+    .tooltip-arrow {
+      left: 50%;
+      bottom: -6px;
+      width: 11px;
+      height: 6px;
+      margin-left: -5px;
+      background: image-url("sprite_air.png") -10px -56px no-repeat;
+    }
+  }
+}

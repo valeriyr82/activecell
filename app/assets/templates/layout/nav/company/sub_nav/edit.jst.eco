@@ -1,0 +1,3 @@
+<div class="edit-form">
+<input type="text" class="report-edit" value="<%= @name %>" style="position: absolute; margin-top: -34px; margin-left: 15px; width: 120px; z-index: 100"/>
+</div>

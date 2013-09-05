@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title></title>
+
+  <style type="text/css">
+      body, #body_style {
+          background: #ffffff;
+          color: #675B5E;
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          font-size: 13px;
+          width: 100% !important;
+      }
+
+      div, p, a, li, td {
+          -webkit-text-size-adjust: none;
+      }
+  </style>
+</head>
+<body style="background-color: #ffffff; color: #675B5E; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;" marginheight="0" topmargin="0" marginwidth="0" leftmargin="0" bgcolor="#ffffff">
+
+<table style="font-size: 13px; line-height: 1.5;" width="500" border="0" cellspacing="0" cellpadding="10" align="center">
+  <tr>
+    <td width="100%" style="border-bottom: 3px solid #30878F; text-align: right;">
+      <a href="http://www.activecell.com/" style="display: inline-block;">
+        <%= image_tag attachments['logo.png'].url, border: 0, size: '180x50', alt: 'activecell', style: 'display: block;' %>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= yield %>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-bottom: 3px solid #30878F;">
+      <% if @created_by.present? %>
+        <%= render 'layouts/notifications/user_avatar', user: @created_by %>
+      <% else %>
+        <%= render 'layouts/notifications/default_avatar' %>
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

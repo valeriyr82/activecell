@@ -1,0 +1,1 @@
+<label for="hex-value">Hex Value<input id='hex-value' name="hex-value" maxlength=7 /></label>

@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://services.intuit.com/sb/company/v2/availableList
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - OAuth gem v0.4.6
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="cWiZ90HNptLSfgRtNfsYeBKs6gTAYMaPk89nUTrSU",
+        oauth_signature="%2FSevaris0jPoNqFjdfKdoQx38tM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1343664062", oauth_token="new%20auth%20token", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Jul 2012 16:01:04 GMT
+      Server:
+      - Apache/2.2.3 (Oracle)
+      Content-Length:
+      - '457'
+      Connection:
+      - close
+      Content-Type:
+      - text/xml;charset=ISO-8859-1
+    body:
+      encoding: US-ASCII
+      string: |
+        <?xml version="1.0" ?>
+        <RestResponse xmlns="http://www.intuit.com/sb/cdm/v2">
+          <CompaniesMetaData>
+            <CompanyMetaData>
+              <ExternalRealmId>667</ExternalRealmId>
+              <QBNRegisteredCompanyName>Company from Intuit</QBNRegisteredCompanyName>
+              <CompanySignUpDateTime>2012-07-24T09:31:06Z</CompanySignUpDateTime>
+              <SampleFile>false</SampleFile>
+              <QBNCompanyUserAdminIdNumber>502941515</QBNCompanyUserAdminIdNumber>
+              <QBNCompanyUserAdminEmail>lucassus@gmail.com</QBNCompanyUserAdminEmail>
+              <SyncEnabled>false</SyncEnabled>
+            </CompanyMetaData>
+          </CompaniesMetaData>
+        </RestResponse>
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 16:01:04 GMT
+recorded_with: VCR 2.2.4

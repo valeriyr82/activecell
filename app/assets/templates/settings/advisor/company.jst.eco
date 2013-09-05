@@ -1,0 +1,27 @@
+<td><%= @affiliation.company.name %></td>
+<td class="override-branding">
+  <% if @affiliation.can_override_branding: %>
+    <input type="checkbox" name="override_branding"
+           value="1" <%= 'checked="checked"' if @affiliation.override_branding %> />
+  <% else: %>
+    <i>This company's branding is already overridden by another advisor.</i>
+  <% end %>
+</td>
+
+<% if @hasActiveSubscription: %>
+  <td class="override-billing">
+    <% if @affiliation.can_override_billing: %>
+    <input type="checkbox" name="override_billing"
+           value="1" <%= 'checked="checked"' if @affiliation.override_billing %> />
+    <% else: %>
+    <i>This company's billing is already overridden by another advisor.</i>
+    <% end %>
+  </td>
+<% end %>
+
+<td>
+  <a href="#" class="btn btn-small btn-success log-on">Log on</a>
+</td>
+<td>
+  <a href="#" class="btn btn-small danger remove-company">&times; Remove</a>
+</td>

@@ -1,0 +1,42 @@
+@import "../../common/colors";
+@import "../../common/mixins";
+
+.horizontal-container {
+  padding: 20px 0;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+}
+
+#sync-status .title {
+  float: left;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 35px;
+}
+
+#sync-status .title span {
+  display: inline-block;
+  padding: 0 15px 0 0;
+}
+
+.connection-status {
+  display: inline-block;
+  position: relative;
+  top: 7px;
+  left: 0;
+  margin: 0 0 0 20px;
+  padding: 2px 7px;
+  font-size: 10px;
+  background: #FFEC9B;
+  border-radius: 5px;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.subscription-control {
+  margin-top: 10px;
+}
+
+.account-message {
+  padding-top: 5px;
+}

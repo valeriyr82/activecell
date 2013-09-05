@@ -1,0 +1,90 @@
+<div class="row">
+  <div class="span14">
+    <h2>Data Integrations</h2>
+  </div>
+</div>
+
+<div class="row"><div class='span15'>
+  
+  <div class="span4">
+    <div class="info-section light-bg">
+      <header>
+        <h3>Quickbooks Desktop</h3>
+      </header>
+
+      <div id="sync-status">
+        <div class="status">
+          <% unless @is_connected_to_intuit: %>
+            <a href="/auth/intuit" class="intuitPlatformConnectButton" title="Connect with QuickBooks">
+              Connect with Intuit
+            </a>
+          <% else: %>
+            <% if @is_intuit_token_expired: %>
+              <span>QuickBooks token is expired. Please reconnect.</span>
+              <a href="/auth/intuit">Reconnect with Intuit</a>
+            <% else: %>
+              <span>Company is connected with Intuit</span>
+              <a href="/intuit_company/disconnect" data-method="PUT">Disconnect from Intuit</a>
+
+              <div id="background-jobs"></div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>    
+  </div>
+
+  <div class="span4">
+    <div class="info-section light-bg">
+      <header>
+        <h3>Quickbooks Online</h3>
+      </header>
+
+      <div id="sync-status">
+        <div class="status">
+          <% unless @is_connected_to_intuit: %>
+            <a href="/auth/intuit" class="intuitPlatformConnectButton" title="Connect with QuickBooks">
+              Connect with Intuit
+            </a>
+          <% else: %>
+            <% if @is_intuit_token_expired: %>
+              <span>QuickBooks token is expired. Please reconnect.</span>
+              <a href="/auth/intuit">Reconnect with Intuit</a>
+            <% else: %>
+              <span>Company is connected with Intuit</span>
+              <a href="/intuit_company/disconnect" data-method="PUT">Disconnect from Intuit</a>
+
+              <div id="background-jobs"></div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="span4">
+    <div class="info-section light-bg">
+      <header>
+        <h3>Xero</h3>
+      </header>
+
+      <div id="sync-status">
+        <div class="status">
+          <% unless false: %>
+            <h4>coming soon</h4>
+            <p>status: planned</p>
+            <p><a href="http://support.activecell.com/forums/110485-product-feedback/suggestions/1739223-integrate-with-xero">
+              vote for this idea or contribute ideas</a> if this is something you are interested in!
+          <% else: %>
+            xero stuff
+          <% end %>
+        </div>
+      </div> 
+    </div>
+  </div>
+  
+  
+  
+</div></div>
+
+

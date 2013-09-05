@@ -1,0 +1,124 @@
+users:
+  type: static
+  worksheet: 0
+  at: A2
+
+companies:
+  type: static
+  worksheet: 0
+  at: E2
+
+scenarios:
+  type: static
+  worksheet: 0
+  at: M2
+
+accounts:
+  type: static
+  worksheet: 0
+  at: P2
+
+revenue_streams:
+  type: static
+  worksheet: 0
+  at: Y2
+
+products:
+  type: static
+  worksheet: 0
+  at: AB2
+
+channels:
+  type: static
+  worksheet: 0
+  at: AF2
+
+segments:
+  type: static
+  worksheet: 0
+  at: AJ2
+
+channel_segment_mix:
+  type: static
+  worksheet: 0
+  at: AM2
+
+customers:
+  type: static
+  worksheet: 0
+  at: AQ2
+
+stages:
+  type: static
+  worksheet: 0
+  at: AV2
+
+employee_types:
+  type: static
+  worksheet: 0
+  at: BC2
+
+employees:
+  type: static
+  worksheet: 0
+  at: BF2
+
+categories:
+  type: static
+  worksheet: 0
+  at: BJ2
+
+vendors:
+  type: static
+  worksheet: 0
+  at: BM2
+
+conversion_history:
+  type: cube
+  worksheet: 1
+  at: B1
+  time_at: D2
+
+financial_history:
+  type: cube
+  worksheet: 1
+  at: AO1
+  time_at: AT2
+
+timesheet_history:
+  type: cube
+  worksheet: 1
+  at: CE1
+  time_at: CI2
+
+unit_revenue_forecast:
+  type: static
+  worksheet: 2
+  at: B2
+
+unit_cac_forecast:
+  type: static
+  worksheet: 2
+  at: G2
+
+conversion_forecast:
+  type: cube
+  worksheet: 2
+  at: L1
+  time_at: O2
+
+churn_forecast:
+  type: cube
+  worksheet: 2
+  at: CJ1
+  time_at: CL2
+
+staffing_forecast:
+  type: static
+  worksheet: 2
+  at: FG2
+
+expense_forecast:
+  type: static
+  worksheet: 2
+  at: FO2

@@ -1,0 +1,14 @@
+<div class="alert-message block-message info">
+  <% unless @advisor: %>
+    <p>Does <%= @name %> advise other businesses?</p>
+    <p>If so, we can upgrade you to <strong>Advisor</strong> status and help deploy Profitably to your clients!</p>
+    <hr />
+    <a href="#" class="btn btn-primary upgrade-to-advisor">Get Started</a>
+  <% else: %>
+    <p>You're an advisor!</p>
+    <hr />
+    <a href="#" class="btn btn-danger upgrade-to-advisor">Downgrade</a>
+  <% end %>
+
+  <!--<a href="#" class="btn">Learn More</a>-->
+</div>

@@ -1,0 +1,411 @@
+@import "mixins";
+@import "colors";
+
+
+// Main nav panel
+//----------------------
+
+.main-nav {
+  float: left;
+  position: relative;
+  width: 61px;
+  margin: 0 20px 15px 9px;
+  padding: 0;
+  list-style: none;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(30,30,30,0.2);
+
+  li {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid #ddd;
+
+    @include gradient(#f7f7f7, #eaeaea);
+
+    &.nav-ribbon {
+      position: absolute;
+      top: 0px;
+      left: -2px;
+      width: 80px;
+      height: 65px;
+      border: none;
+      background-image: image-url("sprite_nav_ribbon.png");
+      z-index: 10;
+
+      &:hover {
+        background-image: image-url("sprite_nav_ribbon.png");
+      }
+    }
+
+    &:hover {
+      @include gradient(darken(#f7f7f7, 5%), darken(#eaeaea, 5%));
+    }
+
+    a {
+      position: relative;
+      display: block;
+      padding: 13px 0;
+      color: #666;
+      font-size: 14px;
+      text-align: right;
+      text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+      z-index: 15;
+
+      i {
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin: 0 auto 4px auto;
+      }
+    }
+
+    &.active {
+      a {
+        .icon-grey {
+          background-image: image-url('sprite_icons_32x32_white.png');
+        }
+      }
+    }
+
+    &.divided {
+      border-top: 1px solid darken(#ddd, 15%);
+      border-bottom: 1px solid #ddd;
+      box-shadow: inset 0 2px 2px rgba(0,0,0,0.12);
+
+      @include gradient(darken(#f7f7f7, 10%), darken(#eaeaea, 15%));
+
+      &:hover {
+        @include gradient(darken(#f7f7f7, 10%), darken(#eaeaea, 10%));
+      }
+    }
+  }
+}
+
+
+// Sub nav panel
+//----------------------
+.sub-nav {
+  float: right;
+  height: 41px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 0 2px rgba(30,30,30,0.15),
+                       0 1px 0 rgba(0,0,0,0.2),
+                       inset 1px 1px 0 rgba(255,255,255,0.9);
+
+  @include gradient(#f7f7f7, #eaeaea);
+
+  li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+    a {
+      display: block;
+      position: relative;
+      max-width: 150px;
+      padding: 16px 25px 14px 25px;
+      color: #505050;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 0 rgba(255,255,255,0.7);
+      outline: none;
+
+      @include text-overflow;
+      @include transition(color 0.3s);
+
+      &:hover {
+        color: $primary-dark;
+
+        @include transition(color 0.3s);
+      }
+
+      &:focus {
+        outline: none;
+      }
+      
+      &.new-report {
+        color: $link-color;
+      }
+    }
+
+    &.active {
+      a {
+        color: #f4f4f4;
+        cursor: default;
+        text-shadow: 1px 1px rgba(0,0,0,0.2);
+        box-shadow: inset 0 4px 6px rgba(0,0,0,0.5),
+                             inset 0 -3px 3px rgba(0,0,0,0.1);
+        
+        @include gradient(#626262, #919191);
+
+        &:after, &:before {
+          display: none;
+        }
+      }
+    }
+
+    &:last-child {
+      &.active {
+        a {
+          border-radius: 0 3px 0 0;
+        }
+      }
+    }
+
+    &:first-child {
+      &.active {
+        a {
+          border-radius: 3px 0 0 0;
+        }
+      }
+    }
+
+    .report-edit {
+      border: none;
+      background: $grey;
+      color: $white;
+      text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+      box-shadow: inset 1px 1px 2px rgba(0,0,0,0.6) !important;
+    }
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    width: 200px;
+
+    &:after {
+      left: 157px;
+    }
+
+    li {
+      float: none;
+      margin: 0;
+      width: 0;
+
+      a {
+        font-size: 12px;
+        width: 180px;
+        background: transparent;
+      }
+
+      &.active {
+        a {
+          box-shadow: none;
+          color: $primary;
+          text-shadow: none;
+        }
+      }
+
+      .edit-form {
+        margin-left: -8px;
+        margin-top: 8px;
+
+        input[type="text"] {
+          width: 175px !important;
+          color: inherit;
+          border: 1px solid $primary;
+          background: $white;
+          text-shadow: none;
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+}
+
+.sub-nav-title { float: left; margin-top: 6px; }
+
+// Selector panel
+//----------------------
+
+.analysis-nav {
+  float: right;
+  position: relative;
+  margin: 0 -5px 0 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(30,30,30,0.2);
+
+  li {
+    position: relative;
+    height: 71px;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid #ddd;
+    width: 260px;
+    background-color: $lighter-grey;
+    
+    .mini-chart {
+      text-align: left;
+      color: $primary;
+      vertical-align: middle;
+
+      .chart-container {
+        position: absolute;
+        top: 11px;
+        left: 11px;
+        text-align: center;
+
+        &.well {
+          width: 44px;
+          height: 38px;
+          line-height: 41px;
+          margin-bottom: 0;
+          padding: 5px;
+          border-radius: 3px;
+          border: none;
+          box-shadow:  0 1px 2px rgba(0, 0, 0, 0.14);
+        }
+      }
+    }
+    
+    .metric-name {
+      @include proxima-bold;
+      
+      display: block;
+      line-height: 1;
+      color: darken($heading-grey, 7%);
+      padding: 2px 0 5px 0;
+    }
+
+    .metric-col {
+      width: 170px;
+    }
+    
+    .metric-value {
+      /* Shadows are visible under slightly transparent text color */
+      @include proxima-800;
+
+      display: block;
+      padding-top: 2px;
+      font-size: 38px;
+      color: rgba(51, 51, 51, 0.85);
+      text-shadow: -1px 2px 1px $lighter-grey, 0 0 0 $black, -1px 2px 1px $lighter-grey;
+    }
+
+    &.nav-ribbon {
+      position: absolute;
+      top: 0px;
+      right: -5px;
+      width: 280px;
+      height: 76px;
+      border: none;
+      background: transparent image-url("sprite_nav_ribbon.png") 0 -80px no-repeat;
+      z-index: 10;
+
+      &:hover {
+        background-image: image-url("sprite_nav_ribbon.png");
+        background-position: 0 -80px;
+      }
+    }
+
+    &:hover {
+      @include gradient(lighten($grey, 20%), lighten($grey, 27%));
+      
+      .metric-name {
+        color: darken($heading-grey, 25%);
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.4);
+      }
+      
+      .metric-value {
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.5) !important;
+        color: rgba(51, 51, 51, 0.9);
+        text-shadow: none;
+      }
+    }
+
+    .table-lnk {
+      float: right;
+      width: 230px; 
+      height: 62px; 
+      margin-top: -20px; 
+      vertical-align: middle; 
+    }
+
+    .actions {
+      display: none;
+    }
+
+    a {
+      position: relative;
+      display: block;
+      padding: 20px 15px 20px 0;
+      color: #666;
+      font-size: 14px;
+      text-align: right;
+      text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+      z-index: 15;
+
+        i {
+          position: absolute;
+          left: 10px;
+          top: 21px;
+        }
+      }
+
+    &.active {
+      a {
+        color: $white;
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+
+        i {
+          display: none;
+        }
+      }
+
+      .chart-container {
+        display: none;
+      }
+
+      .metric-col {
+        .metric-name {
+          padding-top: 15px;
+          color: $white;
+          text-shadow: 1px 1px rgba(0,0,0,0.2);
+        }
+
+        .metric-value {
+          display: none;
+        }
+      }
+
+      .actions {
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 40px;
+        padding: 7px 8px;
+        text-align: center;
+        z-index: 999;
+        background: $white;
+        border-radius: 3px;
+        box-shadow: inset 1px 1px 1px rgba(0,0,0,0.14);
+
+        i {
+          margin: 0 1px;
+          cursor: pointer;
+          text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+
+          &:hover {
+            @include opacity(0.8);
+          }
+        }
+      }
+    }
+  }
+}
+
+.company-analysis-nav-footer {
+  float: right;
+  clear: right;
+  text-align: right;
+}

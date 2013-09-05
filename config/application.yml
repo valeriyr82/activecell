@@ -1,0 +1,49 @@
+defaults: &defaults
+  user_voice:
+    subdomain: 'activecell'
+    sso_key: '6a9763a0626657be18279e5cf6abe222'
+  intuit:
+    # engineering@activecell.com
+    consumer_key: 'qyprdgRkF8XXfWM4zFhgqbtVZrlQGT'
+    consumer_secret: 'cyQxPlqzGJORJxmJmLvJjugnJuAl9ZzL1tv0rhc3'
+  email_notifications:
+    default_from: 'noreply@activecell.com'
+    default_avatar_email: 'adam@activecell.com'
+  recurly: &recurly
+    api_key: 'dd9e07b6afb84b0e8e31fefc56126c6e'
+    private_key: '3a6c65f6477e44c195aeb046ccd652bc'
+    default_currency: 'USD'
+    company_subdomain: profitably
+    plans:
+      monthly:
+        name: 'Activecell Monthly'
+        unit_amount_in_cents: 4999
+        period: 1
+      annual:
+        name: 'Activecell Annual'
+        unit_amount_in_cents: 49999
+        period: 12
+      advisor_annual:
+        name: 'Activecell Advisor Annual'
+        unit_amount_in_cents: 49999
+        period: 12
+        add_ons:
+          advised_company:
+            name: 'Advised company'
+            add_on_code: 'advised_company'
+            unit_amount_in_cents: 74999
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+demo:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults

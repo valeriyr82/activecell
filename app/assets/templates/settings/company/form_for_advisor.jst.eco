@@ -1,0 +1,14 @@
+<form id="company-for-advisor" class="form-horizontal well textured">
+  <div class="control-group">
+    <label for="company_name" class="control-label">Company Name: </label>
+    <input id="company_name" class="input-large" type="text" name='name'/>
+  </div>
+  <div class="control-group">
+    <label for="company_subdomain" class="control-label">Subdomain name: </label>
+    <input id="company_subdomain" class="input-large" type="text" name='subdomain'/>
+  </div>
+
+  <div class="form-actions textured">
+    <button type="submit" class="btn submit btn-primary">Create</button>
+  </div>
+</form>

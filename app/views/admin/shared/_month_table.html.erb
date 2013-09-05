@@ -1,0 +1,27 @@
+<% desc ||= '' %>
+<div class="row">
+  <div class="span12">
+    <h3><%= title %></h3>
+    <h3><small><%= desc %></small></h3>
+    <table class="table table-condensed table-bordered table-striped <%= klass %>">
+      <thead>
+        <tr>
+          <% fields.each do |field| %>
+          <th></th>
+          <% end %>
+          <th colspan="36">monthId =></th>
+        </tr>
+        <tr>
+          <% fields.each do |field| %>
+          <th><%= field %></th>
+          <% end %>
+          <% 36.times do |month| %>
+          <th><%= month + 1 %></th>
+          <% end %>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>

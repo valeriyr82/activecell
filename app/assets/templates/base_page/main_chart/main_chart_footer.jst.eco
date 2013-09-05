@@ -1,0 +1,4 @@
+<div class="row">
+  <div id="main-chart-legend" class="span6"></div>
+  <div id="time-slider-container" class="span4"></div> 
+</div>

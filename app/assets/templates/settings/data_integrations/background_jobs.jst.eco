@@ -1,0 +1,29 @@
+<h3>Background jobs</h3>
+
+<% if @job.isFinished(): %>
+  <div class="well">
+    Last job was finished at <b><%= @job.get('completed_at') %></b> with status <b><%= @job.get('status') %></b>
+  </div>
+<% end %>
+
+<div>
+  <% if @job.canScheduleNextJob(): %>
+    <button class="btn queue">Queue import</button>
+  <% end %>
+
+  <% if @job.isQueued(): %>
+    <span>Import is queued</span>
+  <% else: %>
+
+  <% if @job.isWorking(): %>
+    <% if @job.hasProgress(): %>
+      <span>Import is in progress: <%= @job.getStepsPercentage() %>%</span>
+
+      <div class="progress progress-striped active">
+        <div class="bar" style="width: <%= @job.getStepsPercentage() %>%;"></div>
+      </div>
+    <% else: %>
+      <span>Import is in progress</span>
+    <% end %>
+  <% end %>
+</div>

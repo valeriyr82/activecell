@@ -1,0 +1,21 @@
+<button class="scenario-select selector">
+  <%= @currentScenario.get('name') %>
+</button>
+<ul class="scenarios hide dropdown-list">
+
+  <% for scenario in @scenarios: %>
+    <% if scenario.name isnt @currentScenario.get('name'): %>
+      <li>
+        <a href='#'><%= scenario.name %></a>
+      </li>
+    <% end %>
+  <% end %>
+
+  <li class="new-scenario">
+    <a href="#">
+      <i class="icon-small-add-doc icon-grey"></i> 
+      Create New Scenario
+    </a>
+  </li>
+
+</ul>

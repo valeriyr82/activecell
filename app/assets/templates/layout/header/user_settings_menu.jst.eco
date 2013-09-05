@@ -1,0 +1,46 @@
+<button class='user-settings selector'>
+  <div class="avatar">
+    <img src="<%= @avatarUrl %>" width="36" height="36" alt="" />
+  </div>
+  <span>
+    <strong><%= @company.get('name') %></strong><br />
+    <span class="email"><%= @user.get('email') %></span>
+  </span>
+  <i class="icon-small-arrow-circle-down icon-grey"></i>
+</button>
+<ul class='companies hide dropdown-list'>
+
+  <% unless @isTrialExpired: %>
+    <% if @companies.length > 1: %>
+      <% for company in @companies: %>
+        <li><a href='javascript:;' class="change-company" company-id="<%= company.id %>"><%= company.get('name') %></a></li>
+      <% end %>
+
+      <% if @advisedCompanies.length > 1: %>
+        <% for company in @advisedCompanies: %>
+          <li><a href='#'><%= "#{company.get('name')} (advised)" %></a></li>
+        <% end %>
+      <% end %>
+
+      <li class="accented-border"><a href="#settings/user"><i class="icon-small-settings icon-grey"></i> Settings</a></li>
+    <% else: %>
+      <li class="accented-border"><a href="#settings/user"><i class="icon-small-settings icon-grey"></i> User Settings</a></li>
+      <li><a href="#settings/company"><i class="icon-small-settings2 icon-grey"></i> Company Settings</a></li>
+      <li><a href="#settings/data_integrations"><i class="icon-small-share icon-grey"></i> Data Integrations</a></li>
+
+      <% unless @subscriber.isOverridden(): %>
+        <li class="accented-border"><a href="#settings/account"><i class="icon-small-settings icon-grey"></i> Account Settings</a></li>
+      <% end %>
+
+      <% if @company.isAdvisor(): %>
+        <li class="accented-border"><a href="#settings/advisor"><i class="icon-small-settings icon-grey"></i> Advisor Settings</a></li>
+      <% end %>
+    <% end %>
+  <% else: %>
+    <li class="accented-border"><a href="#settings/account"><i class="icon-small-settings icon-grey"></i> Account Settings</a></li>
+  <% end %>
+
+  <li class="log-out last">
+    <a href="/users/sign_out" title="Log out"><i class="icon-small-user-icon icon-grey"></i> Log out</a>
+  </li>
+</ul>

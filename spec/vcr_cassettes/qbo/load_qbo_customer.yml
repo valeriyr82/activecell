@@ -1,0 +1,237 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="1panqGlYGEGcoUfwIHNqudui7cBGv5Sb8FOnU8Q70",
+        oauth_signature="AijXx%2FtorVHCmPofc1PtNLm7zFs%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296512", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:01:49 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=55F2B6FEAF9B4375E50653E4432D4E31.c1-pprdqboas30c; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296509386378; path=/; expires=Tue, 10-Sep-13 17:01:49
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '312'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q013472960670985d14da3</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:01:53 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/customers/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="Wq9Hu0aFL7jybilp1bVv9vSwdz2gBioTcXIAi1vFKE",
+        oauth_signature="4OkR7xsgzAPbWGExr%2B%2BFN2tK1xI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296513", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:01:50 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=322E47E361BE63A4602163AB6D710EBC.c36-pprdqboas30c; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296510660797; path=/; expires=Tue, 10-Sep-13 17:01:50
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2059'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: ! '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:SearchResults
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:CdmCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:type="Customers"><Customer><Id idDomain="QBO">245</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:30-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:30-07:00</LastUpdatedTime></MetaData><Name>Analytix
+        Solutions</Name><WebSite/><Email/><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Analytix
+        Solutions</ShowAs><SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId><SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">235</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:30-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:30-07:00</LastUpdatedTime></MetaData><Name>Arthur
+        Carroll - Armadillo</Name><WebSite/><Email/><Notes><Content>Per Graham 9/6/11:&#xD;
+
+        signed up for a month on Intuit &amp; then purchased annual plan so migrated
+        to AppCenter.</Content></Notes><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Arthur
+        Carroll - Armadillo</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">205</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:29-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:29-07:00</LastUpdatedTime></MetaData><Name>Bart
+        Schnell</Name><WebSite/><Email/><Notes><Content>Per Graham 9/6/11: confirmed
+        lost bart</Content></Notes><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Bart
+        Schnell</ShowAs><PaymentMethodId idDomain="QBO">17</PaymentMethodId><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">300</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>CDL
+        Companies</Name><WebSite/><Email><Address>erichaney@cdlcollege.com</Address></Email><GivenName>Eric</GivenName><FamilyName>Haney</FamilyName><DBAName>CDL
+        Companies</DBAName><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>CDL
+        Companies</ShowAs><SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId><SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName><PaymentMethodId
+        idDomain="QBO">18</PaymentMethodId><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">275</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:31-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime></MetaData><Name>Center
+        for Progressive Renewal</Name><WebSite/><Email/><GivenName>James</GivenName><FamilyName>Powell</FamilyName><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>false</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>James
+        Powell</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">236</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:30-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:30-07:00</LastUpdatedTime></MetaData><Name>Chris
+        Coggins</Name><WebSite/><Email/><DBAName>The Tax Office</DBAName><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>false</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>The
+        Tax Office</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">286</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:31-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime></MetaData><Name>Crystal
+        Clean Auto Detailing</Name><WebSite/><Email><Address>ross@ccautodetail.com</Address></Email><GivenName>Ross</GivenName><FamilyName>Timyan</FamilyName><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>false</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Ross
+        Timyan</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">11</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:24-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime></MetaData><Name>Direct--Minimum
+        Viable Product</Name><WebSite/><Email/><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>true</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Direct--Minimum
+        Viable Product</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">10</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:24-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime></MetaData><Name>Direct--Prototype</Name><WebSite/><Email/><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>true</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Direct--Prototype</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">136</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:27-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:27-07:00</LastUpdatedTime></MetaData><Name>Esther
+        Blodgett</Name><WebSite/><Email/><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Esther
+        Blodgett</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">280</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:31-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime></MetaData><Name>FBC
+        Distribution</Name><WebSite/><Email><Address>sean@fbcdist.com</Address></Email><GivenName>Sean</GivenName><FamilyName>Pierce</FamilyName><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>false</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Sean
+        Pierce</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">206</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:29-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:29-07:00</LastUpdatedTime></MetaData><Name>Full
+        360</Name><WebSite/><Email/><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Full
+        360</ShowAs><PaymentMethodId idDomain="QBO">17</PaymentMethodId><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">106</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:26-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:26-07:00</LastUpdatedTime></MetaData><Name>Intuit
+        Quickbase</Name><WebSite/><Email/><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Intuit
+        Quickbase</ShowAs><SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId><SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">138</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:27-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:27-07:00</LastUpdatedTime></MetaData><Name>Julia
+        Pimsleur</Name><WebSite/><Email><Address>julia@littlepim.com</Address></Email><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>false</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Julia
+        Pimsleur</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">140</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:27-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:27-07:00</LastUpdatedTime></MetaData><Name>Matt
+        Schwartz</Name><WebSite/><Email><Address>matt@mjsearch.com</Address></Email><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>false</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Matt
+        Schwartz</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">273</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:31-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime></MetaData><Name>PAYPAL
+        *DOUGADAMSSE      402-935</Name><WebSite/><Email/><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>PAYPAL
+        *DOUGADAMSSE      402-935</ShowAs><SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId><SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">291</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>PINGDOM.COM         VASTERAS</Name><WebSite/><Email/><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>false</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>PINGDOM.COM         VASTERAS</ShowAs><SalesTaxCodeId
+        idDomain="QBO">1</SalesTaxCodeId><SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">9</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:24-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime></MetaData><Name>Profitably,
+        Inc.</Name><WebSite/><Email/><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Profitably,
+        Inc.</ShowAs><SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId><SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">139</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:27-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:27-07:00</LastUpdatedTime></MetaData><Name>Sarah
+        Malinowski</Name><WebSite/><Email><Address>sarahmalinowski@gmail.com</Address></Email><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>false</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Sarah
+        Malinowski</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">134</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:27-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:27-07:00</LastUpdatedTime></MetaData><Name>Shawn
+        O''Connor</Name><WebSite/><Email/><GivenName>Shawn</GivenName><FamilyName>O''Connor</FamilyName><DBAName>Stratus
+        Prep</DBAName><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Stratus
+        Prep</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">141</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:27-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:27-07:00</LastUpdatedTime></MetaData><Name>Shep
+        Sepaniak</Name><WebSite/><Email><Address>schupak@fritzmcdonald.com</Address></Email><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>false</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Shep
+        Sepaniak</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">288</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:31-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime></MetaData><Name>Starlite
+        Logistics</Name><WebSite/><Email><Address>billbiduo@starlitelogistics.com</Address></Email><GivenName>Bill</GivenName><FamilyName>Dilbuo</FamilyName><DBAName>Starlite
+        Logistics</DBAName><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Starlite
+        Logistics</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">289</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Tipspring</Name><WebSite/><Email><Address>g@tipsring.com</Address></Email><GivenName>Greg</GivenName><FamilyName>Doran</FamilyName><DBAName>Tipspring</DBAName><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>false</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Tipspring</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">301</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Unleashed
+        Online Marketing</Name><WebSite/><Email><Address>chris@unleashed-online.com</Address></Email><GivenName>Chris</GivenName><FamilyName>Reilly</FamilyName><DBAName>Unleashed
+        Online Marketing</DBAName><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Unleashed
+        Online Marketing</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">202</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:29-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:29-07:00</LastUpdatedTime></MetaData><Name>Virtualis
+        Bookkeeping</Name><WebSite/><Email/><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Virtualis
+        Bookkeeping</ShowAs><SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId><SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">204</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:29-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:29-07:00</LastUpdatedTime></MetaData><Name>Virtualis
+        Client 1</Name><WebSite/><Email/><Notes><Content>second customer Virtualis
+        has brought us still to be named.  He hasn''t loaded their data yet, so we
+        don''t have a customer name, but we can create a placeholder...</Content></Notes><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>false</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Virtualis
+        Client 1</ShowAs><SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId><SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">281</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:31-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime></MetaData><Name>W
+        H Lawrence, CPA</Name><WebSite/><Email><Address>whlawrence.cpa@gmail.com</Address></Email><GivenName>Bill</GivenName><FamilyName>Lawrence</FamilyName><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>false</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Bill
+        Lawrence</ShowAs><SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId><SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">274</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:31-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime></MetaData><Name>WG
+        Consulting</Name><WebSite/><Email/><GivenName>Bianca</GivenName><FamilyName>Whitfield</FamilyName><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>false</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Bianca
+        Whitfield</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer><Customer><Id
+        idDomain="QBO">135</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:27-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:27-07:00</LastUpdatedTime></MetaData><Name>Willie
+        Mitchell</Name><Address><Line1>WILLIE MITCHELL</Line1><Tag>Billing</Tag></Address><WebSite/><Email/><DBAName>Old
+        and New Plumbing</DBAName><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>false</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Old
+        and New Plumbing</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance></Customer></qbo:CdmCollections><qbo:Count>29</qbo:Count><qbo:CurrentPage>1</qbo:CurrentPage></qbo:SearchResults>'
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:01:54 GMT
+recorded_with: VCR 2.2.4

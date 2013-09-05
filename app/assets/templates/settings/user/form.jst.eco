@@ -1,0 +1,21 @@
+<form id="user-info">
+  <div class="avatar image-container"></div>
+
+  <div class="span5">
+    <div class="control-group">
+      <label for="user_name" class="control-label">Name:</label>
+      <input id="user_name" class="input-xlarge" type="text" value="<%= @name %>" name="name"/>
+    </div>
+    <div class="control-group">
+      <label for="user_email" class="control-label">Email:</label>
+      <input id="user_email" class="input-xlarge" type="email" value="<%= @email %>" name="email"/>
+    </div>
+    <div class="control-group">
+      <label for="user_email_notifications" class="checkbox" id="user_email_notifications_label">
+        Email notifications
+        <input type="checkbox" name="email_notifications" id="user_email_notifications" 
+               value="1" <%= 'checked="checked"' if @email_notifications %> />
+      </label>
+    </div>
+  </div>
+</form>

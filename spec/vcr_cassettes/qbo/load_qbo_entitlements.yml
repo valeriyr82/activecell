@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="qOci7Pqy5TPRyT5GhmlA0XifaDliVCKlFd7BAiuxWQ",
+        oauth_signature="tlcVYszr7KAVNE%2BWuCVkqEy7AdE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347365124", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 11 Sep 2012 12:05:27 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=E0A1E0FBE0CDE91F79966144241AB6DE.c1-pprdqboas30g; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347365127494468; path=/; expires=Wed, 11-Sep-13 12:05:27
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '313'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q0134735626509531cd321</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Tue, 11 Sep 2012 12:05:26 GMT
+- request:
+    method: get
+    uri: https://qbo.intuit.com/qbo36/manage/entitlements/v2/497421705?PageNum=1&ResultsPerPage=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="Okq9JEazPxUL6vMz9x5Cux2zwulJiuDboonHQuW9HY",
+        oauth_signature="eL7GfAx%2F%2FZp%2FUkGd%2FtY1NwfRXCA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347365126", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 11 Sep 2012 12:05:29 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=7652A35EA00F074686065B6BB2E8BF1E.c36-pprdqboas30j; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347365129874019; path=/; expires=Wed, 11-Sep-13 12:05:29
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '825'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><EntitlementsResponse><QboCompany>true</QboCompany><PlanName>QBWEBVAR1MO</PlanName><MaxUsers>3</MaxUsers><CurrentUsers>2</CurrentUsers><DaysRemainingTrial>0</DaysRemainingTrial><Entitlement
+        id="7"><name>PayPal</name><term>Off</term></Entitlement><Entitlement id="8"><name>Merchant
+        Service</name><term>Off</term></Entitlement><Entitlement id="50"><name>Adjusted
+        Trial Balance Report</name><term>Off</term></Entitlement><Entitlement id="51"><name>Adjusting
+        Journal Entries</name><term>Off</term></Entitlement><Entitlement id="52"><name>Accountant
+        Menu</name><term>Off</term></Entitlement><Entitlement id="53"><name>Reconciliation
+        Troubleshooting</name><term>Off</term></Entitlement><Entitlement id="54"><name>Reclassify
+        Transactions</name><term>Off</term></Entitlement><Entitlement id="55"><name>Write
+        Off Invoices</name><term>Off</term></Entitlement><Entitlement id="1"><name>Class
+        Tracking</name><term>Off</term></Entitlement><Entitlement id="3"><name>Expense
+        Tracking by Customer</name><term>Off</term></Entitlement><Entitlement id="4"><name>Time
+        Tracking</name><term>Off</term></Entitlement><Entitlement id="5"><name>Budgets</name><term>Off</term></Entitlement><Entitlement
+        id="6"><name>Custom Invoice Styles</name><term>On</term></Entitlement><Entitlement
+        id="9"><name>1099 Forms for Vendors</name><term>Off</term></Entitlement><Entitlement
+        id="10"><name>Managing Bills to Pay Later</name><term>On</term></Entitlement><Entitlement
+        id="11"><name>Complete Set of Reports</name><term>On</term></Entitlement><Entitlement
+        id="12"><name>Enhanced Reporting</name><term>On</term></Entitlement><Entitlement
+        id="13"><name>Exporting to Excel</name><term>On</term></Entitlement><Entitlement
+        id="15"><name>Delayed Charges</name><term>On</term></Entitlement><Entitlement
+        id="16"><name>Custom Sales Fields</name><term>On</term></Entitlement><Entitlement
+        id="17"><name>More Users -- up to 20</name><term>On</term></Entitlement><Entitlement
+        id="19"><name>Recurring Transactions</name><term>On</term></Entitlement><Entitlement
+        id="20"><name>Closing the Books</name><term>On</term></Entitlement><Entitlement
+        id="21"><name>Location Tracking</name><term>Off</term></Entitlement><Entitlement
+        id="22"><name>More Names</name><term>On</term></Entitlement><Entitlement id="25"><name>Custom
+        Home Page</name><term>On</term></Entitlement><Entitlement id="26"><name>Do-it-yourself
+        Payroll</name><term>Off</term></Entitlement><Entitlement id="28"><name>Online
+        Banking</name><term>On</term></Entitlement><Entitlement id="29"><name>Basic
+        Sales</name><term>On</term></Entitlement><Entitlement id="30"><name>Basic
+        Banking</name><term>On</term></Entitlement><Entitlement id="31"><name>Accounting</name><term>On</term></Entitlement><Entitlement
+        id="33"><name>Reports Only User</name><term>Off</term></Entitlement><Entitlement
+        id="35"><name>Estimates</name><term>On</term></Entitlement><Entitlement id="41"><name>Company
+        Snapshot</name><term>On</term></Entitlement><Entitlement id="42"><name>Purchase
+        Order</name><term>Off</term></Entitlement><Entitlement id="43"><name>Inventory</name><term>Off</term></Entitlement><Entitlement
+        id="44"><name>Do-it-yourself Payroll (Paycycle)</name><term>Off</term></Entitlement><Entitlement
+        id="45"><name>Multi-Currency</name><term>Off</term></Entitlement><Entitlement
+        id="46"><name>Trends</name><term>On</term></Entitlement><Entitlement id="47"><name>Hide
+        Employee List</name><term>Off</term></Entitlement><Entitlement id="48"><name>Simple
+        Report List</name><term>Off</term></Entitlement><Entitlement id="49"><name>Global
+        Tax Model</name><term>On</term></Entitlement><Entitlement id="56"><name>Text
+        Messaging</name><term>On</term></Entitlement></EntitlementsResponse>
+    http_version: 
+  recorded_at: Tue, 11 Sep 2012 12:05:28 GMT
+recorded_with: VCR 2.2.4

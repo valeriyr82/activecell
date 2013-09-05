@@ -1,0 +1,20 @@
+<div class='row'>
+  <div class="span10">
+    <h2>Revenue Streams</h2>
+    <p>The different sources of income for your company.</p>
+    <table class="revenue-streams megatable inset">
+      <tbody></tbody>
+    </table>
+    <a class="btn primary new-revenue-stream" href="javascript:;">
+      <strong>+</strong> Add a stream
+    </a>
+  </div>
+
+  <div class="span4">
+    <h2>Suggested Streams</h2>
+    <p>Revenue streams for your industry</p>
+    <table class="suggested-revenue-streams megatable inset bg-white">
+      <tbody></tbody>
+    </table>
+  </div>
+</div>

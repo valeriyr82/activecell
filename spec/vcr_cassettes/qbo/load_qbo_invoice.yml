@@ -1,0 +1,293 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="mtckZ1VN4dgsjMlpzSBkkFuK5GLaFRxkNxCde68LEn0",
+        oauth_signature="sCTLYfLISQR1Mpmkj0fNCQiDB28%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296490", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:01:28 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=F45E0A91F709181895B392625C0B76A9.c1-pprdqboas30d; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296488046821; path=/; expires=Tue, 10-Sep-13 17:01:28
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '312'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q013472960670985d14da3</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:01:31 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/invoices/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="W81je02LoiiXZgNz0jVrzVVSMrpf3nRLT0In1t2s",
+        oauth_signature="bkO4Q2dufIqvulkTMSrpGaQ3ixs%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296491", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:01:29 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=8A85979EEBCF8BAE58E225896A206BAD.c36-pprdqboas30f; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296489377962; path=/; expires=Tue, 10-Sep-13 17:01:29
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2975'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: ! '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:SearchResults
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:CdmCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:type="Invoices"><Invoice><Id idDomain="QBO">1094</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-06-21T00:00:00-07:00</CreateTime><LastUpdatedTime>2012-06-21T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>80</DocNumber><TxnDate>2012-06-21-07:00</TxnDate><CustomerId
+        idDomain="QBO">236</CustomerId><SubTotalAmt>41.63</SubTotalAmt><TotalAmt>41.63</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>41.63</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>41.63</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1080</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-06-08T00:00:00-07:00</CreateTime><LastUpdatedTime>2012-06-08T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>68</DocNumber><TxnDate>2012-06-08-07:00</TxnDate><CustomerId
+        idDomain="QBO">235</CustomerId><SubTotalAmt>20.86</SubTotalAmt><TotalAmt>20.86</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>20.86</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>20.86</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1093</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-05-21T00:00:00-07:00</CreateTime><LastUpdatedTime>2012-05-21T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>79</DocNumber><TxnDate>2012-05-21-07:00</TxnDate><CustomerId
+        idDomain="QBO">236</CustomerId><SubTotalAmt>41.67</SubTotalAmt><TotalAmt>41.67</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>41.67</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>41.67</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1079</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-05-08T00:00:00-07:00</CreateTime><LastUpdatedTime>2012-05-08T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>67</DocNumber><TxnDate>2012-05-08-07:00</TxnDate><CustomerId
+        idDomain="QBO">235</CustomerId><SubTotalAmt>20.83</SubTotalAmt><TotalAmt>20.83</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>20.83</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>20.83</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1092</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-04-21T00:00:00-07:00</CreateTime><LastUpdatedTime>2012-04-21T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>78</DocNumber><TxnDate>2012-04-21-07:00</TxnDate><CustomerId
+        idDomain="QBO">236</CustomerId><SubTotalAmt>41.67</SubTotalAmt><TotalAmt>41.67</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>41.67</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>41.67</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1078</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-04-08T00:00:00-07:00</CreateTime><LastUpdatedTime>2012-04-08T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>66</DocNumber><TxnDate>2012-04-08-07:00</TxnDate><CustomerId
+        idDomain="QBO">235</CustomerId><SubTotalAmt>20.83</SubTotalAmt><TotalAmt>20.83</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>20.83</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>20.83</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1091</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-21T00:00:00-07:00</CreateTime><LastUpdatedTime>2012-03-21T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>77</DocNumber><TxnDate>2012-03-21-07:00</TxnDate><CustomerId
+        idDomain="QBO">236</CustomerId><SubTotalAmt>41.67</SubTotalAmt><TotalAmt>41.67</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>41.67</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>41.67</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1077</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-08T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-03-08T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>65</DocNumber><TxnDate>2012-03-08-08:00</TxnDate><CustomerId
+        idDomain="QBO">235</CustomerId><SubTotalAmt>20.83</SubTotalAmt><TotalAmt>20.83</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>20.83</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>20.83</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1090</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-02-21T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-02-21T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>76</DocNumber><TxnDate>2012-02-21-08:00</TxnDate><CustomerId
+        idDomain="QBO">236</CustomerId><SubTotalAmt>41.67</SubTotalAmt><TotalAmt>41.67</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>41.67</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>41.67</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1076</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-02-08T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-02-08T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>64</DocNumber><TxnDate>2012-02-08-08:00</TxnDate><CustomerId
+        idDomain="QBO">235</CustomerId><SubTotalAmt>20.83</SubTotalAmt><TotalAmt>20.83</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>20.83</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>20.83</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">795</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-01-22T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-22T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>29</DocNumber><TxnDate>2012-01-22-08:00</TxnDate><CustomerId
+        idDomain="QBO">138</CustomerId><SubTotalAmt>4.12</SubTotalAmt><TotalAmt>4.12</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.12</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.12</UnitPrice></Line></Invoice><Invoice><Id
+        idDomain="QBO">1089</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-01-21T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-21T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>75</DocNumber><TxnDate>2012-01-21-08:00</TxnDate><CustomerId
+        idDomain="QBO">236</CustomerId><SubTotalAmt>41.67</SubTotalAmt><TotalAmt>41.67</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>41.67</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>41.67</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">808</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-01-11T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-11T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>42</DocNumber><TxnDate>2012-01-11-08:00</TxnDate><CustomerId
+        idDomain="QBO">139</CustomerId><SubTotalAmt>4.12</SubTotalAmt><TotalAmt>4.12</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.12</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.12</UnitPrice></Line></Invoice><Invoice><Id
+        idDomain="QBO">824</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-01-09T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-09T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>54</DocNumber><TxnDate>2012-01-09-08:00</TxnDate><CustomerId
+        idDomain="QBO">141</CustomerId><SubTotalAmt>4.12</SubTotalAmt><TotalAmt>4.12</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.12</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.12</UnitPrice></Line></Invoice><Invoice><Id
+        idDomain="QBO">1075</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-01-08T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-08T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>63</DocNumber><TxnDate>2012-01-08-08:00</TxnDate><CustomerId
+        idDomain="QBO">235</CustomerId><SubTotalAmt>20.83</SubTotalAmt><TotalAmt>20.83</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>20.83</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>20.83</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">794</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-12-22T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-22T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>28</DocNumber><TxnDate>2011-12-22-08:00</TxnDate><CustomerId
+        idDomain="QBO">138</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1088</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-12-21T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-21T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>74</DocNumber><TxnDate>2011-12-21-08:00</TxnDate><CustomerId
+        idDomain="QBO">236</CustomerId><SubTotalAmt>41.67</SubTotalAmt><TotalAmt>41.67</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>41.67</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>41.67</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">807</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-12-11T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-11T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>41</DocNumber><TxnDate>2011-12-11-08:00</TxnDate><CustomerId
+        idDomain="QBO">139</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">823</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-12-09T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-09T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>53</DocNumber><TxnDate>2011-12-09-08:00</TxnDate><CustomerId
+        idDomain="QBO">141</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1074</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-12-08T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-08T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>62</DocNumber><TxnDate>2011-12-08-08:00</TxnDate><CustomerId
+        idDomain="QBO">235</CustomerId><SubTotalAmt>20.83</SubTotalAmt><TotalAmt>20.83</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>20.83</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>20.83</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">793</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-11-22T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-11-22T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>27</DocNumber><TxnDate>2011-11-22-08:00</TxnDate><CustomerId
+        idDomain="QBO">138</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1087</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-11-21T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-11-21T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>73</DocNumber><TxnDate>2011-11-21-08:00</TxnDate><CustomerId
+        idDomain="QBO">236</CustomerId><SubTotalAmt>41.67</SubTotalAmt><TotalAmt>41.67</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>41.67</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>41.67</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">806</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-11-11T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-11-11T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>40</DocNumber><TxnDate>2011-11-11-08:00</TxnDate><CustomerId
+        idDomain="QBO">139</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">822</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-11-09T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-11-09T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>52</DocNumber><TxnDate>2011-11-09-08:00</TxnDate><CustomerId
+        idDomain="QBO">141</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1073</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-11-08T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-11-08T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>61</DocNumber><TxnDate>2011-11-08-08:00</TxnDate><CustomerId
+        idDomain="QBO">235</CustomerId><SubTotalAmt>20.83</SubTotalAmt><TotalAmt>20.83</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>20.83</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>20.83</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">792</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-10-22T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-22T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>26</DocNumber><TxnDate>2011-10-22-07:00</TxnDate><CustomerId
+        idDomain="QBO">138</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1086</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-10-21T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-21T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>72</DocNumber><TxnDate>2011-10-21-07:00</TxnDate><CustomerId
+        idDomain="QBO">236</CustomerId><SubTotalAmt>41.67</SubTotalAmt><TotalAmt>41.67</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>41.67</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>41.67</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">805</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-10-11T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-11T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>39</DocNumber><TxnDate>2011-10-11-07:00</TxnDate><CustomerId
+        idDomain="QBO">139</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">821</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-10-09T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-09T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>51</DocNumber><TxnDate>2011-10-09-07:00</TxnDate><CustomerId
+        idDomain="QBO">141</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1072</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-10-08T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-08T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>60</DocNumber><TxnDate>2011-10-08-07:00</TxnDate><CustomerId
+        idDomain="QBO">235</CustomerId><SubTotalAmt>20.83</SubTotalAmt><TotalAmt>20.83</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>20.83</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>20.83</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">791</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-09-22T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-22T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>25</DocNumber><TxnDate>2011-09-22-07:00</TxnDate><CustomerId
+        idDomain="QBO">138</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1085</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-09-21T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-21T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>71</DocNumber><TxnDate>2011-09-21-07:00</TxnDate><CustomerId
+        idDomain="QBO">236</CustomerId><SubTotalAmt>41.67</SubTotalAmt><TotalAmt>41.67</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>41.67</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>41.67</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1336</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-09-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>82</DocNumber><TxnDate>2011-09-16-07:00</TxnDate><Note>VOID:</Note><CustomerId
+        idDomain="QBO">205</CustomerId><SubTotalAmt>0.00</SubTotalAmt><TotalAmt>0.00</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>0.00</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">10</ItemId><UnitPrice>49.99</UnitPrice><Qty>0</Qty></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Amount>0.00</Amount><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">804</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-09-11T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-11T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>38</DocNumber><TxnDate>2011-09-11-07:00</TxnDate><CustomerId
+        idDomain="QBO">139</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">820</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-09-09T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-09T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>50</DocNumber><TxnDate>2011-09-09-07:00</TxnDate><CustomerId
+        idDomain="QBO">141</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1071</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-09-08T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-08T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>59</DocNumber><TxnDate>2011-09-08-07:00</TxnDate><CustomerId
+        idDomain="QBO">235</CustomerId><SubTotalAmt>20.83</SubTotalAmt><TotalAmt>20.83</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>20.83</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>20.83</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1338</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-09-06T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-06T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>84</DocNumber><TxnDate>2011-09-06-07:00</TxnDate><Note>VOID:
+        We will have to refund this--it was incorrectly billed by Intuit</Note><CustomerId
+        idDomain="QBO">235</CustomerId><SubTotalAmt>0.00</SubTotalAmt><TotalAmt>0.00</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>0.00</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">10</ItemId><UnitPrice>49.99</UnitPrice><Qty>0</Qty></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Amount>0.00</Amount><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">790</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-22T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-22T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>24</DocNumber><TxnDate>2011-08-22-07:00</TxnDate><CustomerId
+        idDomain="QBO">138</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1084</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-21T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-21T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>70</DocNumber><TxnDate>2011-08-21-07:00</TxnDate><CustomerId
+        idDomain="QBO">236</CustomerId><SubTotalAmt>41.67</SubTotalAmt><TotalAmt>41.67</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>41.67</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>41.67</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1335</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-08-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>81</DocNumber><TxnDate>2011-08-16-07:00</TxnDate><Note>VOID:</Note><CustomerId
+        idDomain="QBO">205</CustomerId><SubTotalAmt>0.00</SubTotalAmt><TotalAmt>0.00</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>0.00</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">10</ItemId><UnitPrice>49.99</UnitPrice><Qty>0</Qty></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Amount>0.00</Amount><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">803</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-11T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-11T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>37</DocNumber><TxnDate>2011-08-11-07:00</TxnDate><CustomerId
+        idDomain="QBO">139</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">819</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-09T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-09T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>49</DocNumber><TxnDate>2011-08-09-07:00</TxnDate><CustomerId
+        idDomain="QBO">141</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1070</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-08T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-08T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>58</DocNumber><TxnDate>2011-08-08-07:00</TxnDate><CustomerId
+        idDomain="QBO">235</CustomerId><SubTotalAmt>20.83</SubTotalAmt><TotalAmt>20.83</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>20.83</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>20.83</UnitPrice></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">1337</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-08-06T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-06T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>83</DocNumber><TxnDate>2011-08-06-07:00</TxnDate><Note>VOID:
+        Will have to refund this--it was incorrectly billed by Intuit</Note><CustomerId
+        idDomain="QBO">235</CustomerId><SubTotalAmt>0.00</SubTotalAmt><TotalAmt>0.00</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>0.00</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">10</ItemId><UnitPrice>49.99</UnitPrice><Qty>0</Qty></Line><Line><Desc>Sales
+        Tax 8.875%</Desc><Amount>0.00</Amount><Taxable>false</Taxable><ItemId idDomain="QBO">15</ItemId><UnitPrice>0.08875</UnitPrice><Qty>0</Qty></Line></Invoice><Invoice><Id
+        idDomain="QBO">789</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-07-22T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-07-22T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>23</DocNumber><TxnDate>2011-07-22-07:00</TxnDate><CustomerId
+        idDomain="QBO">138</CustomerId><SubTotalAmt>4.17</SubTotalAmt><TotalAmt>4.17</TotalAmt><ToBePrinted>false</ToBePrinted><ToBeEmailed>false</ToBeEmailed><DueDate>2012-07-07-07:00</DueDate><ShipMethodId
+        idDomain="QBO"/><Balance>0.00</Balance><DiscountTaxable>true</DiscountTaxable></Header><Line><Amount>4.17</Amount><Taxable>false</Taxable><ItemId
+        idDomain="QBO">12</ItemId><UnitPrice>4.16583</UnitPrice><Qty>1.001001</Qty></Line></Invoice></qbo:CdmCollections><qbo:Count>80</qbo:Count><qbo:CurrentPage>1</qbo:CurrentPage></qbo:SearchResults>'
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:01:33 GMT
+recorded_with: VCR 2.2.4

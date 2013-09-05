@@ -1,0 +1,9 @@
+<div class="modal-header">
+  <a href="#" class="close pull-right" data-dismiss="modal"><i class="icon-small-cross icon-grey"><!-- --></i></a>
+  <h3>Choose a metric</h3>
+</div>
+<div class="modal-search"></div>
+<div class="modal-body"></div>
+<div class="modal-footer">
+  <a href="#" class="btn" data-dismiss="modal">Close</a>
+</div>

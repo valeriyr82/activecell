@@ -1,0 +1,147 @@
+<header id="overview">
+  <h1>scaffolding</h1>
+  <p class="lead">activecell is built on a responsive 16-column grid. because our tables are so detailed, we set a minimum width of 940px, but we allow for a maximum grid of 1,100px.</p>
+  <div class="subnav middle-bar">
+    <div class="container">
+      <ul class="nav nav-pills">
+        <li><a href="#grid_system">grid system</a></li>
+        <li><a href="#layouts">layouts</a></li>
+        <li><a href="#header_footer">header and footer</a></li>
+        <li><a href="#navigation">navigation</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section id="grid_system">
+  <div class="page-header">
+    <h1>grid system <small>16 columns with a responsive twist</small></h1>
+  </div>
+  <div class="row">
+    <div class="span16">
+      <div class="row show-grid">
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+        <div class="span1">1</div>
+      </div>
+      <div class="row show-grid">
+        <div class="span4">4</div>
+        <div class="span4">4</div>
+        <div class="span4">4</div>
+        <div class="span4">4</div>
+      </div>
+      <div class="row show-grid">
+        <div class="span4">4</div>
+        <div class="span8">8</div>
+        <div class="span4">4</div>
+      </div>
+      <div class="row show-grid">
+        <div class="span6">6</div>
+        <div class="span6">6</div>
+        <div class="span4">4</div>
+      </div>
+      <div class="row show-grid">
+        <div class="span12">12</div>
+        <div class="span4">4</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <p>
+        the grid system provided in activecell utilizes <strong>16 columns</strong> that render out at widths of
+        940px and 1100px.
+      </p>
+    </div>
+    <div class="span6">
+      <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span8"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+    </div>
+    <div class="span5">
+      <p>
+        As shown here, a basic layout can be created with two "columns", each spanning a number of the 12 foundational
+        columns we defined as part of our grid system.
+      </p>
+    </div>
+  </div>
+  <br>
+  <h2>offsetting columns</h2>
+  <div class="row show-grid">
+    <div class="span5">5</div>
+    <div class="span5 offset6">5 offset 6</div>
+  </div>
+  <div class="row show-grid">
+    <div class="span4 offset4">4 offset 4</div>
+    <div class="span4 offset4">4 offset 4</div>
+  </div>
+  <div class="row show-grid">
+    <div class="span8 offset4">8 offset 4</div>
+  </div>
+  <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span5"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span5 offset6"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+  <br>
+  <h2>nesting columns</h2>
+  <div class="row">
+    <div class="span8">
+      <p>
+        with the static grid system in activecell, nesting is easy. to nest your content, just add a new
+        <code>.row</code> and set of <code>.span*</code> columns within an existing <code>.span*</code> column.
+      </p>
+      <h3>example</h3>
+      <p>
+        nested rows should include a set of columns that add up to the number of columns of it's parent. for example,
+        two nested <code>.span4</code> columns should be placed within a <code>.span8</code>.
+      </p>
+      <div class="row show-grid">
+        <div class="span8">
+          Level 1 of column
+          <div class="row show-grid">
+            <div class="span4">
+              Level 2
+            </div>
+            <div class="span4">
+              Level 2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="span8">
+      <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span8"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    Level 1 column</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4"</span><span class="tag">&gt;</span><span class="pln">Level 2</span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4"</span><span class="tag">&gt;</span><span class="pln">Level 2</span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+    </div>
+  </div>
+</section>
+
+
+<section id="navigation">
+  <div class="responsive_design">
+    <h1>navigation</h1>
+  </div>
+  <div class="row">
+    <div class="span16">
+      <br />
+      <h2>sub nav</h2>
+      <br />
+        <ul class="sub-nav" style="float: left">
+          <li data-sub-nav="user" class="active"><a href="#settings/user" title="user">user</a></li>
+          <li data-sub-nav="company"><a href="#settings/company" title="company">company</a></li>
+          <li data-sub-nav="data_integrations"><a href="#settings/data_integrations" title="integrations">integrations</a></li>
+          <li data-sub-nav="account"><a href="#settings/account" title="account">account</a></li>
+          <li data-sub-nav="account"><a href="#settings/account" title="account">settings</a></li>
+        </ul>
+      <br />
+      <br />
+    </div>
+  </div>
+</section>

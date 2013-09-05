@@ -1,0 +1,51 @@
+development:
+  sessions:
+    default:
+      hosts: 
+        - localhost:27017
+      database: activecell_development
+
+test:
+  sessions:
+    default:
+      hosts: 
+        - localhost:27017
+      database: activecell_test<%= ENV['TEST_ENV_NUMBER'] %>
+
+<% if ENV['MONGOLAB_URI'] %>
+  <% uri = URI.parse(ENV['MONGOLAB_URI']) %>
+
+staging:
+  sessions:
+    default:
+      username: <%= uri.user %>
+      password: <%= uri.password %>
+      hosts:
+        - <%= uri.host %>:<%= uri.port %>
+      database: <%= uri.path.sub('/','') %>
+
+demo:
+  sessions:
+    default:
+      username: <%= uri.user %>
+      password: <%= uri.password %>
+      hosts:
+        - <%= uri.host %>:<%= uri.port %>
+      database: <%= uri.path.sub('/','') %>
+
+production:
+  sessions:
+    default:
+      username: <%= uri.user %>
+      password: <%= uri.password %>
+      hosts:
+        - <%= uri.host %>:<%= uri.port %>
+      database: <%= uri.path.sub('/','') %>
+<% else %>
+production:
+  sessions:
+    default:
+      hosts:
+        - localhost:27017
+      database: activecell_production
+<% end %>

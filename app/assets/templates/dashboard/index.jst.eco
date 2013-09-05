@@ -1,0 +1,13 @@
+<div class="span15" style="margin-top: -20px;">
+    <div id="metrics-container">
+      <div class="metric"></div>
+      <div class="metric"></div>
+      <div class="metric"></div>
+      <div class="metric"></div>
+    </div>
+    <div id="dashboard-sidebar">
+      <div id="activity-stream-container"></div>
+      <div id="task-list-container">
+      </div>
+    </div>
+</div>

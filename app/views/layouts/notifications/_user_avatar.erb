@@ -1,0 +1,7 @@
+<div style="float: left; width: 90px; height: 80px">
+  <img border="0" src="<%= avatar_url_for(user.email) %>" width="80" height="80" alt="Author Photo"/>
+</div>
+<div style="font-size: 14px;">
+  <strong><%= user.name.downcase %></strong> <br/>
+  <span style="color: #999"><em><%= user.email %></em></span> <br/>
+</div>

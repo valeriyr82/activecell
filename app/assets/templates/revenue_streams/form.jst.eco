@@ -1,0 +1,11 @@
+<td class="title show-td hide"><%= @name %></td>
+<td class="show-td hide"><a class="btn small edit" href="javascript:;">Edit</a></td>
+<td class="title edit-td">
+  <form>
+    <input type="text" class='name' name='revenue_stream[name]' value="<%= @name %>" />
+  </form>
+</td>
+<td class="edit-td">
+  <a class="btn small delete" href="javascript:;">Delete</a>
+  <a class="btn small save" href="javascript:;">Save</a>
+</td>

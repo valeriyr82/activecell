@@ -1,0 +1,11 @@
+    <div class="span10">
+      <div class="widget-block">
+    	<p>Custom reports are a set of metrics and graphs that you define. Got a list of metrics you check frequently? An upcoming board meeting with a special set of numbers? Put them all into a custom report and track them here.</p>
+	<p>Get started by typing a name for your report in the top right, then choose the graphs you'd like to include. You can add up to 8.</p>
+	<br />
+	<a href="javascript:;" class="btn btn-primary btn-large choose-metric">Choose a metric</a>
+	<br />
+	<br />
+      </div>
+    </div>
+

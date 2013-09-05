@@ -1,0 +1,32 @@
+<header id="overview">
+  <h1>charts</h1>
+  <p class="lead">we do a tremendous amount of complex work with charts, so our charts need to really rip!</p>
+</header>
+
+<section id="charts">
+  <div class="page-header">
+    <h1>Simple pivotal table</h1>
+  </div>
+  <div class="row">
+    <div class="span16">
+      <div id="chart-icons">
+        <ul>
+            <li id="pivottable" title="pivot table" class=""><a href="#body"></a></li>
+            <li id="sankey" class="" title="sankey"><a href="#body"></a></li>
+            <li id="bar" title="bar chart" class=""><a href="#body"></a></li>
+            <li id="stackedarea" title="stacked area chart" class=""><a href="#body"></a></li>
+            <li id="percentarea" title="percent area chart" class="over"><a href="#body"></a></li>
+            <li id="line" title="line chart" class=""><a href="#body"></a></li>
+            <li id="bubble" title="line chart" class=""><a href="#body"></a></li>
+            <li id="leaderboard" title="leader board" class=""><a href="#body"></a></li>
+            <li id="geo" title="geo" class=""><a href="#body"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span16">
+      <div id="chart" class="chart span16"></div>
+    </div>
+  </div>
+</section>

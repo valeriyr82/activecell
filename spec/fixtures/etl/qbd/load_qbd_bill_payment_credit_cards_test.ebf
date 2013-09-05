@@ -1,0 +1,6 @@
+ETLCache.resolvers[:company_id] = batch.options[:company_id]
+@since = Date.new(2009,1,1).to_time
+
+# extractions
+extract '{:entities => [:bill_payment_credit_card], :since => @since}'
+run 'controls_symlink/load_qbd_bill_payment_credit_cards.ctl'

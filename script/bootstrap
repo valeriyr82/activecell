@@ -1,0 +1,223 @@
+#!/bin/bash
+#
+# bootstrap
+#
+# Checks for dependencies so you can get rolling with ActiveCell straight away
+
+function log {
+  if onLinux; then
+    echo -e "\e[1;31m>> \e[1;34m$1\e[0m"
+  else
+    echo $1
+  fi
+}
+
+function printOk {
+  if onLinux; then
+    echo -e "\e[1;32m$1\e[0m"
+  else
+    echo $1
+  fi
+}
+
+function printError {
+  if onLinux; then
+    echo -e "\e[1;31m$1\e[0m"
+  else
+    echo $1
+  fi
+}
+
+function onLinux {
+  [ $OSTYPE = "linux-gnu" ]
+}
+
+function onOsx {
+  unamestr=$(uname)
+  [ $unamestr = "Darwin" ]
+}
+
+function onDebianCompatible {
+  [ -x /usr/bin/apt-get ]
+}
+
+#
+# Check if given deb package is installed
+#
+function debInstalled {
+  local installed="$(dpkg -l | grep "$1")"
+  if [ "$installed" != "" ]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
+#
+# Return false when one of the given packages is not installed
+#
+function allDebInstalled {
+  for package in ${1}; do
+    if ! debInstalled "$package"; then
+      return 1
+    fi
+  done
+
+  return 0
+}
+
+set -e
+
+###############################################################################
+#
+# Welcome to ActiveCell
+#
+###############################################################################
+
+echo ""
+echo "  ActiveCell"
+echo "  A bad-ass business management platform."
+echo ""
+
+if onLinux; then
+  if onDebianCompatible; then
+      ubuntu_codename=`cat /etc/*-release | grep DISTRIB_CODENAME | sed 's/.*=//g'`
+      log "Ubuntu/Debian ($ubuntu_codename) Linux detected."
+  fi
+fi
+
+#
+# Check for Ruby version
+#
+ruby_version="$(ruby -e 'print RUBY_VERSION')"
+if [ "$ruby_version" != "1.9.3" ]; then
+  printError "  x Your current Ruby version is "$ruby_version". You need to Ruby version 1.9.3."
+  printError "    If you use RVM, you can run:"
+  printError "    rvm install ruby-1.9.3-p194"
+  printError "    rvm use 1.9.3-p194"
+  exit
+else
+  printOk "  + Ruby version 1.9.3 in use."
+fi
+
+#
+# Check for Phantomjs
+#
+if test ! $(which phantomjs); then
+  printError "  x You need to install PhantomJS. If you use Homebrew, you can run:"
+  printError "    brew install phantomjs"
+  exit
+else
+  printOk "  + PhantomJS found."
+fi
+
+#
+# Check for MongoDB
+#
+if test ! $(which mongo); then
+  printError "  x You need to install MongoDB. If you use Homebrew, you can run:"
+  printError "    brew install mongodb"
+  exit
+else
+  mongodb_version="$(mongo --version | awk -F" " '{print $4}')"
+  if [ "$mongodb_version" \< "1.8.0" ]; then
+    printError "  x Your current MongoDB version is "$mongodb_version""
+    printError "    You need to install MongoDB > 2.0.0 so we can use latest monogid version."
+    exit
+  else
+    printOk "  + MongoDB found."
+  fi
+fi
+
+#
+# Check for MongoDB
+#
+if test ! $(which redis-server); then
+  printError "  x You need to install Redis. If you use Homebrew, you can run:"
+  printError "    brew install redis"
+  exit
+else
+  printOk "  + Redis found."
+fi
+
+#
+# Check for /etc/hosts and default domains
+#
+domains=("activecell.local" "launchpad.activecell.local" "sterlingcooper.activecell.local" "sterling-cooper.activecell.local" "test-company.activecell.local")
+for domain in ${domains[*]}; do
+  if ! `grep -q "$domain" /etc/hosts`; then
+    printError "  x Your /etc/hosts does not contain required domain: "$domain""
+    printError "    Please add the following like to the /etc/hosts file:"
+    printError "    127.0.0.1 "$domain""
+    exit
+  else
+    printOk "  + "$domain" found in the /etc/hosts file"
+  fi
+done
+
+#
+# Check for libraries required by webkit driver
+#
+if onLinux; then
+  if onDebianCompatible; then
+    required_packages=("libqt4-dev" "libqtwebkit-dev" "xvfb")
+
+    if ! allDebInstalled "${required_packages[*]}"; then
+      printError "  x Packages required by webkit are not installed."
+      printError "    Executing sudo apt-get install "${required_packages[@]}""
+      sudo apt-get install "${required_packages[@]}"
+    fi
+  fi
+fi
+
+if onOsx; then
+    qtInstalled="$(which qmake | grep ".")"
+       if [ "$qtInstalled" == "" ]; then
+            printError " x You need to install qt. "
+            printError " Go to https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit"
+       fi
+fi
+
+#
+# Check for libraries required by paperclip and rmagick
+#
+if onLinux; then
+  if onDebianCompatible; then
+    required_packages=("imagemagick")
+
+    if ! allDebInstalled "${required_packages[*]}"; then
+      printError "  x Packages required by paperclip are not installed."
+      printError "    Executing sudo apt-get install "${required_packages[@]}""
+      sudo apt-get install "${required_packages[@]}"
+    fi
+  fi
+fi
+
+if onOsx; then
+    iMagickInstalled="$(which convert | grep ".")"
+    if [ "$iMagickInstalled" == "" ]; then
+        printError "  x please install imagemagick If you use Homebrew, you can run:"
+        printError " brew install imagemagick"
+    fi
+fi
+
+
+#
+# Check for Bundler
+# Note: Once Bundler 1.2 is out in standard release, we can just check for bundler.
+#
+bundle_version="$(bundle --version | awk -F" " '{print $3}')"
+if [ "$bundle_version" \< "1.2.0.pre.1" ]; then
+  printError "  x Your bundler version is "$bundle_version
+  printError "    You need to install Bundler 1.2.0.rc or greater so we can rock Heroku:"
+  printError "    gem install bundler --pre"
+  exit
+else
+  printOk "  + Bundler found."
+fi
+
+#
+# Install gems
+#
+log "Installing ruby gems."
+bundle

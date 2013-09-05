@@ -1,0 +1,8 @@
+<div class="ui-horizontal-slider" >
+  <div class="ui-slider-title">
+    <em>from</em> <strong><div style = 'display:inline' id="from"></div></strong> 
+    <em>to</em> <strong><div style = 'display:inline' id="to"></div></strong>
+  </div>
+
+  <div class="time-slider"></div>
+</div>

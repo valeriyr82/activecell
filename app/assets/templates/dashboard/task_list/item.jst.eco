@@ -1,0 +1,25 @@
+<% if !@task.done: %>
+  <% @done_checkbox_class = 'blank-checkbox' %>
+  <% @done_content_class = 'in-progress' %>
+<% end %>
+
+<span class="checkbox <%= @done_checkbox_class %>"><!-- --></span>
+<div class="content <%= @done_content_class %>">
+  <strong><%= @task.user.name %></strong> <%= @task.text %>
+ 
+  <div class="control-panel">
+    <i class="icon-small-trash delete-task" title="Delete this task"><!-- --></i>
+      <div class="dropdown-trigger">
+      <i class="icon-small-return recurring-icon" title="Make this task recurring"><!-- --></i>
+        <ul class="dropdown-block dropdown-list right-aligned recurring-options">
+        <li><a href="#" data-recurring="monthly">Monthly</a></li>
+        <li><a href="#" data-recurring="quarterly">Quarterly</a></li>
+        <li><a href="#" data-recurring="annualy">Annualy</a></li>
+        <% if @task.recurring: %>
+        <li><a href="#" data-recurring="">None</a></li>
+        <% end %>
+      </ul>
+  </div>
+  </div>
+
+</div>

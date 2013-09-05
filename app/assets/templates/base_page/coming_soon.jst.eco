@@ -1,0 +1,20 @@
+<div class="row">
+  <div id="main_chart">
+    <div class="span10">
+      <div class="main-chart-header" id="main-chart-header"></div>
+      <div class="widget-block">
+        <div class="main-d3-chart" id="main-d3-chart">
+          <span class='coming-soon'>coming soon</span>
+        </div>
+      </div>
+      <div class="main-chart-footer" id="main-chart-footer"></div>
+    </div>
+    <div style="display: none"></div>
+  </div>
+</div>
+
+<div id="wide-table-container">
+   <div id="main_table1"></div>
+   <div id="main_table2"></div>
+</div>
+

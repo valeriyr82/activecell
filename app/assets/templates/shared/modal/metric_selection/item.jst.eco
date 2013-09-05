@@ -1,0 +1,13 @@
+<li>
+  <% if @active: %>
+    <a href="javascript:;" 
+      class="choose-metric" 
+      analysisCategory="<%= @analysisCategory %>" 
+      prefix="<%= @prefix %>" 
+      analysisId="<%= @analysisId %>">
+      <%= @name %>
+    </a>
+  <% else: %>
+    <span><%= @name %></span>
+  <% end %>
+</li>

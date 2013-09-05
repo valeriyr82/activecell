@@ -1,0 +1,57 @@
+<div class="main-content">
+  <h1 class="inset">sign up</h1>
+  <div class="well textured clearfix">
+  <%= form_for(@sign_up, url: user_registration_path, html: { id: "sign-upp", class: "form-stacked form-horizontal", method: :post }) do |f| %>
+  <%= devise_error_messages!(@sign_up) %>
+      <%= hidden_field_tag :t, @token %>
+      <div class="control-group">
+        <div class="controls">
+          <%= f.text_field :company_name, placeholder: 'Company name', class: "input-narrow-form alt-field" %>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <%= f.text_field :company_subdomain, placeholder: 'Subdomain name', class: 'input-narrow-form alt-field company-subdomain' %>
+          <span>.activecell.com</span>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <%= f.text_field :user_name, placeholder: 'User name', class: 'input-narrow-form alt-field' %>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <%= f.email_field :user_email, placeholder: 'Email address', class: 'input-narrow-form alt-field' %>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <%= f.password_field :user_password, placeholder: 'Password', class: 'input-narrow-form alt-field' %>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <%= f.password_field :user_password_confirmation, placeholder: 'Confirm Password', class: 'input-narrow-form alt-field' %>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <div class="pull-left" style="margin-top: 5px;">
+              <ipp:login href="/auth/intuit_sso"></ipp:login>
+          </div>
+          <button type="submit" class="btn btn-primary pull-right">Sign up</button>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <br />
+  <br />  
+  <div class="hr"></div>
+  <h2 class="inset">Already a member?</h2>
+  <div class="centered">
+    <%= render :partial => "devise/shared/links", :locals=>{:flag=>'sign_in'} %>
+    <span class="accented">to get back to work</span>
+  </div> 
+</div>

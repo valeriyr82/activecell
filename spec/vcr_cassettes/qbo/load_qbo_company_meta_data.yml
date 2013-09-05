@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="dJnFduarV0PoQEdfJeothL4ay1UqqNDHGTBM0eFBy8",
+        oauth_signature="BfV58zvztxw8g4UDoXrCbKukMis%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347362206", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 11 Sep 2012 11:16:48 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=91105CBEA40893A250A0DF4F3F86D446.c1-pprdqboas30g; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347362208274920; path=/; expires=Wed, 11-Sep-13 11:16:48
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '313'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q0134735626509531cd321</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Tue, 11 Sep 2012 11:16:48 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/companymetadata/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="ZvpxbdQNTTCBmN4lzY9xDWdYoQQXEeWdKty9fjOp4w",
+        oauth_signature="7zQpbnxpFhvBjTu83mbFg0dCUfk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347362208", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 11 Sep 2012 11:16:50 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=D1A6BD558A17C51120CDC723A7481D65.c36-pprdqboas30l; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347362210752764; path=/; expires=Wed, 11-Sep-13 11:16:50
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '416'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><CompanyMetaData
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><QBNRegisteredCompanyName>Profitably,
+        Inc.</QBNRegisteredCompanyName><Address><Line1>902 Broadway, 4th Floor</Line1><City>New
+        York</City><CountrySubDivisionCode>NY</CountrySubDivisionCode><PostalCode>10010</PostalCode><Tag>COMPANY_ADDRESS</Tag></Address><Phone><FreeFormNumber>+1
+        617.314.0825</FreeFormNumber></Phone><Email><Address>adam@neary.com</Address><Tag>COMPANY_EMAIL</Tag></Email><LegalAddress><Line1>902
+        Broadway, 4th Floor</Line1><City>New York</City><CountrySubDivisionCode>NY</CountrySubDivisionCode><PostalCode>10010</PostalCode><Tag>LEGAL_ADDRESS</Tag></LegalAddress><IndustryType>Manufacturing
+        Businesses</IndustryType></CompanyMetaData>
+    http_version: 
+  recorded_at: Tue, 11 Sep 2012 11:16:50 GMT
+recorded_with: VCR 2.2.4

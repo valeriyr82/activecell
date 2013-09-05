@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="ofqr0BPj3FS8rKxRe2G955KHtLu7fwR7rOKeE74fo",
+        oauth_signature="s4dpichpHvUj%2B8V14enAWM%2FPJcY%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296414", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:00:12 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=F303090E3B60402EA02DBF2885ACFF17.c1-pprdqboas30c; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296412714871; path=/; expires=Tue, 10-Sep-13 17:00:12
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '312'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q013472960670985d14da3</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:00:18 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/bill-payments/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="OYREHsmRKqn58h6q6gnQeLmEjCSArSrcDKuCJfSe8uE",
+        oauth_signature="1a7Qx%2F5E6vsm4WzZn1kID2d3sSE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296418", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:00:16 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=9B56ABCA6F8FDCC4A4FEA37358356F6F.c36-pprdqboas30g; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296416858579; path=/; expires=Tue, 10-Sep-13 17:00:16
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '3165'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: ! '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:SearchResults
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:CdmCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:type="BillPayments"><BillPayment>
+        <Id
+              idDomain="QBO">273
+        </Id>
+        <SyncToken>1</SyncToken>
+        <MetaData>
+          <CreateTime>2010-11-05T00:00:00-07:00</CreateTime>
+          <LastUpdatedTime>2010-11-05T00:00:00-07:00</LastUpdatedTime>
+        </MetaData>
+        <Header>
+          <TxnDate>2010-11-05-07:00</TxnDate>
+          <Note>THIS IS TEST</Note>
+          <EntityId>123</EntityId>
+          <BankAccountId>94</BankAccountId>
+          <ToBePrinted>false</ToBePrinted>
+          <TotalAmt>2700.00</TotalAmt>
+        </Header>
+        <Line>
+          <Amount>2700.00</Amount>
+          <TxnId>269</TxnId>
+        </Line>
+      </BillPayment>
+      <BillPayment><Id idDomain="QBO">84</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-06-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-06-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-06-16-07:00</TxnDate><EntityId>24</EntityId><BankAccountId>92</BankAccountId><ToBePrinted>true</ToBePrinted><TotalAmt>340.06</TotalAmt></Header><Line><Amount>340.06</Amount><TxnId>39</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">83</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-06-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-06-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-06-16-07:00</TxnDate><EntityId>18</EntityId><BankAccountId>92</BankAccountId><ToBePrinted>true</ToBePrinted><TotalAmt>100.00</TotalAmt></Header><Line><Amount>50.00</Amount><TxnId>25</TxnId></Line><Line><Amount>50.00</Amount><TxnId>29</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">82</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2010-06-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-06-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-06-16-07:00</TxnDate><Note>VOID:
+        No account number</Note><EntityId>25</EntityId><BankAccountId>92</BankAccountId><ToBePrinted>false</ToBePrinted><TotalAmt>0.00</TotalAmt></Header></BillPayment><BillPayment><Id
+        idDomain="QBO">81</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-06-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-06-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-06-16-07:00</TxnDate><EntityId>23</EntityId><BankAccountId>92</BankAccountId><ToBePrinted>true</ToBePrinted><TotalAmt>10.83</TotalAmt></Header><Line><Amount>10.83</Amount><TxnId>34</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">80</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-06-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-06-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-06-16-07:00</TxnDate><EntityId>14</EntityId><BankAccountId>92</BankAccountId><ToBePrinted>true</ToBePrinted><TotalAmt>261.98</TotalAmt></Header><Line><Amount>33.43</Amount><TxnId>17</TxnId></Line><Line><Amount>43.48</Amount><TxnId>16</TxnId></Line><Line><Amount>12.99</Amount><TxnId>35</TxnId></Line><Line><Amount>4.99</Amount><TxnId>33</TxnId></Line><Line><Amount>14.97</Amount><TxnId>36</TxnId></Line><Line><Amount>82.15</Amount><TxnId>37</TxnId></Line><Line><Amount>69.97</Amount><TxnId>45</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">79</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-06-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-06-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-06-16-07:00</TxnDate><EntityId>21</EntityId><BankAccountId>92</BankAccountId><ToBePrinted>true</ToBePrinted><TotalAmt>12.00</TotalAmt></Header><Line><Amount>12.00</Amount><TxnId>28</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">78</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-06-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-06-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-06-16-07:00</TxnDate><EntityId>19</EntityId><BankAccountId>92</BankAccountId><ToBePrinted>true</ToBePrinted><TotalAmt>40.00</TotalAmt></Header><Line><Amount>40.00</Amount><TxnId>26</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">77</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-06-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-06-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-06-16-07:00</TxnDate><EntityId>20</EntityId><BankAccountId>92</BankAccountId><ToBePrinted>true</ToBePrinted><TotalAmt>63.96</TotalAmt></Header><Line><Amount>19.99</Amount><TxnId>38</TxnId></Line><Line><Amount>19.99</Amount><TxnId>40</TxnId></Line><Line><Amount>3.99</Amount><TxnId>27</TxnId></Line><Line><Amount>19.99</Amount><TxnId>30</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">76</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-06-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-06-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-06-16-07:00</TxnDate><EntityId>15</EntityId><BankAccountId>92</BankAccountId><ToBePrinted>true</ToBePrinted><TotalAmt>72.00</TotalAmt></Header><Line><Amount>12.00</Amount><TxnId>19</TxnId></Line><Line><Amount>12.00</Amount><TxnId>18</TxnId></Line><Line><Amount>24.00</Amount><TxnId>21</TxnId></Line><Line><Amount>24.00</Amount><TxnId>20</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">86</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-06-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-06-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-06-16-07:00</TxnDate><EntityId>16</EntityId><BankAccountId>92</BankAccountId><ToBePrinted>true</ToBePrinted><TotalAmt>3375.00</TotalAmt></Header><Line><Amount>3375.00</Amount><TxnId>22</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">87</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-06-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-06-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-06-16-07:00</TxnDate><EntityId>17</EntityId><BankAccountId>92</BankAccountId><ToBePrinted>true</ToBePrinted><TotalAmt>650.00</TotalAmt></Header><Line><Amount>50.00</Amount><TxnId>23</TxnId></Line><Line><Amount>600.00</Amount><TxnId>24</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">50</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-05-12T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-05-12T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-05-12-07:00</TxnDate><Note>OLSONPROCESSED
+        ON:05/12 REFERENCE NUMBER: 0000000007</Note><EntityId>12</EntityId><BankAccountId>48</BankAccountId><ToBePrinted>false</ToBePrinted><TotalAmt>500.00</TotalAmt></Header><Line><Amount>500.00</Amount><TxnId>8</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">51</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-05-12T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-05-12T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-05-12-07:00</TxnDate><Note>MEDIAPROCESSED
+        ON:05/12 REFERENCE NUMBER: 0000000006</Note><EntityId>6</EntityId><BankAccountId>48</BankAccountId><ToBePrinted>false</ToBePrinted><TotalAmt>100.00</TotalAmt></Header><Line><Amount>100.00</Amount><TxnId>12</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">64</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-04-12T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-04-12T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-04-12-07:00</TxnDate><EntityId>7</EntityId><BankAccountId>48</BankAccountId><ToBePrinted>true</ToBePrinted><TotalAmt>1800.00</TotalAmt></Header><Line><Amount>1800.00</Amount><TxnId>10</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">65</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-04-12T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-04-12T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-04-12-07:00</TxnDate><EntityId>8</EntityId><BankAccountId>48</BankAccountId><ToBePrinted>true</ToBePrinted><TotalAmt>500.00</TotalAmt></Header><Line><Amount>500.00</Amount><TxnId>6</TxnId></Line></BillPayment><BillPayment><Id
+        idDomain="QBO">15</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2010-03-31T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-03-31T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>1234</DocNumber><TxnDate>2010-03-31-07:00</TxnDate><EntityId>123</EntityId><BankAccountId>48</BankAccountId><ToBePrinted>false</ToBePrinted><TotalAmt>1000.00</TotalAmt></Header><Line><Amount>1000.00</Amount><TxnId>14</TxnId></Line></BillPayment>
+      </qbo:CdmCollections><qbo:Count>17</qbo:Count><qbo:CurrentPage>1</qbo:CurrentPage></qbo:SearchResults>'
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:00:25 GMT
+recorded_with: VCR 2.2.4

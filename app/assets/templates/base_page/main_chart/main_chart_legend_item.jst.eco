@@ -1,0 +1,11 @@
+<li class="<%= @series.type %>">
+  <span 
+    <% if @series.color: %>
+      style="background-color:<%= @series.color %>"
+    <% end %>
+    <% if @series.class: %>
+      class="<%= @series.class %>"
+    <% end %>
+  ><!-- --></span>
+  <%= @series.title %>
+</li>

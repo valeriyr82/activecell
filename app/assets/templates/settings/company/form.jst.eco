@@ -1,0 +1,34 @@
+<div class="span8">
+  <form id="company-basic-info" class="form-horizontal">
+    <div class="control-group">
+      <label for="company_name" class="control-label">Company Name: </label>
+      <input id="company_name"  class="input-large" type="text" value="<%= @name %>" name='name'/>
+    </div>
+    <div class="control-group">
+      <label for="company_address_1" class="control-label">Address 1: </label>
+      <input id="company_address_1"  class="input-large" type="text" value="<%= @address_1 %>" name='address_1'/>
+    </div>
+    <div class="control-group">
+      <label for="company_address_2" class="control-label">Address 2: </label>
+      <input id="company_address_2"  class="input-large" type="text" value="<%= @address_2 %>" name='address_2'/>
+    </div>
+    <div class="control-group">
+      <label for="company_postal_code" class="control-label">ZIP: </label>
+      <input id="company_postal_code" class="input-large" type="text" value="<%= @postal_code %>" name='postal_code'/>
+    </div>
+    <div class="control-group">
+      <label for="company_country_id" class="control-label">Country: </label>
+      <select id="company_country_id" class="input-large" name="country_id">
+      </select>
+    </div>
+    <div class="control-group">
+      <label for="company_url" class="control-label">Website: </label>
+      <input id='company_url'  class="input-large" type="text" value="<%= @url %>" name='url'/>
+    </div>
+    <div class="control-group">
+      <label for="company_industry_id" class="control-label">Industry: </label>
+      <select id="company_industry_id" class="input-large" name="industry_id">
+      </select>
+    </div>
+  </form>
+</div>

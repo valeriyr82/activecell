@@ -1,0 +1,10 @@
+<script type="text/javascript">
+  var uvOptions = {
+    sso: '<%= current_user.uv_sso_token %>'
+  };
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/XhHK4NZVjyGoMj9ZhUNimA.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
+</script>

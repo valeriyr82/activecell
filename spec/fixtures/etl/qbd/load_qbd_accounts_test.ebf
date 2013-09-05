@@ -1,0 +1,5 @@
+ETLCache.resolvers[:company_id] = batch.options[:company_id]
+
+# extractions
+extract '{:entities => [:account]}'
+run 'controls_symlink/load_qbd_accounts.ctl'

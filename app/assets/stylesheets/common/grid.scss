@@ -1,0 +1,382 @@
+@import "mixins";
+
+// FIXED GRID
+// --------------------------------------------------
+
+// Default, 1100px
+// -------------------------
+$gridColumns:             16 !default;
+$gridColumnWidth:         50px !default;
+$gridGutterWidth:         20px !default;
+$gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1)) !default;
+
+// Portrait tablet to default desktop
+// -------------------------
+$gridColumnWidthTablet:   40px !default;
+$gridGutterWidthTablet:   20px !default;
+
+// Large desktop and up
+// -------------------------
+$gridColumnWidthLarge:    50px !default;
+$gridGutterWidthLarge:    20px !default;
+
+// Fixed (1100px)
+@include gridCore($gridColumnWidth, $gridGutterWidth);
+
+
+.page-wrapper {
+  width: 1140px;
+  margin: 2px auto 0 auto;
+  padding: 18px 0 20px 0;
+  background-color: #fff !important;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+  &.narrow {
+    width: 580px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .container {
+      width: 539px;
+    }
+
+    .main-content {
+      padding: 20px 55px;
+    }
+    
+    &.textured-with-border {
+      &:before, &:after {
+        width: 553px;
+      }
+    }
+  }
+}
+
+.main-nav-wrapper {
+  float: left;
+  width: 90px;
+
+  @include clearfix;
+}
+
+.main-container { 
+  padding-left: 40px; 
+}
+
+.content-wrapper {
+  float: left;
+  width: 985px;
+  padding-left: 10px;
+
+  @include clearfix;
+}
+
+.page-top-nav-wrapper {
+  padding: 0 0 20px 0;
+
+  @include clearfix;
+
+  #breadcrumbs {
+    float: left;
+    width: 450px;
+  }
+
+  #sub-nav {
+    float: right;
+  }
+}
+
+.page-content-wrapper {
+  @include clearfix();
+  margin-right: 5px;
+
+  #page_content {
+    float: left;
+    width: 720px;
+
+   @include clearfix();
+  }
+
+  #analisys_nav {
+    float: right;
+  }
+}
+
+#metrics-container {
+  float: left;
+  width: 680px;
+}
+
+#dashboard-sidebar {
+  float: left;
+  width: 300px;
+  margin: 0 0 0 8px;
+}
+
+#wide-table-container {
+  @include clearfix();
+
+  margin: 15px 0 0 -90px;
+  width: 1075px;
+}
+
+// Responsive grid
+
+@media (min-width: 1140px) {
+
+  @include gridCore($gridColumnWidthLarge, $gridGutterWidthLarge);
+  @include gridInput($gridColumnWidthLarge, $gridGutterWidthLarge);
+
+  .container {
+    width: 1100px;
+  }  
+
+  // Thumbnails
+  .thumbnails {
+    margin-left: -30px;
+  }
+
+  .thumbnails > li {
+    margin-left: 30px;
+  }
+  
+  .row-fluid .thumbnails {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1160px) {
+
+  // Fixed grid
+  @include gridCore($gridColumnWidthTablet, $gridGutterWidthTablet);
+
+  // Input grid
+  @include gridInput($gridColumnWidthTablet, $gridGutterWidthTablet);
+
+  .container {
+    width: 940px;
+  }
+
+  .page-wrapper {
+    width: 980px !important;
+
+    &.narrow {
+      width: 580px !important;
+
+      &.textured-with-border {
+        &:before, &:after {
+          width: 553px !important;
+        }
+     }
+    }
+  }
+
+  .content-wrapper {
+    width: 820px;
+  }
+
+  .page-content-wrapper {
+    #page_content {
+      width: 600px;
+    }
+
+    #metrics-container {
+      width: 580px;
+
+      .metric {
+        width: 270px;
+
+        .selected-metric-header {
+          h4 {
+            font-size: 12px;
+            width: 215px;
+          }
+        }
+      }
+    }
+
+    #dashboard-sidebar {
+      width: 245px;
+    }
+
+    #activity-stream-container {
+      .activity-stream-header {
+        input[type="text"] {
+          width: 177px;
+        }
+      }
+
+      .content {
+        font-size: 11px;
+      }
+    }
+
+    #task-list-container {
+      .task-list-header {
+        h3 {
+          display: none;
+        }
+
+      }
+
+      .task-form {
+        input[type="text"] {
+          width: 211px;
+        }
+      }
+    }
+  }
+
+  .textured-with-border {
+    &:before, &:after {
+      width: 954px !important;
+    }
+  }
+
+  .analysis-nav {
+    li {
+      width: 215px !important;
+
+      &.nav-ribbon {
+        width: 235px !important;
+        
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 74px;
+          width: 17px;
+          background: image-url("sprite_nav_ribbon.png") -261px -80px no-repeat;
+        }
+      }
+
+      .table-lnk {
+        margin-right: -6px;
+        width: 135px !important;
+
+        .metric-value {
+          font-size: 28px;
+        }
+      }
+
+      a {
+        font-size: 13px !important;
+      }
+    }
+  }
+
+  //Tables
+
+  table.three-year {
+    th, td {
+      font-size: 11px !important;    
+    }
+  }
+
+  #wide-table-container {
+    width: 910px;
+  }
+
+  // Breadcrumbs
+
+  .breadcrumbs {
+    li {
+      font-size: 13px;
+
+      span {
+        max-width: 140px;
+      }
+    }
+  }
+
+  .popup {
+    .links-block {
+      li {
+        margin: 2px;
+        padding: 2px 10px;
+        font-size: 16px;
+      }
+
+      span {
+        margin: 7px;
+        font-size: 21px;
+      }
+    }
+  }
+
+  .dropdown-list {
+    padding: 6px 5px;
+
+    li {
+      width: 140px;
+
+      a {
+        padding: 6px 8px;
+        font-size: 13px;
+      }
+    }
+  }
+  
+  .counter-block {
+    min-width: 50px;
+    padding: 9px 5px 0 5px;
+    margin: 0 5px 10px 0;
+
+    .value {
+      font-size: 22px;
+    }
+
+    .title {
+      font-size: 11px;
+    }
+  }
+
+  .ui-vertical-slider {
+    li {
+      margin-right: 15px;
+    }
+  }
+
+  input {
+    width: 165px;    
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {    
+    &.rounded {
+      width: 153px;
+    }
+    
+    &.input-medium {
+      width: 130px;
+    }
+
+    &.input-large {
+      width: 180px;
+    }
+
+    &.input-xlarge {
+      width: 210px;
+    }
+  }
+
+  .control-label {
+    width: 125px;
+  }
+
+
+  .search-form {
+    input[type="text"] {
+      width: 139px;
+    }
+  }
+
+  .breadcrumbs {
+    li {
+      font-size: 12px;
+    }
+  }
+}

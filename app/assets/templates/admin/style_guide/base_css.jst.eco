@@ -1,0 +1,1532 @@
+<header id="overview">
+  <h1>base css</h1>
+  <p class="lead">on top of the scaffolding, basic HTML elements are styled and enhanced with extensible classes to provide a fresh, consistent look and feel.</p>
+  <div class="subnav middle-bar">
+    <div class="container">
+      <ul class="nav nav-pills">
+        <li><a href="#branding">branding</a></li>
+        <li><a href="#typography">typography</a></li>
+        <li><a href="#forms">forms</a></li>
+        <li><a href="#buttons">buttons</a></li>
+        <li><a href="#icons">icons</a></li>
+      </ul>
+     </div>
+  </div>
+</header>
+
+<section id="branding">
+  <div class="page-header">
+    <h1>branding</h1>
+  </div>
+    <h2>Logos</h2>
+    <div class="row">
+      <div class="span16">
+        <h3>Primary Logo <small>Light Background</small></h3>
+        <div class="row">
+          <div class="span16">
+            <div class="well bg-white">
+              <div class="row">
+                <div class="span8">
+                  <img src="/assets/branding/style_guide/logo/activecell-one-color-medium.png" width="" height="" alt="" />
+                </div>
+                <div class="span7">
+                  <img src="/assets/branding/style_guide/logo/activecell-one-color-small.png" width="" height="" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    
+    <div class="row">
+      <div class="span16">
+        <h3>Primary Logo <small>Dark Background</small></h3>
+        <div class="row">
+          <div class="span16">
+            <div class="well bg-dark-blue-30">
+              <div class="row">
+                <div class="span8">
+                  <img src="/assets/branding/style_guide/logo/activecell-full-color-darkBG-medium.png" width="" height="" alt="" />
+                </div>
+                <div class="span7">
+                  <img src="/assets/branding/style_guide/logo/activecell-full-color-darkBG-small.png" width="" height="" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="span16">
+        <h3>Mono Logo <small>Light Background</small></h3>
+        <div class="row">
+          <div class="span16">
+            <div class="well bg-white">
+              <div class="row">
+                <div class="span8">
+                  <img src="/assets/branding/style_guide/logo/activecell-mono-medium.png" width="" height="" alt="" />
+                </div>
+                <div class="span7">
+                  <img src="/assets/branding/style_guide/logo/activecell-mono-small.png" width="" height="" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="span16">
+        <h3>Mono Logo <small>Dark Background</small></h3>
+        <div class="row">
+          <div class="span16">
+            <div class="well bg-dark-blue-30">
+              <div class="row">
+                <div class="span8">
+                  <img src="/assets/branding/style_guide/logo/activecell-white-darkBG-medium.png" width="" height="" alt="" />
+                </div>
+                <div class="span7">
+                  <img src="/assets/branding/style_guide/logo/activecell-white-darkBG-small.png" width="" height="" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="span16">
+        <div class="row">
+          <div class="span16">
+            <div class="well bg-white" style="padding-top: 0">
+              <div class="row">
+                <div class="span4">
+                  <h6>Avatar 16x16</h6>
+                  <img src="/assets/branding/style_guide/avatars/activecell-avatar-16x16.png" width="" height="" alt="" />
+                </div>
+                <div class="span4">
+                  <h6>Avatar 32x32</h6>
+                  <img src="/assets/branding/style_guide/avatars/activecell-avatar-32x32.png" width="" height="" alt="" />
+                </div>
+                <div class="span4">
+                  <h6>Avatar 48x48</h6>
+                  <img src="/assets/branding/style_guide/avatars/activecell-avatar-48x48.png" width="" height="" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <br />
+    <h2>Color palette</h2>
+
+    <div class="row">
+      <div class="span16">
+       <h3>Primary Colors</h3>
+        <table class="table-flat">
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-primary"></span>
+              <h6>Primary <span>#30878F</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-primary-light"></span>
+              <h6>Primary Light <span>#DAE1E9</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-primary-dark"><!-- --></span>
+              <h6>Primary Dark <span>#00455B</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-secondary"><!-- --></span>
+              <h6>Secondary <span>#005568</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-secondary-light"><!-- --></span>
+              <h6>Secondary Light <span>#005568</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-secondary-dark"><!-- --></span>
+              <h6>Secondary Dark <span>#013144</span></h6>
+            </td>
+          </tr>
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-green"><!-- --></span>
+              <h6>Green <span>#c4d33e</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-light-green"><!-- --></span>
+              <h6>Green Light <span>#B4d037</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-dark-green"><!-- --></span>
+              <h6>Green, Dark <span>#99B718</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-link-color"><!-- --></span>
+              <h6>Link Color <span>#006B75</span></h6>
+            </td>
+            <td width="20%">
+              &nbsp;
+            </td>
+            <td width="20%">
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-white" style="border: 1px solid #eee"><!-- --></span>
+              <h6>White <span>#ffffff</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-light-grey"><!-- --></span>
+              <h6>Light Grey <span>#f2f2f3</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-grey"><!-- --></span>
+              <h6>Grey <span>#9b9b9b</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-dark-grey"><!-- --></span>
+              <h6>Dark Grey <span>#333333</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-black"><!-- --></span>
+              <h6>Black <span>#231F20</span></h6>
+            </td>
+            <td width="20%">
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+
+        <h3>alerts and warnings</h3>
+        <table class="table-flat">
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-success" style="border: 1px solid #eee"><!-- --></span>
+              <h6>Success <span>#8ac16f</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-warning"><!-- --></span>
+              <h6>Warning <span>#eedc94</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-danger"><!-- --></span>
+              <h6>Danger <span>#dc6e59</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-info"><!-- --></span>
+              <h6>Info <span>#19affe</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-inverse"><!-- --></span>
+              <h6>Inverse <span>dark-grey-50</span></h6>
+            </td>
+            <td width="20%">
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-success-light" style="border: 1px solid #eee"><!-- --></span>
+              <h6>Success light <span>#e7ffdc</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-warning-light"><!-- --></span>
+              <h6>Warning light <span>#fce5b1</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-danger-light"><!-- --></span>
+              <h6>Danger light <span>#ffdacf</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-info-light"><!-- --></span>
+              <h6>Info light <span>#b8f6ff</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-inverse-light"><!-- --></span>
+              <h6>Inverse light <span>light-grey</span></h6>
+            </td>
+            <td width="20%">
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+
+        <h3>Charting Colors</h3>
+        <table class="table-flat">
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-dark-blue-10"></span>
+              <h6>Dark Blue 10 <span>#0B3748</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-dark-blue-20"></span>
+              <h6>Dark Blue 20 <span>#254E5D</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-dark-blue-30"></span>
+              <h6>Dark Blue 30 <span>#3F6672</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-dark-blue-40"></span>
+              <h6>Dark Blue 40 <span>#597D88</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-dark-blue-50"></span>
+              <h6>Dark Blue 50 <span>#73959D</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-dark-blue-60"></span>
+              <h6>Dark Blue 60 <span>#8EADB3</span></h6>
+            </td>
+          </tr>
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-blue-10"></span>
+              <h6>Blue 10 <span>#0C1B75</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-blue-20"></span>
+              <h6>Blue 20 <span>#263683</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-blue-30"></span>
+              <h6>Blue 30 <span>#405192</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-blue-40"></span>
+              <h6>Blue 40 <span>#5A6CA1</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-blue-50"></span>
+              <h6>Blue 50 <span>#7487B0</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-blue-60"></span>
+              <h6>Blue 60 <span>#8FA3BF</span></h6>
+            </td>
+          </tr>
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-azure-10"></span>
+              <h6>Azure 10 <span>#003FC1</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-azure-20"></span>
+              <h6>Azure 20 <span>#2058C8</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-azure-30"></span>
+              <h6>Azure 30 <span>#4072D0</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-azure-40"></span>
+              <h6>Azure 40 <span>#608BD7</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-azure-50"></span>
+              <h6>Azure 50 <span>#80A5DF</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-azure-60"></span>
+              <h6>Azure 60 <span>#A0BFE7</span></h6>
+            </td>
+          </tr>
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-light-blue-10"></span>
+              <h6>Light Blue 10 <span>#4727C0</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-light-blue-20"></span>
+              <h6>Light Blue 20 <span>#6043C8</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-light-blue-30"></span>
+              <h6>Light Blue 30 <span>#795FD0</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-light-blue-40"></span>
+              <h6>Light Blue 40 <span>#927BD8</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-light-blue-50"></span>
+              <h6>Light Blue 50 <span>#AB87E0</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-light-blue-60"></span>
+              <h6>Light Blue 60 <span>#C5B3E9</span></h6>
+            </td>
+          </tr>
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-barn-red-10"></span>
+              <h6>Barn Red 10 <span>#4E0002</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-barn-red-20"></span>
+              <h6>Barn Red 20 <span>#671E20</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-barn-red-30"></span>
+              <h6>Barn Red 30 <span>#813D3F</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-barn-red-40"></span>
+              <h6>Barn Red 40 <span>#9A5C5D</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-barn-red-50"></span>
+              <h6>Barn Red 50 <span>#B47B7C</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-barn-red-60"></span>
+              <h6>Barn Red 60 <span>#CE9A9B</span></h6>
+            </td>
+          </tr>
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-scarlet-red-10"></span>
+              <h6>Scarlet Red 10 <span>#D21E17</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-scarlet-red-20"></span>
+              <h6>Scarlet Red 20 <span>#D83C36</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-scarlet-red-30"></span>
+              <h6>Scarlet Red 30 <span>#DE5A55</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-scarlet-red-40"></span>
+              <h6>Scarlet Red 40 <span>#E47975</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-scarlet-red-50"></span>
+              <h6>Scarlet Red 50 <span>#EA9794</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-scarlet-red-60"></span>
+              <h6>Scarlet Red 60 <span>#F0B6B4</span></h6>
+            </td>
+          </tr>
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-alloy-orange-10"></span>
+              <h6>Alloy Orange 10<span>#C07200</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-alloy-orange-20"></span>
+              <h6>Alloy Orange 20<span>#C98621</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-alloy-orange-30"></span>
+              <h6>Alloy Orange 30<span>#D39A42</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-alloy-orange-40"></span>
+              <h6>Alloy Orange 40<span>#DDAF63</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-alloy-orange-50"></span>
+              <h6>Alloy Orange 50<span>#E7C384</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-alloy-orange-60"></span>
+              <h6>Alloy Orange 60<span>#F1D8A6</span></h6>
+            </td>
+          </tr>
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-brown-10"></span>
+              <h6>Brown 10<span>#623C1C</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-brown-20"></span>
+              <h6>Brown 20<span>#79593D</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-brown-30"></span>
+              <h6>Brown 30<span>#90765F</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-brown-40"></span>
+              <h6>Brown 40<span>#A79380</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-brown-50"></span>
+              <h6>Brown 50<span>#BEB0A2</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-brown-60"></span>
+              <h6>Brown 60<span>#D6CDC4</span></h6>
+            </td>
+          </tr>
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-silver-grey-10"></span>
+              <h6>Silver Grey 10<span>#777777</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-silver-grey-20"></span>
+              <h6>Silver Grey 20<span>#8A8A8A</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-silver-grey-30"></span>
+              <h6>Silver Grey 30<span>#9D9D9D</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-silver-grey-40"></span>
+              <h6>Silver Grey 40<span>#B1B1B1</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-silver-grey-50"></span>
+              <h6>Silver Grey 50<span>#C4C4C4</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-silver-grey-60"></span>
+              <h6>Silver Grey 60<span>#D8D8D8</span></h6>
+            </td>
+          </tr>
+          <tr>
+            <td width="20%">
+              <span class="pallete-block bg-dark-grey-10"></span>
+              <h6>Dark Grey 10<span>#414343</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-dark-grey-20"></span>
+              <h6>Dark Grey 20<span>#4D4F4F</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-dark-grey-30"></span>
+              <h6>Dark Grey 30<span>#5A5B5B</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-dark-grey-40"></span>
+              <h6>Dark Grey 40<span>#676868</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-dark-grey-50"></span>
+              <h6>Dark Grey 50<span>#747474</span></h6>
+            </td>
+            <td width="20%">
+              <span class="pallete-block bg-dark-grey-60"></span>
+              <h6>Dark Grey 60<span>#818181</span></h6>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+
+</section>
+
+<div class="row">
+  <div class="span16">
+    <div class="page-header">
+    <h1>textures </h1>
+    </div>
+    <div class="row">
+      <div class="span6">
+        To fill out background with a texture use <code>.textured</code> class on wells, tables or any appropriate element.
+      </div>
+      <div class="span9 offset1">
+        <div class="textured" style="padding: 20px 20px 1px 20px">
+          <div class="well textured">
+            <h3>Hello, world</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="span6">
+        For alternative well use <code>.on-top</code> class for the "on top" effect with outer shadow.
+      </div>
+      <div class="span9 offset1">
+        <div class="textured" style="padding: 20px 20px 1px 20px">
+          <div class="well bg-white on-top">
+            <h3>Hello, world</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="typography">
+  <div class="page-header">
+    <h1>typography <small>headings, paragraphs, lists, and other inline type elements</small></h1>
+  </div>
+  <h2>Headings &amp; body copy</h2>
+  <div class="row">
+    <div class="span5">
+      <h3>Inset Shadow</h3>
+      <p>For the inset shadows for the headings add <code>.inset</code> class to the header tag</p>
+      <h1 class="inset">Inset Shadow</h1>
+    </div>
+    <div class="span6">
+      <h3>Example body text</h3>
+      <p>
+        Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
+        montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+      </p>
+      <h3>Lead body copy</h3>
+      <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+      <p class="lead">
+        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+      </p>
+    </div>
+    <div class="span5">
+      <div class="well textured">
+        <h1>h1. Heading 1</h1>
+        <h2>h2. Heading 2</h2>
+        <h3>h3. Heading 3</h3>
+        <h4>h4. Heading 4</h4>
+        <h5>h5. Heading 5</h5>
+        <h6>h6. Heading 6</h6>
+      </div>
+    </div>
+  </div>
+  <h2>Emphasis, address, and abbreviation</h2>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Element</th>
+        <th>Usage</th>
+        <th>Optional</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <code>&lt;strong&gt;</code>
+        </td>
+        <td>
+          For emphasizing a snippet of text with <strong>important</strong>
+        </td>
+        <td>
+          <span class="muted">None</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>&lt;em&gt;</code>
+        </td>
+        <td>
+          For emphasizing a snippet of text with <em>stress</em>
+        </td>
+        <td>
+          <span class="muted">None</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>&lt;abbr&gt;</code>
+        </td>
+        <td>
+          Wraps abbreviations and acronyms to show the expanded version on hover
+        </td>
+        <td>
+          <p>Include optional <code>title</code> attribute for expanded text</p>
+          Use <code>.initialism</code> class for uppercase abbreviations.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>&lt;address&gt;</code>
+        </td>
+        <td>
+          For contact information for its nearest ancestor or the entire body of work
+        </td>
+        <td>
+          Preserve formatting by ending all lines with <code>&lt;br&gt;</code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="row">
+    <div class="span5">
+      <h3>Using emphasis</h3>
+      <p><a href="#">
+        Fusce dapibus</a>, <strong>tellus ac cursus commodo</strong>, <em>tortor mauris condimentum nibh</em>, ut
+        fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra
+        augue.
+      </p>
+      <p>
+        <strong>Note:</strong> Feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5, but their
+        usage has changed a bit. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying
+        additional importance while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.
+      </p>
+    </div>
+    <div class="span5">
+      <h3>Example addresses</h3>
+      <p>Here are two examples of how the <code>&lt;address&gt;</code> tag can be used:</p>
+      <address>
+        <strong>Twitter, Inc.</strong><br>
+        795 Folsom Ave, Suite 600<br>
+        San Francisco, CA 94107<br>
+        <abbr title="Phone">P:</abbr> (123) 456-7890
+      </address>
+      <address>
+        <strong>Full Name</strong><br>
+        <a href="mailto:#">first.last@gmail.com</a>
+      </address>
+    </div>
+    <div class="span6">
+      <h3>Example abbreviations</h3>
+      <p>
+        Abbreviations with a <code>title</code> attribute have a light dotted bottom border and a help cursor on hover.
+        This gives users extra indication something will be shown on hover.
+      </p>
+      <p>
+        Add the <code>initialism</code> class to an abbreviation to increase typographic harmony by giving it a
+        slightly smaller text size.
+      </p>
+      <p>
+        <abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.
+      </p>
+      <p>
+        An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.
+      </p>
+    </div>
+  </div>
+  <h2>Blockquotes</h2>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Element</th>
+        <th>Usage</th>
+        <th>Optional</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <code>&lt;blockquote&gt;</code>
+        </td>
+        <td>
+          Block-level element for quoting content from another source
+        </td>
+        <td>
+          <p>Add <code>cite</code> attribute for source URL</p>
+          Use <code>.pull-left</code> and <code>.pull-right</code> classes for floated options
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <code>&lt;small&gt;</code>
+        </td>
+        <td>
+          Optional element for adding a user-facing citation, typically an author with title of work
+        </td>
+        <td>
+          Place the <code>&lt;cite&gt;</code> around the title or name of source
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="row">
+    <div class="span6">
+      <p>
+        To include a blockquote, wrap <code>&lt;blockquote&gt;</code> around any
+        <abbr title="HyperText Markup Language">HTML</abbr> as the quote. For straight quotes we recommend a
+        <code>&lt;p&gt;</code>.
+      </p>
+      <p>
+        Include an optional <code>&lt;small&gt;</code> element to cite your source and you'll get an em dash
+        <code>&amp;mdash;</code> before it for styling purposes.
+      </p>
+    </div>
+    <div class="span10">
+      <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;blockquote&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</span><span class="tag">&lt;/p&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;small&gt;</span><span class="pln">Someone famous</span><span class="tag">&lt;/small&gt;</span></li><li class="L3"><span class="tag">&lt;/blockquote&gt;</span></li></ol></pre>
+    </div>
+  </div>
+  <h3>Example blockquotes</h3>
+  <div class="row">
+    <div class="span8">
+      <p>Default blockquotes are styled as such:</p>
+      <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
+        <small>Someone famous in <cite title="">Body of work</cite></small>
+      </blockquote>
+    </div>
+    <div class="span8">
+      <p>To float your blockquote to the right, add <code>class="pull-right"</code>:</p>
+      <blockquote class="pull-right">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
+        <small>Someone famous in <cite title="">Body of work</cite></small>
+      </blockquote>
+    </div>
+  </div>
+  <h2>Lists</h2>
+  <div class="row">
+    <div class="span6">
+      <h3>Unordered</h3>
+      <p><code>&lt;ul&gt;</code></p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
+        <li>Nulla volutpat aliquam velit
+          <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+          </ul>
+        </li>
+        <li>Faucibus porta lacus fringilla vel</li>
+        <li>Aenean sit amet erat nunc</li>
+        <li>Eget porttitor lorem</li>
+      </ul>
+    </div>
+    <div class="span6">
+      <h3>Unstyled</h3>
+      <p><code>&lt;ul class="unstyled"&gt;</code></p>
+      <ul class="unstyled">
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
+        <li>Nulla volutpat aliquam velit
+          <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+          </ul>
+        </li>
+        <li>Faucibus porta lacus fringilla vel</li>
+        <li>Aenean sit amet erat nunc</li>
+        <li>Eget porttitor lorem</li>
+      </ul>
+    </div>
+    <div class="span4">
+      <h3>Ordered</h3>
+      <p><code>&lt;ol&gt;</code></p>
+      <ol>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
+        <li>Nulla volutpat aliquam velit</li>
+        <li>Faucibus porta lacus fringilla vel</li>
+        <li>Aenean sit amet erat nunc</li>
+        <li>Eget porttitor lorem</li>
+      </ol>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="span6">
+      <h3>Description</h3>
+      <p><code>&lt;dl&gt;</code></p>
+      <dl>
+        <dt>Description lists</dt>
+        <dd>A description list is perfect for defining terms.</dd>
+        <dt>Euismod</dt>
+        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+        <dt>Malesuada porta</dt>
+        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+      </dl>
+    </div>
+    <div class="span10">
+      <h3>Horizontal description</h3>
+      <p><code>&lt;dl class="dl-horizontal"&gt;</code></p>
+      <dl class="dl-horizontal">
+        <dt>Description lists</dt>
+        <dd>A description list is perfect for defining terms.</dd>
+        <dt>Euismod</dt>
+        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+        <dt>Malesuada porta</dt>
+        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+        <dt>Felis euismod semper eget lacinia</dt>
+        <dd>
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
+          risus.
+        </dd>
+      </dl>
+      <hr>
+      <p>
+        <span class="label label-info">Heads up!</span>
+        Horizontal description lists will truncate terms that are too long to fit in the left column fix
+        <code>text-overflow</code>. In narrower viewports, they will change to the default stacked layout.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="forms">
+  <div class="page-header">
+    <h1>Forms</h1>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <h2>Flexible HTML and CSS</h2>
+      <p>
+          The best part about forms in Bootstrap is that all your inputs and controls look great no matter how you
+          build them in your markup. No superfluous HTML is required, but we provide the patterns for those who require
+          it.
+      </p>
+      <p>
+          More complicated layouts come with succinct and scalable classes for easy styling and event binding, so
+          you're covered at every step.
+      </p>
+    </div>
+    <div class="span5">
+      <h2>Four layouts included</h2>
+      <p>Bootstrap comes with support for four types of form layouts:</p>
+      <ul>
+        <li>Vertical (default)</li>
+        <li>Search</li>
+        <li>Inline</li>
+        <li>Horizontal</li>
+      </ul>
+      <p>
+          Different types of form layouts require some changes to markup, but the controls themselves remain and behave
+          the same.
+      </p>
+    </div>
+    <div class="span6">
+      <h2>Control states and more</h2>
+      <p>
+          Bootstrap's forms include styles for all the base form controls like input, textarea, and select you'd
+          expect. But it also comes with a number of custom components like appended and prepended inputs and support
+          for lists of checkboxes.
+      </p>
+      <p>
+          States like error, warning, and success are included for each type of form control. Also included are styles
+          for disabled controls.
+      </p>
+    </div>
+  </div>
+
+  <h2>Four types of forms</h2>
+  <p>Bootstrap provides simple markup and styles for four styles of common web forms.</p>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Vertical (default)</th>
+        <td><code>.form-vertical</code> <span class="muted">(not required)</span></td>
+        <td>Stacked, left-aligned labels over controls</td>
+      </tr>
+      <tr>
+        <th>Inline</th>
+        <td><code>.form-inline</code></td>
+        <td>Left-aligned label and inline-block controls for compact style</td>
+      </tr>
+      <tr>
+        <th>Search</th>
+        <td><code>.form-search</code></td>
+        <td>Extra-rounded text input for a typical search aesthetic</td>
+      </tr>
+      <tr>
+        <th>Horizontal</th>
+        <td><code>.form-horizontal</code></td>
+        <td>Float left, right-aligned labels on same line as controls</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Example form</h2>
+  <div class="row">
+    <div class="span8">
+      <h3>Basic form</h3>
+      <div class="well textured">
+      <form class="form-horizontal" id="user-password-form">
+      <div class="control-group">
+        <label class="control-label" for="user_current_password">Current password:</label>
+        <input type="password" name="current_password" class="input-large" id="user_current_password">
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="user_password">New password:</label>
+        <input type="password" name="password" class="input-large" id="user_password">
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="user_password_confirmation">Confirm password:</label>
+        <input type="password" name="password_confirmation" class="input-large" id="user_password_confirmation">
+      </div>
+
+      <div class="form-actions textured clearfix">
+        <button class="btn submit btn-primary btn-mini">Change password</button>
+      </div>
+    </form>
+  </div>
+    </div>
+
+    <div class="span8">
+      <h3>Inputs</h3>
+      <form class="form-horizontal">
+      <div class="control-group">
+        <div class="controls">
+          <input type="text" placeholder="Edit box" class="input-large">
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <input type="text" disabled="disabled" placeholder="Edit box" class="input-large disabled">
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <input type="text" placeholder="Edit box with shadow" class="with-shadow input-large">
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <input type="text" placeholder="Edit box with round borders" class="rounded input-large">
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <input type="text" placeholder="Alternative input" class="alt-field input-large">
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <div class="prepend-icon">
+            <i class="icon-small-user-icon icon-grey"></i>
+            <input type="text" placeholder="Prepend icon" class="input-large">
+          </div>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls error">
+          <input type="text" placeholder="Error" class="input-large">
+          <span class="msg">Error</span>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls success">
+          <input type="text" placeholder="Success" class="input-large">
+          <span class="msg">Success</span>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls pending">
+          <input type="text" placeholder="Pending" class="input-large">
+          <span class="msg">Pending</span>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+
+  <br>
+</section>
+
+<section id="buttons">
+  <div class="page-header">
+    <h1>Buttons</h1>
+  </div>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Button</th>
+        <th>class=""</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><button class="btn" href="#">Default</button></td>
+        <td><code>btn</code></td>
+        <td>Standard grey button with gradient</td>
+      </tr>
+      <tr>
+        <td><button class="btn rounded">Rounded</button></td>
+        <td><code>btn rounded</code></td>
+        <td>Standard grey button with rounded corners</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-primary" href="#">Primary</button></td>
+        <td><code>btn btn-primary</code></td>
+        <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-primary"><i class="icon-small-download icon-white"></i> Download</button></td>
+        <td><code>btn btn-primary</code></td>
+        <td>Primary action button with an icon</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-info" href="#">Info</button></td>
+        <td><code>btn btn-info</code></td>
+        <td>Used as an alternative to the default styles</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-success" href="#">Success</button></td>
+        <td><code>btn btn-success</code></td>
+        <td>Indicates a successful or positive action</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-warning" href="#">Warning</button></td>
+        <td><code>btn btn-warning</code></td>
+        <td>Indicates caution should be taken with this action</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-danger" href="#">Danger</button></td>
+        <td><code>btn btn-danger</code></td>
+        <td>Indicates a dangerous or potentially negative action</td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-inverse" href="#">Inverse</button></td>
+        <td><code>btn btn-inverse</code></td>
+        <td>Alternate dark grey button, not tied to a semantic action or use</td>
+      </tr>
+      <tr>
+        <td><button class="btn circle-btn"><i class="icon-small-calendar icon-grey"><!-- --></i></button></td>
+        <td><code>btn circle-btn</code></td>
+        <td>Circle button</td>
+      </tr>      
+      <tr>
+        <td><div class="btn-icon"><i class="icon-large-dashboard icon-grey"><!-- --></i></div></td>
+        <td><code>btn-icon</code></td>
+        <td>Square icon</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="row">
+    <div class="span5">
+      <h3>Buttons for actions</h3>
+      <p>
+          As a convention, buttons should only be used for actions while hyperlinks are to be used for objects. For
+          instance, "Download" should be a button while "recent activity" should be a link.
+      </p>
+      <p>
+          Button styles can be applied to anything with the <code>.btn</code> class applied. However, typically you'll
+          want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements.
+      </p>
+      <h3>Cross browser compatibility</h3>
+      <p>
+          IE9 doesn't crop background gradients on rounded corners, so we remove it. Related, IE9 jankifies disabled
+          <code>button</code> elements, rendering text grey with a nasty text-shadow that we cannot fix.
+      </p>
+    </div>
+    <div class="span5">
+      <h3>Multiple sizes</h3>
+      <p>
+          Fancy larger or smaller buttons? Add <code>.btn-large</code>, <code>.btn-small</code>, or
+          <code>.btn-mini</code> for two additional sizes.
+      </p>
+      <p>
+        <button class="btn btn-large btn-primary">Primary action</button>
+        <button class="btn btn-large">Action</button>
+      </p>
+      <p>
+        <button class="btn btn-small btn-primary">Primary action</button>
+        <button class="btn btn-small">Action</button>
+      </p>
+      <p>
+        <button class="btn btn-mini btn-primary">Primary action</button>
+        <button class="btn btn-mini">Action</button>
+      </p>
+      <br>
+      <h3>Disabled state</h3>
+      <p>
+          For disabled buttons, add the <code>.disabled</code> class to links and the <code>disabled</code> attribute
+          for <code>&lt;button&gt;</code> elements.
+      </p>
+      <p>
+        <a href="#" class="btn btn-large btn-primary disabled">Primary link</a>
+        <a href="#" class="btn btn-large disabled">Link</a>
+      </p>
+      <p style="margin-bottom: 18px;">
+        <button class="btn btn-large btn-primary disabled" disabled="disabled">Primary button</button>
+        <button class="btn btn-large" disabled="">Button</button>
+      </p>
+      <p>
+        <span class="label label-info">Heads up!</span>
+        We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no
+        prefix is required.
+      </p>
+    </div>
+    <div class="span6">
+      <h3>One class, multiple tags</h3>
+      <p>
+          Use the <code>.btn</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or
+          <code>&lt;input&gt;</code> element.
+      </p>
+      <form>
+        <a class="btn" href="">Link</a>
+        <button class="btn" type="submit">Button</button>
+        <input class="btn" type="button" value="Input">
+        <input class="btn" type="submit" value="Submit">
+      </form>
+      <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Link</span><span class="tag">&lt;/a&gt;</span></li><li class="L1"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">  Button</span></li><li class="L3"><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span></li><li class="L5"><span class="pln">         </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Input"</span><span class="tag">&gt;</span></li><li class="L6"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span></li><li class="L7"><span class="pln">         </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Submit"</span><span class="tag">&gt;</span></li></ol></pre>
+      <p>
+          As a best practice, try to match the element for you context to ensure matching cross-browser rendering. If
+          you have an <code>input</code>, use an <code>&lt;input type="submit"&gt;</code> for your button.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="icons">
+  <div class="page-header">
+    <h1>Icons</h1>
+  </div>
+ 
+   <div class="row">
+    <div class="span4">
+      <ul class="the-icons small-icons">
+        <li><i class="icon-small-add-chat"></i> <span>icon-small-add-chat</span></li>
+        <li><i class="icon-small-add-doc"></i> <span>icon-small-add-doc</span></li>
+        <li><i class="icon-small-add-image"></i> <span>icon-small-add-image</span></li>
+        <li><i class="icon-small-add-product"></i> <span>icon-small-add-product</span></li>
+        <li><i class="icon-small-add-tag"></i> <span>icon-small-add-tag</span></li>
+        <li><i class="icon-small-add-user"></i> <span>icon-small-add-user</span></li>
+        <li><i class="icon-small-add-video"></i> <span>icon-small-add-video</span></li>
+        <li><i class="icon-small-add-window"></i> <span>icon-small-add-window</span></li>
+        <li><i class="icon-small-adress-book"></i> <span>icon-small-adress-book</span></li>
+        <li><i class="icon-small-alert"></i> <span>icon-small-alert</span></li>
+        <li><i class="icon-small-align-center"></i> <span>icon-small-align-center</span></li>
+        <li><i class="icon-small-align-left"></i> <span>icon-small-align-left</span></li>
+        <li><i class="icon-small-align-right"></i> <span>icon-small-align-right</span></li>
+        <li><i class="icon-small-arrow-circle-down"></i> <span>icon-small-arrow-circle-down</span></li>
+        <li><i class="icon-small-arrow-circle-left"></i> <span>icon-small-arrow-circle-left</span></li>
+        <li><i class="icon-small-arrow-circle-right"></i> <span>icon-small-arrow-circle-right</span></li>
+        <li><i class="icon-small-arrow-circle-top"></i> <span>icon-small-arrow-circle-top</span></li>
+        <li><i class="icon-small-arrow-left"></i> <span>icon-small-arrow-left</span></li>
+        <li><i class="icon-small-arrow-right"></i> <span>icon-small-arrow-right</span></li>
+        <li><i class="icon-small-attach"></i> <span>icon-small-attach</span></li>
+        <li><i class="icon-small-attention"></i> <span>icon-small-attention</span></li>
+        <li><i class="icon-small-bag"></i> <span>icon-small-bag</span></li>
+        <li><i class="icon-small-baloon"></i> <span>icon-small-baloon</span></li>
+        <li><i class="icon-small-baloon-question"></i> <span>icon-small-baloon-question</span></li>
+        <li><i class="icon-small-bell"></i> <span>icon-small-bell</span></li>
+        <li><i class="icon-small-binoculars"></i> <span>icon-small-binoculars</span></li>
+        <li><i class="icon-small-book"></i> <span>icon-small-book</span></li>
+        <li><i class="icon-small-book2"></i> <span>icon-small-book2</span></li>
+        <li><i class="icon-small-box"></i> <span>icon-small-box</span></li>
+        <li><i class="icon-small-break"></i> <span>icon-small-break</span></li>
+        <li><i class="icon-small-brush"></i> <span>icon-small-brush</span></li>
+        <li><i class="icon-small-bug"></i> <span>icon-small-bug</span></li>
+        <li><i class="icon-small-building"></i> <span>icon-small-building</span></li>
+        <li><i class="icon-small-building2"></i> <span>icon-small-building2</span></li>
+        <li><i class="icon-small-businessman"></i> <span>icon-small-businessman</span></li>
+        <li><i class="icon-small-bulb"></i> <span>icon-small-bulb</span></li>
+        <li><i class="icon-small-bulb-off"></i> <span>icon-small-bulb-off</span></li>
+        <li><i class="icon-small-bulb-shine"></i> <span>icon-small-bulb-shine</span></li>
+        <li><i class="icon-small-bus"></i> <span>icon-small-bus</span></li>
+        <li><i class="icon-small-calc"></i> <span>icon-small-calc</span></li>
+        <li><i class="icon-small-case"></i> <span>icon-small-case</span></li>
+        <li><i class="icon-small-calendar"></i> <span>icon-small-calendar</span></li>
+        <li><i class="icon-small-chart"></i> <span>icon-small-chart</span></li>
+        <li><i class="icon-small-chat"></i> <span>icon-small-chat</span></li>
+        <li><i class="icon-small-check-mark0"></i> <span>icon-small-check-mark0</span></li>
+        <li><i class="icon-small-check-mark1"></i> <span>icon-small-check-mark1</span></li>
+        <li><i class="icon-small-check-mark2"></i> <span>icon-small-check-mark2</span></li>
+        <li><i class="icon-small-check-mark3"></i> <span>icon-small-check-mark3</span></li>
+        <li><i class="icon-small-circle-cross"></i> <span>icon-small-circle-cross</span></li>
+        <li><i class="icon-small-clipboard"></i> <span>icon-small-clipboard</span></li>
+      </ul>
+    </div>
+
+    <div class="span4">
+      <ul class="the-icons small-icons">
+        <li><i class="icon-small-clock"></i> <span>icon-small-clock</span></li>
+        <li><i class="icon-small-cloud"></i> <span>icon-small-cloud</span></li>
+        <li><i class="icon-small-code"></i> <span>icon-small-code</span></li>
+        <li><i class="icon-small-color-picker"></i> <span>icon-small-color-picker</span></li>
+        <li><i class="icon-small-computer"></i> <span>icon-small-computer</span></li>
+        <li><i class="icon-small-console"></i> <span>icon-small-console</span></li>
+        <li><i class="icon-small-cross"></i> <span>icon-small-cross</span></li>
+        <li><i class="icon-small-cross-small"></i> <span>icon-small-cross-small</span></li>
+        <li><i class="icon-small-darts-board"></i> <span>icon-small-darts-board</span></li>
+        <li><i class="icon-small-dashboard"></i> <span>icon-small-dashboard</span></li>
+        <li><i class="icon-small-database"></i> <span>icon-small-database</span></li>
+        <li><i class="icon-small-deer"></i> <span>icon-small-deer</span></li>
+        <li><i class="icon-small-doc"></i> <span>icon-small-doc</span></li>
+        <li><i class="icon-small-docs"></i> <span>icon-small-docs</span></li>
+        <li><i class="icon-small-download"></i> <span>icon-small-download</span></li>
+        <li><i class="icon-small-embed"></i> <span>icon-small-embed</span></li>
+        <li><i class="icon-small-end"></i> <span>icon-small-end</span></li>
+        <li><i class="icon-small-expand"></i> <span>icon-small-expand</span></li>
+        <li><i class="icon-small-eye"></i> <span>icon-small-eye</span></li>
+        <li><i class="icon-small-fire"></i> <span>icon-small-fire</span></li>
+        <li><i class="icon-small-flag"></i> <span>icon-small-flag</span></li>
+        <li><i class="icon-small-folder"></i> <span>icon-small-folder</span></li>
+        <li><i class="icon-small-fullscreen"></i> <span>icon-small-fullscreen</span></li>
+        <li><i class="icon-small-fullscreen2"></i> <span>icon-small-fullscreen2</span></li>
+        <li><i class="icon-small-fwd"></i> <span>icon-small-fwd</span></li>
+        <li><i class="icon-small-game-console"></i> <span>icon-small-game-console</span></li>
+        <li><i class="icon-small-get-from-cloud"></i> <span>icon-small-get-from-cloud</span></li>
+        <li><i class="icon-small-globe"></i> <span>icon-small-globe</span></li>
+        <li><i class="icon-small-globe2"></i> <span>icon-small-globe2</span></li>
+        <li><i class="icon-small-group-icon"></i> <span>icon-small-group-icon</span></li>
+        <li><i class="icon-small-hand"></i> <span>icon-small-hand</span></li>
+        <li><i class="icon-small-headphones"></i> <span>icon-small-headphones</span></li>
+        <li><i class="icon-small-heart"></i> <span>icon-small-heart</span></li>
+        <li><i class="icon-small-heart-empty"></i> <span>icon-small-heart-empty</span></li>
+        <li><i class="icon-small-home"></i> <span>icon-small-home</span></li>
+        <li><i class="icon-small-image"></i> <span>icon-small-image</span></li>
+        <li><i class="icon-small-info"></i> <span>icon-small-info</span></li>
+        <li><i class="icon-small-ipad"></i> <span>icon-small-ipad</span></li>
+        <li><i class="icon-small-iphone"></i> <span>icon-small-iphone</span></li>
+        <li><i class="icon-small-key"></i> <span>icon-small-key</span></li>
+        <li><i class="icon-small-laughing"></i> <span>icon-small-laughing</span></li>
+        <li><i class="icon-small-layers"></i> <span>icon-small-layers</span></li>
+        <li><i class="icon-small-like"></i> <span>icon-small-like</span></li>
+        <li><i class="icon-small-line-chart"></i> <span>icon-small-line-chart</span></li>
+        <li><i class="icon-small-link"></i> <span>icon-small-link</span></li>
+        <li><i class="icon-small-list"></i> <span>icon-small-list</span></li>
+        <li><i class="icon-small-location"></i> <span>icon-small-location</span></li>
+        <li><i class="icon-small-location-place"></i> <span>icon-small-location-place</span></li>
+        <li><i class="icon-small-lock"></i> <span>icon-small-lock</span></li>
+        <li><i class="icon-small-magic-wand"></i> <span>icon-small-magic-wand</span></li>
+      </ul>
+    </div>
+
+    <div class="span4">
+      <ul class="the-icons small-icons">
+        <li><i class="icon-small-mail"></i> <span>icon-small-mail</span></li>
+        <li><i class="icon-small-melody"></i> <span>icon-small-melody</span></li>
+        <li><i class="icon-small-melody2"></i> <span>icon-small-melody2</span></li>
+        <li><i class="icon-small-mic"></i> <span>icon-small-mic</span></li>
+        <li><i class="icon-small-mobile"></i> <span>icon-small-mobile</span></li>
+        <li><i class="icon-small-modern-camera"></i> <span>icon-small-modern-camera</span></li>
+        <li><i class="icon-small-more"></i> <span>icon-small-more</span></li>
+        <li><i class="icon-small-movie"></i> <span>icon-small-movie</span></li>
+        <li><i class="icon-small-new-mail"></i> <span>icon-small-new-mail</span></li>
+        <li><i class="icon-small-note"></i> <span>icon-small-note</span></li>
+        <li><i class="icon-small-notebook"></i> <span>icon-small-notebook</span></li>
+        <li><i class="icon-small-pages"></i> <span>icon-small-pages</span></li>
+        <li><i class="icon-small-pause"></i> <span>icon-small-pause</span></li>
+        <li><i class="icon-small-pause-circle"></i> <span>icon-small-pause-circle</span></li>
+        <li><i class="icon-small-pencil"></i> <span>icon-small-pencil</span></li>
+        <li><i class="icon-small-phone"></i> <span>icon-small-phone</span></li>
+        <li><i class="icon-small-phone-book"></i> <span>icon-small-phone-book</span></li>
+        <li><i class="icon-small-photo"></i> <span>icon-small-photo</span></li>
+        <li><i class="icon-small-picture"></i> <span>icon-small-picture</span></li>
+        <li><i class="icon-small-pie-chart"></i> <span>icon-small-pie-chart</span></li>
+        <li><i class="icon-small-pin"></i> <span>icon-small-pin</span></li>
+        <li><i class="icon-small-plane"></i> <span>icon-small-plane</span></li>
+        <li><i class="icon-small-plastic-card"></i> <span>icon-small-plastic-card</span></li>
+        <li><i class="icon-small-play"></i> <span>icon-small-play</span></li>
+        <li><i class="icon-small-play-circle"></i> <span>icon-small-play-circle</span></li>
+        <li><i class="icon-small-plus"></i> <span>icon-small-plus</span></li>
+        <li><i class="icon-small-plus2"></i> <span>icon-small-plus2</span></li>
+        <li><i class="icon-small-pointer-bottom"></i> <span>icon-small-pointer-bottom</span></li>
+        <li><i class="icon-small-pointer-left"></i> <span>icon-small-pointer-left</span></li>
+        <li><i class="icon-small-pointer-right"></i> <span>icon-small-pointer-right</span></li>
+        <li><i class="icon-small-pointer-top"></i> <span>icon-small-pointer-top</span></li>
+        <li><i class="icon-small-pop-up-video"></i> <span>icon-small-pop-up-video</span></li>
+        <li><i class="icon-small-power"></i> <span>icon-small-power</span></li>
+        <li><i class="icon-small-presentation"></i> <span>icon-small-presentation</span></li>
+        <li><i class="icon-small-print"></i> <span>icon-small-print</span></li>
+        <li><i class="icon-small-private"></i> <span>icon-small-private</span></li>
+        <li><i class="icon-small-put-in-cloud"></i> <span>icon-small-put-in-cloud</span></li>
+        <li><i class="icon-small-question"></i> <span>icon-small-question</span></li>
+        <li><i class="icon-small-quill"></i> <span>icon-small-quill</span></li>
+        <li><i class="icon-small-reload"></i> <span>icon-small-reload</span></li>
+        <li><i class="icon-small-remove-chat"></i> <span>icon-small-remove-chat</span></li>
+        <li><i class="icon-small-remove-doc"></i> <span>icon-small-remove-doc</span></li>
+        <li><i class="icon-small-remove-image"></i> <span>icon-small-remove-image</span></li>
+        <li><i class="icon-small-remove-product"></i> <span>icon-small-remove-product</span></li>
+        <li><i class="icon-small-remove-tag"></i> <span>icon-small-remove-tag</span></li>
+        <li><i class="icon-small-remove-user"></i> <span>icon-small-remove-user</span></li>
+        <li><i class="icon-small-remove-video"></i> <span>icon-small-remove-video</span></li>
+        <li><i class="icon-small-remove-window"></i> <span>icon-small-remove-window</span></li>
+        <li><i class="icon-small-return"></i> <span>icon-small-return</span></li>
+        <li><i class="icon-small-rev"></i> <span>icon-small-rev</span></li>
+      </ul>
+    </div>
+
+    <div class="span4">
+      <ul class="the-icons small-icons">
+        <li><i class="icon-small-rss"></i> <span>icon-small-rss</span></li>
+        <li><i class="icon-small-sad-smile"></i> <span>icon-small-sad-smile</span></li>
+        <li><i class="icon-small-schedule"></i> <span>icon-small-schedule</span></li>
+        <li><i class="icon-small-scissors"></i> <span>icon-small-scissors</span></li>
+        <li><i class="icon-small-search"></i> <span>icon-small-search</span></li>
+        <li><i class="icon-small-security"></i> <span>icon-small-security</span></li>
+        <li><i class="icon-small-secutity-ok"></i> <span>icon-small-secutity-ok</span></li>
+        <li><i class="icon-small-send"></i> <span>icon-small-send</span></li>
+        <li><i class="icon-small-settings"></i> <span>icon-small-settings</span></li>
+        <li><i class="icon-small-settings2"></i> <span>icon-small-settings2</span></li>
+        <li><i class="icon-small-share"></i> <span>icon-small-share</span></li>
+        <li><i class="icon-small-shit"></i> <span>icon-small-shit</span></li>
+        <li><i class="icon-small-shopping-bag"></i> <span>icon-small-shopping-bag</span></li>
+        <li><i class="icon-small-shopping-cart"></i> <span>icon-small-shopping-cart</span></li>
+        <li><i class="icon-small-shopping-cart-full"></i> <span>icon-small-shopping-cart-full</span></li>
+        <li><i class="icon-small-shopping-cart-in"></i> <span>icon-small-shopping-cart-in</span></li>
+        <li><i class="icon-small-shopping-cart-out"></i> <span>icon-small-shopping-cart-out</span></li>
+        <li><i class="icon-small-shorten"></i> <span>icon-small-shorten</span></li>
+        <li><i class="icon-small-smile"></i> <span>icon-small-smile</span></li>
+        <li><i class="icon-small-star"></i> <span>icon-small-star</span></li>
+        <li><i class="icon-small-start"></i> <span>icon-small-start</span></li>
+        <li><i class="icon-small-stop"></i> <span>icon-small-stop</span></li>
+        <li><i class="icon-small-support"></i> <span>icon-small-support</span></li>
+        <li><i class="icon-small-tag"></i> <span>icon-small-tag</span></li>
+        <li><i class="icon-small-tags"></i> <span>icon-small-tags</span></li>
+        <li><i class="icon-small-thumbnails"></i> <span>icon-small-thumbnails</span></li>
+        <li><i class="icon-small-thumbnails-large"></i> <span>icon-small-thumbnails-large</span></li>
+        <li><i class="icon-small-timer"></i> <span>icon-small-timer</span></li>
+        <li><i class="icon-small-trash"></i> <span>icon-small-trash</span></li>
+        <li><i class="icon-small-tv"></i> <span>icon-small-tv</span></li>
+        <li><i class="icon-small-unfullscreen"></i> <span>icon-small-unfullscreen</span></li>
+        <li><i class="icon-small-unfullscreen2"></i> <span>icon-small-unfullscreen2</span></li>
+        <li><i class="icon-small-unlike"></i> <span>icon-small-unlike</span></li>
+        <li><i class="icon-small-unlock"></i> <span>icon-small-unlock</span></li>
+        <li><i class="icon-small-update"></i> <span>icon-small-update</span></li>
+        <li><i class="icon-small-user"></i> <span>icon-small-user</span></li>
+        <li><i class="icon-small-user-icon"></i> <span>icon-small-user-icon</span></li>
+        <li><i class="icon-small-user-icon-girl"></i> <span>icon-small-user-icon-girl</span></li>
+        <li><i class="icon-small-users"></i> <span>icon-small-users</span></li>
+        <li><i class="icon-small-users-icon"></i> <span>icon-small-users-icon</span></li>
+        <li><i class="icon-small-video"></i> <span>icon-small-video</span></li>
+        <li><i class="icon-small-volume"></i> <span>icon-small-volume</span></li>
+        <li><i class="icon-small-volume-off"></i> <span>icon-small-volume-off</span></li>
+        <li><i class="icon-small-volume-off-circle"></i> <span>icon-small-volume-off-circle</span></li>
+        <li><i class="icon-small-volume-on-circle"></i> <span>icon-small-volume-on-circle</span></li>
+        <li><i class="icon-small-wallet"></i> <span>icon-small-wallet</span></li>
+        <li><i class="icon-small-web-camera"></i> <span>icon-small-web-camera</span></li>
+        <li><i class="icon-small-window"></i> <span>icon-small-window</span></li>
+        <li><i class="icon-small-zoom-in"></i> <span>icon-small-zoom-in</span></li>
+        <li><i class="icon-small-zoom-out"></i> <span>icon-small-zoom-out</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="span5">
+      <h3>Built as a sprite</h3>
+      <p>
+          Instead of making every icon an extra request, we've compiled them into a sprite—a bunch of images in one
+          file that uses CSS to position the images with <code>background-position</code>. This is the same method we
+          use on Twitter.com and it has worked well for us.
+      </p>
+      <p>
+          All icons classes are prefixed with <code>.icon-</code> for proper namespacing and scoping, much like our
+          other components. This will help avoid conflicts with other tools.
+      </p>
+    </div>
+    <div class="span6">
+      <h3>How to use</h3>
+      <p>
+          Bootstrap uses an <code>&lt;i&gt;</code> tag for all icons, but they have no case class—only a shared prefix.
+          To use, place the following code just about anywhere:
+      </p>
+      <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-small-pencil"</span><span class="tag">&gt;&lt;/i&gt;</span></li></ol></pre>
+      <p>There are also styles available for white and grey icons, made ready with one extra class:</p>
+      <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-small-pencil icon-white"</span><span class="tag">&gt;&lt;/i&gt;</span></li></ol></pre>
+      <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-small-pencil icon-grey"</span><span class="tag">&gt;&lt;/i&gt;</span></li></ol></pre>
+      <p>
+          There are 200 classes to choose from for your icons. Just add an <code>&lt;i&gt;</code> tag with the right
+          classes and you're set. You can find the full list in this document.
+      </p>
+      <p>
+        <span class="label label-info">Heads up!</span>
+        When using beside strings of text, as in buttons or nav links, be sure to leave a space after the
+        <code>&lt;i&gt;</code> tag for proper spacing.
+      </p>
+    </div>
+    <div class="span5">
+      <h3>Icons sizes</h3>
+      <h5>64 x 64 pixels</h5>
+      <pre class="prettyprint linenums"><ol class="linenums"><li><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon<b>-huge-</b>pencil"</span><span class="tag">&gt;&lt;/i&gt;</span></li></ol></pre>
+
+    <h5>32 x 32 pixels</h5>
+    <pre class="prettyprint linenums"><ol class="linenums"><li><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon<b>-large-</b>pencil"</span><span class="tag">&gt;&lt;/i&gt;</span></li></ol></pre>
+
+    <h5>16 x 16 pixels</h5>
+    <pre class="prettyprint linenums"><ol class="linenums"><li><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon<b>-small-</b>pencil"</span><span class="tag">&gt;&lt;/i&gt;</span></li></ol></pre>
+
+  </div>
+</div>
+
+  <br />
+
+  <h3>Examples</h3>
+  <p>Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs.</p>
+  <div class="row">
+    <div class="span8">
+      <div class="btn-toolbar" style="margin-bottom: 9px">
+        <div class="btn-group">
+          <a class="btn" href="#"><i class="icon-align-left"></i></a>
+          <a class="btn" href="#"><i class="icon-align-center"></i></a>
+          <a class="btn" href="#"><i class="icon-align-right"></i></a>
+          <a class="btn" href="#"><i class="icon-align-justify"></i></a>
+        </div>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> User</a>
+          <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
+            <li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+            <li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="i"></i> Make admin</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        <a class="btn" href="#"><i class="icon-refresh"></i> Refresh</a>
+        <a class="btn btn-success" href="#"><i class="icon-shopping-cart icon-white"></i> Checkout</a>
+        <a class="btn btn-danger" href="#"><i class="icon-trash icon-white"></i> Delete</a>
+      </p>
+      <p>
+        <a class="btn btn-large" href="#"><i class="icon-comment"></i> Comment</a>
+        <a class="btn btn-small" href="#"><i class="icon-cog"></i> Settings</a>
+        <a class="btn btn-small btn-info" href="#"><i class="icon-info-sign icon-white"></i> More Info</a>
+      </p>
+    </div>
+    <div class="span8">
+      <form>
+        <div class="control-group">
+          <label class="control-label" for="inputIcon">Email address</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on"><i class="icon-envelope"></i></span><input class="span2" id="inputIcon" type="text">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

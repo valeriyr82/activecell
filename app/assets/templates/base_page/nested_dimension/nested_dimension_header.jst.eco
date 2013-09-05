@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="span4 search-box-container-top"></div>
+  <div class="span6 align-right">
+    <!--  Allow this if no toggle buttons included -->
+    <!--
+    <% if @flags.allowAdd: %>
+      <button class="btn btn-mini btn-add-dimension">add <%= @flags.parentDimension %></button>
+      <input type="text" class="hide text-add-dimension input-medium"  placeholder="type <%= @flags.parentDimension %> name">
+    <% end %>    
+    -->
+
+    <% if @flags.allowToggle: %>
+      <div class="btn-group" id="toggle-view-button">
+        <% if @flags.parentDimension is 'segment': %>
+          <button class="btn btn-mini" id="btn-view-channel">view by channel</button>
+          <button class="btn btn-mini active" id="btn-view-segment">view by segment</button>
+        <% else: %>
+          <button class="btn btn-mini active" id="btn-view-channel">view by channel</button>
+          <button class="btn btn-mini" id="btn-view-segment">view by segment</button>
+        <% end %>
+      </div>
+    <% end %>
+    <% if @flags.allowSelect: %>
+      <select class="select-account-type">
+        <option selected value="<%= @flags.selectDimension %>"><%= @flags.selectDimension %></option>
+        <option disabled>Select an account type:</option>
+          <% for item in @flags.selectMass: %>
+            <% if item isnt @flags.selectDimension: %>
+            <option value="<%= item %>"><%= item %></option>
+            <% end %>
+          <% end %>
+      </select>
+    <% end %>
+
+  </div>
+</div>

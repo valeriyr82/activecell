@@ -1,0 +1,36 @@
+<div class="row company-logo-inner">
+  <div class="span2 pull-left logo-links">
+    <h5 class="logo-section-header">logo</h5>
+  </div>
+
+  <div class="span3 pull-right">
+    <form id="fileupload" action="/api/v1/company_branding" method="PUT" enctype="multipart/form-data">
+      <div class="row fileupload-buttonbar">
+          <span class='error'></span>
+          <span class="btn btn-small fileinput-button">
+            <i class="icon-plus icon-white"></i>
+            <span class="small-font">upload company logo</span>
+            <input type="file" name="company_branding[logo]" id="company_logo">
+          </span>
+      </div>
+    </form>
+
+    <p class="clear-logo-link">
+      <% if @logo_file_name: %>
+        <a href="#settings/company" class="revert-original-state">clear logo</a>
+      <% else: %>
+        <a href="#settings/company" class="revert-original-state" style="display: none">clear logo</a>
+      <% end %>
+    </p>
+
+
+    <p class="logo-container">
+      <% if @logo_file_name: %>
+        <img src="<%= @logo_url %>" class='logo'/>
+      <% else: %>
+        <span class='logo placeholder'></span>
+      <% end %>
+    </p>
+  </div>
+</div>
+<span class='error'></span>

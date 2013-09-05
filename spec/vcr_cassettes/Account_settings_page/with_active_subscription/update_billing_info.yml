@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dd9e07b6afb84b0e8e31fefc56126c6e:@api.recurly.com/v2/recurly_js/result/99624fdb4af045eda32aa051dcfcc394
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      User-Agent:
+      - Recurly/2.1.5; ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-linux]
+      Accept-Language:
+      - !binary |-
+        ZW4tVVMsKg==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 24 Jun 2012 18:56:15 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Content-Language:
+      - en-US
+      Etag:
+      - ! '"7cf9b6c9a5bd1979082bb50537f45e67"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<billing_info href=\"https://api.recurly.com/v2/accounts/4fe7503476368bfc04000008@recurly/billing_info\"
+        type=\"credit_card\">\n  <account href=\"https://api.recurly.com/v2/accounts/4fe7503476368bfc04000008@recurly\"/>\n
+        \ <first_name>Luke </first_name>\n  <last_name>Ban</last_name>\n  <company
+        nil=\"nil\"></company>\n  <address1>zvcx</address1>\n  <address2></address2>\n
+        \ <city>zxcv</city>\n  <state></state>\n  <zip>123</zip>\n  <country>PL</country>\n
+        \ <phone nil=\"nil\"></phone>\n  <vat_number nil=\"nil\"></vat_number>\n  <ip_address>83.142.184.138</ip_address>\n
+        \ <ip_address_country>PL</ip_address_country>\n  <card_type>Visa</card_type>\n
+        \ <year type=\"integer\">2013</year>\n  <month type=\"integer\">1</month>\n
+        \ <first_six>411111</first_six>\n  <last_four>1111</last_four>\n</billing_info>\n"
+    http_version: 
+  recorded_at: Sun, 24 Jun 2012 18:56:15 GMT
+recorded_with: VCR 2.2.0

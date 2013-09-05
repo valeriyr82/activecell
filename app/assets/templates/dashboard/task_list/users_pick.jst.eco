@@ -1,0 +1,3 @@
+<li class="dropdown-link dropdown-account autocomplete-item" data-user-id="<%= @id %>">
+  <a><%= @name %></a>
+</li>

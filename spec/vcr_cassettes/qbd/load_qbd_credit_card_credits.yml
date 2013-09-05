@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://services.intuit.com/sb/creditcardcredit/v2/174322770
+    body:
+      encoding: US-ASCII
+      string: ! "<CreditCardCreditQuery xmlns=\"http://www.intuit.com/sb/cdm/v2\">\n  <StartPage>1</StartPage>\n  <ChunkSize>500</ChunkSize>\n  <StartTransactionDate>2012-01-01</StartTransactionDate>\n</CreditCardCreditQuery>\n"
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="ELW34lZPR3lPLN8jnHcW4P8HaMLnbfCLZR8pf8JfQ",
+        oauth_signature="ICGWx7WYqAXFZD8f0x16SFuM%2BlQ%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1345641593", oauth_token="qyprdccBfAsG24NCvLzv88kkkXtWccNPxQPn7ygRGZz4Yv14",
+        oauth_version="1.0"
+      Content-Type:
+      - text/xml
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 22 Aug 2012 13:19:55 GMT
+      Server:
+      - Apache/2.2.3 (Oracle)
+      Linequerytime:
+      - '340'
+      Contextinittime:
+      - '610'
+      Response-Id:
+      - bf9cb1dc-25e9-4af2-a375-17c8dd4965f8
+      Assemblingtime:
+      - '0'
+      Headerquerytime:
+      - '221'
+      Content-Encoding:
+      - gzip
+      Headerdaotime:
+      - '221'
+      Linedaotime:
+      - '340'
+      Response-App-Time:
+      - '1912'
+      Response-Routing-Time:
+      - '1919'
+      Content-Length:
+      - '1228'
+      Connection:
+      - close
+      Content-Type:
+      - text/xml
+    body:
+      encoding: US-ASCII
+      string: ! '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><RestResponse
+        xmlns="http://www.intuit.com/sb/cdm/v2"><CreditCardCredits><CreditCardCredit><Id
+        idDomain="QB">8122</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:17:20Z</CreateTime><LastUpdatedTime>2012-03-12T17:17:20Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8122</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-02-28T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">83</CCAccountId><CCAccountName>TD Bank Credit Card #0951</CCAccountName><EntityId
+        idDomain="QB">38</EntityId><EntityName>TD Bank</EntityName><EntityType>Vendor</EntityType><TotalAmt>3303.56</TotalAmt></Header><Line><Id
+        idDomain="QB">8124</Id><Desc>TD BANK, N.A.    PAYMENT</Desc><Amount>3303.56</Amount><AccountId
+        idDomain="QB">82</AccountId><AccountName>TD Bank Bus. Conv. Checking</AccountName><AccountType>Asset</AccountType></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QB">8095</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:17:19Z</CreateTime><LastUpdatedTime>2012-03-12T18:52:12Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8095</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-01-30T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">83</CCAccountId><CCAccountName>TD Bank Credit Card #0951</CCAccountName><EntityId
+        idDomain="QB">38</EntityId><EntityName>TD Bank</EntityName><EntityType>Vendor</EntityType><TotalAmt>558.59</TotalAmt></Header><Line><Id
+        idDomain="QB">8097</Id><Desc>TD BANK, N.A.    PAYMENT</Desc><Amount>558.59</Amount><AccountId
+        idDomain="QB">82</AccountId><AccountName>TD Bank Bus. Conv. Checking</AccountName><AccountType>Asset</AccountType></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QB">8044</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:11:54Z</CreateTime><LastUpdatedTime>2012-03-12T17:11:54Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8044</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-03-08T00:00:00Z</TxnDate><Note>4227493335  210-581-0410371556605061003</Note><Status>Payable</Status><CCAccountId
+        idDomain="QB">137</CCAccountId><CCAccountName>Amex Plum Card #1003</CCAccountName><EntityId
+        idDomain="QB">233</EntityId><EntityName>The Rackspace</EntityName><EntityType>Vendor</EntityType><TotalAmt>1514.01</TotalAmt></Header><Line><Id
+        idDomain="QB">8046</Id><Amount>1514.01</Amount><AccountId idDomain="QB">76</AccountId><AccountName>Hosting</AccountName><AccountType>Expense</AccountType></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QB">8023</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:11:52Z</CreateTime><LastUpdatedTime>2012-03-12T17:11:52Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8023</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-02-29T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">137</CCAccountId><CCAccountName>Amex Plum Card #1003</CCAccountName><EntityId
+        idDomain="QB">38</EntityId><EntityName>TD Bank</EntityName><EntityType>Vendor</EntityType><TotalAmt>1045.27</TotalAmt></Header><Line><Id
+        idDomain="QB">8025</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>1045.27</Amount><AccountId
+        idDomain="QB">82</AccountId><AccountName>TD Bank Bus. Conv. Checking</AccountName><AccountType>Asset</AccountType></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QB">8008</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:11:52Z</CreateTime><LastUpdatedTime>2012-03-12T18:51:18Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8008</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-02-20T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">137</CCAccountId><CCAccountName>Amex Plum Card #1003</CCAccountName><EntityId
+        idDomain="QB">147</EntityId><EntityName>American Express</EntityName><EntityType>Vendor</EntityType><TotalAmt>15.22</TotalAmt></Header><Line><Id
+        idDomain="QB">8010</Id><Amount>15.22</Amount><AccountId idDomain="QB">20</AccountId><AccountName>Bank
+        Service Charges</AccountName><AccountType>Expense</AccountType></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QB">7996</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:11:51Z</CreateTime><LastUpdatedTime>2012-03-12T18:51:18Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">7996</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-02-10T00:00:00Z</TxnDate><Note>4167103036  210-581-0410371556605061003</Note><Status>Payable</Status><CCAccountId
+        idDomain="QB">137</CCAccountId><CCAccountName>Amex Plum Card #1003</CCAccountName><EntityId
+        idDomain="QB">233</EntityId><EntityName>The Rackspace</EntityName><EntityType>Vendor</EntityType><TotalAmt>1618.94</TotalAmt></Header><Line><Id
+        idDomain="QB">7998</Id><Amount>1618.94</Amount><AccountId idDomain="QB">76</AccountId><AccountName>Hosting</AccountName><AccountType>Expense</AccountType></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QB">7975</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:11:50Z</CreateTime><LastUpdatedTime>2012-03-12T18:51:17Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">7975</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-01-31T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">137</CCAccountId><CCAccountName>Amex Plum Card #1003</CCAccountName><EntityId
+        idDomain="QB">38</EntityId><EntityName>TD Bank</EntityName><EntityType>Vendor</EntityType><TotalAmt>1001.01</TotalAmt></Header><Line><Id
+        idDomain="QB">7977</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>1001.01</Amount><AccountId
+        idDomain="QB">82</AccountId><AccountName>TD Bank Bus. Conv. Checking</AccountName><AccountType>Asset</AccountType></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QB">7960</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:11:49Z</CreateTime><LastUpdatedTime>2012-03-12T18:50:08Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">7960</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-01-22T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">137</CCAccountId><CCAccountName>Amex Plum Card #1003</CCAccountName><EntityId
+        idDomain="QB">147</EntityId><EntityName>American Express</EntityName><EntityType>Vendor</EntityType><TotalAmt>13.93</TotalAmt></Header><Line><Id
+        idDomain="QB">7962</Id><Amount>13.93</Amount><AccountId idDomain="QB">20</AccountId><AccountName>Bank
+        Service Charges</AccountName><AccountType>Expense</AccountType></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QB">7939</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:11:47Z</CreateTime><LastUpdatedTime>2012-03-12T18:50:07Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">7939</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-01-12T00:00:00Z</TxnDate><Note>4104796502  210-581-0410371556605061003</Note><Status>Payable</Status><CCAccountId
+        idDomain="QB">137</CCAccountId><CCAccountName>Amex Plum Card #1003</CCAccountName><EntityId
+        idDomain="QB">233</EntityId><EntityName>The Rackspace</EntityName><EntityType>Vendor</EntityType><TotalAmt>1600.3</TotalAmt></Header><Line><Id
+        idDomain="QB">7941</Id><Amount>1600.3</Amount><AccountId idDomain="QB">76</AccountId><AccountName>Hosting</AccountName><AccountType>Expense</AccountType></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QB">7912</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:07:25Z</CreateTime><LastUpdatedTime>2012-03-12T17:07:25Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">7912</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-03-08T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">111</CCAccountId><CCAccountName>American Express Simply Cash</CCAccountName><EntityId
+        idDomain="QB">38</EntityId><EntityName>TD Bank</EntityName><EntityType>Vendor</EntityType><TotalAmt>739.08</TotalAmt></Header><Line><Id
+        idDomain="QB">7914</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>739.08</Amount><AccountId
+        idDomain="QB">82</AccountId><AccountName>TD Bank Bus. Conv. Checking</AccountName><AccountType>Asset</AccountType></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QB">7894</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:07:24Z</CreateTime><LastUpdatedTime>2012-03-12T17:07:24Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">7894</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-02-20T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">111</CCAccountId><CCAccountName>American Express Simply Cash</CCAccountName><EntityId
+        idDomain="QB">147</EntityId><EntityName>American Express</EntityName><EntityType>Vendor</EntityType><TotalAmt>8.11</TotalAmt></Header><Line><Id
+        idDomain="QB">7896</Id><Amount>8.11</Amount><AccountId idDomain="QB">20</AccountId><AccountName>Bank
+        Service Charges</AccountName><AccountType>Expense</AccountType></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QB">7882</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:07:23Z</CreateTime><LastUpdatedTime>2012-03-12T18:48:37Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">7882</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-02-07T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">111</CCAccountId><CCAccountName>American Express Simply Cash</CCAccountName><EntityId
+        idDomain="QB">38</EntityId><EntityName>TD Bank</EntityName><EntityType>Vendor</EntityType><TotalAmt>387.54</TotalAmt></Header><Line><Id
+        idDomain="QB">7884</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>387.54</Amount><AccountId
+        idDomain="QB">82</AccountId><AccountName>TD Bank Bus. Conv. Checking</AccountName><AccountType>Asset</AccountType></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QB">7858</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:07:22Z</CreateTime><LastUpdatedTime>2012-03-12T18:48:37Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">7858</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-01-17T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">111</CCAccountId><CCAccountName>American Express Simply Cash</CCAccountName><EntityId
+        idDomain="QB">147</EntityId><EntityName>American Express</EntityName><EntityType>Vendor</EntityType><TotalAmt>16.66</TotalAmt></Header><Line><Id
+        idDomain="QB">7860</Id><Amount>16.66</Amount><AccountId idDomain="QB">20</AccountId><AccountName>Bank
+        Service Charges</AccountName><AccountType>Expense</AccountType></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QB">7423</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-01-09T16:39:52Z</CreateTime><LastUpdatedTime>2012-03-12T18:47:49Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">7423</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-01-08T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">111</CCAccountId><CCAccountName>American Express Simply Cash</CCAccountName><EntityId
+        idDomain="QB">38</EntityId><EntityName>TD Bank</EntityName><EntityType>Vendor</EntityType><TotalAmt>747.55</TotalAmt></Header><Line><Id
+        idDomain="QB">7425</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>747.55</Amount><AccountId
+        idDomain="QB">82</AccountId><AccountName>TD Bank Bus. Conv. Checking</AccountName><AccountType>Asset</AccountType></Line></CreditCardCredit></CreditCardCredits></RestResponse>'
+    http_version: 
+  recorded_at: Wed, 22 Aug 2012 13:19:57 GMT
+recorded_with: VCR 2.2.4

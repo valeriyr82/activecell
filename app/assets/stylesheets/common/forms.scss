@@ -1,0 +1,1242 @@
+@import "colors";
+@import "mixins";
+
+input, textarea, select {
+  display: inline-block;
+  width: auto;
+  //height: 18px;
+  padding: 5px 4px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+
+  &.with-shadow {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15); 
+  }
+
+  &.rounded {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2em;
+  }
+
+  &.alt-field {
+    //border: none;
+    padding: 8px 10px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.22),
+                        inset 1px 1px 0 rgba(255,255,255,0.9);
+
+    @include gradient($white, $lighter-grey);
+
+    &:focus {
+      border-color: $grey;
+    }
+  }
+
+  &.well {
+    padding-bottom: 14px;
+  }
+}
+
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: $primary;
+}
+
+select {
+  height: 28px;
+  width: 219px;
+  line-height: 28px;
+}
+
+.input-mini, input.mini, textarea.mini, select.mini {
+  width: 60px;
+}
+
+.input-small, input.x-small, textarea.x-small, select.x-small {
+  width: 70px;
+}
+
+.input-small, input.small, textarea.small, select.small {
+  width: 90px;
+}
+
+.input-medium, input.medium,  textarea.medium {
+  width: 160px;
+}
+
+.input-large, input.large, select.large,  textarea.large {
+  width: 210px;
+}
+
+.input-xlarge, input.xlarge, select.xlarge,  textarea.xlarge {
+  width: 270px;
+}
+
+.input-narrow-form {
+  width: 394px;
+}
+
+select.medium {
+  width: 160px;
+}
+
+.input-prepend {
+  input.medium {
+    width: 125px;
+  }
+}
+
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 3px 0;
+  *margin-top: 0;
+  /* IE6-7 */
+
+  line-height: normal;
+  border: none;
+}
+
+.input-prepend input, .input-append input {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.input-prepend .add-on, .input-append .add-on {
+  background: #f5f5f5;
+  float: left;
+  display: block;
+  width: auto;
+  min-width: 16px;
+  padding: 4px 4px 4px 5px;
+  color: $heading-grey;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  border: 1px solid #ccc;
+  border-right-width: 0;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+
+.input-prepend .active, .input-append .active {
+  background: #D7EBED;
+  border-color: #9FD9DF;
+}
+
+.input-prepend .add-on {
+  *margin-top: 1px;
+  /* IE6-7 */
+}
+
+.input-append input {
+  float: left;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+
+.input-append .add-on {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  border-right-width: 1px;
+  border-left-width: 0;
+}
+
+label {
+  color: $heading-black;
+  //float: left;
+  font-size: 13px;
+  line-height: 18px;
+  padding-top: 6px;
+  //text-align: right;
+  //width: 130px;
+}
+
+div.input {
+  margin-left: 150px;
+}
+
+input[readonly]:focus, textarea[readonly]:focus, input.disabled {
+  color: lighten($grey, 10%);
+  border-color: #DDDDDD;
+  background: none repeat scroll 0 0 #F5F5F5;
+  box-shadow: none;
+}
+
+.inputs-list {
+  margin: 0 0 5px;
+  width: 100%;
+  li {
+    display: block;
+    padding: 0;
+    width: 100%;
+    label {
+      display: block;
+      float: none;
+      width: auto;
+      padding: 0;
+      line-height: 18px;
+      text-align: left;
+      white-space: normal;
+      strong {
+        color: #808080;
+      }
+      small {
+        font-size: 12px;
+        font-weight: normal;
+      }
+    }
+  }
+  ul.inputs-list {
+    margin-left: 25px;
+    margin-bottom: 10px;
+    padding-top: 0;
+  }
+  li:first-child {
+    padding-top: 5px;
+  }
+  input[type=radio], input[type=checkbox] {
+    margin-bottom: 0;
+  }
+}
+
+.help-block {
+  font-size: 12px;
+  line-height: 18px;
+  color: darken($heading-grey, 10%);
+}
+
+.form-stacked {
+
+  .remember-checkbox {
+    margin-top: 4px;
+  }
+
+  div.error {
+    padding: 10px 0 10px 10px;
+    margin-top: 0;
+    margin-left: -10px;
+
+    label {
+      color: $danger;
+    }
+  }
+
+  .help-block {
+    display: inline-block;
+    padding: 5px 0 0 0;
+  }
+}
+
+.form-horizontal { 
+  .control-label {
+    float: left;
+    width: 140px;
+    text-align: right;
+  }
+  
+  .form-actions {
+    padding-left: 160px;
+  }
+}
+
+.control-group {
+  margin: 0 0 10px 0;
+}
+
+.controls {
+  .msg {
+    position: absolute;
+    display: inline-block;
+    margin: 0 0 0 8px;
+    padding: 3px 9px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(0,0,0,0.2);
+    border-radius: 4px;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 6px;
+      left: -7px;
+      width: 0;
+      height: 0;
+    }
+  }
+
+
+  &.error {
+    input {
+      border-color: $danger;
+    }
+
+    .msg {
+      color: $white;
+      border: 1px solid darken($danger, 5%);
+
+      @include gradient($danger, lighten($danger, 5%));
+
+      &:after {
+        top: 6px;
+        left: -7px;
+        border-top: 6px solid transparent;
+        border-right: 6px solid darken($danger, 5%);
+        border-bottom: 6px solid transparent;
+      }
+    }
+  }
+
+  &.success {
+    input {
+      border-color: $success;
+    }
+
+    .msg {
+      color: $white;
+      border: 1px solid darken($success, 5%);
+
+      @include gradient($success, lighten($success, 5%));
+
+      &:after {
+        top: 6px;
+        left: -7px;
+        border-top: 6px solid transparent;
+        border-right: 6px solid darken($success, 5%);
+        border-bottom: 6px solid transparent;
+      }
+    }
+  }
+
+  &.pending {
+    input {
+      border-color: $info;
+    }
+
+    .msg {
+      color: $white;
+      border: 1px solid darken($info, 5%);
+
+      @include gradient($info, lighten($info, 5%));
+
+      &:after {
+        top: 6px;
+        left: -7px;
+        border-top: 6px solid transparent;
+        border-right: 6px solid darken($info, 5%);
+        border-bottom: 6px solid transparent;
+      }
+    }
+  }
+}
+
+.control-label {
+  display: inline-block;
+  padding: 0 20px 0 0;
+  line-height: 27px;
+  width: 170px;
+}
+
+.form-actions {
+  padding: 20px 10px 20px 190px;
+
+  .btn {
+    margin: 0 10px 0 0;
+  }
+}
+
+.prepend-icon {
+  position: relative;
+
+  input[type="text"],
+  input[type="password"] {
+    padding-left: 30px;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    position: absolute;
+    left: 9px;
+    top: 6px;
+  } 
+}
+
+.search-form {
+  display: inline-block;
+  position: relative;
+
+  input[type="text"] {
+    //width: 184px;
+    padding-right: 30px !important;
+    padding-left: 25px;
+  }
+
+  i {
+    position: absolute;
+    top: 6px;
+  }
+  .icon-glass {
+    left: 7px;
+  }
+  .icon-eliminate {
+    right: 7px;
+    cursor: pointer;
+  }
+}
+
+// Selector
+// ------------------------
+
+.selector {
+  position: relative;
+  width: 150px;
+  height: 34px;
+  line-height: 34px;
+  padding: 0  15px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  color: $black;
+  text-align: left;
+  border: none;
+  border-radius: 2px;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5),
+                      inset 1px 1px 1px rgba(255,255,255,1);
+
+  @include gradient(lighten($lighter-grey, 1%), darken($lighter-grey, 8%));
+
+  &:hover {
+    background: lighten($lighter-grey, 1%);
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 4px;
+    width: 1px;
+    height: 25px;
+    background: lighten($grey, 16%);
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -2px;
+    border-left: 4px solid transparent;
+    border-top: 4px solid lighten($black, 10%);
+    border-right: 4px solid transparent;
+  }
+}
+
+// Checkboxes
+// ------------------------
+
+.checkbox {
+  position: relative;
+  display: block;
+  margin: 0 7px 0 0;
+  padding-left: 30px;
+  min-height: 21px;
+  line-height: 21px;
+  padding-top: 0;
+  vertical-align: top;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 21px;
+    height: 21px;
+    background: image-url("sprite_air.png") -10px -170px no-repeat;
+  }
+  
+  &:active {
+    &:before {
+      background-position: -10px -200px;
+    }
+  }
+
+  &.checked {
+   &:before {
+      background-position: -10px -110px;
+    }
+    
+    &:active {
+      &:before {
+        background-position: -10px -140px;
+      }
+    }
+  }
+  
+  input {
+    position: absolute;
+    left: -4000px;
+  }
+}
+
+// Radio buttons
+// ------------------------
+
+.radio {
+  @extend .checkbox;
+
+  background: image-url("sprite_air.png") -40px -110px no-repeat;
+
+  &:active {
+    background: image-url("sprite_air.png") -40px -140px no-repeat;    
+  }
+
+  &.checked {
+    background: image-url("sprite_air.png") -40px -80px no-repeat;
+  }
+}
+
+// Blank buttons
+// ------------------------
+
+.blank-button {
+  @extend .checkbox;
+
+  background: image-url("sprite_air.png") -70px -110px no-repeat;
+
+  &:active {
+    background: image-url("sprite_air.png") -70px -140px no-repeat;    
+  }
+
+  &.checked {
+    background: image-url("sprite_air.png") -70px -80px no-repeat;
+  }
+}
+
+// Switchers
+// ------------------------
+
+.switch {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 45px;
+
+  li {
+    position: relative;
+    height: 18px;
+    margin: 15px 0;
+    background: $info;
+    border-radius: 1em;
+    cursor: pointer;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3),
+                         inset 0 -1px 0 rgba(255,255,255,0.3);
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -3px;
+      top: -3px;
+      width: 24px;
+      height: 25px;
+      background: image-url("sprite_air.png") -10px -10px no-repeat;
+    }
+
+    &.active {
+      background-color: $scarlet-red-20;
+
+      &:after {
+        left: auto;
+        right: -3px;
+      }
+
+      i {
+        right: auto;
+        left: 3px;
+      }
+    }
+
+    i {
+      position: absolute;
+      right: 6px;
+      top: 1px;
+
+      @include opacity(0.8);
+    }
+  }
+}
+
+.validation-error {
+  display: block;
+  color: $danger;
+  margin: 10px 0 0 162px;
+}
+
+.password-changed-notification {
+  display: block;
+  margin: -20px 0 10px 0;
+  color: darken($success, 10%);
+}
+
+
+// Recurly
+// ------------------------------
+
+.recurly {
+  display: block;
+  position: relative;
+  width: 800px;
+}
+.recurly .cost,
+.recurly .discount {
+  font-size: 16px;
+  text-align: right;
+}
+.recurly .subscription {
+  border-radius: 9px 9px 0 0;
+  text-shadow: 0 1px 0 #fff;
+  padding-top: 20px;
+  overflow: hidden;
+}
+.recurly .plan {
+  color: #333;
+}
+.recurly .plan .name {
+  float: left;
+  font-size: 32px;
+  min-width: 200px;
+  padding-left: 20px;
+  padding-right: 40px;
+
+  @include proxima-bold;
+}
+.recurly .plan .quantity.field {
+  clear: none;
+  width: 60px;
+  margin: 4px 0;
+}
+.recurly .plan .quantity.field input[type=text] {
+  width: 48px;
+}
+.recurly .plan .quantity.field:before {
+  content: "\d7";
+  height: 48px;
+  line-height: 30px;
+  position: absolute;
+  right: 100%;
+  width: 40px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1337;
+  color: #666;
+}
+.recurly .plan .recurring_cost {
+  float: right;
+  text-align: right;
+  padding-right: 20px;
+
+  @include proxima-800;
+}
+.recurly .plan .recurring_cost .cost {
+  font-size: 32px;
+}
+.recurly .plan .recurring_cost .interval {
+  font-size: 12px;
+  padding-bottom: 20px;
+  margin-top: 8px;
+}
+.recurly .free_trial {
+  clear: left;
+  float: left;
+  font-size: 13px;
+  height: 22px;
+  margin: 0;
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  font-style: italic;
+}
+.recurly .setup_fee {
+  clear: both;
+  background: url("images/dash.png") repeat-x 1px top;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.recurly .setup_fee .title {
+  float: left;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.recurly .setup_fee .cost {
+  float: right;
+  padding-right: 20px;
+}
+.recurly .vat {
+  height: 24px;
+  padding: 20px 20px;
+  display: none;
+  background: url("images/dash.png") repeat-x 1px top;
+}
+.recurly .vat.applicable {
+  display: block;
+}
+.recurly .vat .title {
+  font-size: 16px;
+  font-weight: normal;
+  float: left;
+}
+.recurly .vat .cost {
+  float: right;
+  font-size: 18px;
+}
+.recurly .add_ons {
+  clear: both;
+}
+
+.recurly .add_ons.any {
+  margin: 5px 10px;
+}
+
+.recurly .add_ons .add_on {
+  display: block;
+  position: relative;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-top: 1px dashed $grey;
+}
+
+.recurly .add_ons .add_on .name {
+  display: inline-block;
+}
+
+.recurly .add_ons .add_on .quantity.field {
+  position: absolute;
+  top: 4px;
+  left: 249px;
+  width: 60px;
+  display: none;
+}
+
+.recurly .add_ons .add_on .quantity.field input[type=text] {
+  width: 48px;
+}
+
+.recurly .add_ons .add_on .cost {
+  float: right;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.recurly .add_ons .add_on:active,
+.recurly .add_ons .add_on.selected {
+  color: #111;
+  background: #fff;
+  width: auto;
+  box-shadow: inset 0 1px 4px 0 rgba(0,0,0,0.07);
+  text-shadow: none;
+}
+
+.recurly .coupon {
+  clear: both;
+  overflow: hidden;
+  height: 34px;
+  color: #333;
+  padding: 10px 20px 20px 20px;
+  position: relative;
+}
+.recurly .coupon .check {
+  width: 15px;
+  height: 15px;
+  float: left;
+  border-radius: 15px;
+  background: #70ccf8;
+  border: 1px solid #0090c9;
+  margin: 5px 0 1px 10px;
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.35), 0 1px 1px 0 rgba(0,0,0,0.10);
+  background: #43bef9 url("images/coupon_check.png") no-repeat center center;
+  background: url("images/coupon_check.png") no-repeat center center, -webkit-linear-gradient(top, #71CDFA 0%, #43BEF9 50%, #00B1F6 50%, #71CEFB 100%);
+  background: url("images/coupon_check.png") no-repeat center center, -moz-linear-gradient(top, #71CDFA 0%, #43BEF9 50%, #00B1F6 50%, #71CEFB 100%);
+  background: url("images/coupon_check.png") no-repeat center center, -o-linear-gradient(top, #71CDFA 0%, #43BEF9 50%, #00B1F6 50%, #71CEFB 100%);
+  background: url("images/coupon_check.png") no-repeat center center linear-gradient(top, #71CDFA 0%, #43BEF9 50%, #00B1F6 50%, #71CEFB 100%);
+}
+.recurly .coupon .check:hover {
+  background: url("images/coupon_check.png") no-repeat center center, -webkit-linear-gradient(top, #71CDFA 0%, #43BEF9 50%, #00B1F6 50%, #71CEFB 100%);
+  background: url("images/coupon_check.png") no-repeat center center, -moz-linear-gradient(top, #71CDFA 0%, #43BEF9 50%, #00B1F6 50%, #71CEFB 100%);
+  background: url("images/coupon_check.png") no-repeat center center, -o-linear-gradient(top, #71CDFA 0%, #43BEF9 50%, #00B1F6 50%, #71CEFB 100%);
+  background: url("images/coupon_check.png") no-repeat center center linear-gradient(top, #71CDFA 0%, #43BEF9 50%, #00B1F6 50%, #71CEFB 100%);
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.75), 0 1px 1px 0 rgba(0,0,0,0.10);
+}
+.recurly .coupon .check:active {
+  background: url("images/coupon_check.png") no-repeat center center, -webkit-linear-gradient(top, #f0f0f0, #fff);
+  background: url("images/coupon_check.png") no-repeat center center, -moz-linear-gradient(top, #f0f0f0, #fff);
+  background: url("images/coupon_check.png") no-repeat center center, -o-linear-gradient(top, #f0f0f0, #fff);
+  background: url("images/coupon_check.png") no-repeat center center linear-gradient(top, #f0f0f0, #fff);
+  box-shadow: inset 0 3px 3px 0 rgba(0,0,0,0.03);
+  border: 1px solid #999;
+}
+.recurly .coupon.checking .check {
+  background: #f0f0f0 url("images/coupon_checking.gif") no-repeat center center;
+  box-shadow: inset 0 3px 3px 0 rgba(0,0,0,0.03);
+  border: 1px solid #999;
+}
+.recurly .coupon.invalid .coupon_code {
+  border-color: #a55;
+  background: #fee;
+  color: #311;
+}
+.recurly .coupon .coupon_code .error {
+  left: 300px;
+}
+.recurly .coupon .description {
+  float: left;
+  margin-left: 20px;
+  height: 34px;
+  line-height: 28px;
+  vertical-align: middle;
+  font-size: 14.4px;
+}
+.recurly .coupon .discount {
+  float: right;
+  height: 34px;
+  line-height: 34px;
+  vertical-align: middle;
+}
+.recurly .error {
+  display: none !important;
+  padding: 5px;
+  line-height: 22px;
+  vertical-align: middle;
+  color: #000;
+  text-shadow: 0 1px 0 #fec;
+  background: #ffc;
+  border: 1px solid #ba1;
+  box-shadow: 3px 5px 5px 0 rgba(0,0,0,0.10);
+  border-radius: 5px;
+  font-size: 13px;
+}
+.recurly .server_errors {
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+  margin: 0 20px;
+  opacity: 0;
+}
+.recurly .server_errors .error {
+  padding-left: 26px;
+  background: rgba(240,250,0,0.50) url("images/error.png") no-repeat 5px 9px;
+}
+.recurly .server_errors.any {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s linear;
+  -moz-transition: opacity 0.5s linear;
+  margin: 20px 20px;
+  margin-bottom: 0;
+}
+.recurly .contact_info,
+.recurly .billing_info,
+.recurly .accept_tos {
+  position: relative;
+  padding: 15px 10px;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.recurly .contact_info .title,
+.recurly .billing_info .title,
+.recurly .accept_tos .title {
+  font-size: 16px;
+  height: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 #fff;
+  border-bottom: 1px dashed $grey;
+
+  @include proxima-bold;
+}
+
+.recurly .contact_info .credit_card,
+.recurly .billing_info .credit_card,
+.recurly .accept_tos .credit_card {
+  clear: both;
+}
+.recurly .contact_info {
+  margin-top: 20px;
+}
+
+.recurly .accept_tos input[type=checkbox] {
+  display: inline;
+  line-height: 34px;
+  vertical-align: middle;
+}
+.recurly .accept_tos label {
+  margin: 0 0 0 5px;
+  display: inline;
+  line-height: 34px;
+  vertical-align: middle;
+}
+.recurly .accept_tos .field .error {
+  display: block;
+  position: static;
+}
+.recurly .field {
+  display: inline;
+  float: left;
+  clear: left;
+  width: 300px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.recurly .field input[type=text] {
+  width: 400px;
+}
+.recurly .field.company_name {
+  margin-bottom: 0;
+}
+.recurly .field .error {
+  min-width: 128px;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 20px;
+  z-index: 1337;
+}
+.recurly .field .placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 7px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 28px;
+  vertical-align: middle;
+  color: #999;
+  cursor: text;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-weight: 300;
+}
+.recurly .field.focus .placeholder {
+  color: #ccc;
+}
+.recurly .field.invalid .placeholder {
+  color: #a77;
+}
+.recurly .field.coupon_code {
+  width: 170px;
+}
+.recurly .field.coupon_code input[type=text] {
+  width: 160px;
+}
+.recurly .field.first_name {
+  clear: left;
+  width: 185px;
+}
+.recurly .field.first_name input[type=text] {
+  width: 185px;
+}
+.recurly .field.first_name .error {
+  left: 300px;
+}
+.recurly .field.last_name {
+  width: 185px;
+  margin-left: 30px;
+  clear: none;
+}
+.recurly .field.last_name input[type=text] {
+  width: 185px;
+}
+.recurly .field.card_number {
+  width: 332px;
+}
+.recurly .field.card_number input[type=text] {
+  width: 323px;
+}
+.recurly .field.card_number .error {
+  left: 300px;
+}
+.recurly .field.cvv {
+  width: 60px;
+  margin-left: 20px;
+  margin-left: 20px;
+  clear: none;
+  clear: none;
+}
+.recurly .field.cvv input[type=text] {
+  width: 48px;
+}
+
+.recurly .field.expires {
+  width: 700px;
+}
+
+.recurly .field.expires input[type=text] {
+  width: 288px;
+}
+
+.recurly .field.expires .title {
+  float: left;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 29px;
+  vertical-align: middle;
+  width: 59px;
+  border-bottom: none;
+}
+
+.recurly .field.expires {
+  .month {
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+  }
+
+  .year {
+    float: left;
+    width: 120px;
+    margin-left: 20px;
+  }
+}
+
+.recurly .field.state {
+  width: 291px;
+}
+.recurly .field.state input[type=text] {
+  width: 280px;
+}
+.recurly .field.state .error {
+  left: 300px;
+}
+.recurly .field.zip {
+  width: 100px;
+  margin-left: 20px;
+  margin-left: 20px;
+  clear: none;
+  clear: none;
+}
+.recurly .field.zip input[type=text] {
+  width: 88px;
+}
+.recurly .field.vat_number {
+  width: 140px;
+  display: none;
+}
+.recurly .field.vat_number input[type=text] {
+  width: 128px;
+}
+.recurly .field.vat_number.applicable {
+  display: block;
+}
+.recurly .only_zipstreet .zip.field,
+.recurly .only_zip .zip.field {
+  margin-left: 0;
+  clear: left;
+}
+
+.recurly .field.country {
+  width: 409px;
+}
+
+.recurly .accepted_cards {
+  position: absolute;
+  top: 20px;
+  right: 180px;
+  width: 160px;
+}
+.recurly .card {
+  background-position: right top;
+  background-repeat: no-repeat;
+  text-indent: -3000px;
+  width: 40px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.recurly .card.mastercard {
+  background-image: url("images/credit_cards/mastercard.png");
+}
+.recurly .card.american_express {
+  background-image: url("images/credit_cards/amex.png");
+}
+.recurly .card.visa {
+  background-image: url("images/credit_cards/visa.png");
+}
+.recurly .card.discover {
+  background-image: url("images/credit_cards/discover.png");
+}
+.recurly .card.no_match {
+  opacity: 0.5;
+}
+.recurly input[type=text],
+.recurly select {
+  vertical-align: middle;
+  color: #000;
+}
+.recurly input[type=text].invalid,
+.recurly select.invalid {
+  border-color: #a55;
+  background: #fee;
+  color: #311;
+}
+.recurly input[type=text][disabled] {
+  background: #eee;
+}
+.recurly input[type=checkbox] {
+  color: #f00;
+}
+.recurly select {
+  color: inherit;
+  font-family: inherit;
+  width: 100%;
+}
+.recurly select > option {
+  color: inherit;
+}
+.recurly .due_now {
+  width: 750px;
+  clear: both;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  padding: 0 20px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.50);
+  background: rgba(255,255,255,0.4);
+  border-radius: 5px;
+
+  @include proxima-bold;
+}
+
+.recurly .due_now .title {
+  float: left;
+  font-size: 20px;
+  position: relative;
+}
+.recurly .due_now .cost {
+  float: right;
+  font-size: 29px;
+  font-weight: bold;
+  margin: 0;
+}
+.recurly .footer {
+  margin: 0px;
+  padding: 5px 10px 10px 10px;
+}
+
+.recurly button.submit {
+  display: inline-block;
+  @include ie7-inline-block();
+  margin-bottom: 0; // For input.btn
+  padding: 7px 16px !important;
+  color: #fff !important;
+  line-height: 19px;
+  font-size: 18px;
+  *line-height: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+  vertical-align: middle;
+  cursor: pointer;
+  @include buttonBackground($success, darken($success, 10%));
+  border: 1px solid darken($success, 15%);
+  *border: 0;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0 1px rgba(0,0,0,0.2),
+                      inset 1px 1px 0 rgba(255,255,255,0.2) !important;    
+ 
+  @include proxima-bold;
+  @include border-radius(4px);
+  @include ie7-restore-left-whitespace();
+
+  &:hover {
+    color: darken($grey, 15%);
+    text-decoration: none;
+    background-position: 0 -15px;
+
+    @include transition(background-position .1s linear);
+  }
+
+  &:active, &:focus {
+    outline: none !important;
+  }
+
+  &.active, &:active {
+    background-color: darken($success, 15%);
+    background-color: darken($success, 20%) \9;
+    background-image: none;
+    outline: 0;
+    @include box-shadow(#{inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)});
+  }
+
+  &.disabled, &[disabled] {
+    cursor: default;
+    background-color: darken($white, 10%);
+    background-image: none;
+    @include opacity(0.65);
+    @include box-shadow(none);
+  }
+
+}
+
+
+.iefail {
+  background: #666;
+  padding: 10px;
+  position: absolute;
+  top: -1%;
+  left: -1%;
+  height: 102%;
+  width: 102%;
+  z-index: 9999;
+}
+.iefail .chromeframe {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.iefail .chromeframe p {
+  text-align: center;
+}
+.iefail .chromeframe p.blast {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.iefail .chromeframe p a {
+  color: #4183c4;
+  text-transform: capitalize;
+}

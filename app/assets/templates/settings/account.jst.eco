@@ -1,0 +1,160 @@
+<div class="row">
+  <div class="span14">
+    <h2>Account Settings</h2>
+   
+    <div class="message-block clearfix account-message">
+    <% if @subscriber.hasActiveSubscription(): %>
+      <p class="pull-left">
+        Your current plan is "<%= @subscription.getPlanName() %>"
+        <%= @subscription.getPlanPrice() %> per <%= @subscription.getPlanIntervalName() %>
+
+        <% if @subscription.getPlanCode() is 'monthly': %>
+          <a href="#" class="btn btn-large btn-primary upgrade-button" data-plan-code="annual">
+            change to annual
+          </a>
+        <% else: %>
+          <a href="#" class="btn btn-large btn-primary upgrade-button" data-plan-code="monthly">
+            change to monthly
+          </a>
+        <% end %>
+      </p>
+
+      <div id="recurly-edit-subscription-form-container">
+        <div id="recurly-edit-subscription-form"></div>
+      </div>
+    <% else: %>
+      <% if @isInTrial: %>
+        <% if @isTrialExpired: %>
+          <p class="pull-left">Trial period expired.</p>
+        <% else: %>
+          <p class="pull-left">
+            <span class="xtra"><%= @trialDaysLeft %></span> 
+             days left in your trial.
+          </p>
+        <% end %>
+      <% end %>
+    <% end %>
+
+    <div class="pull-right subscription-control">
+    <% if @subscriber.subscriptionIsCancelled(): %>
+        <span>Your subscription is cancelled.</span>
+    <% end %>
+      <span>
+        You can <a href="#" class="btn btn-small cancel-account-button">&times; cancel</a>
+        your account at any time.
+      </span>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div id="recurly-subscription-form-container" class="well textured" style="display: none;">
+    <div id="recurly-subscription-form"></div>
+  </div>
+
+  <div class="row subscription-plans">
+    <div class="span4" style="margin-left: 80px;">
+      <div class="subscribe-plan monthly">
+        <header>
+          <h1>Monthly</h1>
+          <h2>one step at a time</h2>
+        </header>
+
+        <div class="price">
+          <div class="ribbon">join</div>
+          <span class="value">
+            <small>$</small>49<small>99</small>
+          </span>
+          <span class="time-period">per month</span>
+        </div>
+
+        <ul class="plan-items">
+          <li><i class="icon-small-get-from-cloud icon-grey"><!-- --></i> real time data integration</li>
+          <li><i class="icon-small-line-chart icon-grey"><!-- --></i> world class analytics</li>
+          <li><i class="icon-small-businessman icon-grey"><!-- --></i> powerful planning tools</li>
+          <li><i class="icon-small-security icon-grey"><!-- --></i> proven data security</li>
+        </ul>
+
+        <p class="plan-footer">
+          monthly plans allow you to get started with activecell one step at a time before making a commitment to a longer-term arrangement.
+        </p>
+
+        <div class="info-control">
+          <a class="btn btn-action subscribe-button monthly" href="#">
+            Upgrade <i class="icon-small-arrow-right icon-white"><!-- --></i>
+          </a>
+        </div>
+      </div> <!-- /.subscribe-plan -->
+    </div>
+
+    <div class="span4">
+      <div class="subscribe-plan annual">
+        <header>
+          <h1>Annual</h1>
+          <h2>get to work</h2>
+        </header>
+
+        <div class="price">
+          <div class="ribbon red">join</div>
+          <span class="value">
+            <small>$</small>499<small>99</small>
+          </span>
+          <span class="time-period">yearly</span>
+        </div>
+
+        <ul class="plan-items">
+          <li><i class="icon-small-arrow-circle-left icon-grey"><!-- --></i> everything from monthly</li>
+          <li><i class="icon-small-fire icon-grey"><!-- --></i> initial setup consultation</li>
+          <li><i class="icon-small-heart icon-grey"><!-- --></i> 24/7 tech support</li>
+          <li><i class="icon-small-building icon-grey"><!-- --></i> custom branding</li>
+        </ul>
+
+        <p class="plan-footer">
+          annual plans save you some cash and get you a little extra love (!). <br />
+          let us know what you need and we can always get it done.
+        </p>
+
+        <div class="info-control">
+          <a class="btn btn-action subscribe-button annual" href="#">Upgrade <i class="icon-small-arrow-right icon-white"><!-- --></i></a>
+        </div>
+      </div> <!-- /.subscribe-plan -->
+      </div>
+
+      <div class="span4">
+        <div class="subscribe-plan advisor-annual">
+          <header>
+            <h1>Advisor</h1>
+            <h2>activecell for your clients</h2>
+          </header>
+
+          <div class="price">
+            <div class="ribbon green">join</div>
+            <span class="value">
+              <small>$</small>749<small>99</small>
+            </span>
+            <span class="time-period">per client yearly</span>
+          </div>
+
+          <ul class="plan-items">
+            <li><i class="icon-small-arrow-circle-left icon-grey"><!-- --></i> everything from annual</li>
+            <li><i class="icon-small-globe2 icon-grey"><!-- --></i> centralized administration</li>
+            <li><i class="icon-small-plastic-card icon-grey"><!-- --></i> centralized billing</li>
+            <li><i class="icon-small-star icon-grey"><!-- --></i> private label experience</li>
+          </ul>
+
+          <p class="plan-footer">
+            offer activecell for your clients with a fully-branded private label experience, and
+            your copy is free once you have 10 clients on board!
+          </p>
+
+          <div class="info-control">
+            <a class="btn btn-action subscribe-button advisor-annual" href="#">
+              Upgrade <i class="icon-small-arrow-right icon-white"><!-- --></i>
+            </a>
+          </div>
+        </div> <!-- /.subscribe-plan -->
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<li>
+  <div class="wrapper">
+    <div class="article-icon">
+      <img src="<%= @senderAvatarUrl %>" width="44" height="44" alt="" />
+      <strong><%= @senderName %></strong>
+    </div>
+
+    <div class="comment"><p><%= @content %></p></div>
+    <small><%= @date %></small>
+  </div>
+</li>

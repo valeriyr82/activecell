@@ -1,0 +1,123 @@
+@import "colors";
+@import "mixins";
+
+
+/* Background pallete
+-------------------------------------------------- */
+
+.bg-primary {background-color: $primary;}
+.bg-primary-light {background-color: $primary-light;}
+.bg-primary-dark {background-color: $primary-dark;}
+.bg-secondary {background-color: $secondary;}
+.bg-secondary-light {background-color: $secondary-light;}
+.bg-secondary-dark {background-color: $secondary-dark;}
+.bg-green {background-color: $green;}
+.bg-light-green {background-color: $light-green;}
+.bg-dark-green {background-color: $dark-green;}
+
+.bg-white {background-color: $white;}
+.bg-light-grey {background-color: $lighter-grey;}
+.bg-grey {background-color: $grey;}
+.bg-dark-grey {background-color: $dark-grey;}
+.bg-black {background-color: $black;}
+
+.bg-link-color {background-color: $link-color;}
+
+.bg-dark-blue-10 {background-color: $dark-blue-10;}
+.bg-dark-blue-20 {background-color: $dark-blue-20;}
+.bg-dark-blue-30 {background-color: $dark-blue-30;}
+.bg-dark-blue-40 {background-color: $dark-blue-40;}
+.bg-dark-blue-50 {background-color: $dark-blue-50;}
+.bg-dark-blue-60 {background-color: $dark-blue-60;}
+
+.bg-blue-10 {background-color: $blue-10;}
+.bg-blue-20 {background-color: $blue-20;}
+.bg-blue-30 {background-color: $blue-30;}
+.bg-blue-40 {background-color: $blue-40;}
+.bg-blue-50 {background-color: $blue-50;}
+.bg-blue-60 {background-color: $blue-60;}
+
+.bg-azure-10 {background-color: $azure-10;}
+.bg-azure-20 {background-color: $azure-20;}
+.bg-azure-30 {background-color: $azure-30;}
+.bg-azure-40 {background-color: $azure-40;}
+.bg-azure-50 {background-color: $azure-50;}
+.bg-azure-60 {background-color: $azure-60;}
+
+.bg-light-blue-10 {background-color: $light-blue-10;}
+.bg-light-blue-20 {background-color: $light-blue-20;}
+.bg-light-blue-30 {background-color: $light-blue-30;}
+.bg-light-blue-40 {background-color: $light-blue-40;}
+.bg-light-blue-50 {background-color: $light-blue-50;}
+.bg-light-blue-60 {background-color: $light-blue-60;}
+
+.bg-barn-red-10 {background-color: $barn-red-10;}
+.bg-barn-red-20 {background-color: $barn-red-20;}
+.bg-barn-red-30 {background-color: $barn-red-30;}
+.bg-barn-red-40 {background-color: $barn-red-40;}
+.bg-barn-red-50 {background-color: $barn-red-50;}
+.bg-barn-red-60 {background-color: $barn-red-60;}
+
+.bg-scarlet-red-10 {background-color: $scarlet-red-10;}
+.bg-scarlet-red-20 {background-color: $scarlet-red-20;}
+.bg-scarlet-red-30 {background-color: $scarlet-red-30;}
+.bg-scarlet-red-40 {background-color: $scarlet-red-40;}
+.bg-scarlet-red-50 {background-color: $scarlet-red-50;}
+.bg-scarlet-red-60 {background-color: $scarlet-red-60;}
+
+.bg-alloy-orange-10 {background-color: $alloy-orange-10;}
+.bg-alloy-orange-20 {background-color: $alloy-orange-20;}
+.bg-alloy-orange-30 {background-color: $alloy-orange-30;}
+.bg-alloy-orange-40 {background-color: $alloy-orange-40;}
+.bg-alloy-orange-50 {background-color: $alloy-orange-50;}
+.bg-alloy-orange-60 {background-color: $alloy-orange-60;}
+
+.bg-brown-10 {background-color: $brown-10;}
+.bg-brown-20 {background-color: $brown-20;}
+.bg-brown-30 {background-color: $brown-30;}
+.bg-brown-40 {background-color: $brown-40;}
+.bg-brown-50 {background-color: $brown-50;}
+.bg-brown-60 {background-color: $brown-60;}
+
+.bg-silver-grey-10 {background-color: $silver-grey-10;}
+.bg-silver-grey-20 {background-color: $silver-grey-20;}
+.bg-silver-grey-30 {background-color: $silver-grey-30;}
+.bg-silver-grey-40 {background-color: $silver-grey-40;}
+.bg-silver-grey-50 {background-color: $silver-grey-50;}
+.bg-silver-grey-60 {background-color: $silver-grey-60;}
+
+.bg-dark-grey-10 {background-color: $dark-grey-10;}
+.bg-dark-grey-20 {background-color: $dark-grey-20;}
+.bg-dark-grey-30 {background-color: $dark-grey-30;}
+.bg-dark-grey-40 {background-color: $dark-grey-40;}
+.bg-dark-grey-50 {background-color: $dark-grey-50;}
+.bg-dark-grey-60 {background-color: $dark-grey-60;}
+
+.bg-success {background-color: $success;}
+.bg-warning {background-color: $warning;}
+.bg-danger {background-color: $danger;}
+.bg-info {background-color: $info;}
+.bg-inverse {background-color: $inverse;}
+
+.bg-success-light {background-color: $success-light;}
+.bg-warning-light {background-color: $warning-light;}
+.bg-danger-light {background-color: $danger-light;}
+.bg-info-light {background-color: $info-light;}
+.bg-inverse-light {background-color: $inverse-light;}
+
+
+/* Legacy colors
+  $alt-blue: #006b75;
+  $mid-blue: #436974;
+  $light-blue: #D6DFE6;
+  $text-fade: #71A2AA;
+  $text-header-link: #79A8B2;
+
+  $grey-bg: #D7E0E6;
+  $lighter-grey: #F5F5F5; (previous light-bg became new light-grey)
+  $mid-grey: #EAEAEB;
+  $dark-grey: #E6E6E6;
+  $black-fade: #666666;
+
+  $maroon: #c35d58;
+*/

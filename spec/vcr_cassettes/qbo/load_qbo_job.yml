@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="TM4hK5hOSJjfn0OJ5wUg6lchnAojasnIwrHjoRy3U",
+        oauth_signature="cgIPMHwxwEFKCg6qJLc36QEhjKU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296497", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:01:34 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=CE2673624B30B2E6821DCEE8A54F3170.c1-pprdqboas30d; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296494853824; path=/; expires=Tue, 10-Sep-13 17:01:34
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '312'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q013472960670985d14da3</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:01:38 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/jobs/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="1No1qqdIW8WAaKz2zrI3miBszXSkLnbovIRgzZpA",
+        oauth_signature="YB5jYbXCSAiiNlpqKcC3KEMdv8I%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296498", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:01:36 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=0DA810B45A7DF571AAE05F801CFD4116.c36-pprdqboas307; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296496128055; path=/; expires=Tue, 10-Sep-13 17:01:36
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '556'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:SearchResults
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:CdmCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:type="Jobs"><Job><Id idDomain="QBO">11</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:24-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime></MetaData><Name>Direct--Minimum
+        Viable Product</Name><WebSite/><Email/><CustomField xsi:type="BooleanTypeCustomField"><DefinitionId>Bill
+        With Parent</DefinitionId><Value>true</Value></CustomField><CustomField xsi:type="StringTypeCustomField"><DefinitionId>Preferred
+        Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Direct--Minimum
+        Viable Product</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance><CustomerId
+        idDomain="QBO">9</CustomerId><CustomerName>Profitably, Inc.</CustomerName></Job><Job><Id
+        idDomain="QBO">10</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:24-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime></MetaData><Name>Direct--Prototype</Name><WebSite/><Email/><CustomField
+        xsi:type="BooleanTypeCustomField"><DefinitionId>Bill With Parent</DefinitionId><Value>true</Value></CustomField><CustomField
+        xsi:type="StringTypeCustomField"><DefinitionId>Preferred Delivery Method</DefinitionId><Value>PRINT</Value></CustomField><ShowAs>Direct--Prototype</ShowAs><OpenBalance><Amount>0</Amount></OpenBalance><CustomerId
+        idDomain="QBO">9</CustomerId><CustomerName>Profitably, Inc.</CustomerName></Job></qbo:CdmCollections><qbo:Count>2</qbo:Count><qbo:CurrentPage>1</qbo:CurrentPage></qbo:SearchResults>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:01:40 GMT
+recorded_with: VCR 2.2.4

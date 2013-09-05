@@ -1,0 +1,403 @@
+@import "colors";
+@import "mixins";
+
+#main_chart {
+  border-color: #666;
+  background-color: #fff;
+  .widget-block {
+    clear: both;
+  }
+}
+
+#main-d3-chart {
+  height: 400px;
+  margin: -10px;
+  
+  .sankey-chart {
+    .node {
+      stroke: #fff;
+      stroke-width: 2px;
+    }
+
+    .link {
+      fill: none;
+      stroke: #000;
+      opacity: .3;
+    }
+    .link.on {
+      stroke: #F00;
+      opacity: .7;
+    }
+
+    .node {
+        stroke: none;
+    }
+  }
+  
+  .draggable-node-chart {
+
+    ul {
+      list-style-type: none;
+      margin: 0.5em 0em 0.5em 0em;
+      width: 100%; 
+    }
+
+    ul li {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 0em;
+      padding: 0em 1em; 
+    }
+
+    .axis { 
+      font-size: 1.5em; 
+    }
+
+    .chart {
+      background-color: #F7F2C5;
+      width: 960px;
+      height: 500px; 
+    }
+
+    circle, .line {
+      fill: none;
+      stroke: steelblue;
+      stroke-width: 2px; 
+    }
+
+    circle {
+      fill: white;
+      fill-opacity: 0.2;
+      cursor: move; 
+    }
+
+    circle.selected {
+      fill: #ff7f0e;
+      stroke: #ff7f0e; 
+    }
+
+    circle:hover {
+      fill: #ff7f0e;
+      stroke: #707f0e; 
+    }
+
+    circle.selected:hover {
+      fill: #ff7f0e;
+      stroke: #ff7f0e; 
+    }
+  }
+  
+  .ui-button {
+    border: 1px solid $grey;
+    padding: 5px;
+  }
+  
+  .axis {
+    &.yAxis, &.xAxis {
+      @include data-label()
+    }
+    
+    &.yAxis {
+      line, path {
+        stroke: $grey;
+        stroke-width: 2px;
+      }
+      
+      .domain {
+        stroke: none;
+      }
+    }
+  }
+  
+  .point {
+    stroke-width: 2px;
+    z-index: 100;
+    
+    &.point-noise { fill: $grey }
+    &.point-dogs { fill: $danger }
+    &.point-sprouts { fill: $info }
+    &.point-stars { fill: $success }
+  }
+  
+  path {
+    &.line {
+      stroke-width: 4px;
+    }
+  }
+}
+
+#main-chart-header {
+  .btn-group {
+    margin-bottom: 8px;
+  }
+}
+
+#main-chart-legend {
+  .well {
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .chart-legend {
+    margin: 1px 0 0 15px;
+    padding: 5px 0 0 0;
+    list-style: none;
+    
+    @include clearfix;
+    
+    li {
+      float: left;
+      text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+      margin: 0 15px 5px 0;
+      
+      span {
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        margin: 0 6px 0 0;
+        width: 6px;
+        height: 6px;
+        border-radius: 1em;
+        box-shadow: 1px 1px 0 rgba(255,255,255,0.8),
+        inset 1px 1px 1px rgba(0,0,0,0.2);
+        &.point-noise { background-color: $grey }
+        &.point-dogs { background-color: $danger }
+        &.point-sprouts { background-color: $info }
+        &.point-stars { background-color: $success }
+      }
+    }
+  }
+}
+
+#chart-container {
+  border: 1px solid #E6E6E6;
+  margin-top: 20px;
+  position: relative;
+  .uncategorized {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px;
+    z-index: 1;
+    border-left: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    background: #fff;
+  }
+  .empty {
+    background: #F2F2F3;
+    color: #9B9DA1;
+    font-weight: bold;
+    height: 150px;
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 132px;
+    text-align: center;
+    width: 938px;
+  }
+}
+
+#chart {
+  width: 938px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.chart-legend {
+  margin: 0 0 10px 10px;
+  color: $heading-black;
+  overflow: hidden;
+  
+  .legend-item {
+    float: left;
+    overflow: hidden;
+    margin-right: 10px;
+    .color, .text {
+      float: left;
+    }
+    .color {
+      width: 14px;
+      height: 14px;
+      border: 1px solid #E6E6E6;
+      margin-right: 8px;
+    }
+    .text {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+.mini-chart-container {
+  height: 38px;
+}
+
+.metric-inner-container {
+  height: 225px;
+  
+  .bar {
+    fill: $primary;
+  }
+}
+
+
+
+
+
+/* series styling */
+
+
+path.sparkline {
+  stroke: $primary;
+  stroke-width: 1px;
+  fill: none;
+}
+
+
+
+path.line {
+  fill: none;
+  stroke-width: 2px;
+}
+
+path.area {
+  fill: #e7e7e7;
+}
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.xAxis.axis line {
+  stroke: #fff;
+}
+
+.xAxis.axis .minor {
+  stroke-opacity: .5;
+}
+
+.xAxis.axis path {
+  display: none;
+}
+
+.yAxis.axis line, .yAxis.axis path {
+  fill: none;
+  stroke: #000;
+}
+
+
+
+
+
+
+
+
+
+
+div.tipsy.help-tip.seg-tipsy .tipsy-inner div {
+  padding: 6px;
+}
+
+/* ScatterChart stylings */
+/* Designers: I used an SVG viewbox to dynamically resize the chart  */
+/* http://www.w3.org/TR/SVG/coords.html#ViewBoxAttribute */
+/* You may find a better way to resize dynamically. */
+/* Please don't hesitate to contact me for any info: esbullington on github */
+
+#scatter {
+  width: 65%;
+}
+.scatter.xaxis path,
+.scatter.xaxis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.scatter.yaxis path,
+.scatter.yaxis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.scatter.xaxis text,
+.scatter.xaxis text {
+  fill: black;
+  font-size: 12px;
+}
+
+
+/* Leaderboard styling */
+
+.leaderboard {
+  &.label {
+    fill: $grey;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  &.value {
+    font-size: 27px;
+    fill: darken($grey, 40%);
+    text-anchor: end;
+    
+    @include proxima-800();
+  }
+  
+  &.change {
+    fill: $grey;
+    font-size: 12px;
+    
+    @include proxima-bold();
+  }
+  
+  .triangle-down {
+    fill: $danger;
+    stroke: none;
+  }
+  
+  .triangle-up {
+    fill: $success;
+    stroke: none;
+  }
+  
+  &.track {
+    fill: lighten($grey, 25%);
+    stroke: none;
+  }
+  
+  &.bar {
+    fill: $primary;
+    stroke: none;
+  }
+}
+
+/* Gauge styling */
+
+.gauge {
+  &.arc {
+    fill: lighten($grey, 25%);
+  }
+  
+  &.arc-value {
+    fill: $primary;
+  }
+  
+  &.pointer-circle {
+    fill: $lighter-grey;
+    stroke: $heading-grey;
+  }
+  
+  &.pointer, &.pointer-nail {
+    stroke: none;
+    fill: darken($grey, 35%);
+  }
+    
+  &.label {
+    font-size: 27px;
+    fill: darken($grey, 40%);
+    text-anchor: middle;
+    
+    @include proxima-800();
+  }
+}

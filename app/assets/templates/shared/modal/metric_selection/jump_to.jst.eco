@@ -1,0 +1,34 @@
+<div class="search-input-box"></div>
+<% if @allowJumpTo: %>
+  <div class="modal-search-jump-to">
+
+    <% for item in @mass: %>
+    <select class="modal-select">
+      <option selected disabled>jump to 
+      <% i = 0 %>
+      <% for element in item: %>
+        <% if i isnt 0: %>
+         /
+        <% end %>
+      <%= element.name %>
+      <% i++ %>
+      <% end %>
+      </option>
+        <% for element in item: %>
+          <optgroup label="<%= element.name %>">
+            <% for child in element: %>
+              <option class="child" id="<%= element.name %>" value="<%= child.id %>"><%= child.name %></option>
+            <% end %>
+          </optgroup>
+        <% end %>
+    </select>
+    <% end %>
+
+  </div>
+  <div class="modal-search-results" hidden>
+    <h4>Matches</h4>
+    <h4 class="modal-search-no-results" hidden>No results</h4>
+    <div class="modal-search-ul-container">
+    </div>
+  </div>
+<% end %>

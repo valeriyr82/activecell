@@ -1,0 +1,96 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="iFJacva6nOA6s0jdZZZGLO8vYwOuLv7cgnEIPsi0",
+        oauth_signature="iWaNTsg%2BAe%2FVzEdcKcSI2cEYpXI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296391", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 16:59:49 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=E8CB497786D8AEBF81A9C27AA819547E.c1-pprdqboas30h; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296389107448; path=/; expires=Tue, 10-Sep-13 16:59:49
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '312'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q013472960670985d14da3</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 16:59:53 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/payment-methods/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="D5AmaRq5MxMtUSr0ileFRlATii8Fvn4zD6dEmyc0",
+        oauth_signature="RELT3VIviN5rcmNYpSYSzBh%2Fys0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296393", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 16:59:50 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=C7864E1BBCB00D24B877F644BE220D1F.c36-pprdqboas307; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296390378728; path=/; expires=Tue, 10-Sep-13 16:59:50
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '498'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:SearchResults
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:CdmCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:type="PaymentMethods"><PaymentMethod><Id idDomain="QBO">10</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>American
+        Express</Name><Type>CREDIT_CARD</Type></PaymentMethod><PaymentMethod><Id idDomain="QBO">18</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>Braintree</Name><Type>CREDIT_CARD</Type></PaymentMethod><PaymentMethod><Id
+        idDomain="QBO">8</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>Cash</Name><Type>NON_CREDIT_CARD</Type></PaymentMethod><PaymentMethod><Id
+        idDomain="QBO">9</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>Check</Name><Type>NON_CREDIT_CARD</Type></PaymentMethod><PaymentMethod><Id
+        idDomain="QBO">14</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>Debit
+        Card</Name><Type>CREDIT_CARD</Type></PaymentMethod><PaymentMethod><Id idDomain="QBO">11</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>Discover</Name><Type>CREDIT_CARD</Type></PaymentMethod><PaymentMethod><Id
+        idDomain="QBO">16</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>E-Check</Name><Type>CREDIT_CARD</Type></PaymentMethod><PaymentMethod><Id
+        idDomain="QBO">15</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>Gift
+        Card</Name><Type>CREDIT_CARD</Type></PaymentMethod><PaymentMethod><Id idDomain="QBO">17</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>Intuit</Name><Type>CREDIT_CARD</Type></PaymentMethod><PaymentMethod><Id
+        idDomain="QBO">12</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>MasterCard</Name><Type>CREDIT_CARD</Type></PaymentMethod><PaymentMethod><Id
+        idDomain="QBO">13</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>Visa</Name><Type>CREDIT_CARD</Type></PaymentMethod></qbo:CdmCollections><qbo:Count>11</qbo:Count><qbo:CurrentPage>1</qbo:CurrentPage></qbo:SearchResults>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 16:59:54 GMT
+recorded_with: VCR 2.2.4

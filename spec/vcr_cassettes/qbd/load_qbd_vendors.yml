@@ -1,0 +1,287 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://services.intuit.com/sb/vendor/v2/174322770
+    body:
+      encoding: US-ASCII
+      string: ! "<VendorQuery xmlns=\"http://www.intuit.com/sb/cdm/v2\">\n  <StartPage>1</StartPage>\n  <ChunkSize>500</ChunkSize>\n</VendorQuery>\n"
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="dEkIxIVO5z25rxjFAIGxGC9ov7G2gre5tYxBTvBnsw",
+        oauth_signature="0kYCPR6lDwy1Rgia9udWH4J9bwk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1345541318", oauth_token="qyprdccBfAsG24NCvLzv88kkkXtWccNPxQPn7ygRGZz4Yv14",
+        oauth_version="1.0"
+      Content-Type:
+      - text/xml
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Aug 2012 09:28:40 GMT
+      Server:
+      - Apache/2.2.3 (Oracle)
+      Content-Encoding:
+      - gzip
+      Response-Id:
+      - 45d4c52d-d277-442e-8e1d-9967c5239a31
+      Response-App-Time:
+      - '891'
+      Response-Db-Time:
+      - '858'
+      Response-Routing-Time:
+      - '904'
+      Content-Length:
+      - '15130'
+      Connection:
+      - close
+      Content-Type:
+      - text/xml
+    body:
+      encoding: US-ASCII
+      string: ! '<RestResponse xmlns="http://www.intuit.com/sb/cdm/v2"
+
+        xmlns:xdb          ="http://xmlns.oracle.com/xdb"
+
+        xmlns:xsi          ="http://www.w3.org/2001/XMLSchema-instance"
+
+        xsi:schemaLocation ="http://www.intuit.com/sb/cdm/v2 ../common/RestDataFilter.xsd">
+        <Vendors>
+
+          <Vendor>
+
+            <Id idDomain="QB">307</Id>
+
+            <SyncToken>1</SyncToken>
+
+            <MetaData>
+
+              <CreatedBy>app</CreatedBy>
+
+              <CreateTime>2012-03-12T18:04:37.0Z</CreateTime>
+
+              <LastModifiedBy>app</LastModifiedBy>
+
+              <LastUpdatedTime>2012-03-12T18:04:37.0Z</LastUpdatedTime>
+
+            </MetaData>
+
+            <ExternalKey idDomain="QB">307</ExternalKey>
+
+            <Synchronized>true</Synchronized>
+
+            <PartyReferenceId idDomain="QB">307</PartyReferenceId>
+
+            <TypeOf>Person</TypeOf>
+
+            <Name>Mutually Human</Name>
+
+            <Active>true</Active>
+
+            <ShowAs>Mutually Human</ShowAs>
+
+            <OpenBalance>
+
+              <CurrencyCode>USD</CurrencyCode>
+
+              <Amount>0</Amount>
+
+            </OpenBalance>
+
+            <OpenBalanceDate>2012-02-07</OpenBalanceDate>
+
+            <Vendor1099>false</Vendor1099>
+
+          </Vendor>
+
+          <Vendor>
+
+            <Id idDomain="QB">304</Id>
+
+            <SyncToken>1</SyncToken>
+
+            <MetaData>
+
+              <CreatedBy>app</CreatedBy>
+
+              <CreateTime>2012-03-12T17:17:52.0Z</CreateTime>
+
+              <LastModifiedBy>app</LastModifiedBy>
+
+              <LastUpdatedTime>2012-03-12T17:17:52.0Z</LastUpdatedTime>
+
+            </MetaData>
+
+            <ExternalKey idDomain="QB">304</ExternalKey>
+
+            <Synchronized>true</Synchronized>
+
+            <PartyReferenceId idDomain="QB">304</PartyReferenceId>
+
+            <TypeOf>Person</TypeOf>
+
+            <Name>BuyDomains</Name>
+
+            <Active>true</Active>
+
+            <ShowAs>BuyDomains</ShowAs>
+
+            <OpenBalance>
+
+              <CurrencyCode>USD</CurrencyCode>
+
+              <Amount>0</Amount>
+
+            </OpenBalance>
+
+            <OpenBalanceDate>2012-01-16</OpenBalanceDate>
+
+            <Vendor1099>false</Vendor1099>
+
+          </Vendor>
+
+          <Vendor>
+
+            <Id idDomain="QB">303</Id>
+
+            <SyncToken>1</SyncToken>
+
+            <MetaData>
+
+              <CreatedBy>app</CreatedBy>
+
+              <CreateTime>2012-03-12T17:17:31.0Z</CreateTime>
+
+              <LastModifiedBy>app</LastModifiedBy>
+
+              <LastUpdatedTime>2012-03-12T17:17:31.0Z</LastUpdatedTime>
+
+            </MetaData>
+
+            <ExternalKey idDomain="QB">303</ExternalKey>
+
+            <Synchronized>true</Synchronized>
+
+            <PartyReferenceId idDomain="QB">303</PartyReferenceId>
+
+            <TypeOf>Person</TypeOf>
+
+            <Name>Tumblr</Name>
+
+            <Active>true</Active>
+
+            <ShowAs>Tumblr</ShowAs>
+
+            <OpenBalance>
+
+              <CurrencyCode>USD</CurrencyCode>
+
+              <Amount>0</Amount>
+
+            </OpenBalance>
+
+            <OpenBalanceDate>2012-01-25</OpenBalanceDate>
+
+            <Vendor1099>false</Vendor1099>
+
+          </Vendor>
+
+          <Vendor>
+
+            <Id idDomain="QB">302</Id>
+
+            <SyncToken>1</SyncToken>
+
+            <MetaData>
+
+              <CreatedBy>app</CreatedBy>
+
+              <CreateTime>2012-03-12T17:16:08.0Z</CreateTime>
+
+              <LastModifiedBy>app</LastModifiedBy>
+
+              <LastUpdatedTime>2012-03-12T17:16:08.0Z</LastUpdatedTime>
+
+            </MetaData>
+
+            <ExternalKey idDomain="QB">302</ExternalKey>
+
+            <Synchronized>true</Synchronized>
+
+            <PartyReferenceId idDomain="QB">302</PartyReferenceId>
+
+            <TypeOf>Person</TypeOf>
+
+            <Name>FTD</Name>
+
+            <Active>true</Active>
+
+            <ShowAs>FTD</ShowAs>
+
+            <OpenBalance>
+
+              <CurrencyCode>USD</CurrencyCode>
+
+              <Amount>0</Amount>
+
+            </OpenBalance>
+
+            <OpenBalanceDate>2012-02-26</OpenBalanceDate>
+
+            <Vendor1099>false</Vendor1099>
+
+          </Vendor>
+
+          <Vendor>
+
+            <Id idDomain="QB">301</Id>
+
+            <SyncToken>1</SyncToken>
+
+            <MetaData>
+
+              <CreatedBy>app</CreatedBy>
+
+              <CreateTime>2012-03-12T17:15:31.0Z</CreateTime>
+
+              <LastModifiedBy>app</LastModifiedBy>
+
+              <LastUpdatedTime>2012-03-12T17:15:31.0Z</LastUpdatedTime>
+
+            </MetaData>
+
+            <ExternalKey idDomain="QB">301</ExternalKey>
+
+            <Synchronized>true</Synchronized>
+
+            <PartyReferenceId idDomain="QB">301</PartyReferenceId>
+
+            <TypeOf>Person</TypeOf>
+
+            <Name>Track1099</Name>
+
+            <Active>true</Active>
+
+            <ShowAs>Track1099</ShowAs>
+
+            <OpenBalance>
+
+              <CurrencyCode>USD</CurrencyCode>
+
+              <Amount>0</Amount>
+
+            </OpenBalance>
+
+            <OpenBalanceDate>2012-01-30</OpenBalanceDate>
+
+            <Vendor1099>false</Vendor1099>
+
+          </Vendor>
+
+        </Vendors>
+    </RestResponse>'
+    http_version: 
+  recorded_at: Tue, 21 Aug 2012 09:28:42 GMT
+recorded_with: VCR 2.2.4

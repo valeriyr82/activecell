@@ -1,0 +1,37 @@
+<td>
+  <img src="<%= @avatarUrl %>" width="32" height="32" />
+  <%= @name %>
+</td>
+<td>
+  <% if @type == 'user': %>
+    <a href="mailto:<%= @email %>"><%= @email %></a>
+  <% else: %>
+    --
+  <% end %>
+</td>
+<td class="centered"><%= @type %></td>
+<td class="has-access centered">
+  <% if not @currentUser and not @overrideBilling: %>
+    <ul class="switch">
+      <% if @hasAccess: %>
+        <li class="revoke-access"
+            id="revoke-access-<%= @id %>">
+          <i class="icon-small-check-mark2 icon-white"></i>
+        </li>
+      <% else: %>
+        <li class="active grant-access"
+            id="grant-access-<%= @id %>">
+          <i class="icon-small-cross-small icon-white"></i>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <% if @currentUser: %>
+    Yes<br/> <small>(this is you)</small>
+  <% end %>
+
+  <% if @overrideBilling: %>
+    <i>no access</i>
+  <% end %>
+</td>

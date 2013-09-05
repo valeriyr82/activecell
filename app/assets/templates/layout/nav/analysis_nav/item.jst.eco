@@ -1,0 +1,17 @@
+<span class="actions">
+  <i class="icon-small-dashboard icon-blue icon-analysis-nav" data-original-title="Add to dashboard"></i>
+  <i class="icon-small-plus2 icon-blue icon-analysis-nav" data-original-title="Add to custom report"></i>
+  <i class="icon-small-mail icon-blue icon-analysis-nav" data-original-title="Email report"></i>
+  <i class="icon-small-download icon-blue icon-analysis-nav" data-original-title="Download report"></i>
+</span>
+<a title="<%= @name %>" href="#<%= @path %>">
+  <table class="table-lnk">
+    <tr>
+      <td class="mini-chart"></td>
+      <td class="metric-col">
+        <span class="metric-name"><%= @name %></span>
+        <span class="metric-value"><%= @metricValue %></span>
+      </td>
+    </tr>
+  </table>
+</a>

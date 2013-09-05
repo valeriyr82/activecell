@@ -1,0 +1,1100 @@
+<header id="overview">
+  <h1>components</h1>
+  <p class="lead">a handful of reusable components to provide navigation, alerts, popovers, and much more!</p>
+  <div class="subnav middle-bar">
+    <div class="container">
+      <ul class="nav nav-pills">
+        <li><a href="#breadcrumbs">breadrumbs</a></li>
+        <li><a href="#widgets">widgets</a></li>
+        <li><a href="#ui-components">ui components</a></li>
+        <li><a href="#notification-windows">notification windows</a></li>
+        <li><a href="#pagination">pagination</a></li>
+        <li><a href="#misc-elements">misc elements</a></li>
+        <li><a href="#alerts">alerts</a></li>
+        <li><a href="#dashboard-widgets">dashboard widgets</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section id="breadcrumbs">
+  <div class="page-header">
+    <h1>Breadcrumbs <small></small></h1>
+  </div>
+  <div class="row">
+    <div class="span8">
+      <h3>Examples</h3>
+      <p>A single example shown as it might be displayed across multiple pages.</p>
+      <ul class="breadcrumbs">
+        <li class="active">Home</li>
+      </ul>
+      <br />
+      <ul class="breadcrumbs">
+        <li><a href="#">Home</a></li> <li class="active">Library</li>
+      </ul>
+      <br />
+      <ul class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li class="active">Data</li>
+      </ul>
+    </div>
+    <div class="span8">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;ul class="breadcrumbs"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;Data&lt;/li&gt;
+&lt;/ul&gt;</pre>
+    </div>
+  </div>
+</section>
+
+<section id="widgets">
+  <div class="page-header">
+    <h1>Widgets</h1>
+  </div> 
+  <div class="row">
+    <div class="span8">
+      <h3>Example</h3>
+      <div class="widget-block">
+        <img width="" height="" alt="" src="/assets/placeholder_widget.png">
+      </div>
+    </div>
+    <div class="span8">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;div class="widget-block"&gt;
+    ...
+&lt;/div&gt;</pre>      
+    </div>
+  </div>
+  <div class="row">  
+    <div class="span8">
+      <h3>Textured example</h3>
+      <div class="widget-block well textured">
+        <img width="" height="" alt="" src="/assets/placeholder_widget.png">
+      </div>
+    </div>
+    <div class="span8">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;div class="widget-block well textured"&gt;
+    ...
+&lt;/div&gt;</pre>
+    </div>
+  </div>
+</section>
+
+<section id="ui-components">
+  <div class="page-header">
+    <h1>UI Components</h1>
+  </div>
+  <div class="row">
+    <div class="span4">
+      <h3>Switchers</h3>
+      <div class="offset1">
+        <br />
+        <ul class="switch">
+          <li><i class="icon-small-check-mark2 icon-white"></i><!-- --></li>
+          <li class="active"><i class="icon-small-cross-small icon-white"></i><!-- --></li>
+          <li><!-- --></li>
+          <li class="active"><!-- --></li>
+        </ul>
+      </div>
+    </div>
+    <div class="span10">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;ul class="switch"&gt;
+  &lt;li&gt;&lt;i class="icon-small-check-mark2 icon-white">&lt;/i&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;i class="icon-small-cross-small icon-white">&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>      
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="span4">
+      <h3>Scrollbar</h3>
+      <div class="offset1">
+        <br />
+        <ul class="ui-scrollbar">
+          <li>
+            <div style="bottom: 80%" class="ui-slider-handler"><!-- --></div>
+            <div class="ui-slider-track"><!-- --></div>        
+          </li>
+      </ul>
+      </div>
+    </div>
+
+    <div class="span10">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;ul class="ui-scrollbar"&gt;
+  &lt;li&gt;
+    &lt;div style="bottom: 80%" class="ui-slider-handler"&gt;&lt;/div&gt;
+    &lt;div class="ui-slider-track"&gt;&lt;/div&gt;     
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>      
+    </div>
+  </div>    
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="span4">
+      <h3>Vertical Slider</h3>
+      <div class="offset1">
+        <br />
+        <ul style="margin-left: -20px" class="ui-vertical-slider">
+          <li>
+            <div style="bottom: 80%" class="ui-slider-handler"><!-- --></div>
+            <div style="height: 80%" class="ui-slider-fill"><!-- --></div>
+            <div class="ui-slider-track"><!-- --></div>
+          </li>
+          <li>
+            <div style="bottom: 70%" class="ui-slider-handler"><!-- --></div>
+            <div style="height: 70%" class="ui-slider-fill"><!-- --></div>
+            <div class="ui-slider-track"><!-- --></div>
+          </li>
+          <li>
+            <div style="bottom: 60%" class="ui-slider-handler"><!-- --></div>
+            <div style="height: 60%" class="ui-slider-fill"><!-- --></div>
+            <div class="ui-slider-track"><!-- --></div>
+          </li> 
+        </ul>
+      </div>
+    </div>
+
+    <div class="span10">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;ul class="ui-vertical-slider"&gt;
+  &lt;li&gt;
+    &lt;div style="bottom: 80%" class="ui-slider-handler"&gt;&lt;/div&gt;
+    &lt;div style="height: 80%" class="ui-slider-fill">&lt;/div&gt;
+    &lt;div class="ui-slider-track">&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div style="bottom: 70%" class="ui-slider-handler"&gt;&lt;/div&gt;
+    &lt;div style="height: 70%" class="ui-slider-fill"&gt;&lt;/div&gt;
+    &lt;div class="ui-slider-track"&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div style="bottom: 60%" class="ui-slider-handler"&gt;&lt;/div&gt;
+    &lt;div style="height: 60%" class="ui-slider-fill"&gt;&lt;/div&gt;
+    &lt;div class="ui-slider-track">&lt;/div&gt;
+  &lt;/li&gt; 
+&lt;/ul&gt;</pre>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="span4">
+      <h3>Horizontal Slider</h3>
+
+      <br />
+      <br />
+      
+      <ul class="ui-horizontal-slider">
+        <li>
+          <div class="ui-slider-title"><strong>2800</strong> <em>of</em> <strong>3100</strong></div>
+          <div style="left: 80%" class="ui-slider-handler"><!-- --></div>
+          <div style="width: 80%" class="ui-slider-fill"><!-- --></div>
+          <div class="ui-slider-track"><!-- --></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="span12">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;ul class="ui-horizontal-slider"&gt;
+  &lt;li&gt;
+    &lt;div class="ui-slider-title"&gt;&lt;strong&gt;2800&lt;/strong&gt; &lt;em&gt;of&lt;/em&gt; &lt;strong&gt;3100&lt;/strong&gt;&lt;/div&gt;
+    &lt;div style="left: 80%" class="ui-slider-handler"&gt;&lt;/div&gt;
+    &lt;div style="width: 80%" class="ui-slider-fill"&gt;&lt;/div&gt;
+    &lt;div class="ui-slider-track"&gt;&lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="span4">
+      <h3>Horizontal Slider</h3>
+
+      <br />
+      <br />
+      
+      <ul class="ui-horizontal-slider">
+        <li>
+          <div class="ui-slider-title"><em>from</em> <strong>1500</strong> <em>to</em> <strong>3100</strong></div>
+          <div style="left: 60%" class="ui-slider-handler"><!-- --></div>
+          <div style="left: 20%" class="ui-slider-handler"><!-- --></div>
+          <!-- width = 1st hander left pos - 2nd handler left pos (60%-20%); margin-left = 2nd handler left pos (20%) -->
+          <div style="width: 40%; margin-left: 20%" class="ui-slider-fill"><!-- --></div>
+          <div class="ui-slider-track"><!-- --></div>
+        </li>
+    </ul>
+    </div>
+
+    <div class="span12">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;ul class="ui-horizontal-slider"&gt;
+  &lt;li&gt;
+    &lt;div class="ui-slider-title"&gt; ... &lt;/div&gt;
+    &lt;div style="left: 60%" class="ui-slider-handler"&gt;&lt;/div&gt;
+    &lt;div style="left: 20%" class="ui-slider-handler"&gt;&lt;/div&gt;
+    &lt;div style="width: 40%; margin-left: 20%" class="ui-slider-fill"&gt;&lt;/div&gt;
+    &lt;div class="ui-slider-track"&gt;&lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<code>track fill width = 1st hander left pos - 2nd handler left pos (60%-20%); margin-left = 2nd handler left pos (20%)</code>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="span4">
+      <h3>Dropdown</h3>
+
+      <br />
+
+      <ul class="dropdown-list">
+        <li><a href="#"><i class="icon-small-arrow-circle-left icon-grey"></i> Popular</a></li>
+        <li><a href="#"><i class="icon-small-arrow-circle-left icon-grey"></i> Following</a></li>
+        <li><a href="#"><i class="icon-small-arrow-circle-left icon-grey"></i> Likes</a></li>
+      </ul>
+    </div>
+
+    <div class="span12">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;ul class="dropdown-list"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-small-arrow-circle-left icon-grey"&gt;&lt;/i&gt; Popular&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-small-arrow-circle-left icon-grey"&gt;&lt;/i&gt; Following&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-small-arrow-circle-left icon-grey"&gt;>&lt;/i&gt; Likes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+    </div>
+  </div>    
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="span4">
+      <h3>Checkbox</h3>
+
+      <br />
+      
+      <label class="checkbox">
+        Sample checkbox
+        <input type="checkbox">
+      </label>
+
+      <br />
+
+      <label class="checkbox checked">
+        Checked checkbox
+        <input type="checkbox">
+      </label>
+    </div>
+
+    <div class="span12">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;label class="checkbox"&gt;
+  Sample checkbox
+  &lt;input type="checkbox"&gt;
+&lt;/label&gt;
+
+&lt;label class="checkbox checked"&gt;
+  Checked checkbox
+  &lt;input type="checkbox"&gt;
+&lt;/label&gt;</pre>
+    </div>
+  </div>
+</section>
+
+
+<section id="notification-windows">
+  <div class="page-header">
+    <h1>Notification Windows</h1>
+  </div>
+  <div class="row">
+    <div class="span6">
+      <h3>Example</h3>
+      <div class="notification-window">
+        <h2>Notification window</h2>
+        <div class="window-action"><i class="icon-small-cross icon-grey"><!-- --></i></div>
+        <div class="window-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="span10">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;div class="notification-window"&gt;
+&lt;h2&gt;Notification window&lt;/h2&gt;
+  &lt;div class="window-action"&gt;&lt;i class="icon-small-cross icon-grey"&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;div class="window-content"&gt;
+    &lt;p&gt;
+      ...
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>      
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="span6">
+      <h3>With buttons</h3>
+      <div class="notification-window">
+        <h2>Notification window</h2>
+        <div class="window-action"><i class="icon-small-cross icon-grey"><!-- --></i></div>
+        <div class="window-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+        <div class="notification-controls">
+            <button class="btn pull-left">Send</button>
+            <button class="btn danger pull-right">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div class="span10">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;div class="notification-window"&gt;
+  &lt;h2&gt;Notification window&lt;/h2&gt;
+  &lt;div class="window-action"&gt;&lt;i class="icon-small-cross icon-grey"&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;div class="window-content"&gt;
+    &lt;p&gt;
+      ...
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="notification-controls"&gt;
+      &lt;button class="btn pull-left"&gt;Send&lt;/button&gt;
+      &lt;button class="btn danger pull-right"&gt;Cancel&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>      
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="span6">
+      <h3>Message</h3>
+      <div class="message-block">
+        <span class="ribbon red">NEW</span>
+        <h4>Metallica &ndash; Enter Sandman</h4>
+        <br />
+        <p>Laos, alongside many of its Southeast Asian neighbours, is well known.</p>
+      </div>
+    </div>
+    <div class="span10">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;div class="message-block"&gt;
+  &lt;span class="ribbon red">NEW&lt;/span&gt;
+  &lt;h4&gt;Metallica &ndash; Enter Sandman&lt;/h4&gt;
+  &lt;p&gt;Laos, alongside many of its Southeast Asian neighbours, is well known.&lt;/p&gt;
+&lt;/div&gt;</pre>      
+    </div>
+  </div>   
+
+</section>
+
+<br />
+<br />
+
+<section id="pagination">
+  <div class="page-header">
+    <h1>Pagination</h1>
+  </div>
+  <div class="row">
+    <div class="span4">
+      <h3>Example</h3>
+      
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <ul class="pagination-block">
+        <li class="prev"><a href="#"><i class="icon-small-arrow-left icon-grey"><!-- --></i></a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li class="next"><a href="#"><i class="icon-small-arrow-right icon-grey"><!-- --></i></a></li>
+      </ul>
+    </div>
+  <div class="span12">
+    <h3>Sample code</h3>
+      
+      <pre class="well textured">&lt;ul class="pagination-block"&gt;
+  &lt;li class="prev"&gt;&lt;a href="#"&gt;&lt;i class="icon-small-arrow-left icon-grey"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="next"&gt;&lt;a href="#"&gt;&lt;i class="icon-small-arrow-right icon-grey"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="span4">
+      <h3>Example</h3>
+      
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <ul class="alt-pagination-block">
+        <li class="prev"><a href="#"><i class="icon-small-arrow-left icon-grey"><!-- --></i></a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li class="next"><a href="#"><i class="icon-small-arrow-right icon-grey"><!-- --></i></a></li>
+      </ul>
+    </div>
+  <div class="span12">
+    <h3>Sample code</h3>
+      
+      <pre class="well textured">&lt;ul class="alt-pagination-block"&gt;
+  &lt;li class="prev"&gt;&lt;a href="#"&gt;&lt;i class="icon-small-arrow-left icon-grey"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="next"&gt;&lt;a href="#"&gt;&lt;i class="icon-small-arrow-right icon-grey"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+    </div>
+  </div>
+</section>
+
+<section id="misc-elements">
+  <div class="page-header">
+    <h1>Misc Elements</h1>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <h1 style="margin: 0 0 10px 0">BUY</h1>
+      <div class="popup">
+        <ul class="links-block">
+          <li class="active">
+            Personal
+            <span>$25</span>
+          </li>
+          <li>
+            Developers
+            <span>$250</span>
+          </li>        
+        </ul>
+      </div>
+    </div>
+    <div class="span11">
+      <h3>Sample code</h3>
+      
+      <pre class="well textured">&lt;div class="popup"&gt;
+  &lt;ul class="links-block"&gt;
+    &lt;li class="active"&gt;
+      Personal
+      &lt;span>$25&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      Developers
+      &lt;span&gt;$250&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="span5">
+      <h3>Block with counter</h3>
+      <div class="counter-block">
+        <span class="value">250</span>
+        <span class="title">Friends</span>
+      </div>
+      <div class="counter-block">
+        <span class="value">14</span>
+        <span class="title">Likes</span>
+      </div>
+      <div class="counter-block">
+        <span class="value">430</span>
+        <span class="title">Views</span>
+      </div>
+    </div>
+    <div class="span11">
+      <h3>Sample code</h3>
+      
+      <pre class="well textured">&lt;div class="counter-block"&gt;
+  &lt;span class="value">250&lt;/span&gt;
+  &lt;span class="title">Friends&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="counter-block"&gt;
+  &lt;span class="value">14&lt;/span&gt;
+  &lt;span class="title">Likes&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="counter-block"&gt;
+  &lt;span class="value"&gt;430&lt;/span&gt;
+  &lt;span class="title"&gt;Views&lt;/span&gt;
+&lt;/div&gt;</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span5">
+      <h3>Info block</h3>
+      <div class="info-block">
+        <div class="btn-icon">
+          <i class="icon-large-mail icon-grey"><!-- --></i>
+        </div>
+        <div class="value">
+          <h3>1,050</h3>
+          <h4>MAILS EVERYDAY</h4>
+        </div>
+      </div>
+    </div>
+    <div class="span11">
+      <h3>Sample code</h3>
+      
+      <pre class="well textured">&lt;div class="info-block"&gt;
+  &lt;div class="btn-icon"&gt;
+    &lt;i class="icon-large-mail icon-grey"&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;div class="value"&gt;
+    &lt;h3&gt;1,050&lt;/h3&gt;
+    &lt;h4&gt;MAILS EVERYDAY&lt;/h4&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="span6">
+      <h3>Stats block</h3>
+      <div class="stats-block">
+        <header>
+          <span class="title">USA</span>
+          <span class="value">
+            75,4%
+            <aside class="up">+23%</aside>
+          </span>
+        </header>
+        <div class="stats-block-slider">
+          <div style="width: 75%" class="ui-slider-fill"><!-- --></div>
+          <div class="ui-slider-track"><!-- --></div>
+        </div>
+      </div>
+      <div class="stats-block">
+        <header>
+          <span class="title">New Zealand</span>
+          <span class="value">
+            45,7%
+            <aside class="down">-12%</aside>
+          </span>
+        </header>
+        <div class="stats-block-slider">
+          <div style="width: 45%" class="ui-slider-fill"><!-- --></div>
+          <div class="ui-slider-track"><!-- --></div>
+        </div>
+      </div>
+    </div>
+    <div class="span10">
+      <h3>Sample code</h3>
+      
+      <pre class="well textured">&lt;div class="stats-block"&gt;
+  &lt;header&gt;
+    &lt;span class="title"&gt;USA&lt;/span&gt;
+    &lt;span class="value"&gt;
+      75,4%
+      &lt;aside class="up"&gt;+23%&lt;/aside&gt;
+    &lt;/span&gt;
+  &lt;/header&gt;
+  &lt;div class="stats-block-slider"&gt;
+    &lt;div style="width: 75%" class="ui-slider-fill"&gt;&lt;div&gt;
+    &lt;div class="ui-slider-track">&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span6">
+      <h3>Equations (ascii)</h3>
+
+      <br />
+
+      <div class="comment">
+        `x = (-b +- sqrt(b^2-4ac))/(2a)`
+      </div>
+
+    </div>
+    <div class="span10">
+      <h3>Sample code</h3>
+      
+      <pre class="well textured">&lt;div class="comment"&gt;
+  &grave;x = (-b +- sqrt(b^2-4ac))/(2a)&grave; 
+&lt;/div&gt;</pre>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="span6">
+      <h3>Equations (MathML)</h3>
+
+      <br />
+      <br />
+
+      <div class="comment">
+          <math display='block'>
+            <mrow>
+              <mrow>
+                <msub>
+                  <mo>&#x222b;</mo>
+                  <mrow>
+                    <mi>D</mi>
+                  </mrow>
+                </msub>
+                <mrow>
+                  <mo>
+                    (</mo><mo>&#x2207;&#x22c5;</mo><mi>F</mi><mo>)
+                  </mo>
+                </mrow>
+                <mi>d</mi>
+                <mrow>
+                  <mi>V</mi>
+                </mrow>
+              </mrow>
+              <mo>=</mo>
+              <mrow>
+                <msub>
+                  <mo>&#x222b;</mo>
+                  <mrow>
+                    <mo>&#x2202;</mo>
+                    <mi>D</mi>
+                  </mrow>
+                </msub>
+                <mrow>
+                  <mtext>&#x2009;</mtext>
+                  <mi>F</mi>
+                  <mo>&#x22c5;</mo>
+                  <mi>n</mi>
+                </mrow>
+                <mi>d</mi>
+                <mi>S</mi>
+              </mrow>
+            </mrow>
+          </math>
+      </div>
+    </div>
+
+    <div class="span10">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;div class="comment"&gt;
+  &lt;math display='block'&gt;
+    &lt;mrow&gt;
+      &lt;mrow&gt;
+        &lt;msub&gt;
+          &lt;mo&gt;&amp;#x222b;&lt;/mo&gt;
+          &lt;mrow&gt;
+            &lt;mi>D&lt;/mi&gt;
+          &lt;/mrowv
+        &lt;/msub&gt;
+        &lt;mrow&gt;
+          &lt;mo&gt;
+            (&lt;/mo&gt;&lt;mo&gt;&amp;#x2207;&amp;#x22c5;&lt;/mo&gt;&lt;mi&gt;F&lt;/mi&gt;&lt;mo&gt;)
+          &lt;/mo&gt;
+        &lt;/mrow&gt;
+        &lt;mi>d&lt;/mi&gt;
+        &lt;mrow&gt;
+          &lt;mi>V&lt;/mi&gt;
+        &lt;/mrow&gt;
+      &lt;/mrow&gt;
+      &lt;mo&gt;=&lt;/mo&gt;
+      &lt;mrow&gt;
+        &lt;msub&gt;
+          &lt;mo&gt;&amp;#x222b;&lt;/mo&gt;
+          &lt;mrow&gt;
+            &lt;mo&gt;&amp;#x2202;&lt;/mo&gt;
+            &lt;mi&gt;D&lt;/mi&gt;
+          &lt;/mrow&gt;
+        &lt;/msub&gt;
+        &lt;mrow&gt;
+          &lt;mtext&gt;&amp;#x2009;&lt;/mtext&gt;
+          &lt;mi&gt;F&lt;/mi&gt;
+          &lt;mo&gt;&amp;#x22c5;&lt;/mo&gt;
+          &lt;mi&gt;n&lt;/mi&gt;
+        &lt;/mrow&gt;
+        &lt;mi&gt;d&lt;/mi&gt;
+        &lt;mi>S&lt;/mi&gt;
+      &lt;/mrow&gt;
+    &lt;/mrow&gt;
+  &lt;/math&gt;
+&lt;/div&gt;</pre>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+   <div class="row">
+    <div class="span6">
+      <h3>Equations (TeX)</h3>
+
+      <div class="comment">
+          \[ \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) \]
+      </div>
+
+    </div>
+    <div class="span10">
+      <h3>Sample code</h3>
+      
+        <pre class="well textured">&lt;div class="comment"&gt;
+  &#92;[ &#92;left( &#92;sum_{k=1}^n a_k b_k \right)^2 &#92;leq &#92;eft( &#92;sum_{k=1}^n a_k^2 &#92;right) &#92;left( &#92;sum_{k=1}^n b_k^2 &#92;right) &#92;]
+&lt;/div&gt;</pre>
+    </div>
+  </div>
+</section>
+
+
+<section id="alerts">
+  <div class="page-header">
+    <h1>Alerts <small>Styles for success, warning, and error messages</small></h1>
+  </div>
+  <h2>Lightweight defaults</h2>
+  <div class="row">
+    <div class="span16">
+      <h3>Example alerts</h3>
+      <p>Wrap your message and an optional close icon in a div with simple class.</p>
+
+      <br />
+      
+      <div class="alert" style="width: 940px;">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+      </div>
+
+      <br />
+      <pre class="prettyprint linenums well textured"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"alert"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"close"</span><span class="pln"> </span><span class="atn">data-dismiss</span><span class="pun">=</span><span class="atv">"alert"</span><span class="tag">&gt;</span><span class="pln">×</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;strong&gt;</span><span class="pln">Warning!</span><span class="tag">&lt;/strong&gt;</span><span class="pln"> Best check yo self, you're not looking too good.</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+      <br />
+      <br />
+
+      <p>
+          Easily extend the standard alert message with two optional classes: <code>.alert-block</code> for more
+          padding and text controls and <code>.alert-heading</code> for a matching heading.
+      </p>
+      <div class="alert alert-block" style="width: 940px;">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <h4 class="alert-heading">Warning!</h4>
+        <p>
+            Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent
+            commodo cursus magna, vel scelerisque nisl consectetur et.
+        </p>
+        <div class="alert-control">
+          <button type="button" class="btn btn-success">Save</button>
+          <button type="button" class="btn btn-danger">Close</button>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <pre class="prettyprint linenums well textured"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"alert alert-block"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"close"</span><span class="pln"> </span><span class="atn">data-dismiss</span><span class="pun">=</span><span class="atv">"alert"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">×</span><span class="tag">&lt;/a&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;h4</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"alert-heading"</span><span class="tag">&gt;</span><span class="pln">Warning!</span><span class="tag">&lt;/h4&gt;</span></li><li class="L3"><span class="pln">  Best check yo self, you're not...</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+    </div>
+  </div>
+</section>
+
+
+<section id="dashboard-widgets">
+  <div class="page-header">
+    <h1>dashboard metric widget <small>a quick and easy view into whichever metrics the user likes!</small></h1>
+  </div>
+  <div class="row">
+  <div class="span6">
+  <div class="metric"><div><div class="selected-metric-header">
+  <h4>conversion</h4>
+  <div class="dropdown-block">
+    <div class="dropdown-trigger">
+      <a class="btn mini-circle-btn" href="#"><i class="icon-small-settings icon-grey"><!-- --></i></a>
+      <ul class="dropdown-list right-aligned">
+        <li><a class="navigate-to" href="#channels/conversion">
+          <i class="icon-small-arrow-circle-right icon-grey"><!-- --></i>
+           drill into this metric
+        </a></li>
+        <li><a class="send-via-email" href="javascript:;">
+          <i class="icon-small-mail icon-grey"><!-- --></i>
+           send via email
+        </a></li>
+        <li><a class="export-excel" href="javascript:;">
+          <i class="icon-small-get-from-cloud icon-grey"><!-- --></i>
+           export to Excel
+        </a></li>
+        <li><a class="edit-metric" href="javascript:;">
+          <i class="icon-small-hand icon-grey"><!-- --></i>
+           choose another metric
+        </a></li>
+        <li><a class="delete-metric" href="javascript:;">
+          <i class="icon-small-circle-cross icon-grey"><!-- --></i>
+           remove this metric
+        </a></li>
+        <li><a class="about-metric" href="javascript:;">
+          <i class="icon-small-info icon-blue"><!-- --></i>
+           about this metric
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="widget-block selected">
+  <div class="metric-inner-container">
+    <div class="coming-soon">
+      ...coming soon...
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+  </div>
+</section>
+
+<section id="activity-stream">
+  <div class="page-header">
+    <h1>activity stream widget <small>what an awesome communication mechanism for the user!</small></h1>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <div id="activity-stream-container" style="width: 300px;"><div><div class="activity-stream-header">
+  <form id="activity-stream-form">
+    <div class="prepend-icon">
+      <i class="icon-small-chat icon-grey"></i>
+      <input type="text" placeholder="Add a comment…" maxlength="1000" id="activity-stream-input">
+    </div>
+  </form>
+</div>
+<div class="text-block content-block well textured">
+  <ul class="articles-list"><div><li>
+  <div class="wrapper">
+    <div class="article-icon">
+      <img width="44" height="44" alt="" src="/assets/fake_avatars/avatar-8.jpg">
+      <strong>Don Draper</strong>
+    </div>
+
+    <div class="comment"><p>Team, looks like we missed our sales targets for last quarter. Not pleased.</p></div>
+    <small>about 1 hour ago</small>
+  </div>
+</li>
+</div><div><li>
+  <div class="wrapper">
+    <div class="article-icon">
+      <img width="44" height="44" alt="" src="/assets/fake_avatars/avatar-11.jpg">
+      <strong>Bert Cooper</strong>
+    </div>
+
+    <div class="comment"><p>Another great month, team. Nice work. Let's just get that churn rate down.</p></div>
+    <small>about 1 hour ago</small>
+  </div>
+</li>
+</div><div><li>
+  <div class="wrapper">
+    <div class="article-icon">
+      <img width="44" height="44" alt="" src="/assets/fake_avatars/avatar-2.jpg">
+      <strong>Joan Harris</strong>
+    </div>
+
+    <div class="comment"><p>Closed your books for the month. There were a few invoices I couldn't reconcile but they are small so we will get to them next month.</p></div>
+    <small>about 1 hour ago</small>
+  </div>
+</li>
+</div></ul>
+</div>
+</div>
+</div>
+  </div>
+  </div>
+</section>
+
+<section id="task-widget">
+  <div class="page-header">
+    <h1>task widget <small>keep track of what's next to do</small></h1>
+  </div>
+  <div class="row">
+    <div class="span6">
+<div id="task-list-container" style="width: 300px;">
+  <div><div>
+  <div class="task-list-header">
+  <h3>tasks</h3>
+  <div class="task-control">
+    <ul class="task-switcher">
+      <li class="tasks-all active">all tasks</li>
+      <li class="tasks-my">assigned to me</li>
+    </ul>
+    <div class="dropdown-block">
+      <div class="dropdown-trigger">
+        <i class="icon-small-settings icon-white"><!-- --></i>
+        <ul class="dropdown-list right-aligned">
+          <li data-action="hide" class="hide-completed-tasks"> <a href="#"><i class="icon-small-eye icon-grey"></i> hide completed</a> </li>
+          <li data-action="show" class="hide show-completed-tasks"> <a href="#"><i class="icon-small-eye icon-grey"></i> show completed</a> </li>
+          <li class="clear-completed-tasks"> <a href="#"><i class="icon-small-cross icon-grey"></i> clear completed</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="task-form">
+  <textarea autocomplete="off" placeholder="Enter @name and task" type="text" rows="1"></textarea>
+  <div class="char-count"></div>
+  <input type="hidden" id="mentioned-user-id">
+</div>
+<ul id="users-list" class="dropdown-list autocomplete-results"><li class="dropdown-link dropdown-account autocomplete-item selected">
+  <a>Roger Sterling</a>
+</li>
+<li class="dropdown-link dropdown-account autocomplete-item">
+  <a>Bert Cooper</a>
+</li>
+<li class="dropdown-link dropdown-account autocomplete-item">
+  <a>Pete Campbell</a>
+</li>
+</ul></div><ul class="task-list"><li class="task-item">
+  
+<span class="checkbox blank-checkbox"><!-- --></span>
+<div class="content in-progress">
+  <strong>Bert Cooper</strong> Review books for sketchy bonus checks
+ 
+  <div class="control-panel">
+    <i title="Delete this task" class="icon-small-trash delete-task"><!-- --></i>
+      <div class="dropdown-trigger">
+      <i title="Make this task recurring" class="icon-small-return recurring-icon"><!-- --></i>
+        <ul class="dropdown-block dropdown-list right-aligned recurring-options">
+        <li><a data-recurring="monthly" href="#">Monthly</a></li>
+        <li><a data-recurring="quarterly" href="#">Quarterly</a></li>
+        <li><a data-recurring="annualy" href="#">Annualy</a></li>
+      </ul>
+  </div>
+  </div>
+
+</div>
+</li><li class="task-item">
+<span class="checkbox blank-checkbox"><!-- --></span>
+<div class="content in-progress">
+  <strong>Pete Campbell</strong> Order more whiskey
+ 
+  <div class="control-panel">
+    <i title="Delete this task" class="icon-small-trash delete-task"><!-- --></i>
+      <div class="dropdown-trigger">
+      <i title="Make this task recurring" class="icon-small-return recurring-icon"><!-- --></i>
+        <ul class="dropdown-block dropdown-list right-aligned recurring-options">
+        <li><a data-recurring="monthly" href="#">Monthly</a></li>
+        <li><a data-recurring="quarterly" href="#">Quarterly</a></li>
+        <li><a data-recurring="annualy" href="#">Annualy</a></li>
+      </ul>
+  </div>
+  </div>
+</div>
+</li>
+<li class="task-item">
+<span class="checkbox blank-checkbox"><!-- --></span>
+<div class="content in-progress">
+  <strong>Don Draper</strong> Hire new creative
+ 
+  <div class="control-panel">
+    <i title="Delete this task" class="icon-small-trash delete-task"><!-- --></i>
+      <div class="dropdown-trigger">
+      <i title="Make this task recurring" class="icon-small-return recurring-icon"><!-- --></i>
+        <ul class="dropdown-block dropdown-list right-aligned recurring-options">
+        <li><a data-recurring="monthly" href="#">Monthly</a></li>
+        <li><a data-recurring="quarterly" href="#">Quarterly</a></li>
+        <li><a data-recurring="annualy" href="#">Annualy</a></li>
+      </ul>
+  </div>
+  </div>
+
+</div>
+</li>
+<li class="task-item">
+<span class="checkbox "><!-- --></span>
+<div class="content ">
+  <strong>Roger Sterling</strong> Sketch out plot concepts for season 3
+ 
+  <div class="control-panel">
+    <i title="Delete this task" class="icon-small-trash delete-task"><!-- --></i>
+      <div class="dropdown-trigger">
+      <i title="Make this task recurring" class="icon-small-return recurring-icon"><!-- --></i>
+        <ul class="dropdown-block dropdown-list right-aligned recurring-options">
+        <li><a data-recurring="monthly" href="#">Monthly</a></li>
+        <li><a data-recurring="quarterly" href="#">Quarterly</a></li>
+        <li><a data-recurring="annualy" href="#">Annualy</a></li>
+        
+      </ul>
+  </div>
+  </div>
+
+</div>
+</li>
+</ul>
+</div></div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML">
+</script>

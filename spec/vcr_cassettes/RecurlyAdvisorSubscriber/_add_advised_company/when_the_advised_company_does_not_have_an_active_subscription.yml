@@ -1,0 +1,81 @@
+--- 
+http_interactions: 
+- request: 
+    method: put
+    uri: https://dd9e07b6afb84b0e8e31fefc56126c6e:@api.recurly.com/v2/subscriptions/1b874a29ca8514e0baa70141eba60aea
+    body: 
+      encoding: US-ASCII
+      string: <subscription><plan_code>annual</plan_code><subscription_add_ons><subscription_add_on><add_on_code>advised_company</add_on_code><quantity>1</quantity></subscription_add_on></subscription_add_ons><timeframe>now</timeframe></subscription>
+    headers: 
+      Accept: 
+      - application/xml
+      User-Agent: 
+      - Recurly/2.1.5; ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-linux]
+      Content-Type: 
+      - application/xml
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - blackhole
+      Date: 
+      - Sun, 30 Sep 2012 17:33:39 GMT
+      Content-Type: 
+      - application/xml; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Content-Language: 
+      - en-US
+      Etag: 
+      - "\"0e3404d79d353ef7defe157c099666f8\""
+      Location: 
+      - https://api.recurly.com/v2/subscriptions/1b874a29ca8514e0baa70141eba60aea
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Runtime: 
+      - "0.738923"
+      Strict-Transport-Security: 
+      - max-age=15768000
+    body: 
+      encoding: US-ASCII
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <subscription href="https://api.recurly.com/v2/subscriptions/1b874a29ca8514e0baa70141eba60aea">
+          <account href="https://api.recurly.com/v2/accounts/advisor-subscription-code"/>
+          <plan href="https://api.recurly.com/v2/plans/annual">
+            <plan_code>annual</plan_code>
+            <name>Activecell Annual</name>
+          </plan>
+          <uuid>1b874a29ca8514e0baa70141eba60aea</uuid>
+          <state>active</state>
+          <unit_amount_in_cents type="integer">59988</unit_amount_in_cents>
+          <currency>USD</currency>
+          <quantity type="integer">1</quantity>
+          <activated_at type="datetime">2012-09-30T17:33:36Z</activated_at>
+          <canceled_at nil="nil"></canceled_at>
+          <expires_at nil="nil"></expires_at>
+          <total_billing_cycles nil="nil"></total_billing_cycles>
+          <remaining_billing_cycles nil="nil"></remaining_billing_cycles>
+          <current_period_started_at type="datetime">2012-09-30T17:33:36Z</current_period_started_at>
+          <current_period_ends_at type="datetime">2012-10-30T17:33:36Z</current_period_ends_at>
+          <trial_started_at type="datetime">2012-09-30T17:33:36Z</trial_started_at>
+          <trial_ends_at type="datetime">2012-10-30T17:33:36Z</trial_ends_at>
+          <subscription_add_ons type="array">
+            <subscription_add_on>
+              <add_on_code>advised_company</add_on_code>
+              <unit_amount_in_cents type="integer">3999</unit_amount_in_cents>
+              <quantity type="integer">1</quantity>
+            </subscription_add_on>
+          </subscription_add_ons>
+          <a name="cancel" href="https://api.recurly.com/v2/subscriptions/1b874a29ca8514e0baa70141eba60aea/cancel" method="put"/>
+          <a name="terminate" href="https://api.recurly.com/v2/subscriptions/1b874a29ca8514e0baa70141eba60aea/terminate" method="put"/>
+          <a name="postpone" href="https://api.recurly.com/v2/subscriptions/1b874a29ca8514e0baa70141eba60aea/postpone" method="put"/>
+        </subscription>
+
+    http_version: 
+  recorded_at: Sun, 30 Sep 2012 17:33:40 GMT
+recorded_with: VCR 2.2.5

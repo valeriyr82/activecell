@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<RestResponse xmlns="http://www.intuit.com/sb/cdm/v2">
+  <CompaniesMetaData>
+    <CompanyMetaData>
+      <ExternalRealmId>502945835</ExternalRealmId>
+      <QBNRegisteredCompanyName>Active Cell</QBNRegisteredCompanyName>
+      <CompanySignUpDateTime>2012-07-24T09:31:06Z</CompanySignUpDateTime>
+      <SampleFile>false</SampleFile>
+      <QBNCompanyUserAdminIdNumber>502941515</QBNCompanyUserAdminIdNumber>
+      <QBNCompanyUserAdminEmail>lucassus@gmail.com</QBNCompanyUserAdminEmail>
+      <SyncEnabled>false</SyncEnabled>
+    </CompanyMetaData>
+  </CompaniesMetaData>
+</RestResponse>

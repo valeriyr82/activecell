@@ -1,0 +1,24 @@
+{
+  "defaultColorScheme":  <%== ColorScheme::DEFAULT_COLOR_SCHEME.to_json %>,
+  "periods":             <%== @periods.to_json %>,
+  "tasks":               <%== current_company.tasks.to_json %>,
+  "activities":          <%== current_company.activities.to_json %>,
+  "reports":             <%== current_company.reports.to_json %>,
+  "color_scheme":        <%== current_company.branding_color_scheme.to_json %>,
+  "accounts":            <%== current_company.accounts.to_json %>,
+  "scenarios":           <%== current_company.scenarios.to_json %>,
+  "customers":           <%== current_company.customers.to_json %>,
+  "channels":            <%== current_company.channels.to_json %>,
+  "segments":            <%== current_company.segments.to_json %>,
+  "stages":              <%== current_company.stages.to_json %>,
+  "employees":           <%== current_company.employees.to_json %>,
+  "employee_types":      <%== current_company.employee_types.to_json %>,
+  "products":            <%== current_company.products.to_json %>,
+  "revenue_streams":     <%== current_company.revenue_streams.to_json %>,
+  "vendors":             <%== current_company.vendors.to_json %>,
+  "categories":          <%== current_company.categories.to_json %>,
+  "financial_summary":   <%== current_company.financial_transactions_summary.to_json %>,
+  "conversion_summary":  <%== current_company.conversion_summary.to_json %>,
+
+  "conversion_forecast": <%== current_scenario.present? ? current_scenario.conversion_forecast.to_json : [] %>
+}

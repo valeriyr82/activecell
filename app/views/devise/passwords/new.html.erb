@@ -1,0 +1,23 @@
+<div class="main-content">
+    <h1 class="inset">Forgot your password?</h1>
+    <div class="well textured clearfix">
+    <%= form_for @user, url: user_password_path, html: { method: :post, class: 'form-stacked' } do |f| %>
+      <%= devise_error_messages! %>
+      <div class="control-group">
+        <div class="controls">
+          <%= f.email_field :email, placeholder: 'Email address', class: "input-narrow-form alt-field" %>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <button class="btn btn-primary pull-right" type="submit" id="login_button">Reset password</button>
+        </div>
+      </div>
+      <% end %>
+    </div>
+
+    <div class="hr"></div>
+    <div class="centered">
+      <%= render :partial => "devise/shared/links", :locals=>{:flag=>'sign_in'} %>
+    </div>
+</div>

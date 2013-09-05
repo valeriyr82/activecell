@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>activecell backbone admin</title>
+  <%= stylesheet_link_tag 'admin' %>
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+  <%= render 'layouts/admin/header' %>
+
+  <div class="page-wrapper textured">
+    <div id="container" class='container'>
+      <%= yield %>
+    </div>
+  </div>
+
+  <%= javascript_include_tag 'admin' %>
+  <script type="text/javascript" charset="utf-8">
+    Admin.initialize()
+  </script>
+</body>
+</html>

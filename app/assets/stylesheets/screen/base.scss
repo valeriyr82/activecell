@@ -1,0 +1,14 @@
+@import "../common/colors";
+@import "../common/mixins";
+
+html {
+  min-height: 100%;
+}
+
+body {  
+  @include gradient($primary-dark, $primary);
+}
+
+.container {
+  @include container-fixed();
+}

@@ -1,0 +1,65 @@
+@import "../common/mixins";
+@import "../common/colors";
+
+footer {
+  padding: 0;
+  padding-bottom: 20px;
+  margin-top: 15px;
+  color: $white;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  
+  a {
+    margin-left: 5px;
+    color: $white;
+
+    &:hover {
+        color: darken($white, 10%);
+    }
+  }
+
+  dt {
+    font-weight: bold;
+  }
+  
+  dd {
+    display: block;
+    -webkit-margin-start: 10px;
+  }
+  
+  .copyright {
+    margin-top: 12px;
+  }
+
+  ul {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0;
+    align: center;
+//    padding-left: 20px;
+    margin-bottom: 0px;
+
+    li {
+      display: inline;
+      padding: 0;
+      color: $white;
+      font-size: 14px;
+    }
+  }
+
+  .right-col {
+    position: relative;
+    height: 64px;
+  }
+
+  .footer-thank-you h4, .footer-error h4 {
+    width: 315px;
+    margin-top: 0;
+    margin-left: 20px;
+    padding: 3px 5px;
+    text-align: center;
+    font-size: 12px !important;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+}

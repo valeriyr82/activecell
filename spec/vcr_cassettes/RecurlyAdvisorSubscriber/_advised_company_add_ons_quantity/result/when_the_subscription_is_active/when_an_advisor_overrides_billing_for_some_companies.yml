@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dd9e07b6afb84b0e8e31fefc56126c6e:@api.recurly.com/v2/subscriptions/with-add-ons
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/xml
+      User-Agent:
+      - Recurly/2.1.5; ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-linux]
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - blackhole
+      Date:
+      - Mon, 24 Sep 2012 15:00:34 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Content-Language:
+      - en-US
+      Cache-Control:
+      - no-cache
+      X-Runtime:
+      - '0.049357'
+    body:
+      encoding: US-ASCII
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <subscription href="https://api.recurly.com/v2/subscriptions/18d4987156c1d960b9cf77421e91503a">
+          <account href="https://api.recurly.com/v2/accounts/4@recurly"/>
+          <plan href="https://api.recurly.com/v2/plans/monthly">
+            <plan_code>monthly</plan_code>
+            <name>Activecell Monthly</name>
+          </plan>
+          <uuid>dummy-subscription-uuid</uuid>
+          <state>active</state>
+          <unit_amount_in_cents type="integer">499</unit_amount_in_cents>
+          <currency>USD</currency>
+          <quantity type="integer">1</quantity>
+          <activated_at type="datetime">2012-05-19T15:52:55Z</activated_at>
+          <canceled_at nil="nil"></canceled_at>
+          <expires_at nil="nil"></expires_at>
+          <total_billing_cycles nil="nil"></total_billing_cycles>
+          <remaining_billing_cycles nil="nil"></remaining_billing_cycles>
+          <current_period_started_at type="datetime">2012-05-19T15:52:55Z</current_period_started_at>
+          <current_period_ends_at type="datetime">2012-06-18T15:52:55Z</current_period_ends_at>
+          <trial_started_at type="datetime">2012-05-19T15:52:55Z</trial_started_at>
+          <trial_ends_at type="datetime">2012-06-18T15:52:55Z</trial_ends_at>
+          <subscription_add_ons type="array">
+            <subscription_add_on>
+              <add_on_code>advised_company</add_on_code>
+              <unit_amount_in_cents type="integer">299</unit_amount_in_cents>
+              <quantity type="integer">2</quantity>
+            </subscription_add_on>
+          </subscription_add_ons>
+          <a name="cancel" href="https://api.recurly.com/v2/subscriptions/18d4987156c1d960b9cf77421e91503a/cancel" method="put"/>
+          <a name="terminate" href="https://api.recurly.com/v2/subscriptions/18d4987156c1d960b9cf77421e91503a/terminate" method="put"/>
+        </subscription>
+    http_version: 
+  recorded_at: Mon, 24 Sep 2012 15:00:34 GMT
+recorded_with: VCR 2.2.4

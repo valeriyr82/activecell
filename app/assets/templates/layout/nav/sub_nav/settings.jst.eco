@@ -1,0 +1,13 @@
+<ul class="sub-nav">
+  <li data-sub-nav="user"><a title='user' href="#settings/user">user</a></li>
+  <li data-sub-nav="company"><a title='company' href="#settings/company">company</a></li>
+  <li data-sub-nav="data_integrations"><a title='integrations' href="#settings/data_integrations">integrations</a></li>
+
+  <% if not @subscriber.isOverridden(): %>
+    <li data-sub-nav="account"><a title='account' href="#settings/account">account</a></li>
+  <% end %>
+
+  <% if @company.isAdvisor(): %>
+    <li data-sub-nav="advisor"><a title='advisor' href="#settings/advisor">advisor</a></li>
+  <% end %>
+</ul>

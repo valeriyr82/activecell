@@ -1,0 +1,214 @@
+@import "colors";
+@import "mixins";
+
+.well {
+  @include border-radius(4px);
+  @include inner-shadow(0, 1px, 1px, rgba(0, 0, 0, 0.05));
+  
+  background-color: #F5F5F5;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  min-height: 20px;
+  padding: 19px;
+
+  &.on-top {
+    border: none !important;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.21) !important;
+  }
+
+  .form-actions {
+    margin-left: -19px;
+    margin-right: -19px;
+    padding-left: 180px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.semi-transparent {
+  @include opacity(0.6);
+}
+
+.align-right {
+  text-align: right;
+}
+
+
+.no-transform {
+  text-transform: none;
+}
+
+.pallete-block {
+  display: block;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.show-grid [class*="span"] {
+    margin-bottom: 10px;
+}
+
+.the-icons {
+  list-style: none;
+
+  li {
+    margin: 0 0 8px 0;
+  }
+
+  &.huge-icons {
+    span {
+      position: relative;
+      top: 19px;
+      left: 10px;
+    }
+  }
+
+  &.large-icons {
+    span {
+      position: relative;
+      top: 7px;
+      left: 10px;
+    }
+  }
+
+  &.small-icons {
+    span {
+      position: relative;
+      left: 10px;
+    }
+  }
+}
+
+.textured {
+  background-image: image-url('bgs/bg_texture.png');
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+
+  &.well {
+    background-color: #e5e5e5;
+    border: 1px solid rgba(255, 255, 255, 0.60);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.textured-with-border {
+  position: relative;
+  background-image: image-url('bgs/bg_texture.png');
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1114px;
+    height: 5px;
+    background: $white;
+    border: 1px solid #eaeaea;
+    border-left: none;
+    border-right: none;
+    z-index: 10;
+  }
+
+  &:before {
+    left: 13px;
+    top: 8px;
+  }
+
+   &:after {
+    left: 13px;
+    bottom: 9px;
+  }
+
+  .main-content {
+    position: relative;
+    overflow: hidden;
+    margin: -10px;
+    margin-left: -13px;
+    margin-right: -13px;
+    padding: 15px 15px 15px 15px;
+    background-image: image-url('bgs/bg_texture.png');
+
+    &:before, &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 5px;
+      height: 150%;
+      background: $white;
+      border: 1px solid #eaeaea;
+      z-index: 9;
+    }
+
+    &:before {
+      left: 0;
+      top: 0;
+    }
+
+    &:after {
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+.main-content {
+  background-color: $white;
+}
+
+.page-wrapper {
+  width: 1140px;
+  margin: 2px auto 0 auto;
+  padding: 18px 0 20px 0;
+  background-color: #fff !important;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.hr {
+  @include clearfix;
+  
+  margin: 20px 0 19px 0;
+  border-bottom: 1px solid $grey;
+}
+
+.accented {
+  font-size: 1.4em;
+}
+
+.clearfix { 
+  @include clearfix; 
+}
+
+.coming-soon {
+  display: block;
+  padding-top: 180px;
+  text-align: center;
+  font-size: 36px;
+  color: $grey;
+
+  @include proxima-800();
+}
+
+.centered {
+  text-align: center;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+// add some extra space for "cancel" button
+form.recurly.subscribe {
+  a.btn.cancel {
+    margin-left: 10px;
+  }
+}

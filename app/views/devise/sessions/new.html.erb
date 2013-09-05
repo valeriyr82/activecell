@@ -1,0 +1,48 @@
+<div class="main-content">
+    <h1 class="inset">log in</h1>
+    <div class="well textured clearfix">
+    <%= form_for @user, url: user_session_path, html: { class: "form-stacked form-horizontal" } do |f| %>
+    <%= f.hidden_field :uv_login %>
+      <div class="control-group">
+        <div class="controls">
+          <%= f.email_field :email, placeholder: "Email address", class: "input-narrow-form alt-field" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <%= f.password_field :password, placeholder: "Password", class: "input-narrow-form alt-field" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <div class="sign-user-block">
+          <%= f.label :remember_me, class: 'checkbox pull-left' do -%>
+            remember me <%= f.check_box :remember_me %> 
+          <% end %>
+            
+          <%= render :partial => "devise/shared/links", :locals=>{:flag=>'forgot_password'} %>
+          </div>
+          <button class="btn btn-primary pull-right" type="submit" id="login_button">Log in</button>
+        </div>
+      </div>
+    <% end %>
+    </div>
+  
+  <div class="clearfix pull-left">
+      <span class="accented">Or you can sign in with Intuit:</span>
+  </div>
+  
+  <div class="clearfix pull-right">
+      <ipp:login href="/auth/intuit_sso"></ipp:login>
+  </div>
+
+  <br />
+  <br />  
+  <div class="hr"></div>
+  <h2 class="inset">Hello! new here?</h2>
+  <div class="centered">
+    <%= render :partial => "devise/shared/links", :locals=>{:flag=>'sign_in'} %>
+  </div>
+</div>

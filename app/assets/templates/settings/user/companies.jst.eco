@@ -1,0 +1,24 @@
+
+  <h3>Your companies</h3>
+  <div>
+    <table class="table-std companies">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Account</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="row hide company-form-container">
+      <div class="span14">
+        <div id="company-form"></div>
+      </div>
+    </div>
+    <div class="well textured">
+      <a href="#" class="btn" id="add-company">Add a new company</a>
+    </div>
+  </div>
+  <div class="clear"></div>

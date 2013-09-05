@@ -1,0 +1,229 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="QdBhN7d6SkINlSzSVKiKa7zAdHIgX84eEIHreC0Kl18",
+        oauth_signature="fT5%2BcxGaqcZva3uhYIZ5UT%2F%2BvSk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1343772000", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 12 Sep 2012 13:44:21 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=AE30F45A88171F35E6D29FBFEC32E798.c1-pprdqboas30h; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347457461838560; path=/; expires=Thu, 12-Sep-13 13:44:21
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '313'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q01347457462074802f6b8</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Tue, 31 Jul 2012 22:00:00 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/bills/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="zcXrYPKy6M0EuQcEme3UyFTck5NRwhA7OQ4XPnkvcc",
+        oauth_signature="KA4TSI3T7nKQh7NTNT01fZ26Hlc%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1343772000", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 12 Sep 2012 13:44:25 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=CFD935AF3F26A4D894BFB9A8EF1FA7DE.c36-pprdqboas30d; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347457465054060; path=/; expires=Thu, 12-Sep-13 13:44:25
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '4610'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: ! '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:SearchResults
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:CdmCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:type="Bills"><Bill><Id idDomain="QBO">1605</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-05T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-03-05T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>013</DocNumber><TxnDate>2012-03-05-08:00</TxnDate><VendorId
+        idDomain="QBO">283</VendorId><TotalAmt>3910.00</TotalAmt><DueDate>2012-03-15-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>3910.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1604</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-02-29T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-02-29T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>1382984</DocNumber><TxnDate>2012-02-29-08:00</TxnDate><VendorId
+        idDomain="QBO">13</VendorId><TotalAmt>43.50</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2012-03-30-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>43.50</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1529</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-01-05T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-05T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>003</DocNumber><TxnDate>2012-01-05-08:00</TxnDate><VendorId
+        idDomain="QBO">283</VendorId><TotalAmt>3910.00</TotalAmt><DueDate>2012-01-15-08:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>3910.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1530</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-01-05T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-05T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-01-05-08:00</TxnDate><Msg>Holiday
+        Party</Msg><VendorId idDomain="QBO">287</VendorId><TotalAmt>127.00</TotalAmt><DueDate>2012-01-15-08:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>127.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1528</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-12-27T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-27T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>1369373</DocNumber><TxnDate>2011-12-27-08:00</TxnDate><VendorId
+        idDomain="QBO">13</VendorId><TotalAmt>1964.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2012-01-26-08:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1964.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1475</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-12-06T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-06T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>001</DocNumber><TxnDate>2011-12-06-08:00</TxnDate><VendorId
+        idDomain="QBO">283</VendorId><TotalAmt>3910.00</TotalAmt><DueDate>2011-12-16-08:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>3910.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1476</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-12-05T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-05T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>XBO-PFT2011-8</DocNumber><TxnDate>2011-12-05-08:00</TxnDate><VendorId
+        idDomain="QBO">200</VendorId><TotalAmt>800.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2012-01-04-08:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>800.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1455</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-11-05T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-11-05T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>XBO-PFT2011-7</DocNumber><TxnDate>2011-11-05-07:00</TxnDate><VendorId
+        idDomain="QBO">200</VendorId><TotalAmt>800.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-12-05-08:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>800.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1456</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-11-01T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-11-01T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-11-01-07:00</TxnDate><VendorId
+        idDomain="QBO">226</VendorId><TotalAmt>1000.00</TotalAmt><DueDate>2011-11-11-08:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1000.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1321</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-10-05T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-05T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>XBO-PFT2011-6</DocNumber><TxnDate>2011-10-05-07:00</TxnDate><VendorId
+        idDomain="QBO">200</VendorId><TotalAmt>800.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-11-04-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>800.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1319</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-10-01T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-01T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>352</DocNumber><TxnDate>2011-10-01-07:00</TxnDate><VendorId
+        idDomain="QBO">244</VendorId><TotalAmt>3910.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-10-31-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>3910.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1320</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-10-01T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-01T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-10-01-07:00</TxnDate><VendorId
+        idDomain="QBO">226</VendorId><TotalAmt>1000.00</TotalAmt><DueDate>2011-10-11-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1000.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1318</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-09-15T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-15T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>343</DocNumber><TxnDate>2011-09-15-07:00</TxnDate><VendorId
+        idDomain="QBO">244</VendorId><TotalAmt>3910.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-10-15-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>3910.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1245</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-09-13T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-13T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-09-13-07:00</TxnDate><Msg>VOID:</Msg><VendorId
+        idDomain="QBO">25</VendorId><TotalAmt>0.00</TotalAmt><DueDate>2011-09-23-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>0.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1113</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-09-06T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-06T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>XBO-PFT2011-5</DocNumber><TxnDate>2011-09-06-07:00</TxnDate><Msg>August
+        2011  (paid with Amex in the past?)</Msg><VendorId idDomain="QBO">200</VendorId><TotalAmt>800.00</TotalAmt><SalesTermId
+        idDomain="QBO">7</SalesTermId><DueDate>2011-10-06-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>800.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1454</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-31T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-31T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>317560</DocNumber><TxnDate>2011-08-31-07:00</TxnDate><VendorId
+        idDomain="QBO">167</VendorId><TotalAmt>2500.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-09-30-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>2500.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1219</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-31T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-31T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-08-31-07:00</TxnDate><VendorId
+        idDomain="QBO">226</VendorId><TotalAmt>1000.00</TotalAmt><DueDate>2011-09-10-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1000.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1122</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-22T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-22T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-08-22-07:00</TxnDate><Msg>Analitix</Msg><VendorId
+        idDomain="QBO">239</VendorId><TotalAmt>244.13</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-09-21-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>244.13</Amount><ReimbursableInfo><CustomerId
+        idDomain="QBO">245</CustomerId></ReimbursableInfo><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1119</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-18T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-18T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>1344097</DocNumber><TxnDate>2011-08-18-07:00</TxnDate><Msg>Client
+        Matter #39653-000 (Adam Dinow)</Msg><VendorId idDomain="QBO">13</VendorId><TotalAmt>225.00</TotalAmt><SalesTermId
+        idDomain="QBO">7</SalesTermId><DueDate>2011-09-17-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>Attention to Board Resolutions</Desc><Amount>225.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1106</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-08T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-08T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-08-08-07:00</TxnDate><Msg>ADVANCED
+        PAYMENT for services to be rendered in August</Msg><VendorId idDomain="QBO">226</VendorId><TotalAmt>1000.00</TotalAmt><DueDate>2011-08-18-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1000.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1127</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-08T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-08T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>335</DocNumber><TxnDate>2011-08-08-07:00</TxnDate><Msg>August
+        2011</Msg><VendorId idDomain="QBO">244</VendorId><TotalAmt>3910.00</TotalAmt><SalesTermId
+        idDomain="QBO">7</SalesTermId><DueDate>2011-09-07-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>3910.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1114</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-05T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-05T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>XBO-PFT2001-4</DocNumber><TxnDate>2011-08-05-07:00</TxnDate><Msg>July
+        2011</Msg><VendorId idDomain="QBO">200</VendorId><TotalAmt>800.00</TotalAmt><SalesTermId
+        idDomain="QBO">7</SalesTermId><DueDate>2011-09-04-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>800.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1104</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-03T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-03T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>001</DocNumber><TxnDate>2011-08-03-07:00</TxnDate><VendorId
+        idDomain="QBO">240</VendorId><TotalAmt>400.00</TotalAmt><DueDate>2011-08-13-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>400.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1100</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-08-01T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-01T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-08-01-07:00</TxnDate><VendorId
+        idDomain="QBO">237</VendorId><TotalAmt>5800.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-08-31-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>5800.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1229</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-07-28T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-07-28T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>1340125</DocNumber><TxnDate>2011-07-28-07:00</TxnDate><Msg>(bill
+        not rec''d until Aug)</Msg><VendorId idDomain="QBO">13</VendorId><TotalAmt>617.40</TotalAmt><SalesTermId
+        idDomain="QBO">7</SalesTermId><DueDate>2011-08-27-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>617.40</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1103</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-07-28T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-07-28T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>1340096</DocNumber><TxnDate>2011-07-28-07:00</TxnDate><Msg>Client
+        matter 39653-000 (Benjamin Carver)</Msg><VendorId idDomain="QBO">13</VendorId><TotalAmt>200.50</TotalAmt><SalesTermId
+        idDomain="QBO">7</SalesTermId><DueDate>2011-08-27-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>200.50</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1105</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-07-26T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-07-26T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>2011/07/SES/010</DocNumber><TxnDate>2011-07-26-07:00</TxnDate><VendorId
+        idDomain="QBO">226</VendorId><TotalAmt>1000.00</TotalAmt><DueDate>2011-08-05-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1000.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1099</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-07-05T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-07-05T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-07-05-07:00</TxnDate><VendorId
+        idDomain="QBO">237</VendorId><TotalAmt>8330.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-08-04-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>8330.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1101</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-06-30T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-06-30T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>2011-4</DocNumber><TxnDate>2011-06-30-07:00</TxnDate><Msg>GothamJS
+        Conference Gold Sponsorship (Francis Hwang/Profitably)</Msg><VendorId idDomain="QBO">238</VendorId><TotalAmt>1000.00</TotalAmt><DueDate>2011-07-10-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1000.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">975</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-06-30T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-06-30T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>2011-6265</DocNumber><TxnDate>2011-06-30-07:00</TxnDate><VendorId
+        idDomain="QBO">222</VendorId><TotalAmt>1500.00</TotalAmt><DueDate>2011-06-30-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1500.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">978</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-06-30T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-06-30T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-06-30-07:00</TxnDate><VendorId
+        idDomain="QBO">224</VendorId><TotalAmt>250.00</TotalAmt><DueDate>2011-07-30-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>250.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1102</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-06-30T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-06-30T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-06-30-07:00</TxnDate><Msg>Affiliate
+        revenue via software bundle</Msg><VendorId idDomain="QBO">239</VendorId><TotalAmt>244.13</TotalAmt><DueDate>2011-07-10-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>244.13</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">976</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-06-28T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-06-28T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>2011-6268</DocNumber><TxnDate>2011-06-28-07:00</TxnDate><VendorId
+        idDomain="QBO">222</VendorId><TotalAmt>5000.00</TotalAmt><DueDate>2011-08-31-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>5000.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">973</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-06-27T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-06-27T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>1334224</DocNumber><TxnDate>2011-06-27-07:00</TxnDate><VendorId
+        idDomain="QBO">13</VendorId><TotalAmt>490.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-07-27-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>490.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">974</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-06-21T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-06-21T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>11440</DocNumber><TxnDate>2011-06-21-07:00</TxnDate><VendorId
+        idDomain="QBO">221</VendorId><TotalAmt>6833.00</TotalAmt><DueDate>2011-07-01-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>6833.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">977</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-06-13T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-06-13T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-06-13-07:00</TxnDate><VendorId
+        idDomain="QBO">223</VendorId><TotalAmt>5000.00</TotalAmt><DueDate>2011-06-23-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>5000.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">1474</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-06-08T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-06-08T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>130721</DocNumber><TxnDate>2011-06-08-07:00</TxnDate><VendorId
+        idDomain="QBO">282</VendorId><TotalAmt>15662.65</TotalAmt><SalesTermId idDomain="QBO">5</SalesTermId><DueDate>2011-06-08-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>15662.65</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">865</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-05-31T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-05-31T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>1329840</DocNumber><TxnDate>2011-05-31-07:00</TxnDate><VendorId
+        idDomain="QBO">13</VendorId><TotalAmt>3670.80</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-06-30-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>3670.80</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">736</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-05-07T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-05-07T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-05-07-07:00</TxnDate><VendorId
+        idDomain="QBO">169</VendorId><TotalAmt>1000.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-06-06-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1000.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">826</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-05-02T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-05-02T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>54787</DocNumber><TxnDate>2011-05-02-07:00</TxnDate><VendorId
+        idDomain="QBO">196</VendorId><TotalAmt>10000.00</TotalAmt><SalesTermId idDomain="QBO">5</SalesTermId><DueDate>2011-05-02-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>10000.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">718</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-05-01T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-05-01T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>2</DocNumber><TxnDate>2011-05-01-07:00</TxnDate><VendorId
+        idDomain="QBO">168</VendorId><TotalAmt>8800.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-05-31-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>8800.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">719</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-04-30T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-04-30T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>RMC-PROF-5</DocNumber><TxnDate>2011-04-30-07:00</TxnDate><VendorId
+        idDomain="QBO">137</VendorId><TotalAmt>1800.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-05-30-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1800.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">896</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-04-29T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-04-29T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>1324660</DocNumber><TxnDate>2011-04-29-07:00</TxnDate><VendorId
+        idDomain="QBO">13</VendorId><TotalAmt>440.00</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-05-29-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>440.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">897</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-04-29T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-04-29T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>1324672</DocNumber><TxnDate>2011-04-29-07:00</TxnDate><VendorId
+        idDomain="QBO">13</VendorId><TotalAmt>11586.55</TotalAmt><SalesTermId idDomain="QBO">7</SalesTermId><DueDate>2011-05-29-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>11586.55</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">150</AccountId></Line></Bill><Bill><Id idDomain="QBO">716</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2011-04-14T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-04-14T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-04-14-07:00</TxnDate><VendorId
+        idDomain="QBO">35</VendorId><TotalAmt>75.80</TotalAmt><DueDate>2011-04-24-07:00</DueDate><Balance>0.00</Balance></Header><Line><Id
+        idDomain="QBO">2</Id><Desc>Policy 3772R059 680*Commercial Package*07/06/10
+        To 07/06/11*</Desc><Amount>75.80</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">33</AccountId></Line></Bill></qbo:CdmCollections><qbo:Count>45</qbo:Count><qbo:CurrentPage>1</qbo:CurrentPage></qbo:SearchResults>'
+    http_version: 
+  recorded_at: Tue, 31 Jul 2012 22:00:00 GMT
+recorded_with: VCR 2.2.4

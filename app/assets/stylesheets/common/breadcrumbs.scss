@@ -1,0 +1,82 @@
+@import "colors";
+@import "mixins";
+
+
+// Air-style breadcrumbs
+// ------------------------------------------------
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0 0 0 3px;
+  white-space: nowrap;
+
+  li {
+    @include h4;
+    position: relative;
+    display: inline-block;
+    margin: 0 10px 0 0;
+    padding: 0 20px 0 5px;
+    height: 32px;
+    line-height: 30px;
+    color: #6f6f6f;
+    background: image-url("sprite_air.png") right -130px no-repeat;
+    text-shadow: 1px 1px rgba(255,255,255,0.85);
+
+    span {
+      @include text-overflow;
+
+      display: block;
+      max-width: 240px;
+    }
+
+    &.last {
+      margin-left: -5px;
+      padding-right: 5px;
+      color: darken(#6f6f6f, 15%);
+      background: none;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -3px;
+      top: 0;
+      height: 32px;
+      width: 5px;
+      background: image-url("sprite_air.png") -100px -130px no-repeat;
+    }
+  }
+}
+
+// Wide table breadcrumbs
+// ------------------------------------------------
+
+
+
+.wide-table-breadcrumbs {
+  margin: 0 0 0 10px;
+  padding: 0;
+  list-style: none;
+
+  li {
+    @include h4;
+
+    display: inline-block;
+    margin: 0 10px 0 0;
+    font-size: 16px;
+    //font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(255,255,255,0.85);
+
+    a {
+      [class^="icon-"], [class*=" icon-"] {
+        margin-top: 1px;
+      }
+    }
+  }
+}

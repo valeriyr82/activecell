@@ -1,0 +1,195 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="Dqqgbx9cw220u3XDlQVtfoVxUgimvUoKqW4eZVnJTg",
+        oauth_signature="3xKzwjYFxZJsskMcirGLTWp%2Fr74%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296556", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:02:34 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=7D751F4CDD032C823059DDA647BF73D1.c1-pprdqboas30e; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296554182000; path=/; expires=Tue, 10-Sep-13 17:02:34
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '312'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q013472960670985d14da3</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:02:38 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/journal-entries/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="e7meRTaFfAGke4i0jxEQTSLV2sD3TWTuzjCIJHFivoo",
+        oauth_signature="CE74Qr4YprBL5n5Khowbej5Bb3k%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296558", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:02:38 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=B719D207E7F8D73E0DF7E3E84225598D.c36-pprdqboas30a; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296558406886; path=/; expires=Tue, 10-Sep-13 17:02:38
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '3336'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:SearchResults
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:CdmCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:type="JournalEntries"><JournalEntry><Id idDomain="QBO">888</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2013-01-01T00:00:00-08:00</CreateTime><LastUpdatedTime>2013-01-01T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2013-01-01-08:00</TxnDate><Note>General
+        Journal</Note><Adjustment>false</Adjustment></Header><Line><Desc>to expense
+        web hosting</Desc><Amount>70.79</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">156</AccountId><EntityId idDomain="QBO"/></Line><Line><Desc>to
+        expense web hosting</Desc><Amount>70.79</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">91</AccountId><EntityId idDomain="QBO"/></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">1235</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-01-31T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-31T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-01-31-08:00</TxnDate><Note>Deposit</Note><Adjustment>false</Adjustment></Header><Line><Desc>6th
+        mo of annual</Desc><Amount>41.67</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">140</AccountId><EntityId idDomain="QBO">245</EntityId><EntityType>Customer</EntityType></Line><Line><Amount>41.67</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">52</AccountId><EntityId idDomain="QBO"/></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">1721</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-01-31T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-31T00:00:00-08:00</LastUpdatedTime></MetaData><Header><DocNumber>1</DocNumber><TxnDate>2012-01-31-08:00</TxnDate><Note>Obsolete</Note><Adjustment>false</Adjustment></Header><Line><Amount>130.65</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">93</AccountId><EntityId idDomain="QBO">202</EntityId><EntityType>Customer</EntityType></Line><Line><Amount>130.65</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">66</AccountId><EntityId idDomain="QBO">202</EntityId><EntityType>Customer</EntityType></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">887</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-01-01T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-01T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-01-01-08:00</TxnDate><Note>General
+        Journal</Note><Adjustment>false</Adjustment></Header><Line><Desc>to expense
+        web hosting</Desc><Amount>70.79</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">156</AccountId><EntityId idDomain="QBO"/></Line><Line><Desc>to
+        expense web hosting</Desc><Amount>70.79</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">91</AccountId><EntityId idDomain="QBO"/></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">1234</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-12-31T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-31T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-12-31-08:00</TxnDate><Note>Deposit</Note><Adjustment>false</Adjustment></Header><Line><Desc>5th
+        mo of annual</Desc><Amount>41.67</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">140</AccountId><EntityId idDomain="QBO">245</EntityId><EntityType>Customer</EntityType></Line><Line><Amount>41.67</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">52</AccountId><EntityId idDomain="QBO"/></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">1234</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-12-31T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-31T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-12-31-08:00</TxnDate><Note>Deposit</Note><Adjustment>false</Adjustment></Header><Line><Desc>5th
+        mo of annual</Desc><Amount>41.67</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">140</AccountId><EntityId idDomain="QBO">245</EntityId><EntityType>Customer</EntityType></Line><Line><Amount>41.67</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">52</AccountId><EntityId idDomain="QBO"/></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">1233</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-11-30T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-11-30T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-11-30-08:00</TxnDate><Note>Deposit</Note><Adjustment>false</Adjustment></Header><Line><Desc>4th
+        mo of annual</Desc><Amount>41.67</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">140</AccountId><EntityId idDomain="QBO">245</EntityId><EntityType>Customer</EntityType></Line><Line><Amount>41.67</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">52</AccountId><EntityId idDomain="QBO"/></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">1233</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-11-30T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-11-30T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-11-30-08:00</TxnDate><Note>Deposit</Note><Adjustment>false</Adjustment></Header><Line><Desc>4th
+        mo of annual</Desc><Amount>41.67</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">140</AccountId><EntityId idDomain="QBO">245</EntityId><EntityType>Customer</EntityType></Line><Line><Amount>41.67</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">52</AccountId><EntityId idDomain="QBO"/></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">1232</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-10-31T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-31T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-10-31-07:00</TxnDate><Note>Deposit</Note><Adjustment>false</Adjustment></Header><Line><Desc>3rd
+        mo of annual</Desc><Amount>41.67</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">140</AccountId><EntityId idDomain="QBO">245</EntityId><EntityType>Customer</EntityType></Line><Line><Amount>41.67</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">52</AccountId><EntityId idDomain="QBO"/></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">1232</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-10-31T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-31T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-10-31-07:00</TxnDate><Note>Deposit</Note><Adjustment>false</Adjustment></Header><Line><Desc>3rd
+        mo of annual</Desc><Amount>41.67</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">140</AccountId><EntityId idDomain="QBO">245</EntityId><EntityType>Customer</EntityType></Line><Line><Amount>41.67</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">52</AccountId><EntityId idDomain="QBO"/></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">1467</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-10-28T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-28T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-10-28-07:00</TxnDate><Note>General
+        Journal</Note><Adjustment>false</Adjustment></Header><Line><Amount>27201.01</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">62</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">264</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">93</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">5</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">94</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">225</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">95</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>976.32</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">113</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Amount>241.44</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">264</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>241.44</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">93</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>499.52</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">94</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>736.32</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">95</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>0.00</Amount><AccountId
+        idDomain="QBO">121</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Amount>2005.97</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">121</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">1467</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-10-28T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-28T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-10-28-07:00</TxnDate><Note>General
+        Journal</Note><Adjustment>false</Adjustment></Header><Line><Amount>27201.01</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">62</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">264</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">93</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">5</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">94</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">225</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">95</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>976.32</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">113</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Amount>241.44</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">264</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>241.44</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">93</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>499.52</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">94</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>736.32</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">95</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>0.00</Amount><AccountId
+        idDomain="QBO">121</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Amount>2005.97</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">121</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">984</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-06-09T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-06-09T00:00:00-07:00</LastUpdatedTime></MetaData><Header><DocNumber>6/9
+        payroll</DocNumber><TxnDate>2011-06-09-07:00</TxnDate><Note>General Journal</Note><Adjustment>false</Adjustment></Header><Line><Amount>12981.48</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">62</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">225</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>566.88</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">121</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">225</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>791.32</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">121</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Amount>3461.60</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">225</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>724.41</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">121</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Desc>discrepancy
+        presumed ny metro tax</Desc><Amount>62.73</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">121</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">863</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-05-31T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-05-31T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-05-31-07:00</TxnDate><Note>General
+        Journal</Note><Adjustment>false</Adjustment></Header><Line><Amount>18504.61</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">62</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">93</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">5</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">94</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">95</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>650.88</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">113</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Amount>241.44</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">93</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>499.52</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">94</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>736.32</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">95</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>1376.45</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">121</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line></JournalEntry><JournalEntry><Id
+        idDomain="QBO">863</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-05-31T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-05-31T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-05-31-07:00</TxnDate><Note>General
+        Journal</Note><Adjustment>false</Adjustment></Header><Line><Amount>18504.61</Amount><PostingType>Credit</PostingType><AccountId
+        idDomain="QBO">62</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">93</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">5</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">94</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>3750.00</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">78</AccountId><EntityId idDomain="QBO">95</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>650.88</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">113</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line><Line><Amount>241.44</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">93</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>499.52</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">94</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>736.32</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">82</AccountId><EntityId idDomain="QBO">95</EntityId><EntityType>Employee</EntityType></Line><Line><Amount>1376.45</Amount><PostingType>Debit</PostingType><AccountId
+        idDomain="QBO">121</AccountId><EntityId idDomain="QBO">172</EntityId><EntityType>Vendor</EntityType></Line></JournalEntry></qbo:CdmCollections><qbo:Count>16</qbo:Count><qbo:CurrentPage>1</qbo:CurrentPage></qbo:SearchResults>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:02:47 GMT
+recorded_with: VCR 2.2.4

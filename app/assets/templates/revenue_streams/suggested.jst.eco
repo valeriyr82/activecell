@@ -1,0 +1,9 @@
+<td class="title"><%= @name %></td>
+<td>
+  <% if @isUsed: %>
+    Added
+  <% else: %>
+    <a class="add btn small" href="javascript:;" title="<%= @name %>">
+    <strong>+</strong> Add</a>
+  <% end %>
+</td>

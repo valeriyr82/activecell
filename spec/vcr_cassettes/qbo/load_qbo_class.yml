@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="Mc9dSj7QlR78QsC3Tk7iVUPn5zHt90q5e4yrVXDEpyE",
+        oauth_signature="X%2FzfxMeDtHeYLHJ9I%2F5qwXxjUPI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296532", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:02:10 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=7CAB73236C738AC9E6F76D02EAB972A8.c1-pprdqboas30c; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296530038475; path=/; expires=Tue, 10-Sep-13 17:02:10
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '312'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q013472960670985d14da3</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:02:13 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/classes/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="HrjbePnPrfL3PTqY1mCPIKvcir3nibLKAzvLl3FgA",
+        oauth_signature="SH%2FQQHXXOiRylyRJUiP5YDxvA0s%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296533", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:02:11 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=8E1CE9638D6D725585A250FD89802B9B.c36-pprdqboas30g; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296531319503; path=/; expires=Tue, 10-Sep-13 17:02:11
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '594'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:SearchResults
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:CdmCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:type="Classes"><Class><Id idDomain="QBO">3600000000000334861</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Board
+        &amp; Advisory</Name><ClassParentId idDomain="QBO">3600000000000334854</ClassParentId></Class><Class><Id
+        idDomain="QBO">3600000000000334866</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Design</Name><ClassParentId
+        idDomain="QBO">3600000000000334853</ClassParentId></Class><Class><Id idDomain="QBO">3600000000000334853</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Direct</Name></Class><Class><Id
+        idDomain="QBO">3600000000000334863</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Engineering</Name><ClassParentId
+        idDomain="QBO">3600000000000334853</ClassParentId></Class><Class><Id idDomain="QBO">3600000000000334867</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Executive</Name><ClassParentId
+        idDomain="QBO">3600000000000334854</ClassParentId></Class><Class><Id idDomain="QBO">3600000000000334858</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Finance
+        &amp; Accounting</Name><ClassParentId idDomain="QBO">3600000000000334854</ClassParentId></Class><Class><Id
+        idDomain="QBO">3600000000000334855</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Hosting</Name><ClassParentId
+        idDomain="QBO">3600000000000334853</ClassParentId></Class><Class><Id idDomain="QBO">3600000000000334854</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Indirect</Name></Class><Class><Id
+        idDomain="QBO">3600000000000334857</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Legal
+        &amp; HR</Name><ClassParentId idDomain="QBO">3600000000000334854</ClassParentId></Class><Class><Id
+        idDomain="QBO">3600000000000334865</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Marketing
+        &amp; PR</Name><ClassParentId idDomain="QBO">3600000000000334854</ClassParentId></Class><Class><Id
+        idDomain="QBO">3600000000000334860</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Office</Name><ClassParentId
+        idDomain="QBO">3600000000000334854</ClassParentId></Class><Class><Id idDomain="QBO">3600000000000334864</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Project</Name><ClassParentId
+        idDomain="QBO">3600000000000334853</ClassParentId></Class><Class><Id idDomain="QBO">3600000000000334868</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Quality</Name><ClassParentId
+        idDomain="QBO">3600000000000334853</ClassParentId></Class><Class><Id idDomain="QBO">3600000000000334862</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Research</Name><ClassParentId
+        idDomain="QBO">3600000000000334853</ClassParentId></Class><Class><Id idDomain="QBO">3600000000000334856</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Support</Name><ClassParentId
+        idDomain="QBO">3600000000000334853</ClassParentId></Class><Class><Id idDomain="QBO">3600000000000334859</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:32-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime></MetaData><Name>Technology</Name><ClassParentId
+        idDomain="QBO">3600000000000334854</ClassParentId></Class></qbo:CdmCollections><qbo:Count>16</qbo:Count><qbo:CurrentPage>1</qbo:CurrentPage></qbo:SearchResults>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:02:15 GMT
+recorded_with: VCR 2.2.4

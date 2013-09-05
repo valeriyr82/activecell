@@ -1,0 +1,30 @@
+<% if current_company.present? and current_company.branding_color_scheme %>
+<% color_scheme = current_company.branding_color_scheme %>
+  <style type='text/css'>
+
+    /* Background*/
+    body {
+      background: -moz-linear-gradient(<%= color_scheme.primary_light %>, <%= color_scheme.primary_dark %>) repeat scroll 0 0 transparent;
+      background: -webkit-linear-gradient(<%= color_scheme.primary_light %>, <%= color_scheme.primary_dark %>) repeat scroll 0 0 transparent;
+    }
+
+    #activity-stream-container .activity-stream-header {
+      background: -moz-linear-gradient(<%= color_scheme.primary_light %>, <%= color_scheme.primary_dark %>);
+      background: -webkit-linear-gradient(<%= color_scheme.primary_light %>, <%= color_scheme.primary_dark %>);
+    }
+
+    #task-list-container .task-list-header {
+      background: -moz-linear-gradient(<%= color_scheme.primary_light %>, <%= color_scheme.primary_dark %>);
+      background: -webkit-linear-gradient(<%= color_scheme.primary_light %>, <%= color_scheme.primary_dark %>);
+    }
+    
+    #task-list-container .task-list-header .task-control .task-switcher {
+      border: 1px solid <%= color_scheme.primary_light %>;
+    }
+    
+    #task-list-container .task-list-header .task-control .task-switcher li.active {
+      background: <%= color_scheme.primary_dark %>;
+    }
+    
+  </style>
+<% end %>

@@ -1,0 +1,34 @@
+<div class="selected-metric-header">
+  <h4><%= @name %></h4>
+  <div class="dropdown-block">
+    <div class="dropdown-trigger">
+      <a href="#" class="btn mini-circle-btn"><i class="icon-small-settings icon-grey"><!-- --></i></a>
+      <ul class="dropdown-list right-aligned">
+        <li><a href="<%= @link %>" class="navigate-to">
+          <i class="icon-small-arrow-circle-right icon-grey"><!-- --></i>
+           drill into this metric
+        </a></li>
+        <li><a href="javascript:;" class="send-via-email">
+          <i class="icon-small-mail icon-grey"><!-- --></i>
+           send via email
+        </a></li>
+        <li><a href="javascript:;" class="export-excel">
+          <i class="icon-small-get-from-cloud icon-grey"><!-- --></i>
+           export to Excel
+        </a></li>
+        <li><a href="javascript:;" class="edit-metric">
+          <i class="icon-small-hand icon-grey"><!-- --></i>
+           choose another metric
+        </a></li>
+        <li><a href="javascript:;" class="delete-metric">
+          <i class="icon-small-circle-cross icon-grey"><!-- --></i>
+           remove this metric
+        </a></li>
+        <li><a href="javascript:;" class="about-metric">
+          <i class="icon-small-info icon-blue"><!-- --></i>
+           about this metric
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</div>

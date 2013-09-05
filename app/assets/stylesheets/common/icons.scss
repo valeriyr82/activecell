@@ -1,0 +1,726 @@
+@import "mixins";
+@import "colors";
+
+[class^="icon-huge"], [class*=" icon-huge"] {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  @include ie7-restore-right-whitespace();
+  line-height: 64px;
+  vertical-align: text-top;
+  background-image: image-url("sprite_icons_64x64.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+
+  &.icon-white {
+    background-image: image-url("sprite_icons_64x64_white.png");
+  }
+
+  &.icon-grey {
+    background-image: image-url("sprite_icons_64x64_grey.png");
+  }
+}
+
+[class^="icon-large"], [class*=" icon-large"] {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  @include ie7-restore-right-whitespace();
+  line-height: 32px;
+  vertical-align: text-top;
+  background-image: image-url("sprite_icons_32x32.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+
+  &.icon-white {
+    background-image: image-url("sprite_icons_32x32_white.png");
+  }
+
+  &.icon-grey {
+    background-image: image-url("sprite_icons_32x32_grey.png");
+  }
+}
+
+[class^="icon-small"], [class*=" icon-small"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  @include ie7-restore-right-whitespace();
+  line-height: 16px;
+  vertical-align: text-top;
+  background-image: image-url("sprite_icons_16x16.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+
+  &.icon-white {
+    background-image: image-url("sprite_icons_16x16_white.png");
+  }
+
+  &.icon-grey {
+    background-image: image-url("sprite_icons_16x16_grey.png");
+  }
+}
+
+.icon-widget-dashboard {
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  @include ie7-restore-right-whitespace();
+  line-height: 110px;
+  vertical-align: text-top;
+  background-image: image-url("icon_widget_dashboard.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+
+// Huge icons set 
+//-------------------------
+
+.icon-huge-add-chat              { background-position: -11px -11px; }
+.icon-huge-add-doc               { background-position: -90px -11px; }
+.icon-huge-add-image           { background-position: -166px -11px; }
+.icon-huge-add-product         { background-position: -244px -11px; }
+.icon-huge-add-tag               { background-position: -320px -11px; }
+.icon-huge-add-user              { background-position: -399px -11px; }
+.icon-huge-add-video            { background-position: -477px -11px; }
+.icon-huge-add-window         { background-position: -554px -11px; }
+.icon-huge-adress-book         { background-position: -634px -11px; }
+.icon-huge-alert                    { background-position: -709px -11px; }
+.icon-huge-align-center         { background-position: -790px -11px; }
+.icon-huge-align-left              { background-position: -10px -90px; }
+.icon-huge-align-right            { background-position: -81px -90px; }
+.icon-huge-arrow-circle-down { background-position: -150px -90px; }
+.icon-huge-arrow-circle-left    { background-position: -220px -90px; }
+.icon-huge-arrow-circle-right  { background-position: -290px -90px; }
+.icon-huge-arrow-circle-top    { background-position: -365px -90px; }
+.icon-huge-arrow-left             { background-position: -435px -90px; }
+.icon-huge-arrow-right           { background-position: -493px -90px; }
+.icon-huge-attach                  { background-position: -560px -90px; }
+.icon-huge-attention              { background-position: -630px -90px; }
+.icon-huge-bag                      { background-position: -704px -90px; }
+.icon-huge-baloon                  { background-position: -787px -90px; }
+.icon-huge-baloon-question    { background-position: -11px -160px; }
+.icon-huge-bell                      { background-position: -90px -160px; }
+.icon-huge-binoculars            { background-position: -165px -160px; }
+.icon-huge-book                    { background-position: -242px -160px; }
+.icon-huge-book2                  { background-position: -319px -160px; }
+.icon-huge-box                      { background-position: -396px -160px; }
+.icon-huge-break                   { background-position: -473px -160px; }
+.icon-huge-brush                   { background-position: -552px -160px; }
+.icon-huge-bug                      { background-position: -627px -160px; }
+.icon-huge-building                { background-position: -704px -160px; }
+.icon-huge-building2              { background-position: -781px -160px; }
+.icon-huge-businessman        { background-position: -11px -240px; }
+.icon-huge-bulb                     { background-position: -90px -240px; }
+.icon-huge-bulb-off                { background-position: -165px -240px; }
+.icon-huge-bulb-shine            { background-position: -242px -240px; }
+.icon-huge-bus                      { background-position: -319px -240px; }
+.icon-huge-calc                     { background-position: -396px -240px; }
+.icon-huge-case                    { background-position: -473px -240px; }
+.icon-huge-calendar              { background-position: -552px -240px; }
+.icon-huge-chart                   { background-position: -627px -240px; }
+.icon-huge-chat                    { background-position: -704px -240px; }
+.icon-huge-check-mark0       { background-position: -781px -240px; }
+.icon-huge-check-mark1       { background-position: -11px -326px; }
+.icon-huge-check-mark2       { background-position: -90px -326px; }
+.icon-huge-check-mark3       { background-position: -165px -326px; }
+.icon-huge-circle-cross         { background-position: -242px -326px; }
+.icon-huge-clipboard            { background-position: -319px -326px; }
+.icon-huge-clock                  { background-position: -396px -326px; }
+.icon-huge-cloud                  { background-position: -473px -326px; }
+.icon-huge-code                   { background-position: -552px -326px; }
+.icon-huge-color-picker         { background-position: -627px -326px; }
+.icon-huge-computer            { background-position: -704px -326px; }
+.icon-huge-console               { background-position: -781px -326px; }
+.icon-huge-cross          	        { background-position: -11px -411px; }
+.icon-huge-cross-small          { background-position: -90px -411px; }
+.icon-huge-darts-board          { background-position: -165px -411px; }
+.icon-huge-dashboard           { background-position: -242px -411px; }
+.icon-huge-database             { background-position: -319px -411px; }
+.icon-huge-deer                    { background-position: -396px -411px; }
+.icon-huge-doc                     { background-position: -473px -411px; }
+.icon-huge-docs                    { background-position: -552px -411px; }
+.icon-huge-download             { background-position: -627px -411px; }
+.icon-huge-embed                 { background-position: -704px -411px; }
+.icon-huge-end                     { background-position: -781px -411px; }
+.icon-huge-expand                { background-position: -11px -490px; }
+.icon-huge-eye                     { background-position: -90px -490px; }
+.icon-huge-fire                     { background-position: -165px -490px; }
+.icon-huge-flag                     { background-position: -242px -490px; }
+.icon-huge-folder                  { background-position: -319px -490px; }
+.icon-huge-fullscreen            { background-position: -396px -490px; }
+.icon-huge-fullscreen2          { background-position: -473px -490px; }
+.icon-huge-fwd                     { background-position: -552px -490px; }
+.icon-huge-game-console     { background-position: -627px -490px; }
+.icon-huge-get-from-cloud    { background-position: -704px -490px; }
+.icon-huge-globe                 { background-position: -781px -490px; }
+.icon-huge-globe2               { background-position: -11px -564px; }
+.icon-huge-group-icon          { background-position: -90px -564px; }
+.icon-huge-hand                   { background-position: -165px -564px; }
+.icon-huge-headphones       { background-position: -242px -564px; }
+.icon-huge-heart                 { background-position: -319px -564px; }
+.icon-huge-heart-empty       { background-position: -396px -564px; }
+.icon-huge-home                 { background-position: -473px -564px; }
+.icon-huge-image                { background-position: -552px -564px; }
+.icon-huge-info                    { background-position: -627px -564px; }
+.icon-huge-ipad                   { background-position: -704px -564px; }
+.icon-huge-iphone               { background-position: -781px -564px; }
+.icon-huge-key                    { background-position: -11px -641px; }
+.icon-huge-laughing             { background-position: -90px -641px; }
+.icon-huge-layers                 { background-position: -165px -641px; }
+.icon-huge-like                     { background-position: -242px -641px; }
+.icon-huge-line-chart            { background-position: -319px -641px; }
+.icon-huge-link                     { background-position: -396px -641px; }
+.icon-huge-list                      { background-position: -473px -641px; }
+.icon-huge-location              { background-position: -552px -641px; }
+.icon-huge-location-place     { background-position: -627px -641px; }
+.icon-huge-lock                    { background-position: -704px -641px; }
+.icon-huge-magic-wand        { background-position: -781px -641px; }
+.icon-huge-mail                    { background-position: -11px -721px; }
+.icon-huge-melody               { background-position: -90px -721px; }
+.icon-huge-melody2             { background-position: -165px -721px; }
+.icon-huge-mic                    { background-position: -242px -721px; }
+.icon-huge-mobile               { background-position: -319px -721px; }
+.icon-huge-modern-camera { background-position: -396px -721px; }
+.icon-huge-more                 { background-position: -473px -721px; }
+.icon-huge-movie                { background-position: -552px -721px; }
+.icon-huge-new-mail            { background-position: -627px -721px; }
+.icon-huge-note                   { background-position: -704px -721px; }
+.icon-huge-notebook            { background-position: -781px -721px; }
+.icon-huge-pages                { background-position: -11px -800px; }
+.icon-huge-pause                { background-position: -90px -800px; }
+.icon-huge-pause-circle       { background-position: -166px -800px; }
+.icon-huge-pencil                { background-position: -242px -800px; }
+.icon-huge-phone                { background-position: -319px -800px; }
+.icon-huge-phone-book        { background-position: -396px -800px; }
+.icon-huge-photo                 { background-position: -473px -800px; }
+.icon-huge-picture               { background-position: -552px -800px; }
+.icon-huge-pie-chart            { background-position: -627px -800px; }
+.icon-huge-pin                     { background-position: -704px -800px; }
+.icon-huge-plane                 { background-position: -781px -800px; }
+.icon-huge-plastic-card        { background-position: -11px -875px; }
+.icon-huge-play                   { background-position: -90px -875px; }
+.icon-huge-play-circle         { background-position: -165px -875px; }
+.icon-huge-plus                  { background-position: -242px -875px; }
+.icon-huge-plus2                { background-position: -319px -875px; }
+.icon-huge-pointer-bottom { background-position: -396px -875px; }
+.icon-huge-pointer-left       { background-position: -473px -875px; }
+.icon-huge-pointer-right     { background-position: -552px -875px; }
+.icon-huge-pointer-top       { background-position: -627px -875px; }
+.icon-huge-pop-up-video    { background-position: -704px -875px; }
+.icon-huge-power               { background-position: -781px -875px; }
+.icon-huge-presentation     { background-position: -11px -951px; }
+.icon-huge-print                 { background-position: -90px -951px; }
+.icon-huge-private             { background-position: -165px -951px; }
+.icon-huge-put-in-cloud     { background-position: -242px -951px; }
+.icon-huge-question          { background-position: -319px -951px; }
+.icon-huge-quill                 { background-position: -396px -951px; }
+.icon-huge-reload              { background-position: -473px -951px; }
+.icon-huge-remove-chat    { background-position: -552px -951px; }
+.icon-huge-remove-doc     { background-position: -627px -951px; }
+.icon-huge-remove-image { background-position: -704px -951px; }
+.icon-huge-remove-product { background-position: -781px -951px; }
+.icon-huge-remove-tag      { background-position: -11px -1041px; }
+.icon-huge-remove-user    { background-position: -90px -1041px; }
+.icon-huge-remove-video   { background-position: -165px -1041px; }
+.icon-huge-remove-window{ background-position: -242px -1041px; }
+.icon-huge-return               { background-position: -319px -1041px; }
+.icon-huge-rev                    { background-position: -396px -1041px; }
+.icon-huge-rss                    { background-position: -473px -1041px; }
+.icon-huge-sad-smile          { background-position: -552px -1041px; }
+.icon-huge-schedule           { background-position: -627px -1041px; }
+.icon-huge-scissors             { background-position: -704px -1041px; }
+.icon-huge-search               { background-position: -781px -1041px; }
+.icon-huge-security             { background-position: -11px -1121px; }
+.icon-huge-secutity-ok        { background-position: -90px -1121px; }
+.icon-huge-send                  { background-position: -165px -1121px; }
+.icon-huge-settings             { background-position: -242px -1121px; }
+.icon-huge-settings2           { background-position: -319px -1121px; }
+.icon-huge-share                 { background-position: -396px -1121px; }
+.icon-huge-shit                    { background-position: -473px -1121px; }
+.icon-huge-shopping-bag    { background-position: -552px -1121px; }
+.icon-huge-shopping-cart    { background-position: -627px -1121px; }
+.icon-huge-shopping-cart-full{ background-position: -704px -1121px; }
+.icon-huge-shopping-cart-in{ background-position: -319px -1200px; }
+.icon-huge-shopping-cart-out{ background-position: -780px -1121px; }
+.icon-huge-shorten             { background-position: -165px -1200px; }
+.icon-huge-smile                 { background-position: -473px -1200px; }
+.icon-huge-star                   { background-position: -552px -1200px; }
+.icon-huge-start                  { background-position: -11px -1200px; }
+.icon-huge-stop                  { background-position: -90px -1200px; }
+.icon-huge-support             { background-position: -627px -1200px; }
+.icon-huge-tag                    { background-position: -165px -1200px; }
+.icon-huge-tags                  { background-position: -242px -1200px; }
+.icon-huge-thumbnails       { background-position: -704px -1200px; }
+.icon-huge-thumbnails-large{ background-position: -781px -1200px; }
+.icon-huge-timer                 { background-position: -90px -1281px; }
+.icon-huge-trash                 { background-position: -11px -1281px; }
+.icon-huge-tv                     { background-position: -165px -1281px; }
+.icon-huge-unfullscreen     { background-position: -242px -1281px; }
+.icon-huge-unfullscreen2   { background-position: -319px -1281px; }
+.icon-huge-unlike               { background-position: -396px -1281px; }
+.icon-huge-unlock              { background-position: -704px -1281px; }
+.icon-huge-update             { background-position: -473px -1281px; }
+.icon-huge-user                 { background-position: -552px -1281px; }
+.icon-huge-user-icon          { background-position: -627px -1281px; }
+.icon-huge-user-icon-girl    { background-position: -781px -1281px; }
+.icon-huge-users                { background-position: -165px -1370px; }
+.icon-huge-users-icon         { background-position: -242px -1370px; }
+.icon-huge-video                { background-position: -90px -1370px; }
+.icon-huge-volume             { background-position: -317px -1370px; }
+.icon-huge-volume-off        { background-position: -11px -1370px; }
+.icon-huge-volume-off-circle{ background-position: -396px -1370px; }
+.icon-huge-volume-on-circle{ background-position: -473px -1370px; }
+.icon-huge-wallet               { background-position: -552px -1370px; }
+.icon-huge-web-camera     { background-position: -627px -1370px; }
+.icon-huge-window            { background-position: -704px -1370px; }
+.icon-huge-zoom-in            { background-position: -781px -1370px; }
+.icon-huge-zoom-out          { background-position: -10px -1450px; }
+
+
+// Large icons set
+//-----------------------
+
+.icon-large-add-chat              { background-position: -10px -10px; }
+.icon-large-add-doc               { background-position: -68px -10px; }
+.icon-large-add-image           { background-position: -128px -10px; }
+.icon-large-add-product         { background-position: -186px -10px; }
+.icon-large-add-tag                { background-position: -245px -10px; }
+.icon-large-add-user              { background-position: -303px -10px; }
+.icon-large-add-video            { background-position: -362px -10px; }
+.icon-large-add-window         { background-position: -420px -10px; }
+.icon-large-adress-book         { background-position: -478px -10px; }
+.icon-large-alert                    { background-position: -537px -10px; }
+.icon-large-align-center         { background-position: -595px -10px; }
+.icon-large-align-left              { background-position: -654px -10px; }
+.icon-large-align-right            { background-position: -712px -10px; }
+.icon-large-arrow-circle-down { background-position: -770px -10px; }
+.icon-large-arrow-circle-left    { background-position: -829px -10px; }
+.icon-large-arrow-circle-right  { background-position: -10px -60px; }
+.icon-large-arrow-circle-top    { background-position: -68px -60px; }
+.icon-large-arrow-left             { background-position: -128px -60px; }
+.icon-large-arrow-right           { background-position: -186px -60px; }
+.icon-large-attach                  { background-position: -245px -60px; }
+.icon-large-attention              { background-position: -303px -60px; }
+.icon-large-bag                      { background-position: -362px -60px; }
+.icon-large-baloon                  { background-position: -420px -60px; }
+.icon-large-baloon-question    { background-position: -478px -60px; }
+.icon-large-bell                       { background-position: -537px -60px; }
+.icon-large-binoculars             { background-position: -595px -60px; }
+.icon-large-book                     { background-position: -654px -60px; }
+.icon-large-book2                   { background-position: -712px -60px; }
+.icon-large-box                       { background-position: -770px -60px; }
+.icon-large-break                    { background-position: -829px -60px; }
+.icon-large-bulb-off                 { background-position: -68px -110px; }
+.icon-large-building2               { background-position: -770px -110px; }
+.icon-large-building                 { background-position: -303px -110px; }
+.icon-large-brush                   { background-position: -186px -110px; }
+.icon-large-bug                       { background-position: -245px -110px; }
+.icon-large-bulb                       { background-position: -10px -110px; }
+.icon-large-businessman         { background-position: -362px -110px; }
+.icon-large-bus                       { background-position: -420px -110px; }
+.icon-large-calc                      { background-position: -478px -110px; }
+.icon-large-bulb-shine             { background-position: -128px -110px; }
+.icon-large-case                      { background-position: -595px -110px; }
+.icon-large-calendar                { background-position: -537px -110px; }
+.icon-large-chart                     { background-position: -654px -110px; }
+.icon-large-chat                      { background-position: -712px -110px; }
+.icon-large-check-mark0        { background-position: -829px -110px; }
+.icon-large-check-mark1        { background-position: -10px -160px; }
+.icon-large-check-mark2        { background-position: -68px -160px; }
+.icon-large-check-mark3        { background-position: -128px -160px; }
+.icon-large-circle-cross           { background-position: -186px -160px; }
+.icon-large-clipboard              { background-position: -245px -160px; }
+.icon-large-clock                    { background-position: -303px -160px; }
+.icon-large-cloud                   { background-position: -362px -160px; }
+.icon-large-code                   { background-position: -420px -160px; }
+.icon-large-color-picker         { background-position: -478px -160px; }
+.icon-large-computer            { background-position: -537px -160px; }
+.icon-large-console               { background-position: -595px -160px; }
+.icon-large-cross          	        { background-position: -654px -160px; }
+.icon-large-cross-small          { background-position: -712px -160px; }
+.icon-large-darts-board          { background-position: -771px -160px; }
+.icon-large-dashboard           { background-position: -829px -160px; }
+.icon-large-database             { background-position: -10px -210px; }
+.icon-large-deer                    { background-position: -68px -210px; }
+.icon-large-doc                     { background-position: -128px -210px; }
+.icon-large-docs                    { background-position: -186px -210px; }
+.icon-large-download             { background-position: -245px -210px; }
+.icon-large-embed                 { background-position: -303px -210px; }
+.icon-large-end                     { background-position: -362px -210px; }
+.icon-large-expand                { background-position: -420px -210px; }
+.icon-large-eye                     { background-position: -478px -210px; }
+.icon-large-fire                     { background-position: -537px -210px; }
+.icon-large-flag                     { background-position: -595px -210px; }
+.icon-large-folder                  { background-position: -654px -210px; }
+.icon-large-fullscreen            { background-position: -712px -210px; }
+.icon-large-fullscreen2          { background-position: -770px -210px; }
+.icon-large-fwd                     { background-position: -829px -210px; }
+.icon-large-game-console     { background-position: -10px -260px; }
+.icon-large-get-from-cloud    { background-position: -68px -260px; }
+.icon-large-globe                  { background-position: -128px -260px; }
+.icon-large-globe2                { background-position: -186px -260px; }
+.icon-large-group-icon          { background-position: -245px -260px; }
+.icon-large-hand                   { background-position: -303px -260px; }
+.icon-large-headphones        { background-position: -362px -260px; }
+.icon-large-heart                  { background-position: -420px -260px; }
+.icon-large-heart-empty       { background-position: -478px -260px; }
+.icon-large-home                 { background-position: -537px -260px; }
+.icon-large-image                { background-position: -595px -260px; }
+.icon-large-info                    { background-position: -654px -260px; }
+.icon-large-ipad                   { background-position: -712px -260px; }
+.icon-large-iphone               { background-position: -770px -260px; }
+.icon-large-key                    { background-position: -829px -260px; }
+.icon-large-laughing             { background-position: -10px -310px; }
+.icon-large-layers                 { background-position: -68px -310px; }
+.icon-large-like                     { background-position: -128px -310px; }
+.icon-large-line-chart            { background-position: -186px -310px; }
+.icon-large-link                     { background-position: -245px -310px; }
+.icon-large-list                      { background-position: -303px -310px; }
+.icon-large-location              { background-position: -362px -310px; }
+.icon-large-location-place     { background-position: -420px -310px; }
+.icon-large-lock                    { background-position: -478px -310px; }
+.icon-large-magic-wand        { background-position: -537px -310px; }
+.icon-large-mail                    { background-position: -595px -310px; }
+.icon-large-melody               { background-position: -654px -310px; }
+.icon-large-melody2             { background-position: -712px -310px; }
+.icon-large-mic                    { background-position: -770px -310px; }
+.icon-large-mobile               { background-position: -829px -310px; }
+.icon-large-modern-camera { background-position: -10px -360px; }
+.icon-large-more                 { background-position: -68px -360px; }
+.icon-large-movie                { background-position: -128px -360px; }
+.icon-large-new-mail            { background-position: -186px -360px; }
+.icon-large-note                   { background-position: -245px -360px; }
+.icon-large-notebook            { background-position: -303px -360px; }
+.icon-large-pages                { background-position: -362px -360px; }
+.icon-large-pause                { background-position: -420px -360px; }
+.icon-large-pause-circle       { background-position: -478px -360px; }
+.icon-large-pencil                { background-position: -537px -360px; }
+.icon-large-phone                { background-position: -595px -360px; }
+.icon-large-phone-book        { background-position: -654px -360px; }
+.icon-large-photo                 { background-position: -712px -360px; }
+.icon-large-picture               { background-position: -770px -360px; }
+.icon-large-pie-chart            { background-position: -829px -360px; }
+.icon-large-pin                     { background-position: -10px -410px; }
+.icon-large-plane                 { background-position: -68px -410px; }
+.icon-large-plastic-card        { background-position: -128px -410px; }
+.icon-large-play                   { background-position: -186px -410px; }
+.icon-large-play-circle         { background-position: -245px -410px; }
+.icon-large-plus                  { background-position: -303px -410px; }
+.icon-large-plus2                { background-position: -362px -410px; }
+.icon-large-pointer-bottom { background-position: -420px -410px; }
+.icon-large-pointer-left       { background-position: -478px -410px; }
+.icon-large-pointer-right     { background-position: -537px -410px; }
+.icon-large-pointer-top       { background-position: -595px -410px; }
+.icon-large-pop-up-video    { background-position: -654px -410px; }
+.icon-large-power               { background-position: -712px -410px; }
+.icon-large-presentation     { background-position: -770px -410px; }
+.icon-large-print                 { background-position: -829px -410px; }
+.icon-large-private             { background-position: -10px -460px; }
+.icon-large-put-in-cloud     { background-position: -68px -460px; }
+.icon-large-question          { background-position: -128px -460px; }
+.icon-large-quill                 { background-position: -186px -460px; }
+.icon-large-reload              { background-position: -245px -460px; }
+.icon-large-remove-chat    { background-position: -303px -460px; }
+.icon-large-remove-doc     { background-position: -362px -460px; }
+.icon-large-remove-image { background-position: -420px -460px; }
+.icon-large-remove-product { background-position: -478px -460px; }
+.icon-large-remove-tag      { background-position: -537px -460px; }
+.icon-large-remove-user    { background-position: -595px -460px; }
+.icon-large-remove-video   { background-position: -654px -460px; }
+.icon-large-remove-window{ background-position: -712px -460px; }
+.icon-large-return               { background-position: -770px -460px; }
+.icon-large-rev                    { background-position: -829px -460px; }
+.icon-large-rss                    { background-position: -10px -510px; }
+.icon-large-sad-smile          { background-position: -68px -510px; }
+.icon-large-schedule           { background-position: -128px -510px; }
+.icon-large-scissors             { background-position: -186px -510px; }
+.icon-large-search               { background-position: -245px -510px; }
+.icon-large-security             { background-position: -303px -510px; }
+.icon-large-secutity-ok        { background-position: -362px -510px; }
+.icon-large-send                  { background-position: -420px -510px; }
+.icon-large-settings             { background-position: -478px -510px; }
+.icon-large-settings2           { background-position: -537px -510px; }
+.icon-large-share                 { background-position: -595px -510px; }
+.icon-large-shit                    { background-position: -654px -510px; }
+.icon-large-shopping-bag    { background-position: -712px -510px; }
+.icon-large-shopping-cart    { background-position: -770px -510px; }
+.icon-large-shopping-cart-full{ background-position: -829px -510px; }
+.icon-large-shopping-cart-in{ background-position: -10px -560px; }
+.icon-large-shopping-cart-out{ background-position: -68px -560px; }
+.icon-large-shorten             { background-position: -128px -560px; }
+.icon-large-smile                 { background-position: -186px -560px; }
+.icon-large-star                   { background-position: -245px -560px; }
+.icon-large-start                  { background-position: -303px -560px; }
+.icon-large-stop                  { background-position: -362px -560px; }
+.icon-large-support             { background-position: -420px -560px; }
+.icon-large-tag                    { background-position: -478px -560px; }
+.icon-large-tags                  { background-position: -537px -560px; }
+.icon-large-thumbnails       { background-position: -595px -560px; }
+.icon-large-thumbnails-large{ background-position: -654px -560px; }
+.icon-large-timer                 { background-position: -712px -560px; }
+.icon-large-trash                 { background-position: -770px -560px; }
+.icon-large-tv                     { background-position: -829px -560px; }
+.icon-large-unfullscreen     { background-position: -10px -610px; }
+.icon-large-unfullscreen2   { background-position: -68px -610px; }
+.icon-large-unlike               { background-position: -128px -610px; }
+.icon-large-unlock              { background-position: -186px -610px; }
+.icon-large-update             { background-position: -245px -610px; }
+.icon-large-user                 { background-position: -303px -610px; }
+.icon-large-user-icon          { background-position: -362px -610px; }
+.icon-large-user-icon-girl    { background-position: -420px -610px; }
+.icon-large-users                { background-position: -478px -610px; }
+.icon-large-users-icon         { background-position: -537px -610px; }
+.icon-large-video                { background-position: -595px -610px; }
+.icon-large-volume             { background-position: -654px -610px; }
+.icon-large-volume-off        { background-position: -712px -610px; }
+.icon-large-volume-off-circle{ background-position: -770px -610px; }
+.icon-large-volume-on-circle{ background-position: -829px -610px; }
+.icon-large-wallet               { background-position: -10px -660px; }
+.icon-large-web-camera     { background-position: -68px -660px; }
+.icon-large-window            { background-position: -128px -660px; }
+.icon-large-zoom-in            { background-position: -186px -660px; }
+.icon-large-zoom-out          { background-position: -245px -660px; }
+
+
+// Small icons set
+//-----------------------
+
+.icon-small-add-chat              { background-position: -10px -10px; }
+.icon-small-add-doc               { background-position: -30px -10px; }
+.icon-small-add-image           { background-position: -50px -10px; }
+.icon-small-add-product         { background-position: -70px -10px; }
+.icon-small-add-tag                { background-position: -90px -10px; }
+.icon-small-add-user              { background-position: -110px -10px; }
+.icon-small-add-video            { background-position: -130px -10px; }
+.icon-small-add-window         { background-position: -150px -10px; }
+.icon-small-adress-book         { background-position: -170px -10px; }
+.icon-small-alert                    { background-position: -190px -10px; }
+.icon-small-align-center         { background-position: -210px -10px; }
+.icon-small-align-left              { background-position: -230px -10px; }
+.icon-small-align-right            { background-position: -250px -10px; }
+.icon-small-arrow-circle-down { background-position: -270px -10px; }
+.icon-small-arrow-circle-left    { background-position: -290px -10px; }
+.icon-small-arrow-circle-right  { background-position: -310px -10px; }
+.icon-small-arrow-circle-top    { background-position: -330px -10px; }
+.icon-small-arrow-left             { background-position: -350px -10px; }
+.icon-small-arrow-right           { background-position: -370px -10px; }
+.icon-small-attach                  { background-position: -390px -10px; }
+.icon-small-attention              { background-position: -10px -30px; }
+.icon-small-bag                      { background-position: -30px -30px; }
+.icon-small-baloon                  { background-position: -50px -30px; }
+.icon-small-baloon-question    { background-position: -70px -30px; }
+.icon-small-bell                       { background-position: -90px -30px; }
+.icon-small-binoculars             { background-position: -110px -30px; }
+.icon-small-book                     { background-position: -130px -30px; }
+.icon-small-book2                   { background-position: -150px -30px; }
+.icon-small-box                       { background-position: -170px -30px; }
+.icon-small-break                    { background-position: -190px -30px; }
+.icon-small-brush                    { background-position: -210px -30px; }
+.icon-small-bug                       { background-position: -230px -30px; }
+.icon-small-building                 { background-position: -250px -30px; }
+.icon-small-building2               { background-position: -270px -30px; }
+.icon-small-businessman         { background-position: -290px -30px; }
+.icon-small-bulb                       { background-position: -310px -30px; }
+.icon-small-bulb-off                 { background-position: -330px -30px; }
+.icon-small-bulb-shine             { background-position: -350px -30px; }
+.icon-small-bus                        { background-position: -370px -30px; }
+.icon-small-calc                       { background-position: -390px -30px; }
+.icon-small-calendar                { background-position: -10px -50px; }
+.icon-small-case                      { background-position: -30px -50px; }
+.icon-small-chart                     { background-position: -50px -50px; }
+.icon-small-chat                      { background-position: -70px -50px; }
+.icon-small-check-mark0        { background-position: -90px -50px; }
+.icon-small-check-mark1        { background-position: -110px -50px; }
+.icon-small-check-mark2        { background-position: -130px -50px; }
+.icon-small-check-mark3        { background-position: -150px -50px; }
+.icon-small-circle-cross           { background-position: -170px -50px; }
+.icon-small-clipboard              { background-position: -190px -50px; }
+.icon-small-clock                    { background-position: -210px -50px; }
+.icon-small-cloud                    { background-position: -230px -50px; }
+.icon-small-code                     { background-position: -250px -50px; }
+.icon-small-color-picker          { background-position: -270px -50px; }
+.icon-small-computer             { background-position: -290px -50px; }
+.icon-small-console                { background-position: -310px -50px; }
+.icon-small-cross                    { background-position: -330px -50px; }
+.icon-small-cross-small           { background-position: -350px -50px; }
+.icon-small-darts-board          { background-position: -370px -50px; }
+.icon-small-dashboard            { background-position: -390px -50px; }
+.icon-small-database              { background-position: -10px -70px; }
+.icon-small-deer                     { background-position: -30px -70px; }
+.icon-small-doc                      { background-position: -50px -70px; }
+.icon-small-docs                     { background-position: -70px -70px; }
+.icon-small-download             { background-position: -90px -70px; }
+.icon-small-embed                  { background-position: -110px -70px; }
+.icon-small-end                       { background-position: -130px -70px; }
+.icon-small-expand                 { background-position: -150px -70px; }
+.icon-small-eye                       { background-position: -170px -70px; }
+.icon-small-fire                       { background-position: -190px -70px; }
+.icon-small-flag                      { background-position: -210px -70px; }
+.icon-small-folder                   { background-position: -230px -70px; }
+.icon-small-fullscreen             { background-position: -250px -70px; }
+.icon-small-fullscreen2           { background-position: -270px -70px; }
+.icon-small-fwd                      { background-position: -290px -70px; }
+.icon-small-game-console      { background-position: -310px -70px; }
+.icon-small-get-from-cloud     { background-position: -330px -70px; }
+.icon-small-globe                   { background-position: -350px -70px; }
+.icon-small-globe2                 { background-position: -370px -70px; }
+.icon-small-group-icon           { background-position: -390px -70px; }
+.icon-small-hand                   { background-position: -10px -90px; }
+.icon-small-headphones        { background-position: -30px -90px; }
+.icon-small-heart                   { background-position: -50px -90px; }
+.icon-small-heart-empty        { background-position: -70px -90px; }
+.icon-small-home                  { background-position: -90px -90px; }
+.icon-small-image                 { background-position: -110px -90px; }
+.icon-small-info                     { background-position: -130px -90px; }
+.icon-small-ipad                    { background-position: -150px -90px; }
+.icon-small-iphone                { background-position: -170px -90px; }
+.icon-small-key                     { background-position: -190px -90px; }
+.icon-small-laughing             { background-position: -210px -90px; }
+.icon-small-layers                 { background-position: -230px -90px; }
+.icon-small-like                     { background-position: -250px -90px; }
+.icon-small-line-chart            { background-position: -270px -90px; }
+.icon-small-link                     { background-position: -290px -90px; }
+.icon-small-list                      { background-position: -310px -90px; }
+.icon-small-location               { background-position: -330px -90px; }
+.icon-small-location-place      { background-position: -350px -90px; }
+.icon-small-lock                     { background-position: -370px -90px; }
+.icon-small-magic-wand        { background-position: -390px -90px; }
+.icon-small-mail                     { background-position: -10px -110px; }
+.icon-small-melody                { background-position: -30px -110px; }
+.icon-small-melody2              { background-position: -50px -110px; }
+.icon-small-mic                      { background-position: -70px -110px; }
+.icon-small-mobile                 { background-position: -90px -110px; }
+.icon-small-modern-camera  { background-position: -110px -110px; }
+.icon-small-more                  { background-position: -130px -110px; }
+.icon-small-movie                 { background-position: -150px -110px; }
+.icon-small-new-mail            { background-position: -170px -110px; }
+.icon-small-note                    { background-position: -190px -110px; }
+.icon-small-notebook            { background-position: -210px -110px; }
+.icon-small-pages                 { background-position: -230px -110px; }
+.icon-small-pause                 { background-position: -250px -110px; }
+.icon-small-pause-circle        { background-position: -270px -110px; }
+.icon-small-pencil                  { background-position: -290px -110px; }
+.icon-small-phone                 { background-position: -310px -110px; }
+.icon-small-phone-book        { background-position: -330px -110px; }
+.icon-small-photo                  { background-position: -350px -110px; }
+.icon-small-picture                { background-position: -370px -110px; }
+.icon-small-pie-chart             { background-position: -390px -110px; }
+.icon-small-pin                      { background-position: -10px -130px; }
+.icon-small-plane                  { background-position: -30px -130px; }
+.icon-small-plastic-card         { background-position: -50px -130px; }
+.icon-small-play                    { background-position: -70px -130px; }
+.icon-small-play-circle           { background-position: -90px -130px; }
+.icon-small-plus                    { background-position: -110px -130px; }
+.icon-small-plus2                  { background-position: -130px -130px; }
+.icon-small-pointer-bottom   { background-position: -150px -130px; }
+.icon-small-pointer-left         { background-position: -170px -130px; }
+.icon-small-pointer-right       { background-position: -190px -130px; }
+.icon-small-pointer-top         { background-position: -210px -130px; }
+.icon-small-pop-up-video      { background-position: -230px -130px; }
+.icon-small-power                 { background-position: -250px -130px; }
+.icon-small-presentation       { background-position: -270px -130px; }
+.icon-small-print                   { background-position: -290px -130px; }
+.icon-small-private               { background-position: -310px -130px; }
+.icon-small-put-in-cloud       { background-position: -330px -130px; }
+.icon-small-question            { background-position: -350px -130px; }
+.icon-small-quill                   { background-position: -370px -130px; }
+.icon-small-reload                { background-position: -390px -130px; }
+.icon-small-remove-chat      { background-position: -10px -150px; }
+.icon-small-remove-doc       { background-position: -30px -150px; }
+.icon-small-remove-image   { background-position: -50px -150px; }
+.icon-small-remove-product { background-position: -70px -150px; }
+.icon-small-remove-tag        { background-position: -90px -150px; }
+.icon-small-remove-user      { background-position: -110px -150px; }
+.icon-small-remove-video     { background-position: -130px -150px; }
+.icon-small-remove-window { background-position: -150px -150px; }
+.icon-small-return                { background-position: -170px -150px; }
+.icon-small-rev                    { background-position: -190px -150px; }
+.icon-small-rss                     { background-position: -210px -150px; }
+.icon-small-sad-smile           { background-position: -230px -150px; }
+.icon-small-schedule            { background-position: -250px -150px; }
+.icon-small-scissors             { background-position: -270px -150px; }
+.icon-small-search               { background-position: -290px -150px; }
+.icon-small-security             { background-position: -310px -150px; }
+.icon-small-secutity-ok         { background-position: -330px -150px; }
+.icon-small-send                  { background-position: -350px -150px; }
+.icon-small-settings             { background-position: -370px -150px; }
+.icon-small-settings2           { background-position: -390px -150px; }
+.icon-small-share                 { background-position: -10px -170px; }
+.icon-small-shit                    { background-position: -30px -170px; }
+.icon-small-shopping-bag    { background-position: -50px -170px; }
+.icon-small-shopping-cart    { background-position: -70px -170px; }
+.icon-small-shopping-cart-full{ background-position: -90px -170px; }
+.icon-small-shopping-cart-in{ background-position: -110px -170px; }
+.icon-small-shopping-cart-out{ background-position: -130px -170px; }
+.icon-small-shorten              { background-position: -150px -170px; }
+.icon-small-smile                  { background-position: -170px -170px; }
+.icon-small-star                    { background-position: -190px -170px; }
+.icon-small-start                   { background-position: -210px -170px; }
+.icon-small-stop                   { background-position: -230px -170px; }
+.icon-small-support              { background-position: -250px -170px; }
+.icon-small-tag                     { background-position: -270px -170px; }
+.icon-small-tags                   { background-position: -290px -170px; }
+.icon-small-thumbnails        { background-position: -310px -170px; }
+.icon-small-thumbnails-large{ background-position: -330px -170px; }
+.icon-small-timer                 { background-position: -350px -170px; }
+.icon-small-trash                 { background-position: -370px -170px; }
+.icon-small-tv                      { background-position: -390px -170px; }
+.icon-small-unfullscreen      { background-position: -10px -190px; }
+.icon-small-unfullscreen2    { background-position: -30px -190px; }
+.icon-small-unlike                { background-position: -50px -190px; }
+.icon-small-unlock               { background-position: -70px -190px; }
+.icon-small-update              { background-position: -90px -190px; }
+.icon-small-user                  { background-position: -110px -190px; }
+.icon-small-user-icon           { background-position: -130px -190px; }
+.icon-small-user-icon-girl     { background-position: -150px -190px; }
+.icon-small-users                 { background-position: -170px -190px; }
+.icon-small-users-icon         { background-position: -190px -190px; }
+.icon-small-video                 { background-position: -210px -190px; }
+.icon-small-volume              { background-position: -230px -190px; }
+.icon-small-volume-off         { background-position: -250px -190px; }
+.icon-small-volume-off-circle{ background-position: -270px -190px; }
+.icon-small-volume-on-circle{ background-position: -290px -190px; }
+.icon-small-wallet                { background-position: -310px -190px; }
+.icon-small-web-camera      { background-position: -330px -190px; }
+.icon-small-window             { background-position: -350px -190px; }
+.icon-small-zoom-in            { background-position: -370px -190px; }
+.icon-small-zoom-out          { background-position: -390px -190px; }
+
+
+.counter-icon {
+  display: inline-block;
+  position: relative;
+  margin: 0 5px 7px 15px;
+
+  span {
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    padding: 1px 5px;
+    line-height: 1;
+    font-size: 9px;
+    text-align: center;
+    color: $white;
+    border: 2px solid $white;
+    border-radius: 1em;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+    @include gradient($scarlet-red-30, $scarlet-red-10);
+  }
+
+  &.blue {
+    span {
+      @include gradient($azure-30, $azure-10);
+    }
+  }
+
+  &.green {
+    span {
+      @include gradient(darken($green, 15%), darken($green, 10%));
+    }
+  }
+}

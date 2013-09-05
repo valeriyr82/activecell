@@ -1,0 +1,9 @@
+<div class="well textured">
+  <form class="form-inline form-add-user">
+    <label for="invited-user-email" class="control-label">User email: </label>
+    <input id="invited-user-email" class="input-medium" type="text" name="email" />
+
+    <button class="btn invite btn-success">Invite</button>
+    <span class="indicator validation-error"></span>
+  </form>
+</div>

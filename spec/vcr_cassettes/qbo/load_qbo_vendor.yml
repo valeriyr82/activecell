@@ -1,0 +1,690 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="NjIi8b9G42igXa7AQqKL2evFLp6r17t705FGo6RdFg",
+        oauth_signature="IuGveMkMN49Pgz553x9TNyF36SM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296394", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 16:59:51 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=B3E87707D6D79480F03BC348EB20A46C.c1-pprdqboas30a; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296391778241; path=/; expires=Tue, 10-Sep-13 16:59:51
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '312'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q013472960670985d14da3</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 16:59:55 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/vendors/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="wxQzzAFBb9hz9NzMnWAVB0753kURYTY6W4cDA0hTk",
+        oauth_signature="lhPM%2BLt2TObjkFweFPH2f11Xo%2BY%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296395", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 16:59:53 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=3DF83E029EFCFE270700B3AC1CB69B92.c36-pprdqboas30a; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296393181843; path=/; expires=Tue, 10-Sep-13 16:59:53
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '4050'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+        <qbo:SearchResults
+          xmlns='http://www.intuit.com/sb/cdm/v2' xmlns:qbp='http://www.intuit.com/sb/cdm/qbopayroll/v1'
+          xmlns:qbo='http://www.intuit.com/sb/cdm/qbo'>
+        <qbo:CdmCollections xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:type='Vendors'>
+        
+        <Vendor>
+          <Id idDomain='QBO'>175</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:29-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:29-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>''wichcraft</Name>
+          <WebSite/>
+          <ShowAs>''wichcraft</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>215</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:30-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:30-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>111
+                Lex Liquors
+          </Name>
+          <WebSite/>
+          <ShowAs>111 Lex Liquors</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>126</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:27-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:27-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>2co.com</Name>
+          <WebSite/>
+          <ShowAs>2co.com</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>15</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:24-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>37
+                Signals
+          </Name>
+          <WebSite/>
+          <ShowAs>37 Signals</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>242</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:30-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:30-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>99Designs</Name>
+          <WebSite/>
+          <ShowAs>99Designs</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>20</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:24-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>AT&amp;T
+                Wi-Fi
+          </Name>
+          <WebSite/>
+          <ShowAs>AT&amp;T Wi-Fi</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>189</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:29-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:29-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Adam
+                Neary non-emp
+          </Name>
+          <Address>
+            <Line1>Adam Neary</Line1>
+            <Line2>100 Paterson
+                Plank Rd #323
+            </Line2>
+            <City>Jersey City</City>
+            <CountrySubDivisionCode>NJ</CountrySubDivisionCode>
+            <PostalCode>07307</PostalCode>
+          </Address>
+          <Phone>
+            <DeviceType>Primary</DeviceType>
+            <FreeFormNumber>6173140825</FreeFormNumber>
+          </Phone>
+          <WebSite/>
+          <ShowAs>Adam
+                Neary non-emp
+          </ShowAs>
+          <AcctNum>00000010</AcctNum>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>12</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:24-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Adam
+                Olson
+          </Name>
+          <WebSite/>
+          <ShowAs>Adam Olson</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>256</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:31-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Alamo
+                Car Rental
+          </Name>
+          <WebSite/>
+          <ShowAs>Alamo Car Rental</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>105</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:26-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:26-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Alexa
+                Bar
+          </Name>
+          <WebSite/>
+          <ShowAs>Alexa Bar</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>124</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:27-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:27-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Alfredo''s
+                Coal Oven Pizza
+          </Name>
+          <WebSite/>
+          <ShowAs>Alfredo''s Coal Oven Pizza</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>255</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:31-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Amazon
+                Marketplace
+          </Name>
+          <WebSite/>
+          <ShowAs>Amazon Marketplace</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>241</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:30-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:30-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Amazon
+                Web Services
+          </Name>
+          <Address>
+            <Line1>Amazon Web Services LLC</Line1>
+            <Line2>410
+                Terry Avenue North
+            </Line2>
+            <City>Seattle</City>
+            <CountrySubDivisionCode>Washington</CountrySubDivisionCode>
+            <PostalCode>98109-5210</PostalCode>
+          </Address>
+          <WebSite/>
+          <ShowAs>Amazon
+                Web Services
+          </ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>253</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:31-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Amazon.com</Name>
+          <WebSite/>
+          <ShowAs>Amazon.com</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>45</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:25-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:25-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Ambrose</Name>
+          <WebSite/>
+          <ShowAs>Ambrose</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>162</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:28-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:28-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Amer
+                Rehman
+          </Name>
+          <Address>
+            <Line1>155 East 31st Street, Apt. 28K</Line1>
+            <City>New
+                York
+            </City>
+            <CountrySubDivisionCode>NY</CountrySubDivisionCode>
+            <PostalCode>10016</PostalCode>
+          </Address>
+          <Phone>
+            <DeviceType>Primary</DeviceType>
+            <FreeFormNumber>(646)
+                298-5444
+            </FreeFormNumber>
+          </Phone>
+          <Phone>
+            <DeviceType>Fax</DeviceType>
+            <FreeFormNumber>(800)
+                323-3120
+            </FreeFormNumber>
+          </Phone>
+          <WebSite/>
+          <ShowAs>Amer Rehman</ShowAs>
+          <AcctNum>0</AcctNum>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>252</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:31-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>American
+                Airlines
+          </Name>
+          <WebSite/>
+          <ShowAs>American Airlines</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>144</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:27-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:27-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>American
+                Express
+          </Name>
+          <WebSite/>
+          <ShowAs>American Express</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>266</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:31-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>American
+                Express (Plum)
+          </Name>
+          <WebSite/>
+          <ShowAs>American Express (Plum)</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>254</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:31-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Amtrak</Name>
+          <WebSite/>
+          <ShowAs>Amtrak</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>88</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:26-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:26-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Ana
+                Hevesi
+          </Name>
+          <Address>
+            <Line1>233 Prospect Pl Apt 2A</Line1>
+            <City>Brooklyn</City>
+            <CountrySubDivisionCode>NY</CountrySubDivisionCode>
+            <PostalCode>11238</PostalCode>
+          </Address>
+          <Phone>
+            <DeviceType>Primary</DeviceType>
+            <FreeFormNumber>917-374-1063</FreeFormNumber>
+          </Phone>
+          <WebSite/>
+          <GivenName>Ana</GivenName>
+          <FamilyName>Hevesi</FamilyName>
+          <ShowAs>Ana
+                Hevesi
+          </ShowAs>
+          <SalesTermId idDomain='QBO'>5</SalesTermId>
+          <AcctNum>12358</AcctNum>
+          <Vendor1099>true</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>169</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:28-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:28-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Apotheke
+                Media
+          </Name>
+          <Address>
+            <Line1>154 Grand Street</Line1>
+            <City>New York</City>
+            <CountrySubDivisionCode>NY</CountrySubDivisionCode>
+            <PostalCode>10013</PostalCode>
+          </Address>
+          <Phone>
+            <DeviceType>Primary</DeviceType>
+            <FreeFormNumber>646-397-8882</FreeFormNumber>
+          </Phone>
+          <WebSite/>
+          <GivenName>Angela</GivenName>
+          <FamilyName>Wang</FamilyName>
+          <ShowAs>Angela
+                Wang
+          </ShowAs>
+          <SalesTermId idDomain='QBO'>7</SalesTermId>
+          <AcctNum>9999999999999</AcctNum>
+          <Vendor1099>true</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>190</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:29-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:29-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>AppSumo</Name>
+          <WebSite/>
+          <ShowAs>AppSumo</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>47</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:25-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:25-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Apple</Name>
+          <WebSite/>
+          <ShowAs>Apple</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>239</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:30-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:30-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Audit
+                My Books
+          </Name>
+          <Address>
+            <Line1>2885 Lassiter Manor Dr.</Line1>
+            <City>Marietta</City>
+            <CountrySubDivisionCode>GA</CountrySubDivisionCode>
+            <PostalCode>30062</PostalCode>
+          </Address>
+          <Phone>
+            <DeviceType>Primary</DeviceType>
+            <FreeFormNumber>9999999999</FreeFormNumber>
+          </Phone>
+          <WebSite/>
+          <ShowAs>Audit
+                My Books
+          </ShowAs>
+          <SalesTermId idDomain='QBO'>7</SalesTermId>
+          <AcctNum>0</AcctNum>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>283</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:31-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:31-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Authentic
+                Matters
+          </Name>
+          <Address>
+            <Line1>304 Arch St.</Line1>
+            <Line2>Suite 4E</Line2>
+            <City>Philadelphia</City>
+            <CountrySubDivisionCode>PA</CountrySubDivisionCode>
+            <PostalCode>19106</PostalCode>
+          </Address>
+          <Phone>
+            <DeviceType>Primary</DeviceType>
+            <FreeFormNumber>4849423863</FreeFormNumber>
+          </Phone>
+          <WebSite/>
+          <GivenName>Dave</GivenName>
+          <FamilyName>Clarke</FamilyName>
+          <DBAName>Authentic
+                Matters
+          </DBAName>
+          <ShowAs>Authentic Matters</ShowAs>
+          <AcctNum>0</AcctNum>
+          <Vendor1099>true</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>19</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:24-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Balsamiq</Name>
+          <WebSite/>
+          <ShowAs>Balsamiq</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>290</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:32-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:32-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Beecher''s</Name>
+          <WebSite/>
+          <ShowAs>Beecher''s</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>58</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:25-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:25-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Bellevue
+                Tavern
+          </Name>
+          <WebSite/>
+          <ShowAs>Bellevue Tavern</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>117</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:27-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:27-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Bertucci''s</Name>
+          <WebSite/>
+          <ShowAs>Bertucci''s</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>43</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:25-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:25-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>BestBuy</Name>
+          <WebSite/>
+          <ShowAs>BestBuy</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>303</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-12T10:37:09-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-12T10:37:09-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Bill.com</Name>
+          <Address>
+            <Line1>3200
+                Ash Street
+            </Line1>
+            <City>Palo Alto</City>
+            <Country>United States</Country>
+            <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+            <PostalCode>94306</PostalCode>
+          </Address>
+          <Phone>
+            <DeviceType>Primary</DeviceType>
+            <FreeFormNumber>866-989-2455</FreeFormNumber>
+          </Phone>
+          <WebSite/>
+          <ShowAs>Bill.com</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>247</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:30-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:30-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Blog
+                Mutt
+          </Name>
+          <WebSite/>
+          <ShowAs>Blog Mutt</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>145</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:27-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:27-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Blue
+                Box Group
+          </Name>
+          <WebSite/>
+          <ShowAs>Blue Box Group</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>2</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:24-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:24-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Bolt
+                Bus
+          </Name>
+          <WebSite/>
+          <ShowAs>Bolt Bus</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor>
+        <Vendor>
+          <Id idDomain='QBO'>178</Id>
+          <SyncToken>0</SyncToken>
+          <MetaData>
+            <CreateTime>2012-07-07T12:01:29-07:00</CreateTime>
+            <LastUpdatedTime>2012-07-07T12:01:29-07:00</LastUpdatedTime>
+          </MetaData>
+          <Name>Bottle
+                rocket
+          </Name>
+          <WebSite/>
+          <ShowAs>Bottle rocket</ShowAs>
+          <Vendor1099>false</Vendor1099>
+        </Vendor></qbo:CdmCollections><qbo:Count>50</qbo:Count><qbo:CurrentPage>1</qbo:CurrentPage></qbo:SearchResults>"
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:00:03 GMT
+recorded_with: VCR 2.2.4

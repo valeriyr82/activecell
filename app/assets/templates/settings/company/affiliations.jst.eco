@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="span14">
+    <h3>Users with access to Sterling Cooper</h3>
+  </div>
+</div>
+
+<div class="row users-with-access">
+      <div class="span10">
+        <table class="table-std users">
+          <thead>
+          <tr>
+            <th>User / Advisor company</th>
+            <th>Email</th>
+            <th>Type</th>
+            <th>Has access?</th>
+          </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <% unless @isAdvised: %>
+      <div id="advisor-box" class="span4 col-message"></div>
+      <% end %>
+  </div>
+
+<div id="company-invitations" class="row"></div>

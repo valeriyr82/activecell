@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="PKTRA0jbLlJtQKuzIKWDzL9r1YX4NsyTJWWKATzrE",
+        oauth_signature="aROrWFRh8Ntlj%2F0xVQncshHNBrA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296409", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:00:08 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=2F16A5E6D14DE3A7A8D1C70D71C9AEF6.c1-pprdqboas30j; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296408552171; path=/; expires=Tue, 10-Sep-13 17:00:08
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '312'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q013472960670985d14da3</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:00:12 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/sales-terms/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="ADzClZcrtsQETyPh2irqkdfuMzoINzM53bbVc8MSu4",
+        oauth_signature="Bbp9lW4LBEfDpj1gf8Xsf4zfD0U%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296412", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:00:10 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=9271ABA7560B9873756AC056C3F4D6E9.c36-pprdqboas30g; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296410023077; path=/; expires=Tue, 10-Sep-13 17:00:10
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '554'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:SearchResults
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:CdmCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:type="SalesTerms"><SalesTerm><Id idDomain="QBO">9</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>1%
+        10 Net 30</Name><DueDays>30</DueDays><DiscountDays>10</DiscountDays><DiscountPercent>0.0100000</DiscountPercent></SalesTerm><SalesTerm><Id
+        idDomain="QBO">10</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>2%
+        10 Net 30</Name><DueDays>30</DueDays><DiscountDays>10</DiscountDays><DiscountPercent>0.0200000</DiscountPercent></SalesTerm><SalesTerm><Id
+        idDomain="QBO">11</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>Consignment</Name><DueDays>90</DueDays><DiscountDays>0</DiscountDays><DiscountPercent>0.0000000</DiscountPercent></SalesTerm><SalesTerm><Id
+        idDomain="QBO">5</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>Due
+        on receipt</Name><DayOfMonthDue>1</DayOfMonthDue><DueNextMonthDays>0</DueNextMonthDays><DiscountDayOfMonth>1</DiscountDayOfMonth><DateDiscountPercent>0.0000000</DateDiscountPercent></SalesTerm><SalesTerm><Id
+        idDomain="QBO">12</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-07-07T12:02:43-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:02:43-07:00</LastUpdatedTime></MetaData><Name>Net
+        10</Name><DueDays>10</DueDays><DiscountDays>0</DiscountDays></SalesTerm><SalesTerm><Id
+        idDomain="QBO">6</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>Net
+        15</Name><DueDays>15</DueDays><DiscountDays>0</DiscountDays><DiscountPercent>0.0000000</DiscountPercent></SalesTerm><SalesTerm><Id
+        idDomain="QBO">7</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>Net
+        30</Name><DueDays>30</DueDays><DiscountDays>0</DiscountDays><DiscountPercent>0.0000000</DiscountPercent></SalesTerm><SalesTerm><Id
+        idDomain="QBO">8</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-07-07T12:01:19-07:00</CreateTime><LastUpdatedTime>2012-07-07T12:01:19-07:00</LastUpdatedTime></MetaData><Name>Net
+        60</Name><DueDays>60</DueDays><DiscountDays>0</DiscountDays><DiscountPercent>0.0000000</DiscountPercent></SalesTerm></qbo:CdmCollections><qbo:Count>8</qbo:Count><qbo:CurrentPage>1</qbo:CurrentPage></qbo:SearchResults>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:00:14 GMT
+recorded_with: VCR 2.2.4

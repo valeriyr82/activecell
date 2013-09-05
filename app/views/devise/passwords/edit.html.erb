@@ -1,0 +1,31 @@
+<div class="main-content">
+  <h1 class="inset">Change your password</h1>
+  <div class="well textured clearfix">
+    <%= form_for @user, url: user_password_path,
+                 html: { method: :put, class: 'form-stacked' } do |f| %>
+      <%= devise_error_messages! %>
+
+      <%= f.hidden_field :reset_password_token %>
+
+      <div class="control-group">
+        <div class="controls">
+          <%= f.password_field :password, placeholder: 'New password', class: "input-narrow-form alt-field" %>
+          <span class="help-block">eg. yourname@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+        <%= f.password_field :password_confirmation, placeholder: 'Confirm new password', class: "input-narrow-form alt-field" %>
+        <span class="help-block">eg. yourname@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <div class="controls">
+          <button class="btn btn-primary pull-right" type="submit" id="login_button">Change my password</button>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

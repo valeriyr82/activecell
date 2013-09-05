@@ -1,0 +1,212 @@
+@import "colors";
+@import "mixins";
+
+.expand1:after, .expand2:after {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  content: "";
+  margin: 8px 0 0 4px;
+}
+.expand1:after {
+  border-width: 0 6px 6px;
+  border-style: solid;
+  border-color: $link-color transparent;
+}
+
+.expand2:after {
+  border-bottom: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid $link-color;
+}
+
+.message-split {
+  float: right;
+  width: 326px;
+  margin-left:28px;
+}
+
+.alert-message {
+  position: relative;
+  @include gradient($warning, lighten($warning, 10%));
+  @include border-radius(4px);
+  @include inner-shadow(0, 1px, 0, rgba(255, 255, 255, 0.25));
+  
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+
+  
+  margin-bottom: 18px;
+  padding: 7px 14px;
+  color: $heading-black;
+
+  border-width: 1px;
+  border-color: $warning $warning darken($warning, 10%);
+  border-style: solid;
+
+  h3 {
+    line-height: 18px;
+    margin-bottom: 4px;
+    img {
+      vertical-align: top;
+      margin-right: 4px;
+    }
+  }
+  
+  h5 {
+    line-height: 18px;
+  }
+  
+  div {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    line-height: 28px;
+  }
+  
+  .btn {
+    @include outer-shadow(0, 1px, 0, rgba(255, 255, 255, 0.25));
+  }
+
+  .close {
+    float: right;
+    margin-top: -5px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #ffffff;
+    filter: alpha(opacity=20);
+    -khtml-opacity: 0.2;
+    -moz-opacity: 0.2;
+    opacity: 0.2;
+  }
+  
+  .close:hover {
+    color: #000000;
+    text-decoration: none;
+    filter: alpha(opacity=40);
+    -khtml-opacity: 0.4;
+    -moz-opacity: 0.4;
+    opacity: 0.4;
+  }
+  
+  &.block-message {
+    background-image: none;
+    background-color: #fdf5d9;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    padding: 14px;
+    border-color: lighten($warning, 10%);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    
+    .alert-actions {
+      margin-top: 5px;
+    }
+
+    &.error {
+      background-color: #F4DDDD;
+      border-color: #F1B5B4;
+    }
+    &.info {
+      background-color: #D7EBED;
+      border-color: #9FD9DF;
+    }
+  }
+}
+
+// Alerts and callouts styles
+// ------------------------------------
+
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+  color: $white;
+  border: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  width: 1114px;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include border-radius(4px);
+  @include gradient($primary-dark, $primary);
+
+  .close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    display: block;
+    float: right;
+    font-size: 20px;
+    position: relative;
+    top: -2px;
+    right: -21px;
+    line-height: 18px;
+    color: $white;
+    text-shadow: 0 1px 0 rgba(0,0,0,.3);
+
+    @include opacity(0.5);
+
+    &:hover {
+      color: $white;
+      
+      @include opacity(0.8);
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.alert-heading {
+  color: inherit;
+}
+
+// Alternate styles
+// ----------------
+
+.alert-success {
+  @include gradient($success, darken($success, 10%));
+}
+.alert-danger, .alert-error, .alert-alert {
+  @include gradient($danger, darken($danger, 10%));
+}
+.alert-info {
+  @include gradient($info, darken($info, 10%));
+}
+
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  .alert-control {
+    display: inline-block;
+    padding: 7px 3px 7px 8px;
+    margin: 15px 0 0 0;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+
+    .btn {
+      margin-right: 5px;
+    }
+  }
+
+}
+
+/*
+.alert-block > p, .alert-block > ul {
+  margin-bottom: 0;
+}
+
+.alert-block p + p {
+  margin-top: 5px;
+}
+*/

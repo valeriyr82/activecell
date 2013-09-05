@@ -1,0 +1,321 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="dNaazb0drY3jrsMK0EztNYC0ChEOVA9ymYPaZgNac",
+        oauth_signature="Az5M7B2UXUCOgMrSGCcjjtdXPtI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296535", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:02:12 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=87FE3281199194675F38605D19E41E07.c1-pprdqboas30f; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296532811557; path=/; expires=Tue, 10-Sep-13 17:02:12
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '312'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q013472960670985d14da3</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:02:16 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/credit-card-credits/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="O8aVST6yswPfnvXiSwFabeyle30KGFhjAlLFP29va7k",
+        oauth_signature="YeD%2BjO3GwpNyBvcFd5cvMfZRSSw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296536", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:02:14 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=AC0B0F017423127E3DBA17BFA753415F.c36-pprdqboas30e; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296534040419; path=/; expires=Tue, 10-Sep-13 17:02:14
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2507'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:SearchResults
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:CdmCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:type="CreditCardCredits"><CreditCardCredit><Id idDomain="QBO">1672</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-03-08T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-03-08T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-03-08-08:00</TxnDate><Msg>4227493335  210-581-0410371556605061003</Msg><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">230</EntityId><EntityType>Vendor</EntityType><TotalAmt>1514.01</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1514.01</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">156</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1628</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-03-08T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-03-08T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-03-08-08:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>739.08</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>739.08</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1665</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-02-29T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-02-29T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-02-29-08:00</TxnDate><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>1045.27</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>1045.27</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1698</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-02-28T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-02-28T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-02-28-08:00</TxnDate><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">36</EntityId><EntityType>Vendor</EntityType><TotalAmt>3303.56</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>TD BANK, N.A.    PAYMENT</Desc><Amount>3303.56</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1660</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-02-20T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-02-20T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-02-20-08:00</TxnDate><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>15.22</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>15.22</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1622</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-02-20T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-02-20T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-02-20-08:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>8.11</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>8.11</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1656</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-02-10T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-02-10T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-02-10-08:00</TxnDate><Msg>4167103036  210-581-0410371556605061003</Msg><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">230</EntityId><EntityType>Vendor</EntityType><TotalAmt>1618.94</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1618.94</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">156</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1618</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-02-07T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-02-07T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-02-07-08:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>387.54</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>387.54</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1649</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-01-31T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-31T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-01-31-08:00</TxnDate><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>1001.01</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>1001.01</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1689</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-01-30T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-30T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-01-30-08:00</TxnDate><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">36</EntityId><EntityType>Vendor</EntityType><TotalAmt>558.59</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>TD BANK, N.A.    PAYMENT</Desc><Amount>558.59</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1644</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-01-22T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-22T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-01-22-08:00</TxnDate><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>13.93</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>13.93</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1610</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-01-17T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-17T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-01-17-08:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>16.66</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>16.66</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1637</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-01-12T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-12T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-01-12-08:00</TxnDate><Msg>4104796502  210-581-0410371556605061003</Msg><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">230</EntityId><EntityType>Vendor</EntityType><TotalAmt>1600.30</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1600.30</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">156</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1551</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2012-01-08T00:00:00-08:00</CreateTime><LastUpdatedTime>2012-01-08T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2012-01-08-08:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>747.55</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>747.55</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1564</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-12-31T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-31T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-12-31-08:00</TxnDate><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>895.62</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>895.62</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1579</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-12-28T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-28T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-12-28-08:00</TxnDate><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">36</EntityId><EntityType>Vendor</EntityType><TotalAmt>533.63</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>TD BANK, N.A.    PAYMENT</Desc><Amount>533.63</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1560</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-12-22T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-22T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-12-22-08:00</TxnDate><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>33.35</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>33.35</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">117</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1544</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-12-16T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-16T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-12-16-08:00</TxnDate><Msg>VOID:</Msg><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>22.93</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>22.93</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1557</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-12-09T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-09T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-12-09-08:00</TxnDate><Msg>4033105701  210-581-0410371556605061003</Msg><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">230</EntityId><EntityType>Vendor</EntityType><TotalAmt>1603.13</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1603.13</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">156</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1542</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-12-08T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-12-08T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-12-08-08:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>1051.41</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>1051.41</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1493</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-11-28T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-11-28T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-11-28-08:00</TxnDate><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">36</EntityId><EntityType>Vendor</EntityType><TotalAmt>1138.79</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>1138.79</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1506</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-11-21T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-11-21T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-11-21-08:00</TxnDate><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>11.81</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>11.81</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">117</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1504</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-11-18T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-11-18T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-11-18-08:00</TxnDate><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">265</EntityId><EntityType>Vendor</EntityType><TotalAmt>776.85</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>776.85</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1365</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-11-16T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-11-16T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-11-16-08:00</TxnDate><Msg>3980911842  210-581-0410371738981511039</Msg><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">230</EntityId><EntityType>Vendor</EntityType><TotalAmt>261.69</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>261.69</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">156</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1364</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-11-15T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-11-15T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-11-15-08:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>32.47</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>32.47</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1360</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-11-08T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-11-08T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-11-08-08:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>2137.76</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>2137.76</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1427</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-10-28T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-28T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-10-28-07:00</TxnDate><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">36</EntityId><EntityType>Vendor</EntityType><TotalAmt>1215.56</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>TD BANK, N.A.    PAYMENT</Desc><Amount>1215.56</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1395</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-10-22T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-22T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-10-22-07:00</TxnDate><Msg>A878859T103
+        6508534100371556605061003</Msg><CCAccountId idDomain="QBO">141</CCAccountId><EntityId
+        idDomain="QBO">72</EntityId><EntityType>Vendor</EntityType><TotalAmt>10.00</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>10.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">115</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1390</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-10-21T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-21T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-10-21-07:00</TxnDate><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>0.50</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>0.50</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">117</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1351</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-10-17T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-17T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-10-17-07:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>31.39</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>31.39</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">117</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1273</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-10-08T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-10-08T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-10-08-07:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>2781.61</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>2781.61</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1264</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-09-26T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-26T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-09-26-07:00</TxnDate><CCAccountId
+        idDomain="QBO">141</CCAccountId><EntityId idDomain="QBO">36</EntityId><EntityType>Vendor</EntityType><TotalAmt>33.49</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>AMERICAN EXPRESS ELEC REMIT</Desc><Amount>33.49</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1251</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-09-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-09-16-07:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>42.92</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>42.92</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1249</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-09-09T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-09T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-09-09-07:00</TxnDate><Msg>318000001
+        1 6502390520371738981511013</Msg><CCAccountId idDomain="QBO">118</CCAccountId><EntityId
+        idDomain="QBO">27</EntityId><EntityType>Vendor</EntityType><TotalAmt>49.00</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>49.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">75</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1250</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-09-09T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-09T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-09-09-07:00</TxnDate><Msg>318000002
+        1 6502390520371738981511013</Msg><CCAccountId idDomain="QBO">118</CCAccountId><EntityId
+        idDomain="QBO">27</EntityId><EntityType>Vendor</EntityType><TotalAmt>49.00</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>49.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">75</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1267</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-09-08T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-08T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-09-08-07:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>3949.87</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Desc>AMEX EPAYMENT    ACH PMT</Desc><Amount>3949.87</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1282</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-09-08T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-08T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-09-08-07:00</TxnDate><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">14</EntityId><EntityType>Vendor</EntityType><TotalAmt>59.88</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>59.88</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">156</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1147</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-09-02T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-09-02T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-09-02-07:00</TxnDate><Msg>refund</Msg><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">247</EntityId><EntityType>Vendor</EntityType><TotalAmt>79.00</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>79.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">75</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1142</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-08-19T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-19T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-08-19-07:00</TxnDate><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">242</EntityId><EntityType>Vendor</EntityType><TotalAmt>204.00</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>204.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">75</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1203</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-08-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-08-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-08-16-07:00</TxnDate><Msg>rebate</Msg><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>50.77</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>50.77</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1059</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-07-28T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-07-28T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-07-28-07:00</TxnDate><Msg>861000007
+        TO VOID DUPLICATE BILLI371738981511013</Msg><CCAccountId idDomain="QBO">118</CCAccountId><EntityId
+        idDomain="QBO">192</EntityId><EntityType>Vendor</EntityType><TotalAmt>23.39</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>23.39</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">112</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1022</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-07-26T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-07-26T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-07-26-07:00</TxnDate><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">241</EntityId><EntityType>Vendor</EntityType><TotalAmt>388.07</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>388.07</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">156</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">1039</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-07-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-07-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-07-16-07:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>20.43</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>20.43</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">952</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-06-15T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-06-15T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-06-15-07:00</TxnDate><CCAccountId
+        idDomain="QBO">130</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>24.75</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>24.75</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">961</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-06-14T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-06-14T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-06-14-07:00</TxnDate><Msg>70629422    402-935-7733371738981511021</Msg><CCAccountId
+        idDomain="QBO">136</CCAccountId><EntityId idDomain="QBO">27</EntityId><EntityType>Vendor</EntityType><TotalAmt>175.00</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>175.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">75</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">935</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-06-10T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-06-10T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-06-10-07:00</TxnDate><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">27</EntityId><EntityType>Vendor</EntityType><TotalAmt>26.03</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>26.03</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">75</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">846</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-05-15T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-05-15T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-05-15-07:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>50.75</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>50.75</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">744</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-04-29T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-04-29T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-04-29-07:00</TxnDate><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">116</EntityId><EntityType>Vendor</EntityType><TotalAmt>10.69</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>10.69</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">75</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">743</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-04-28T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-04-28T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-04-28-07:00</TxnDate><Msg>Memo:TD
+        BANK, N.A.</Msg><CCAccountId idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">36</EntityId><EntityType>Vendor</EntityType><TotalAmt>2137.71</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>2137.71</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">771</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-04-16T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-04-16T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-04-16-07:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>63.04</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>63.04</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">740</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-04-12T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-04-12T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-04-12-07:00</TxnDate><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">5</EntityId><EntityType>Employee</EntityType><TotalAmt>599.95</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>599.95</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">126</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">683</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-03-18T00:00:00-07:00</CreateTime><LastUpdatedTime>2011-03-18T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-03-18-07:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>31.67</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>31.67</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">532</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-02-28T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-02-28T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-02-28-08:00</TxnDate><Msg>Memo:TD
+        BANK, N.A.</Msg><CCAccountId idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">36</EntityId><EntityType>Vendor</EntityType><TotalAmt>2299.03</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>2299.03</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">536</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-02-16T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-02-16T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-02-16-08:00</TxnDate><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">81</EntityId><EntityType>Vendor</EntityType><TotalAmt>99.00</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>99.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">75</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">535</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-02-15T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-02-15T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-02-15-08:00</TxnDate><Msg>Memo:TD
+        BANK, N.A.</Msg><CCAccountId idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">36</EntityId><EntityType>Vendor</EntityType><TotalAmt>35.00</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>35.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">552</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-02-13T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-02-13T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-02-13-08:00</TxnDate><CCAccountId
+        idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">144</EntityId><EntityType>Vendor</EntityType><TotalAmt>21.93</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>21.93</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">144</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">551</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2011-02-08T00:00:00-08:00</CreateTime><LastUpdatedTime>2011-02-08T00:00:00-08:00</LastUpdatedTime></MetaData><Header><TxnDate>2011-02-08-08:00</TxnDate><Msg>Memo:AMEX
+        EPAYMENT</Msg><CCAccountId idDomain="QBO">118</CCAccountId><EntityId idDomain="QBO">36</EntityId><EntityType>Vendor</EntityType><TotalAmt>2193.00</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>2193.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">94</AccountId></Line></CreditCardCredit><CreditCardCredit><Id
+        idDomain="QBO">209</Id><SyncToken>0</SyncToken><MetaData><CreateTime>2010-09-13T00:00:00-07:00</CreateTime><LastUpdatedTime>2010-09-13T00:00:00-07:00</LastUpdatedTime></MetaData><Header><TxnDate>2010-09-13-07:00</TxnDate><CCAccountId
+        idDomain="QBO">95</CCAccountId><EntityId idDomain="QBO">72</EntityId><EntityType>Vendor</EntityType><TotalAmt>10.00</TotalAmt></Header><Line><Id
+        idDomain="QBO">1</Id><Amount>10.00</Amount><BillableStatus>NotBillable</BillableStatus><AccountId
+        idDomain="QBO">115</AccountId></Line></CreditCardCredit></qbo:CdmCollections><qbo:Count>58</qbo:Count><qbo:CurrentPage>1</qbo:CurrentPage></qbo:SearchResults>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:02:19 GMT
+recorded_with: VCR 2.2.4

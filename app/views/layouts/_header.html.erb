@@ -1,0 +1,25 @@
+<div class="head" id="header" data-flash-messages="<%= flash.to_json %>">
+  <div class="container">
+    <% if user_signed_in? %>
+      <%= link_to '#' do %>
+        <% if current_company.present? and current_company.branding.logo? %>
+          <%= image_tag current_company.branding.logo.url(:resized), class: 'logo' %>
+        <% else %>
+          <%= image_tag 'branding/style_guide/logo/activecell-full-color-darkBG-small.png', class: 'logo' %>
+        <% end %>
+      <% end %>
+      <div id="spinner"></div>
+
+      <div class="head-buttons">
+        <div id="scenario-menu"></div>
+        <div id="user-settings-menu"></div>
+      </div>
+    <% else %>
+      <a href="http://www.activecell.com">
+        <%= image_tag 'branding/style_guide/logo/activecell-full-color-darkBG-small.png', class: 'logo' %>
+      </a>
+    <% end %>
+  </div>
+  <div class="modal fade hide" id="ajax-modal" tabindex="-1" role="dialog"></div>
+  <div id="flash-messages"></div>
+</div>

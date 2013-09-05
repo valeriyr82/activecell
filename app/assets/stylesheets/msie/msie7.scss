@@ -1,0 +1,55 @@
+@import "../common/colors";
+@import "../common/mixins";
+
+a, a:focus, a:active, a:selected {
+  outline: 0;
+  ie-dummy: expression(this.hideFocus=true);
+}
+.modal .cancel div {
+  cursor: pointer;
+}
+
+#sign-in.modal {
+  width: 610px;
+}
+
+#progress-bar-container {
+  overflow: hidden;
+  #progress-bar {
+    float: left;
+  }
+}
+
+#modal-shadow {
+  z-index: 1;
+}
+
+body#scenarios {
+  .learn-more #learn-more-video {
+    z-index: 10;
+  }
+  div.forecast {
+    .forecast-table-container {
+      position: relative;
+    }
+    table tr.percents td span {
+      z-index: 1;
+    }
+  }
+  .pane .list ul.plan-list li {
+    margin-bottom: 0;
+  }
+  .cac-forecast div.forecast {
+    table th {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}
+
+#head .tier1-tab {
+  @include opacity(0.5);
+}
+
+table.megatable {
+  border-collapse: collapse;
+}

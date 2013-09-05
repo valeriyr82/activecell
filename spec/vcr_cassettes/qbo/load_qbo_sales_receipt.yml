@@ -1,0 +1,1127 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://qdc.qbo.intuit.com/qbo1/rest/user/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="6ES9YPYMvpK3XuCqa5mFKW3aT7AWZ4O9RXdakidpKE",
+        oauth_signature="SXVn7P5rctKwif5lFA1HiCkqrxg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296548", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:02:25 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=46B7029FEA911F8C5972CB371E4B78AB.c1-pprdqboas30g; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296545979922; path=/; expires=Tue, 10-Sep-13 17:02:25
+        GMT; domain=.intuit.com
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 31 Dec 1969 16:00:00 PST
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '312'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><qbo:QboUser
+        xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+        xmlns:qbo="http://www.intuit.com/sb/cdm/qbo"><qbo:LoginName>adamrneary</qbo:LoginName><qbo:Ticket>V1-156-Q013472960670985d14da3</qbo:Ticket><qbo:AgentId>157280668</qbo:AgentId><qbo:CurrentCompany><qbo:CompanyId>497421705</qbo:CompanyId><qbo:BaseURI>https://qbo.intuit.com/qbo36</qbo:BaseURI><qbo:SubscriptionStatus>SUBSCRIBED</qbo:SubscriptionStatus></qbo:CurrentCompany></qbo:QboUser>
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:02:29 GMT
+- request:
+    method: post
+    uri: https://qbo.intuit.com/qbo36/resource/sales-receipts/v2/497421705
+    body:
+      encoding: US-ASCII
+      string: PageNum=1&ResultsPerPage=100
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="Ugw2U6j1yYOPl1VGM36rRaSUzdB6IQsHRthZLPtiOy4",
+        oauth_signature="NIaXELxzOKfhGT0MjUXVeQGy8fg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1347296549", oauth_token="qyprdu6vPmoGcpFXOZht5vlwgJ5JlM1wszm6ojYZQOb1kiSz",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2012 17:02:27 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=29F7DC24385C74720468CB6F4487A45E.c36-pprdqboas30f; Path=/; Secure;
+        HttpOnly
+      - qboeuid=10.129.32.5.1347296547367998; path=/; expires=Tue, 10-Sep-13 17:02:27
+        GMT; domain=.intuit.com
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2545'
+      Content-Type:
+      - application/xml;charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: ! '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+        <qbo:SearchResults
+                xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:qbp="http://www.intuit.com/sb/cdm/qbopayroll/v1"
+                xmlns:qbo="http://www.intuit.com/sb/cdm/qbo">
+          <qbo:CdmCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:type="SalesReceipts">
+            <SalesReceipt>
+              <Id idDomain="QBO">1719</Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-02-16T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-02-16T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>56</DocNumber>
+                <TxnDate>2012-02-16-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">281
+                </CustomerId>
+                <SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId>
+                <SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName>
+                <SubTotalAmt>54.43</SubTotalAmt>
+                <TotalAmt>54.43</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>true</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>4.44</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>50.028169</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1718
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-02-14T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-02-14T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>55</DocNumber>
+                <TxnDate>2012-02-14-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">289
+                </CustomerId>
+                <SubTotalAmt>54.43</SubTotalAmt>
+                <TotalAmt>54.43</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>true</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>4.44</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>50.028169</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1715
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-02-09T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-02-09T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>52</DocNumber>
+                <TxnDate>2012-02-09-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">288
+                </CustomerId>
+                <SubTotalAmt>49.99</SubTotalAmt>
+                <TotalAmt>49.99</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1716
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-02-09T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-02-09T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>53</DocNumber>
+                <TxnDate>2012-02-09-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">300
+                </CustomerId>
+                <SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId>
+                <SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName>
+                <SubTotalAmt>49.99</SubTotalAmt>
+                <TotalAmt>49.99</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1717
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-02-09T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-02-09T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>54</DocNumber>
+                <TxnDate>2012-02-09-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">301
+                </CustomerId>
+                <SubTotalAmt>49.99</SubTotalAmt>
+                <TotalAmt>49.99</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1714
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-02-06T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-02-06T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>51</DocNumber>
+                <TxnDate>2012-02-06-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">280
+                </CustomerId>
+                <SubTotalAmt>49.99</SubTotalAmt>
+                <TotalAmt>49.99</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1713
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-02-05T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-02-05T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>50</DocNumber>
+                <TxnDate>2012-02-05-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">289
+                </CustomerId>
+                <SubTotalAmt>200.00</SubTotalAmt>
+                <TotalAmt>200.00</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>200.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>200</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1712
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-01-30T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-01-30T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>49</DocNumber>
+                <TxnDate>2012-01-30-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">286
+                </CustomerId>
+                <SubTotalAmt>49.99</SubTotalAmt>
+                <TotalAmt>49.99</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1711
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-01-16T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-01-16T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>48</DocNumber>
+                <TxnDate>2012-01-16-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">281
+                </CustomerId>
+                <SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId>
+                <SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName>
+                <SubTotalAmt>54.43</SubTotalAmt>
+                <TotalAmt>54.43</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>true</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>4.44</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>50.028169</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1710
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-01-14T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-01-14T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>47</DocNumber>
+                <TxnDate>2012-01-14-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">289
+                </CustomerId>
+                <SubTotalAmt>54.43</SubTotalAmt>
+                <TotalAmt>54.43</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>true</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>4.44</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>50.028169</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1709
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-01-10T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-01-10T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>46</DocNumber>
+                <TxnDate>2012-01-10-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">300
+                </CustomerId>
+                <SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId>
+                <SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName>
+                <SubTotalAmt>49.99</SubTotalAmt>
+                <TotalAmt>49.99</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1708
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-01-09T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-01-09T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>45</DocNumber>
+                <TxnDate>2012-01-09-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">288
+                </CustomerId>
+                <SubTotalAmt>49.99</SubTotalAmt>
+                <TotalAmt>49.99</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1707
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-01-06T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-01-06T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>44</DocNumber>
+                <TxnDate>2012-01-06-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">280
+                </CustomerId>
+                <SubTotalAmt>49.99</SubTotalAmt>
+                <TotalAmt>49.99</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1706
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-01-05T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-01-05T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>43</DocNumber>
+                <TxnDate>2012-01-05-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">289
+                </CustomerId>
+                <SubTotalAmt>200.00</SubTotalAmt>
+                <TotalAmt>200.00</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>200.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>200</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1705
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2012-01-02T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2012-01-02T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>42</DocNumber>
+                <TxnDate>2012-01-02-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">202
+                </CustomerId>
+                <SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId>
+                <SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName>
+                <SubTotalAmt>43.55</SubTotalAmt>
+                <TotalAmt>43.55</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>true</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+                <Qty>1</Qty>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Amount>-9.99</Amount>
+                <Taxable>true</Taxable>
+                <ItemId>13</ItemId>
+                <UnitPrice>-9.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>3</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>3.55</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>40</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1537
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2011-12-29T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2011-12-29T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>41</DocNumber>
+                <TxnDate>2011-12-29-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">286
+                </CustomerId>
+                <SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId>
+                <SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName>
+                <SubTotalAmt>49.99</SubTotalAmt>
+                <TotalAmt>49.99</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1534
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2011-12-15T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2011-12-15T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>38</DocNumber>
+                <TxnDate>2011-12-15-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">281
+                </CustomerId>
+                <SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId>
+                <SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName>
+                <SubTotalAmt>54.43</SubTotalAmt>
+                <TotalAmt>54.43</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>true</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>4.44</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>50.028169</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1535
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2011-12-15T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2011-12-15T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>39</DocNumber>
+                <TxnDate>2011-12-15-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">280
+                </CustomerId>
+                <SubTotalAmt>49.99</SubTotalAmt>
+                <TotalAmt>49.99</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1536
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2011-12-15T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2011-12-15T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>40</DocNumber>
+                <TxnDate>2011-12-15-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">289
+                </CustomerId>
+                <SubTotalAmt>200.00</SubTotalAmt>
+                <TotalAmt>200.00</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>200.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>200</UnitPrice>
+              </Line>
+              <Line>
+                <Id>2</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1533
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2011-12-08T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2011-12-08T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>37</DocNumber>
+                <TxnDate>2011-12-08-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">288
+                </CustomerId>
+                <SubTotalAmt>49.99</SubTotalAmt>
+                <TotalAmt>49.99</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>1</Id>
+                <Amount>49.99</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>6</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>0.00</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>0</Qty>
+              </Line>
+            </SalesReceipt>
+            <SalesReceipt>
+              <Id
+                idDomain="QBO">1531
+              </Id>
+              <SyncToken>0</SyncToken>
+              <MetaData>
+                <CreateTime>2011-12-01T00:00:00-08:00</CreateTime>
+                <LastUpdatedTime>2011-12-01T00:00:00-08:00</LastUpdatedTime>
+              </MetaData>
+              <Header>
+                <DocNumber>35</DocNumber>
+                <TxnDate>2011-12-01-08:00</TxnDate>
+                <CustomerId
+                idDomain="QBO">202
+                </CustomerId>
+                <SalesTaxCodeId idDomain="QBO">1</SalesTaxCodeId>
+                <SalesTaxCodeName>IS_TAXABLE</SalesTaxCodeName>
+                <SubTotalAmt>43.55</SubTotalAmt>
+                <TotalAmt>43.55</TotalAmt>
+                <ToBePrinted>false</ToBePrinted>
+                <ToBeEmailed>false</ToBeEmailed>
+                <ShipMethodId
+                idDomain="QBO"/>
+                <DepositToAccountId idDomain="QBO">93</DepositToAccountId>
+                <DepositToAccountName>12000
+                Undeposited Funds
+                </DepositToAccountName>
+                <PaymentMethodId idDomain="QBO">18</PaymentMethodId>
+                <PaymentMethodName>Braintree</PaymentMethodName>
+                <DiscountTaxable>true</DiscountTaxable>
+              </Header>
+              <Line>
+                <Id>7</Id>
+                <Amount>49.99</Amount>
+                <Taxable>true</Taxable>
+                <ItemId>10</ItemId>
+                <UnitPrice>49.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>8</Id>
+                <Amount>-9.99</Amount>
+                <Taxable>true</Taxable>
+                <ItemId>13</ItemId>
+                <UnitPrice>-9.99</UnitPrice>
+              </Line>
+              <Line>
+                <Id>5</Id>
+                <Desc>Sales
+                Tax 8.875%
+                </Desc>
+                <Amount>3.55</Amount>
+                <Taxable>false</Taxable>
+                <ItemId>15</ItemId>
+                <UnitPrice>0.08875</UnitPrice>
+                <Qty>40</Qty>
+              </Line>
+            </SalesReceipt>
+          </qbo:CdmCollections>
+          <qbo:Count>53</qbo:Count>
+          <qbo:CurrentPage>1</qbo:CurrentPage>
+        </qbo:SearchResults>'
+    http_version: 
+  recorded_at: Mon, 10 Sep 2012 17:02:31 GMT
+recorded_with: VCR 2.2.4

@@ -1,0 +1,7 @@
+<td><%= @company.name %></td>
+<td>
+  <a href="#" class="btn btn-small btn-success log-on">Log on</a>
+</td>
+<td>
+  <a href="#" class="btn btn-small danger remove-company">&times; Remove</a>
+</td>

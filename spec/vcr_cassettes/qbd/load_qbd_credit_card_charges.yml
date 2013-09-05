@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://services.intuit.com/sb/creditcardcharge/v2/174322770
+    body:
+      encoding: US-ASCII
+      string: ! "<CreditCardChargeQuery xmlns=\"http://www.intuit.com/sb/cdm/v2\">\n  <StartPage>1</StartPage>\n  <ChunkSize>500</ChunkSize>\n  <StartTransactionDate>2012-01-01</StartTransactionDate>\n</CreditCardChargeQuery>\n"
+    headers:
+      Authorization:
+      - OAuth oauth_consumer_key="qyprdtGdCxGSaII5DLGvNL2S4nO3wf", oauth_nonce="GfGfTEqiCHl03SaigEdWlnH7zXQ6I0eBROpQGzs4",
+        oauth_signature="Jld39UuCCGQ%2BZWtD6R39HAnQak8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1345633773", oauth_token="qyprdccBfAsG24NCvLzv88kkkXtWccNPxQPn7ygRGZz4Yv14",
+        oauth_version="1.0"
+      Content-Type:
+      - text/xml
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 22 Aug 2012 11:09:38 GMT
+      Server:
+      - Apache/2.2.3 (Oracle)
+      Linequerytime:
+      - '431'
+      Contextinittime:
+      - '667'
+      Response-Id:
+      - a2035dc6-5758-4d04-be54-4e5e3df728ba
+      Assemblingtime:
+      - '0'
+      Headerquerytime:
+      - '286'
+      Content-Encoding:
+      - gzip
+      Headerdaotime:
+      - '286'
+      Linedaotime:
+      - '431'
+      Response-App-Time:
+      - '1938'
+      Response-Routing-Time:
+      - '1950'
+      Content-Length:
+      - '5148'
+      Connection:
+      - close
+      Content-Type:
+      - text/xml
+    body:
+      encoding: US-ASCII
+      string: ! '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><RestResponse
+        xmlns="http://www.intuit.com/sb/cdm/v2"><CreditCardCharges><CreditCardCharge><Id
+        idDomain="QB">8134</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:18:04Z</CreateTime><LastUpdatedTime>2012-03-12T18:52:12Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8134</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-01-16T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">83</CCAccountId><CCAccountName>TD Bank Credit Card #0951</CCAccountName><EntityId
+        idDomain="QB">304</EntityId><EntityName>BuyDomains</EntityName><EntityType>Vendor</EntityType><TotalAmt>2934.83</TotalAmt></Header><Line><Id
+        idDomain="QB">8136</Id><Amount>2934.83</Amount><AccountId idDomain="QB">78</AccountId><AccountName>Domains
+        and Internet Property</AccountName><AccountType>Asset</AccountType></Line></CreditCardCharge><CreditCardCharge><Id
+        idDomain="QB">8131</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:17:39Z</CreateTime><LastUpdatedTime>2012-03-12T18:52:12Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8131</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-01-25T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">83</CCAccountId><CCAccountName>TD Bank Credit Card #0951</CCAccountName><EntityId
+        idDomain="QB">303</EntityId><EntityName>Tumblr</EntityName><EntityType>Vendor</EntityType><TotalAmt>19</TotalAmt></Header><Line><Id
+        idDomain="QB">8133</Id><Amount>19</Amount><AccountId idDomain="QB">59</AccountId><AccountName>IT
+        Software</AccountName><AccountType>Expense</AccountType></Line></CreditCardCharge><CreditCardCharge><Id
+        idDomain="QB">8128</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:17:20Z</CreateTime><LastUpdatedTime>2012-03-12T17:17:20Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8128</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-03-09T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">83</CCAccountId><CCAccountName>TD Bank Credit Card #0951</CCAccountName><EntityId
+        idDomain="QB">232</EntityId><EntityName>Zferral</EntityName><EntityType>Vendor</EntityType><TotalAmt>49</TotalAmt></Header><Line><Id
+        idDomain="QB">8130</Id><Amount>49</Amount><AccountId idDomain="QB">59</AccountId><AccountName>IT
+        Software</AccountName><AccountType>Expense</AccountType></Line></CreditCardCharge><CreditCardCharge><Id
+        idDomain="QB">8125</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:17:20Z</CreateTime><LastUpdatedTime>2012-03-12T17:17:20Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8125</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-03-05T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">83</CCAccountId><CCAccountName>TD Bank Credit Card #0951</CCAccountName><EntityId
+        idDomain="QB">244</EntityId><EntityName>Amazon Web Services</EntityName><EntityType>Vendor</EntityType><TotalAmt>118.33</TotalAmt></Header><Line><Id
+        idDomain="QB">8127</Id><Amount>118.33</Amount><AccountId idDomain="QB">76</AccountId><AccountName>Hosting</AccountName><AccountType>Expense</AccountType></Line></CreditCardCharge><CreditCardCharge><Id
+        idDomain="QB">8119</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:17:20Z</CreateTime><LastUpdatedTime>2012-03-12T17:17:20Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8119</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-02-22T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">83</CCAccountId><CCAccountName>TD Bank Credit Card #0951</CCAccountName><EntityId
+        idDomain="QB">186</EntityId><EntityName>Capsule</EntityName><EntityType>Vendor</EntityType><TotalAmt>72</TotalAmt></Header><Line><Id
+        idDomain="QB">8121</Id><Amount>72</Amount><AccountId idDomain="QB">59</AccountId><AccountName>IT
+        Software</AccountName><AccountType>Expense</AccountType></Line></CreditCardCharge><CreditCardCharge><Id
+        idDomain="QB">8116</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:17:19Z</CreateTime><LastUpdatedTime>2012-03-12T17:17:19Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8116</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-02-20T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">83</CCAccountId><CCAccountName>TD Bank Credit Card #0951</CCAccountName><EntityId
+        idDomain="QB">81</EntityId><EntityName>KissMetrics</EntityName><EntityType>Vendor</EntityType><TotalAmt>29</TotalAmt></Header><Line><Id
+        idDomain="QB">8118</Id><Amount>29</Amount><AccountId idDomain="QB">59</AccountId><AccountName>IT
+        Software</AccountName><AccountType>Expense</AccountType></Line></CreditCardCharge><CreditCardCharge><Id
+        idDomain="QB">8113</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:17:19Z</CreateTime><LastUpdatedTime>2012-03-12T17:17:19Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8113</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-02-20T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">83</CCAccountId><CCAccountName>TD Bank Credit Card #0951</CCAccountName><EntityId
+        idDomain="QB">265</EntityId><EntityName>Geckoboard</EntityName><EntityType>Vendor</EntityType><TotalAmt>7.2</TotalAmt></Header><Line><Id
+        idDomain="QB">8115</Id><Amount>7.2</Amount><AccountId idDomain="QB">59</AccountId><AccountName>IT
+        Software</AccountName><AccountType>Expense</AccountType></Line></CreditCardCharge><CreditCardCharge><Id
+        idDomain="QB">8110</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:17:19Z</CreateTime><LastUpdatedTime>2012-03-12T17:17:19Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8110</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-02-17T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">83</CCAccountId><CCAccountName>TD Bank Credit Card #0951</CCAccountName><EntityId
+        idDomain="QB">21</EntityId><EntityName>AT&amp;T Wi-Fi</EntityName><EntityType>Vendor</EntityType><TotalAmt>25</TotalAmt></Header><Line><Id
+        idDomain="QB">8112</Id><Amount>25</Amount><AccountId idDomain="QB">33</AccountId><AccountName>Internet/Telephone/Connectivity</AccountName><AccountType>Expense</AccountType></Line></CreditCardCharge><CreditCardCharge><Id
+        idDomain="QB">8107</Id><SyncToken>1</SyncToken><MetaData><CreateTime>2012-03-12T17:17:19Z</CreateTime><LastUpdatedTime>2012-03-12T17:17:19Z</LastUpdatedTime></MetaData><ExternalKey
+        idDomain="QB">8107</ExternalKey><Synchronized>true</Synchronized><Header><TxnDate>2012-02-13T00:00:00Z</TxnDate><Status>Payable</Status><CCAccountId
+        idDomain="QB">83</CCAccountId><CCAccountName>TD Bank Credit Card #0951</CCAccountName><EntityId
+        idDomain="QB">128</EntityId><EntityName>Fog Creek Software</EntityName><EntityType>Vendor</EntityType><TotalAmt>24</TotalAmt></Header><Line><Id
+        idDomain="QB">8109</Id><Amount>24</Amount><AccountId idDomain="QB">59</AccountId><AccountName>IT
+        Software</AccountName><AccountType>Expense</AccountType></Line></CreditCardCharge></CreditCardCharges></RestResponse>'
+    http_version: 
+  recorded_at: Wed, 22 Aug 2012 11:09:40 GMT
+recorded_with: VCR 2.2.4

@@ -1,0 +1,153 @@
+@import "../../common/colors";
+@import "../../common/mixins";
+
+// customization-colors
+.company-colors{
+  .customize-colors{
+    .clickable{
+      cursor:pointer;
+    }
+    .clearr{
+      clear: both;
+    }
+    .parent{
+      float:right;
+      padding-right:3px;
+    }
+    .control-label{
+      text-align: right;
+      float:left;
+      width: 200px;
+      padding: 0 20px 0 0;
+    }
+    .control-group{
+      margin: 5px;
+    }
+    .bar{
+      float: left;
+      margin: 3px 0px;
+      i{
+        display:block;
+        border: solid 1px;
+        width: 74px;
+        height: 24px;
+      }
+    }
+  }
+  .logo-section-header {
+    margin: 13px 0;
+  }
+}
+
+// Company - Upload logo
+.company-upload-logo{
+  .upload-logo-form input {
+    height: 24px;
+    width: auto;
+    padding: 0 10px 3px;
+  }
+  .error{
+    background: none;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+    color:red;
+    font-style:italic;
+  }
+  .none{
+    display:none;
+  }
+}
+
+// Company setting
+
+.company-settings {
+  .company-logo-section{
+    margin-left: 0;
+    
+    .row .logo-links {
+      text-align: left;
+      .change-logo-link, .clear-logo-link {
+        margin-left: 10px;
+      }
+      
+      .clear-logo-link {
+        margin-top: 4px;
+      }
+    }
+    
+    .logo-section-header {
+      margin-bottom: 5px;
+      text-transform: none;
+      text-align: left;
+    }
+    .revert-original-state{
+      margin-top: 5px;
+      z-index: 5;
+      &:hover {
+        text-decoration: underline;        
+      }
+    }
+    .fileupload-buttonbar{
+      margin:0px;
+      line-height:20px !important;
+    }
+    .error{
+      div{
+        line-height: 1.5 !important;
+      }
+    }
+
+    .fileinput-button{
+      &:hover {
+        text-decoration: underline;        
+      }
+      overflow: hidden;
+      position: relative;
+      padding: 5px 9px;
+      cursor: pointer !important;
+
+      input {
+        margin: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 20px;
+        padding: 0;
+      }
+    }
+  }
+
+  .error{
+    background: none;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+    color:red;
+    font-style: italic;
+  }
+
+}
+
+.advisor-invitation-dialog {
+  .add-as-user, .advisor-companies-selection {
+    float: left;
+  } 
+  
+  .add-as-user {
+    text-align: center;
+    padding-top: 55px;
+  }
+  
+  .advisor-companies-selection {
+    padding-left: 15px;
+    margin-left: -5px;
+    border-left: 1px solid gray;
+  } 
+  
+  .company-logo {
+    text-align: center;
+  }
+}
